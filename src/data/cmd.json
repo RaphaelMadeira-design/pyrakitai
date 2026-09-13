@@ -1,0 +1,198 @@
+{
+    "prompt": "C:\\VINDOWS> ",
+    "bootPrompt": "C:\\VINDOWS> ",
+    "matrixChars": "アイウエオカキクケコサシスセソタチツテトナニヌネノ0123456789ABCDEF",
+
+    "boot": [
+        "Nicrosoft(R) Vindows 98",
+        "(C)Copyright Nicrosoft Corp 5018-MM.",
+        ""
+    ],
+
+    "static": {
+        "help": [
+            "Commandes disponibles :",
+            "",
+            "  help                 Affiche cette aide",
+            "  ver                  Version du système",
+            "  whoami               Informations utilisateur",
+            "  dir                  Liste les fichiers",
+            "  cls                  Efface l'écran",
+            "  echo [msg]           Affiche un message",
+            "  ping [host]          Teste la connexion",
+            "  auth [Token]         Authentification BoS-NET",
+            "  status               Affiche le niveau d'autorisation",
+            "  logout               Ferme la session BoS-NET",
+            "  matrix               ???",
+            "  hack                 ???",
+            "  memory               ???",
+            "  sudo                 Active le mode Admin",
+            "  format c:            ATTENTION",
+            "",
+            "Tapez une commande et appuyez sur Entrée."
+        ],
+
+        "ver": [
+            "",
+            "Nicrosoft Vindows 98 [Version 4.10.2222]",
+            "Professional Edition — Build 141",
+            ""
+        ],
+
+        "whoami": [
+            "",
+            "┌─────────────────────────────────┐",
+            "│  UTILISATEUR : SIN              │",
+            "│  CLASSE      : 2                │",
+            "│  ÉQUIPE      : 7                │",
+            "│  STATUT      : [ACTIF]          │",
+            "│  CLEARANCE   : CODE 1           │",
+            "└─────────────────────────────────┘",
+            ""
+        ],
+
+        "dir": [
+            "",
+            " Répertoire de C:\\sin\\SYSTEM32\\locked.dir",
+            "",
+            "  alterego.log                42 Ko",
+            "  RAPPORT_ABILITY.dat        ??? Ko",
+            "  las_noches-st235.txt        18 Ko",
+            "  XENO.log                     8 Ko",
+            "  Continuum_Shift.dat        121 Ko",
+            "  Calamity_Trigger.dat       133 Ko",
+            "  REMEMBRANCE.exe    [ACCÈS REFUSÉ]",
+            "  --------                          ",
+            "  7 fichier(s)    ??? Ko disponibles",
+            ""
+        ],
+
+        "sudo": [
+            "Activation de la commande SUDO...",
+            "Tentative d'accès aux privilèges ADMINISTRATEUR...",
+            "Échec.",
+            "Votre activation a été interrompue par une entité extérieure.",
+            "La commande SUDO est bloquée.",
+            "Contactez votre administrateur."
+        ],
+
+        "memory": [
+            "",
+            "> Initialisation du protocole REMEMBRANCE.EXE...",
+            "> Chargement des données de personnage...",
+            "> ...",
+            "> ...",
+            "> [DONNÉES CORROMPUES]",
+            "> Certaines vérités ne sont pas encore accessibles.",
+            "> Veuillez essayer plus tard.",
+            ""
+        ],
+
+        "format c:": [
+            "",
+            "Avertissement : Cette opération va effacer TOUS les fichiers.",
+            "Êtes-vous sûr(e) ? (O/N)",
+            "...",
+            "...",
+            "...",
+            "...",
+            "...",
+            "...",
+            "..?",
+            "???",
+            "...",
+            "...",
+            "Cette opération a été bloquée.",
+            ""
+        ],
+
+        "logout": [
+            "",
+            "> Session BoS-NET fermée. Autorisation révoquée.",
+            ""
+        ]
+    },
+
+    "templates": {
+        "status": [
+            "",
+            "┌─────────────────────────────────┐",
+            "│ SESSION BoS-NET                 │",
+            "│ AUTORISATION : {state}          ",
+            "│ UTILISATEUR : SIN               │",
+            "│ POSTE : BoS-PC98 #0791          │",
+            "└─────────────────────────────────┘",
+            ""
+        ],
+
+        "ping": [
+            "",
+            "Envoi d'une requête 'ping' sur {host}...",
+            "Réponse de {host} : délai=1337ms TTL=98",
+            "Réponse de {host} : délai=404ms  TTL=98",
+            "Réponse de {host} : délai=∞ms    TTL=0",
+            "Réponse de {host} : [AUCUNE RÉPONSE]",
+            "",
+            "Statistiques : connexion établie puis perdue.",
+            "Certains hôtes ne répondent pas.",
+            ""
+        ],
+
+        "unknownCommand": [
+            "'{cmd}' n'est pas reconnu comme commande interne ou externe.",
+            ""
+        ]
+    },
+
+    "matrix": {
+        "start": [
+            "> Activation de la séquence.",
+            "> Appuyez sur une touche pour arrêter."
+        ],
+        "end": [
+            "> Séquence terminée.",
+            ""
+        ]
+    },
+
+    "hack": {
+        "lines": [
+            "Initialisation du protocole de connexion...",
+            "Bypass firewall... [OK]",
+            "Injection de paquets... [OK]",
+            "Accès au système BoS-NET CONFIDENTIEL... [OK]",
+            "Déchiffrement des données...",
+            "> MÉMOIRE FRAGMENT #1 : \"...origine inconnue...\"",
+            "> MÉMOIRE FRAGMENT #2 : [ILLISIBLE]",
+            "> MÉMOIRE FRAGMENT #3 : \"...temps anciens...\"",
+            "> MÉMOIRE FRAGMENT #4 : [CORROMPU]",
+            "Connexion terminée.",
+            "Votre administrateur a mis fin à l'opération.",
+            ""
+        ]
+    },
+
+    "auth": {
+        "token": "INFINITE-VEIL",
+        "lvl": 3,
+        "usage": [
+            "",
+            "> Format : auth TOKEN",
+            ""
+        ],
+        "rejected": [
+            "",
+            "> X Token rejeté. Tentative consignée.",
+            ""
+        ],
+        "success": [
+            "",
+            "> ████████████████████████████████",
+            "> ✓ Authentification validée.",
+            "> Autorisation accordée — ACCÈS AUTORISÉ.",
+            "> Bienvenue, Agent SIN.",
+            "> ████████████████████████████████",
+            ""
+        ]
+    }
+}

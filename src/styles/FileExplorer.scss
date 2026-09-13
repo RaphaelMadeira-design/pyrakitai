@@ -1,0 +1,122 @@
+@use 'Variables' as *;
+
+.file-explorer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: $win98-black;
+
+    &__panes {
+        display: flex;
+        flex: 1;
+        overflow: hidden;
+    }
+
+    &__tree {
+        width: 220px;
+        min-width: 120px;
+        border-right: 2px solid $win98-dark-gray;
+        background: $win98-white;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 4px;
+        flex-shrink: 0;
+    }
+
+    &__content {
+        flex: 1;
+        background: $win98-white;
+        overflow-y: auto;
+        padding: 8px;
+    }
+
+    &__tree-item {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 4px;
+        cursor: pointer;
+        font-family: $font-system;
+        font-size: 11px;
+        white-space: nowrap;
+
+        &:hover {
+            background-color: #cce8ff;
+            color: $win98-black;
+        }
+
+        &--selected {
+            background-color: $win98-navy;
+            color: $win98-white;
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+            image-rendering: pixelated;
+            flex-shrink: 0;
+        }
+
+        &__indent {
+            display: inline-block;
+            width: 16px;
+            flex-shrink: 0;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 8px;
+        align-content: flex-start;
+    }
+
+    &__file-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 72px;
+        padding: 4px;
+        cursor: pointer;
+        border: 1px solid transparent;
+
+        &:hover {
+            background-color: #cce8ff;
+            border-color: #99c9ff;
+        }
+
+        &--selected {
+            background-color: $win98-navy;
+            color: $win98-white;
+
+            span {
+                color: $win98-white;
+            }
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+            image-rendering: pixelated;
+            margin-bottom: 4px;
+        }
+
+        span {
+            font-family: $font-system;
+            font-size: 11px;
+            text-align: center;
+            word-break: break-word;
+        }
+    }
+
+    &__breadcrumb {
+        font-family: $font-system;
+        font-size: 11px;
+        color: $win98-dark-gray;
+        padding: 4px 8px;
+        background: $win98-light-gray;
+        border-bottom: 1px solid $win98-dark-gray;
+        flex-shrink: 0;
+    }
+}

@@ -1,0 +1,938 @@
+@use 'Variables' as *;
+
+// ── Palette ─────────────────────────────────────────────────────
+$moba-bg-1:   #060a1c;
+$moba-bg-2:   #0a1430;
+$moba-cyan:   #5ee6ff;
+$moba-blue:   #3a82d9;
+$moba-soft:   #9fc6ff;
+$moba-muted:  #6e87b6;
+$moba-text:   #cfe0ff;
+$moba-border: #2c4f86;
+$moba-gold:   #ffc83c;
+$moba-violet: #b66bff;
+$moba-red:    #ff5e6c;
+$moba-green:  #63e79a;
+
+$pixel-font: $font-system;
+
+// ── Mixins rétro ────────────────────────────────────────────────
+@mixin pixel-frame($c: $moba-border) {
+    border: 1px solid #000;
+    box-shadow:
+        inset 0 0 0 1px $c,
+        inset 0 0 0 2px #000;
+}
+
+@mixin dither($c, $size: 2px) {
+    background-image: repeating-conic-gradient(#{$c} 0% 25%, transparent 0% 50%);
+    background-size: $size $size;
+}
+
+@keyframes moba-grid-drift {
+    from { 
+        background-position: 0 0; 
+    }
+    to   { 
+        background-position: 32px 32px; 
+    }
+}
+@keyframes moba-fade-up {
+    from { 
+        opacity: 0; 
+        transform: translateY(8px); 
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes moba-fade-left {
+    from { 
+        opacity: 0; 
+        transform: translateX(-12px); 
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+@keyframes moba-fade-right {
+    from { 
+        opacity: 0; 
+        transform: translateX(12px); 
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateX(0); 
+    }
+}
+@keyframes moba-portrait-in {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes moba-blink {
+    0%, 60%  { 
+        opacity: 1; 
+    }
+    61%,100% { 
+        opacity: 0.25; 
+    }
+}
+@keyframes moba-spell-in {
+    from { 
+        opacity: 0; 
+        transform: translateY(6px); 
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+@keyframes moba-modal-in {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px) scale(0.98); 
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateY(0) scale(1); 
+    }
+}
+@keyframes moba-overlay-in {
+    from { 
+        opacity: 0; 
+    }
+    to   { 
+        opacity: 1; 
+    }
+}
+
+// ═══════════════════════════════════════════════════════════════
+//  ROOT
+// ═══════════════════════════════════════════════════════════════
+.moba {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: $moba-bg-1;
+    color: $moba-text;
+    font-family: $pixel-font;
+    letter-spacing: 0;
+    image-rendering: pixelated;
+    -webkit-font-smoothing: none;
+    font-smooth: never;
+    text-rendering: optimizeSpeed;
+
+    &::before {
+        content: '';
+        position: absolute; inset: 0;
+        background:
+            linear-gradient(180deg, $moba-bg-2 0%, $moba-bg-1 60%, #04060f 100%);
+        z-index: 0;
+    }
+
+    &__bg-grid {
+        position: absolute; inset: 0;
+        z-index: 1;
+        background-image:
+            linear-gradient(rgba(94,140,210,0.10) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(94,140,210,0.10) 1px, transparent 1px);
+        background-size: 32px 32px;
+        animation: moba-grid-drift 18s steps(32) infinite;
+        pointer-events: none;
+    }
+
+    &__bg-dither {
+        position: absolute; inset: 0;
+        z-index: 1;
+        @include dither(rgba(94,230,255,0.05));
+        pointer-events: none;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 6px 18px 0 18px;
+        overflow: hidden;
+    }
+
+    // ── TOPBAR ────────────────────────────────────────────────
+    &__topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 8px;
+        background: rgba(10, 22, 48, 0.85);
+        @include pixel-frame($moba-border);
+        opacity: 0;
+        animation: moba-fade-up 0.4s steps(6) 0.05s forwards;
+        height: 52px;
+    }
+
+    &__crumb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        color: $moba-muted;
+        text-transform: uppercase;
+        strong { 
+            color: $moba-cyan; 
+            font-weight: 400; 
+        }
+    }
+
+    &__crumb-dot {
+        width: 8px; height: 8px;
+        background: $moba-cyan;
+        animation: moba-blink 1s steps(1) infinite;
+    }
+
+    &__rank {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        text-transform: uppercase;
+        &-label { 
+            color: $moba-muted; 
+        }
+        &-val   {
+            color: #000;
+            background: $moba-cyan;
+            padding: 1px 8px;
+            box-shadow: 2px 2px 0 #08203a;
+        }
+        &-mat { 
+            color: $moba-cyan; 
+        }
+    }
+
+    // ── GRID ──────────────────────────────────────────────────
+    &__grid {
+        flex: 1;
+        min-height: 0;
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr 1.1fr;
+        gap: 14px;
+        overflow: hidden;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 18px 0 18px 0;
+        min-height: 0;
+        min-width: 0;
+        scrollbar-width: thin;
+        scrollbar-color: $moba-border transparent;
+        &::-webkit-scrollbar { 
+            width: 6px; 
+        }
+        &::-webkit-scrollbar-thumb { 
+            background: $moba-border; 
+        }
+
+        &--left {
+            opacity: 0;
+            animation: moba-fade-left 0.4s steps(6) 0.15s forwards;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+        &--center {
+            opacity: 0;
+            animation: moba-portrait-in 0.4s steps(6) 0.25s forwards;
+            align-items: center;
+            justify-content: top;
+            position: relative;
+            overflow: visible;
+            z-index: -1;
+        }
+        &--right {
+            opacity: 0;
+            animation: moba-fade-right 0.4s steps(6) 0.2s forwards;
+            overflow-y: auto;
+        }
+    }
+
+    // ── NAME BLOCK ────────────────────────────────────────────
+    &__name-block {
+        position: relative;
+        padding: 2px 0 4px;
+    }
+
+    &__name {
+        margin: 0;
+        font-family: $pixel-font;
+        font-size: 52px;
+        line-height: 0.95;
+        letter-spacing: 1px;
+        color: $moba-cyan;
+        text-shadow:
+            3px 3px 0 #15347a,
+            6px 6px 0 #06102c;
+    }
+
+    &__lastname {
+        margin: 4px 0 0;
+        font-family: $pixel-font;
+        font-size: 26px;
+        letter-spacing: 8px;
+        color: $moba-soft;
+        text-shadow: 2px 2px 0 #06102c;
+    }
+
+    &__desc {
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.65;
+        color: $moba-text;
+        padding: 0px 0px 0px 10px;
+        border-left: 9px solid $moba-cyan;
+        text-align: justify;
+    }
+
+    // ── PANEL ─────────────────────────────────────────────────
+    &__panel {
+        position: relative;
+        background: rgba(9, 20, 44, 0.82);
+        @include pixel-frame($moba-border);
+        padding: 8px 10px 10px;
+
+        &::after {
+            content: '';
+            position: absolute; inset: 2px;
+            @include dither(rgba(94,230,255,0.045));
+            pointer-events: none;
+        }
+    }
+
+    &__panel-head {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid $moba-border;
+    }
+
+    &__panel-title {
+        font-size: 13px;
+        letter-spacing: 1px;
+        color: $moba-cyan;
+        text-transform: uppercase;
+    }
+
+    &__panel-dot {
+        width: 6px; height: 6px;
+        background: $moba-cyan;
+        animation: moba-blink 1.2s steps(1) infinite;
+    }
+
+    // ── POWER PANEL ──────────────────────────────────────────
+    &__power-grid {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+
+    &__power-cell {
+        padding: 6px 8px;
+        background: rgba(8, 18, 40, 0.85);
+        border: 1px solid $moba-border;
+
+        i {
+            display: block;
+            font-style: normal;
+            font-size: 9px;
+            color: $moba-cyan;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+        }
+        span {
+            font-size: 12px;
+            color: #fff;
+            letter-spacing: 0.5px;
+        }
+
+        &--wide { 
+            grid-column: 1 / -1; 
+        }
+    }
+
+    // ── BARS (Santé / Énergie) ────────────────────────────────────
+    &__bars {
+        display: flex;
+    }
+
+    &__bar {
+        flex: 1;
+        min-width: 0;
+    }
+
+    &__bar-fill {
+        height: 100%;
+        transition: width 0.6s steps(8);
+    }
+
+    &__bar-track {
+        position: relative;
+        height: 18px;
+        background: rgba(8, 18, 40, 0.85);
+        box-shadow: inset 0 0 0 1px $moba-border;
+        overflow: hidden;
+    }
+
+    &__bar-label {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 8px;
+        letter-spacing: 1px;
+        color: #fff;
+        text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+        text-transform: uppercase;
+    }
+
+    &__bar-value {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        font-size: 8px;
+        letter-spacing: 1px;
+        color: #fff;
+        text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px  1px 0 #000,
+        1px  1px 0 #000;
+    }
+
+    &__bar--hp {
+        .moba__bar-track {
+            clip-path: polygon(0 0, 100% 0, calc(100% - 12px) 100%, 0 100%);
+        }
+        .moba__bar-fill { 
+            background: $moba-green; 
+        }
+        .moba__bar-value { 
+            left: 6px; 
+        }
+    }
+
+    &__bar--energy {
+        .moba__bar-track {
+            clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%);
+        }
+        .moba__bar-fill { 
+            background: $moba-cyan; 
+        }
+        .moba__bar-value { 
+            right: 6px; 
+        }
+    }
+
+    // ── AURA CELL ────────────────────────────────────────────────
+    &__power-cell--aura {
+        border-left: 3px solid $moba-violet;
+        i { 
+            color: $moba-violet; 
+        }
+    }
+
+    // ── SPELLS ROW (icons) ────────────────────────────────────
+    &__spells-panel { 
+        min-height: 0; 
+    }
+
+    &__spell-row {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    &__spell-btn {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 82px;
+        width: 82px;
+        background: rgba(16, 32, 66, 0.85);
+        @include pixel-frame($moba-border);
+        cursor: pointer;
+        font-family: $pixel-font;
+        opacity: 0;
+        animation: moba-spell-in 0.3s steps(5) forwards;
+        transition: background-color 0.1s steps(2), transform 0.1s steps(2);
+
+        &:hover {
+            background: rgba(28, 56, 112, 0.95);
+            transform: translateY(-2px);
+            box-shadow:
+                inset 0 0 0 1px $moba-cyan,
+                inset 0 0 0 2px #000;
+
+            .moba__spell-tip { 
+                opacity: 1; 
+                transform: translate(-50%, -40%);
+            }
+        }
+
+        &:focus-visible {
+            outline: 2px solid $moba-cyan;
+            outline-offset: 2px;
+        }
+
+        &.is-ult {
+            box-shadow:
+                inset 0 0 0 1px $moba-gold,
+                inset 0 0 0 2px #000;
+            background: rgba(60, 44, 12, 0.65);
+
+            .moba__spell-glyph {
+                color: $moba-gold;
+                text-shadow: 2px 2px 0 #1a1304;
+            }
+            .moba__spell-key {
+                background: $moba-gold;
+                color: #000;
+            }
+
+            &:hover {
+                box-shadow:
+                    inset 0 0 0 1px #fff0b0,
+                    inset 0 0 0 2px #000;
+            }
+        }
+    }
+
+    &__spell-glyph {
+        pointer-events: none;
+        padding: 4px;
+
+        &--img {
+            height: 100%;
+            object-fit: cover;
+            image-rendering: pixelated;
+        }
+    }
+
+    &__spell-key {
+        position: absolute;
+        bottom: -1px;
+        right: -1px;
+        background: $moba-cyan;
+        color: #04122c;
+        font-family: $pixel-font;
+        font-size: 11px;
+        padding: 0 5px;
+        line-height: 1.3;
+        pointer-events: none;
+    }
+
+    &__spell-tip {
+        position: absolute;
+        bottom: calc(100% + 4px);
+        left: 50%;
+        transform: translate(-50%, 4px);
+        background: #000;
+        color: $moba-cyan;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        padding: 3px 6px;
+        border: 1px solid $moba-cyan;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.15s steps(3), transform 0.15s steps(3);
+        z-index: 5;
+        text-transform: uppercase;
+    }
+
+    // ── RADAR ─────────────────────────────────────────────────
+
+    &__radar-bare {
+        position: relative;
+    }
+
+    &__radar-wrap {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__radar {
+        width: 100%;
+        max-width: 280px;
+
+        text { 
+            font-family: $pixel-font; 
+        }
+    }
+
+    // ── PORTRAIT ──────────────────────────────────────────────
+    &__portrait {
+        position: relative;
+        width: 200%;
+        height: 200%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    &__portrait-glow {
+        position: absolute;
+        top: 8%; left: 50%;
+        transform: translateX(-50%);
+        width: 80%; height: 80%;
+        @include dither(rgba(94,230,255,0.10), 3px);
+        -webkit-mask-image: radial-gradient(ellipse 55% 55% at 50% 45%, #000 0%, transparent 70%);
+        mask-image: radial-gradient(ellipse 55% 55% at 50% 45%, #000 0%, transparent 70%);
+        pointer-events: none;
+    }
+
+    &__portrait-frame {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    &__portrait-img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: bottom center;
+        image-rendering: pixelated;
+        filter:
+            drop-shadow(2px 0 0 #0a1430)
+            drop-shadow(-2px 0 0 #0a1430)
+            drop-shadow(0 4px 0 rgba(0,0,0,0.6));
+    }
+
+    &__portrait-base {
+        position: absolute;
+        bottom: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 62%;
+        height: 10px;
+        @include dither(rgba(94,230,255,0.35), 3px);
+        -webkit-mask-image: radial-gradient(ellipse at center, #000 0%, transparent 70%);
+        mask-image: radial-gradient(ellipse at center, #000 0%, transparent 70%);
+        z-index: 1;
+    }
+
+    // ── FORCES / FAIBLESSES ─────────────────────────────────────
+    &__traits-section { 
+        position: relative; 
+        z-index: 1; 
+    }
+    &__traits-section + &__traits-section { 
+        margin-top: 10px; 
+    }
+
+    &__traits-label {
+        font-size: 10px;
+        letter-spacing: 2px;
+        color: $moba-cyan;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+
+        &--weak {
+            color: $moba-red;
+        }
+    }
+
+    &__traits-list {
+        list-style: none;
+        margin: 0;
+        padding: 6px 8px;
+        background: rgba(8, 18, 40, 0.7);
+        border-left: 2px solid $moba-cyan;
+
+        &--weak {
+            border-left-color: $moba-red;
+
+            .moba__traits-bullet { 
+                color: $moba-red; 
+            }
+        }
+    }
+
+    &__traits-item {
+        display: flex;
+        gap: 6px;
+        align-items: flex-start;
+        font-size: 12px;
+        line-height: 1.5;
+        color: $moba-text;
+
+        & + & { 
+            margin-top: 2px; 
+        }
+    }
+
+    &__traits-bullet {
+        color: $moba-cyan;
+        font-weight: 700;
+        flex-shrink: 0;
+    }
+
+    // ═══════════════════════════════════════════════════════════
+    //  MODAL
+    // ═══════════════════════════════════════════════════════════
+    &__modal-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(2, 6, 18, 0.78);
+        @include dither(rgba(94,230,255,0.05));
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: moba-overlay-in 0.18s steps(4) forwards;
+        padding: 24px;
+    }
+
+    &__modal {
+        position: relative;
+        width: 100%;
+        max-width: 520px;
+        max-height: 90%;
+        overflow-y: auto;
+        background: $moba-bg-2;
+        @include pixel-frame($moba-cyan);
+        padding: 14px 16px 16px;
+        animation: moba-modal-in 0.22s steps(6) forwards;
+        font-family: $pixel-font;
+
+        &.is-ult {
+            box-shadow:
+                inset 0 0 0 1px $moba-gold,
+                inset 0 0 0 2px #000;
+            background: #1a1408;
+        }
+    }
+
+    &__modal-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid $moba-border;
+    }
+
+    &__modal-title-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__modal-key {
+        background: $moba-cyan;
+        color: #000;
+        font-family: $pixel-font;
+        font-size: 14px;
+        padding: 2px 8px;
+        letter-spacing: 1px;
+
+        .moba__modal.is-ult & {
+            background: $moba-gold;
+        }
+    }
+
+    &__modal-title {
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #fff;
+        text-transform: uppercase;
+
+        .moba__modal.is-ult & { 
+            color: $moba-gold; 
+        }
+    }
+
+    &__modal-close {
+        background: transparent;
+        border: 1px solid $moba-border;
+        color: $moba-soft;
+        cursor: pointer;
+        font-family: $pixel-font;
+        font-size: 18px;
+        line-height: 1;
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color 0.1s steps(2), border-color 0.1s steps(2);
+
+        &:hover {
+            color: $moba-cyan;
+            border-color: $moba-cyan;
+        }
+    }
+
+    &__modal-body {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &__modal-glyph {
+        align-self: center;
+        @include pixel-frame($moba-cyan);
+
+        &-img {
+            width: 86px;
+            height: 86px;
+            object-fit: cover;
+            image-rendering: pixelated;
+            display: block;
+        }
+
+        .moba__modal.is-ult & {
+            color: $moba-gold;
+            text-shadow: 3px 3px 0 #1a1304;
+            box-shadow:
+                inset 0 0 0 1px $moba-gold,
+                inset 0 0 0 2px #000;
+        }
+    }
+
+    &__modal-meta {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    &__modal-pill {
+        padding: 5px 8px;
+        background: rgba(8, 18, 40, 0.85);
+        border: 1px solid $moba-border;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+
+        i {
+            display: block;
+            font-style: normal;
+            font-size: 9px;
+            letter-spacing: 1px;
+            color: $moba-cyan;
+        }
+        span {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        &--cost { 
+            border-left: 3px solid $moba-violet;
+            i { 
+                color: $moba-violet; 
+            } 
+        }
+        &--recharge { 
+            border-left: 3px solid $moba-cyan; 
+        }
+        &--duration { 
+            border-left: 3px solid $moba-soft;
+            i { 
+                color: $moba-soft; 
+            } 
+        }
+        &--range    { 
+            border-left: 3px solid $moba-gold;
+            i { 
+                color: $moba-gold; 
+            } 
+        }
+    }
+
+    &__modal-desc {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.6;
+        color: $moba-text;
+        padding: 8px 10px;
+        background: rgba(8, 18, 40, 0.7);
+        border-left: 3px solid $moba-cyan;
+
+        .moba__modal.is-ult & {
+            border-left-color: $moba-gold;
+        }
+    }
+
+    &__modal-effect {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        padding: 6px 10px;
+        background: rgba(8, 18, 40, 0.85);
+        border: 1px dashed $moba-cyan;
+
+        .moba__modal.is-ult & { 
+            border-color: $moba-gold; 
+        }
+    }
+
+    &__modal-effect-label {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        color: $moba-cyan;
+        text-transform: uppercase;
+
+        .moba__modal.is-ult & { 
+            color: $moba-gold; 
+        }
+    }
+
+    &__modal-effect-text {
+        font-size: 12px;
+        line-height: 1.5;
+        color: $moba-text;
+
+        & + & { 
+            margin-top: 6px; 
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "browser": {
+        "title": "Aide d'Internet Explorer",
+        "sections": [
+            {
+                "title": "Navigation",
+                "text": "Utilisez la barre d'adresse pour accéder à un site."
+            },
+            {
+                "title": "Recherche",
+                "text": "Tapez un mot-clé pour effectuer une recherche."
+            }
+        ]
+    },
+
+    "intranet": {
+        "title": "Aide de CGU-NET",
+        "sections": [
+            {
+                "title": "Présentation",
+                "text": "CGU-NET est le réseau interne de l'université."
+            },
+            {
+                "title": "Documents",
+                "text": "Vous pouvez consulter les archives et les annonces internes."
+            }
+        ]
+    },
+
+    "mail": {
+        "title": "Aide Outlook Express",
+        "sections": [
+            {
+                "title": "Lire un courrier",
+                "text": "Cliquez sur un message dans la liste."
+            }
+        ]
+    }
+}

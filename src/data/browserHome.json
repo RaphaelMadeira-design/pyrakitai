@@ -1,0 +1,103 @@
+{
+    "logo": {
+        "text": "nsn",
+        "sub": "Nicrosoft®"
+    },
+    "promoHtml": "Bénéficiez de <em>10€ de réduction</em> dès <em>30€ d'achat</em><br />cette saison sur <span class=\"link\">amazor.com</span>.",
+    "date": {
+        "month": "JUIN",
+        "day": "17"
+    },
+    "searchbarLabelHtml": "<strong>RECHERCHER</strong> sur le Web",
+    "mainNav": ["Accueil", "Recherche", "Images", "Shopping", "Monde", "People & Chat"],
+    "subNavCols": [
+        ["Téléchargement gratuit", "NSN Messenger Service"],
+        ["Personnaliser cette page", "Obtenez ce que vous aimez"]
+    ],
+    "subNavAdHtml": "<strong>Envoyez des chocolats Godiva</strong><br />pour cette saison",
+    "subNavAdCta": "Cliquez ici",
+    "categories": [
+        "Autos", "Business", "Carrières", "Informatique & Web", "Divertissement",
+        "Jeux", "Santé",
+        { "label": "Loisirs", "isNew": true },
+        "Maison & Prêts",
+        { "label": "Guides locaux", "isNew": true },
+        "NSN Update", "Actualités",
+        "Finance perso", "Radio & Vidéo", "Recherche & École", "Sports", "Voyages", "Femmes"
+    ],
+    "shortcuts": [
+        { "label": "Voyager" },
+        { "label": "Acheter musique" },
+        { "label": "Jeux gratuits" },
+        { "label": "Cartes" },
+        { "label": "Enchères", "orange": true },
+        { "label": "Téléchargements" },
+        { "label": "Se connecter" },
+        { "label": "Cours boursiers" },
+        { "label": "Acheter livres" },
+        { "label": "Cartes virtuelles" },
+        { "label": "Pages perso" },
+        { "label": "Plus…", "orange": true }
+    ],
+    "feature1": {
+        "title": "À la une : Arrestation de Makan Seo et son lien avec les Dents de Sabre",
+        "image": {
+            "src": "/images/news1.jpg",
+            "credit": "ActuNet",
+            "caption": "Les efforts combinés des forces de police de la ville et des patrouilleurs de l'Ordre ont permis l'arrestation de Makan Seo, dirigeant de l'entreprise pharmaceutique 'Evo-solutions'."
+        }
+    },
+    "feature2": {
+        "title": "Flash Info : Trois individus arrêtés par le Protectorat lors d'une opération nocturne à Reach",
+        "image": {
+            "src": "/images/news2.jpg",
+            "caption": "Affaire Seo : trois shokunins ont été arrêté par le Protectorat."
+        },
+        "alsoTitle": "Aujourd'hui aussi",
+        "alsoList": [
+            "10 conseils fiscaux",
+            "Le quotidien d'un shokunin",
+            "Voyages hors saison",
+            "Cuisinez comme un chef"
+        ]
+    },
+    "connect": {
+        "title": "Restez connecté",
+        "list": ["Top téléphones sans fil", "Anxiété en société ?", "Envoyez une e-card"],
+        "side": {
+            "img": "/images/news3.jpg",
+            "label": "Qheselis : Et si c'était votre partenaire idéal ?"
+        }
+    },
+    "messageCenter": {
+        "title": "MESSAGE CENTER",
+        "emailLabel": "E-mail",
+        "userLabel": "Identifiant Hotmail :",
+        "passLabel": "Mot de passe :",
+        "signupLabel": "Inscrivez-vous gratuitement",
+        "peopleTitle": "People & Chat",
+        "peopleLinks": [
+            "Créer une communauté",
+            "Communautés populaires",
+            "Lobby Emoticon Chat",
+            "Nouveautés du chat"
+        ]
+    },
+    "helpLabel": "AIDE",
+    "footerBlocks": [
+        {
+            "head": "Exclusivités NSN",
+            "h4": "Envie de gratuit ?",
+            "links": ["Trouvez-en plein ici"]
+        },
+        {
+            "head": "Actualités",
+            "h4": "Lenoxia News",
+            "items": ["Sommet climatique d'Issitis — accord signé", "Exposition de l'artiste Von Gong à Reach", "Ouverture d'une nouvelle embassade à Erebor"]
+        },
+        {
+            "head": "Recherche locale",
+            "links": ["Pages jaunes", "Pages blanches", "Météo"]
+        }
+    ]
+}

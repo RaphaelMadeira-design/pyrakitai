@@ -1,0 +1,181 @@
+@use 'Variables' as *;
+
+.trash {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $win98-gray;
+    color: $win98-black;
+    font-family: $font-system;
+    font-size: 11px;
+    position: relative;
+
+    &__toolbar {
+        gap: 4px;
+    }
+
+    &__toolbar-spacer {
+        flex: 1;
+    }
+
+    &__toolbar-info {
+        font-family: $font-system;
+        font-size: 11px;
+        color: $win98-dark-gray;
+        padding-right: 4px;
+    }
+
+    &__address {
+        flex: 1;
+        height: 18px;
+        background-color: $win98-white;
+        padding: 0 4px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        @include border-inset-light;
+
+        img {
+            width: 16px;
+            height: 16px;
+            image-rendering: pixelated;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        overflow: auto;
+        background-color: $win98-white;
+        margin: 2px;
+        @include border-inset;
+    }
+
+    &__empty {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        color: $win98-dark-gray;
+
+        img {
+            width: 48px;
+            height: 48px;
+            image-rendering: pixelated;
+        }
+    }
+
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: $font-system;
+        font-size: 11px;
+
+        thead tr {
+            background-color: $win98-gray;
+        }
+
+        th {
+            text-align: left;
+            padding: 3px 8px;
+            font-weight: normal;
+            border-right: 1px solid $win98-dark-gray;
+            border-bottom: 1px solid $win98-dark-gray;
+            position: sticky;
+            top: 0;
+            background-color: $win98-gray;
+        }
+
+        td {
+            padding: 2px 8px;
+            white-space: nowrap;
+
+            img {
+                width: 16px;
+                height: 16px;
+                image-rendering: pixelated;
+                margin-right: 6px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    &__row {
+        cursor: default;
+        color: $win98-black;
+
+        &:hover {
+            background-color: rgba($win98-navy, 0.08);
+        }
+
+        &--selected,
+        &--selected:hover {
+            background-color: $win98-navy;
+            color: $win98-white;
+        }
+    }
+
+    // ─── Confirm dialog ──────────────────────────────
+    &__dialog-overlay {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+    }
+
+    &__dialog {
+        min-width: 340px;
+        background-color: $win98-gray;
+        @include border-outset;
+        box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__dialog-body {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        padding: 18px 16px;
+        font-family: $font-system;
+        font-size: 11px;
+
+        img {
+            width: 32px;
+            height: 32px;
+            image-rendering: pixelated;
+            flex-shrink: 0;
+        }
+    }
+
+    &__dialog-buttons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        padding: 0 12px 12px;
+    }
+
+    &__dialog-btn {
+        min-width: 72px;
+        padding: 3px 12px;
+        background-color: $win98-gray;
+        font-family: $font-system;
+        font-size: 11px;
+        color: $win98-black;
+        cursor: pointer;
+        @include border-outset;
+
+        &:active {
+            @include border-inset;
+        }
+
+        &:focus {
+            outline: 1px dotted $win98-black;
+            outline-offset: -4px;
+        }
+    }
+}

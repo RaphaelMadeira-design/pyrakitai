@@ -1,0 +1,406 @@
+// CRT MONITOR FRAME
+// =====================
+
+// Colors
+$monitor-beige: #d4c8a8;
+$monitor-beige-light: #e8dcc0;
+$monitor-beige-dark: #b8a888;
+$monitor-beige-shadow: #8a7a60;
+$monitor-plastic-dark: #3a3a3a;
+$monitor-screen-bezel: #2a2a2a;
+$led-green: #00ff00;
+$led-off: #1a3a1a;
+
+.crt-monitor {
+width: 100vw;
+height: 100vh;
+background: linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 50%, #0a0a0a 100%);
+display: flex;
+align-items: stretch;
+justify-content: center;
+padding: 0;
+box-sizing: border-box;
+overflow: hidden;
+
+// =====================
+// CADRE PRINCIPAL
+// =====================
+&__frame {
+display: flex;
+flex-direction: column;
+align-items: stretch;
+width: 100%;
+height: 100%;
+animation: crt-power-on 0.8s ease-out;
+}
+
+// =====================
+// ZONE ÉCRAN
+// =====================
+&__screen-area {
+flex: 1;
+display: flex;
+flex-direction: column;
+background: linear-gradient(180deg, $monitor-beige 0%, $monitor-beige-dark 100%);
+padding: 20px 50px 10px 50px;
+border-radius: 16px 16px 0 0;
+box-shadow:
+inset 0 2px 0 rgba(255, 255, 255, 0.2),
+inset 0 -2px 0 rgba(0, 0, 0, 0.1),
+0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+// =====================
+// BISEAU INTERNE
+// =====================
+&__bezel {
+flex: 1;
+display: flex;
+flex-direction: column;
+background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
+padding: 8px;
+border-radius: 16px;
+box-shadow:
+inset 0 2px 4px rgba(0, 0, 0, 0.8),
+inset 0 -2px 4px rgba(255, 255, 255, 0.05),
+0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+// =====================
+// ÉCRAN CRT
+// =====================
+&__screen {
+position: relative;
+flex: 1;
+width: 100%;
+background: #000;
+border-radius: 8px;
+overflow: hidden;
+box-shadow:
+inset 0 0 100px rgba(0, 0, 0, 0.8),
+0 0 2px rgba(255, 255, 255, 0.1);
+
+&--on {
+.crt-monitor__content {
+opacity: 1;
+}
+.crt-monitor__scanlines {
+opacity: 0.5;
+}
+.crt-monitor__flicker {
+animation: crt-flicker 0.05s infinite;
+}
+}
+}
+
+// =====================
+// CONTENU (Windows 98)
+// =====================
+&__content {
+position: absolute;
+inset: 0;
+opacity: 0;
+transition: opacity 0.5s ease-in;
+border-radius: inherit;
+overflow: hidden;
+
+> * {
+width: 100%;
+height: 100%;
+}
+
+&--off-anim {
+animation: crt-power-off 0.65s cubic-bezier(0.55, 0, 0.7, 0.2) forwards;
+transform-origin: center center;
+pointer-events: none;
+}
+}
+
+// =====================
+// EFFETS CRT
+// =====================
+
+// Scanlines
+&__scanlines {
+position: absolute;
+inset: 0;
+pointer-events: none;
+z-index: 10;
+opacity: 0;
+transition: opacity 0.3s;
+background: repeating-linear-gradient(
+0deg,
+transparent,
+transparent 2px,
+rgba(0, 0, 0, 0.15) 2px,
+rgba(0, 0, 0, 0.15) 4px
+);
+border-radius: inherit;
+}
+
+// Flicker subtil
+&__flicker {
+position: absolute;
+inset: 0;
+pointer-events: none;
+z-index: 11;
+background: transparent;
+border-radius: inherit;
+}
+
+// Vignette (coins sombres)
+&__vignette {
+position: absolute;
+inset: 0;
+pointer-events: none;
+z-index: 12;
+background: radial-gradient(
+ellipse at center,
+transparent 50%,
+rgba(0, 0, 0, 0.2) 80%,
+rgba(0, 0, 0, 0.4) 100%
+);
+border-radius: inherit;
+}
+
+// Courbure de l'écran
+&__curvature {
+position: absolute;
+inset: 0;
+pointer-events: none;
+z-index: 13;
+border-radius: inherit;
+box-shadow:
+inset 0 0 80px rgba(0, 0, 0, 0.4),
+inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+// Reflet sur l'écran
+&__reflection {
+position: absolute;
+inset: 0;
+pointer-events: none;
+z-index: 14;
+background: linear-gradient(
+135deg,
+rgba(255, 255, 255, 0.03) 0%,
+transparent 40%,
+transparent 60%,
+rgba(255, 255, 255, 0.02) 100%
+);
+border-radius: inherit;
+}
+
+// Écran éteint
+&__off-screen {
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #0a0a0a;
+
+span {
+font-family: 'Pixelify Sans', monospace;
+font-size: 24px;
+color: #333;
+letter-spacing: 4px;
+}
+}
+
+// =====================
+// PANNEAU DE CONTRÔLE
+// =====================
+&__controls {
+width: 100%;
+height: 50px;
+background: linear-gradient(180deg, $monitor-beige-dark 0%, $monitor-beige 30%, $monitor-beige-dark 100%);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 55px;
+border-radius: 0 0 20px 20px;
+flex-shrink: 0;
+box-shadow:
+inset 0 2px 0 rgba(255, 255, 255, 0.15),
+inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+}
+
+// =====================
+// MARQUE
+// =====================
+&__brand {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+&-logo {
+font-family: 'Pixelify Sans', 'Arial Black', sans-serif;
+font-size: 18px;
+font-weight: 800;
+color: $monitor-plastic-dark;
+letter-spacing: 3px;
+text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+&-model {
+font-family: Arial, sans-serif;
+font-size: 9px;
+color: $monitor-beige-shadow;
+letter-spacing: 1px;
+}
+}
+
+// =====================
+// BOUTONS
+// =====================
+&__buttons {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+&__button-group {
+display: flex;
+gap: 4px;
+}
+
+&__btn {
+background: linear-gradient(180deg, #4a4a4a 0%, #2a2a2a 50%, #1a1a1a 100%);
+border: none;
+border-radius: 4px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow:
+0 2px 4px rgba(0, 0, 0, 0.4),
+inset 0 1px 0 rgba(255, 255, 255, 0.1);
+transition: all 0.1s;
+
+&:active {
+transform: scale(0.95);
+box-shadow:
+0 1px 2px rgba(0, 0, 0, 0.4),
+inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+span {
+color: #888;
+font-size: 12px;
+}
+
+&--small {
+width: 28px;
+height: 28px;
+
+span {
+font-size: 14px;
+}
+}
+
+&--power {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+background: linear-gradient(180deg, #3a3a3a 0%, #1a1a1a 100%);
+
+span {
+font-size: 16px;
+color: #666;
+}
+}
+}
+
+&__led {
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: $led-off;
+box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+transition: all 0.3s;
+flex-shrink: 0;
+
+&--on {
+background: $led-green;
+box-shadow: 0 0 8px $led-green, 0 0 16px rgba($led-green, 0.5);
+}
+}
+}
+
+// =====================
+// ANIMATIONS
+// =====================
+@keyframes crt-power-on {
+0% {
+opacity: 0;
+transform: scale(0.98);
+}
+50% {
+opacity: 1;
+}
+100% {
+opacity: 1;
+transform: scale(1);
+}
+}
+
+@keyframes crt-flicker {
+0%, 100% { opacity: 1; }
+50% { opacity: 0.98; }
+}
+
+@keyframes crt-power-off {
+0% {
+opacity: 1;
+transform: scale(1, 1);
+filter: brightness(1);
+}
+35% {
+opacity: 1;
+transform: scale(1, 0.01);
+filter: brightness(3) saturate(0.5);
+}
+70% {
+opacity: 1;
+transform: scale(0.35, 0.006);
+filter: brightness(2) saturate(0);
+}
+100% {
+opacity: 0;
+transform: scale(0, 0.003);
+filter: brightness(0);
+}
+}
+
+// =====================
+// RESPONSIVE
+// =====================
+@media (max-width: 1200px) {
+.crt-monitor {
+&__controls {
+height: 44px;
+padding: 0 55px;
+}
+}
+}
+
+@media (max-width: 900px) {
+.crt-monitor {
+&__controls {
+height: 38px;
+padding: 0 15px;
+}
+
+&__brand-logo {
+font-size: 14px;
+}
+}
+}
+
+// Hide frame on very small screens (will show PDA instead)
+@media (max-width: 768px) {
+.crt-monitor {
+display: none;
+}
+}

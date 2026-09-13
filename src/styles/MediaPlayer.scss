@@ -1,0 +1,271 @@
+@use 'Variables' as *;
+
+.wmp {
+display: flex;
+flex-direction: column;
+height: 100%;
+background: $win98-gray;
+font-family: $font-system;
+font-size: 11px;
+color: $win98-black;
+user-select: none;
+
+// ── Menu bar ─────────────────────────────────────────
+&__menubar {
+display: flex;
+padding: 2px 4px;
+background: $win98-gray;
+border-bottom: 1px solid $win98-dark-gray;
+flex-shrink: 0;
+
+span {
+padding: 2px 6px;
+cursor: default;
+&:hover { background: $win98-navy; color: $win98-white; }
+}
+}
+
+// ── Visualiseur ───────────────────────────────────────
+&__viz-wrap {
+position: relative;
+background: #000810;
+margin: 4px;
+@include border-inset;
+flex-shrink: 0;
+overflow: hidden;
+}
+
+&__canvas {
+display: block;
+width: 100%;
+height: 150px;
+}
+
+&__viz-overlay {
+position: absolute;
+top: 4px; right: 6px;
+}
+
+&__viz-title {
+font-size: 10px;
+color: rgba(0, 200, 255, 0.5);
+font-family: $font-pixel;
+}
+
+// ── Infos piste ───────────────────────────────────────
+&__info {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 3px 8px;
+background: $win98-white;
+@include border-inset;
+margin: 0 4px;
+flex-shrink: 0;
+}
+
+&__track-name {
+font-weight: bold;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+max-width: 60%;
+}
+
+&__time {
+font-family: 'Courier New', monospace;
+font-size: 11px;
+color: $win98-navy;
+flex-shrink: 0;
+}
+
+// ── Seek bar ──────────────────────────────────────────
+&__seek {
+position: relative;
+height: 16px;
+margin: 4px 6px;
+background: $win98-light-gray;
+@include border-inset;
+cursor: pointer;
+flex-shrink: 0;
+}
+
+&__seek-fill {
+position: absolute;
+top: 0; left: 0; bottom: 0;
+background: $win98-navy;
+pointer-events: none;
+}
+
+&__seek-thumb {
+position: absolute;
+top: 0; bottom: 0;
+width: 10px;
+margin-left: -5px;
+background: $win98-gray;
+@include border-outset;
+pointer-events: none;
+}
+
+// ── Contrôles ─────────────────────────────────────────
+&__controls {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 4px 6px;
+flex-shrink: 0;
+}
+
+&__btns {
+display: flex;
+gap: 2px;
+}
+
+&__btn {
+width: 28px;
+height: 24px;
+background: $win98-gray;
+border: none;
+cursor: pointer;
+font-size: 14px;
+display: flex;
+justify-content: center;
+@include border-outset-light;
+
+&:active { 
+@include border-inset-light; 
+}
+
+&--play  { 
+color: #006000; 
+font-size: 14px; 
+}
+&--pause { 
+color: $win98-navy; 
+}
+
+&--stop  { 
+color: #800000; 
+}
+}
+
+&__volume {
+display: flex;
+align-items: center;
+gap: 4px;
+}
+
+&__vol-label { 
+font-family: $font-system;
+font-size: 8px;
+font-weight: 600;
+}
+
+&__vol-slider {
+-webkit-appearance: none;
+appearance: none;
+background: linear-gradient( 
+to right, $win98-navy 0%, 
+$win98-navy calc(var(--value) * 100%), 
+$win98-dark-gray calc(var(--value) * 100%), 
+$win98-dark-gray 100% ); 
+@include border-inset;
+width: 70px;
+height: 8px;
+cursor: pointer;
+}
+
+&__vol-slider::-webkit-slider-runnable-track {
+height: 5px;
+}
+
+&__vol-slider::-moz-range-track {
+height: 2px;
+}
+
+&__vol-slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+width: 8px;
+height: 12px;
+background: $win98-dark-gray;
+@include border-outset;
+margin-top: -4px;
+
+&:hover {
+background: $win98-light-gray;
+}
+}
+
+&__vol-slider::-moz-range-thumb {
+border-radius: 0;
+width: 6px;
+height: 10px;
+background: $win98-dark-gray;
+@include border-outset;
+cursor: pointer;
+
+&:hover {
+background: $win98-light-gray;
+}
+}
+
+// ── Playlist ──────────────────────────────────────────
+&__playlist {
+flex: 1;
+overflow-y: auto;
+background: $win98-white;
+@include border-inset;
+margin: 0 4px;
+min-height: 60px;
+}
+
+&__pl-item {
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 2px 6px;
+cursor: default;
+
+&:hover { 
+background: #e0e8ff; 
+}
+
+&--active {
+background: $win98-navy;
+color: $win98-white;
+
+.wmp__pl-idx { 
+color: $pc98-cyan; 
+}
+}
+}
+
+&__pl-idx {
+color: $win98-dark-gray;
+font-family: 'Courier New', monospace;
+flex-shrink: 0;
+}
+
+&__pl-name {
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+
+// ── Status bar ────────────────────────────────────────
+&__statusbar {
+height: 20px;
+background: $win98-gray;
+border-top: 1px solid $win98-dark-gray;
+display: flex;
+align-items: center;
+padding: 0 6px;
+flex-shrink: 0;
+
+span {
+@include border-inset-light;
+padding: 0 4px;
+font-size: 10px;
+}
+}
+}

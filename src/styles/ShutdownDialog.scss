@@ -1,0 +1,111 @@
+@use 'Variables' as *;
+
+
+/* Fenêtre dialog */
+.shutdown-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+    width: 340px;
+    background: #c0c0c0;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    font-family: $font-system;
+    font-size: 12px;
+
+    /* Fond semi-transparent */
+    &__overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 999998;
+    }
+
+    /* Titlebar */
+    &__titlebar {
+        height: 22px;
+        background: linear-gradient(90deg, $win98-navy, $pc98-violet);
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        padding: 0 6px;
+        gap: 4px;
+        color: $win98-white;
+    }
+
+    /* Corps */
+    &__body {
+        padding: 24px 16px 16px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        img {
+            width: 32px;
+            height: 32px;
+            image-rendering: pixelated;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    /* Séparateur */
+    &__separator {
+        height: 1px;
+        background: #808080;
+        margin: 8px 0 0;
+        box-shadow: 0 1px 0 #fff;
+    }
+
+    /* Boutons */
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 10px 16px 12px;
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            width: 75px;
+            height: 23px;
+            font-family: $font-system;
+            font-size: 12px;
+            background: #c0c0c0;
+            border-top: 2px solid #fff;
+            border-left: 2px solid #fff;
+            border-right: 2px solid #000;
+            border-bottom: 2px solid #000;
+            cursor: pointer;
+
+            &:active {
+                border-top: 2px solid #000;
+                border-left: 2px solid #000;
+                border-right: 2px solid #fff;
+                border-bottom: 2px solid #fff;
+            }
+            img {
+                width: 14px;
+                height: 14px;
+                image-rendering: pixelated;
+            }
+        }
+    }
+}

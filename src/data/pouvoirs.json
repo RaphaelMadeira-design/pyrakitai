@@ -1,0 +1,109 @@
+{
+    "hero": {
+        "firstName": "SIN",
+        "lastName": "ASHU'RA",
+        "school": "Wellston",
+        "portrait": "/images/Full - Pose.png",
+        "description": "Sin peut modeler son aura et créer une silhouette noire et opaque à son image, appelée Alter Ego. Ce clone est capable de se déplacer librement, mais il est limité à une distance de 30 mètres autour de l'utilisateur. Dans sa forme basique, il est tout à fait possible d'attaquer, repousser ou entraver l'Alter Ego. Bien qu'il soit lié à Sin, le double ne partage pas les états qui l'affligent ni les dégâts qu'il subit et est dépourvu de sensations."
+    },
+    "power": {
+        "name": "ALTER EGO",
+        "tier": "???",
+        "level": "???",
+        "aura": "ULTRA VIOLET",
+        "type": "ÉMETTEUR",
+        "role": "ASSAUT / UTILITAIRE"
+    },
+    "stats": [
+        { 
+            "name": "POWER",     
+            "value": 0, 
+            "color": "#ff5e6c" 
+        },
+        { 
+            "name": "SPEED",   
+            "value": 0, 
+            "color": "#5ee6ff" 
+        },
+        { 
+            "name": "TRICK",   
+            "value": 0, 
+            "color": "#a98bff" 
+        },
+        { 
+            "name": "RECOVERY",   
+            "value": 0, 
+            "color": "#5effa1" 
+        },
+        { 
+            "name": "DEFENSE", 
+            "value": 0, 
+            "color": "#ffd24a" 
+        }
+    ],
+    "spells": [
+        {
+            "key": "Q",
+            "name": "Permutation",
+            "cost": 10,
+            "duration": "1 tour",
+            "recharge": "1 tour",
+            "range": "30 m",
+            "effect": "",
+            "desc": "Sort de mobilité. Sin intervertit instantanément sa position physique avec celle de son Alter Ego.",
+            "icon": "/images/spell_1.jpg"
+        },
+        {
+            "key": "W",
+            "name": "Déphasage",
+            "cost": 30,
+            "duration": "2 tours",
+            "recharge": "2 tours",
+            "range": "30 m",
+            "effect": "",
+            "desc": "L'Alter Ego se désolidarise de la matière et du plan physique. Il devient totalement intangible.",
+            "icon": "/images/spell_2.jpg"
+        },
+        {
+            "key": "E",
+            "name": "Camouflage",
+            "cost": 30,
+            "duration": "3 tours",
+            "recharge": "2 tours",
+            "range": "30 m",
+            "effect": "",
+            "desc": " L'Alter Ego devient complètement invisible à l'œil nu. Il reste  repérable par les personnes spécialisées dans la détection d'aura",
+            "icon": "/images/spell_3.jpg"
+        },
+        {
+            "key": "R",
+            "name": "Enveloppe",
+            "cost": 80,
+            "duration": "4 tours",
+            "recharge": "6 tours",
+            "range": "Aucune",
+            "effect": "Tant qu'il retient sa respiration, Sin peut utiliser Déphasage et Camouflage directement.",
+            "desc": " L'Alter Ego rentre à l'intérieur du corps de Sin et fusionne temporairement avec lui, partageant toutes ses capacités. Le clone peut aussi faire jaillir ses membres depuis n'importe quelle partie du corps de Sin.",
+            "icon": "/images/spell_4.jpg",
+            "ult": true
+        }
+    ],
+    "hp": { 
+        "current": 100, 
+        "max": 100 
+    },
+    "energy": { 
+        "current": 80, 
+        "max": 80 
+    },
+    "strengths": [
+        "Capacité qui tire entièrement parti de l'effet de surprise",
+        "L'utilisateur d'Alter Ego jouit d'une grande mobilité",
+        "Pouvoir polyvalent et utile hors des affrontements directs"
+    ],
+    "weaknesses": [
+        "Alter Ego est limité à une distance de 30 mètres autour de l'utilisateur",
+        "La puissance du double est proportionnelle à celle de Sin",
+        "La silhouette peut être neutralisée par des attaques conventionnelles"
+    ]
+}

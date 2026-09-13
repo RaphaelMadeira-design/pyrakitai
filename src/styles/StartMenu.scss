@@ -1,0 +1,95 @@
+@use 'Variables' as *;
+
+// =====================
+// START MENU
+// =====================
+.start-menu {
+    position: fixed;
+    bottom: 32px;
+    left: 0;
+    width: 212px;
+    background: $win98-gray;
+    z-index: 99999;
+    @include border-outset;
+    display: flex;
+    flex-direction: column;
+
+    &__sidebar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 32px;
+        background: linear-gradient(0deg, $win98-blue, $win98-light-blue);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 10px;
+
+        span {
+        font-family: $font-system;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.8);
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        letter-spacing: 1px;
+        }
+    }
+
+    &__content {
+        margin-left: 32px;
+        padding: 0;
+    }
+
+    &__separator {
+        height: 1px;
+        background: $win98-dark-gray;
+        margin: 4px 0;
+        box-shadow: 0 1px 0 $win98-white;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 4px 8px;
+        cursor: pointer;
+        font-family: $font-system;
+        font-size: 11px;
+
+        &:hover {
+            background-color: $win98-navy;
+            color: $win98-white;
+        }
+
+        img {
+            width: 24px;
+            height: 24px;
+            image-rendering: pixelated;
+        }
+
+        &__arrow {
+            margin-left: auto;
+            font-size: 8px;
+        }
+
+        &--sub-open {
+            background-color: $win98-navy;
+            color: $win98-white;
+        }
+    }
+
+    &__submenu {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 180px;
+        background: $win98-gray;
+        color: $win98-black;
+        z-index: 100000;
+        @include border-outset;
+        box-shadow: 2px 2px 0 $win98-black;
+    }
+}

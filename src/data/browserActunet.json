@@ -1,0 +1,165 @@
+{
+    "date": "Vendredi 17 Juin",
+
+    "tickerItems": [
+        "FLASH : Reach — le Protectorat confirme l'arrestation de trois utilisateurs déviants",
+        "CGU : Le Gardien stationnera près de Reach jusqu'à la fin du mois",
+        "CENTRAL-X : Aucun incident signalé au Gouffre depuis 1837 jours",
+        "SCIENCES : Le Sarcophage valide deux nouveaux prototypes d'artéfacts",
+        "MONDE : Tensions diplomatiques entre Arkhos et Elysia",
+        "FAIT DIVERS : Nouvelle Engeance observée près des Ruines de Nahar",
+        "ORDRE : Plusieurs Patrouilleurs mobilisés dans le nord de Lenoxia"
+    ],
+
+    "articles": [
+        {
+            "id": 0,
+            "category": "À la une",
+            "catColor": "#aa0000",
+            "date": "Ven. 17 Juin | 07:43 LT",
+            "headline": "Reach : arrestation de Makan Seo, soupçonné de liens avec le groupe déviant « Dents de Sabre »",
+            "summary": "Les autorités de Reach ont confirmé l'arrestation de Makan Seo au terme d'une opération coordonnée menée avec le soutien de l'Ordre. L'individu est soupçonné d'entretenir des liens étroits avec le groupe déviant connu sous le nom de « Dents de Sabre ».",
+            "paragraphs": [
+                "L'arrestation est intervenue en début de semaine dans le district vert de Reach, à l'issue d'une enquête de plusieurs semaines menée par les services de l'Ordre de la CGU. Les autorités indiquent que l'opération s'est déroulée sans incident majeur.",
+                "Selon plusieurs sources proches du dossier, Makan Seo, patron de la firme pharmaceutique 'Evo-solutions', aurait entretenu des contacts réguliers avec plusieurs membres influents des Dents de Sabre, une organisation déjà connue des services du Protectorat pour diverses activités criminelles à travers la région.",
+                "Au cours des perquisitions, les agents auraient saisi plusieurs kilogrammes de substances illicites ainsi qu'un important volume de données numériques actuellement en cours d'analyse.",
+                "Le chef des forces de police n'a pas souhaité préciser si d'autres arrestations étaient prévues, mais a confirmé que l'enquête demeurait active. Plusieurs individus susceptibles d'être liés au réseau feraient encore l'objet d'une surveillance.",
+                "Les Dents de Sabre sont soupçonnées d'être impliquées dans différents trafics opérant dans plusieurs territoires affiliés à la CGU. Certains analystes estiment que le groupe pourrait disposer d'appuis au sein même des réseaux commerciaux locaux.",
+                "Makan Seo demeure présumé innocent jusqu'à son jugement devant les autorités compétentes."
+            ]
+        },
+
+        {
+            "id": 1,
+            "category": "Faits divers",
+            "catColor": "#336600",
+            "date": "Jeu. 16 Juin | 08:12 LT",
+            "headline": "Reach : trois individus arrêtés par le Protectorat lors d'une opération nocturne",
+            "summary": "Le Protectorat a procédé à plusieurs arrestations dans le district sud de Reach après plusieurs semaines de surveillance.",
+            "paragraphs": [
+                "L'opération a été menée peu avant l'aube par une escouade d'Investigateurs de Première classe.",
+                "Les suspects sont soupçonnés d'avoir utilisé des formes prohibées du Jinsei et d'entretenir des liens avec un groupe déviant local.",
+                "Divers artéfacts non homologués et documents rituels ont été saisis durant la perquisition.",
+                "Les suspects ont été transférés sous haute surveillance en attendant leur jugement."
+            ]
+        },
+
+        {
+            "id": 2,
+            "category": "Monde",
+            "catColor": "#004499",
+            "date": "Mer. 15 Juin | 21:04 LT",
+            "headline": "L'Ordre intervient après l'apparition d'une Engeance supérieure à Issitis",
+            "summary": "Plusieurs Patrouilleurs ont été déployés dans les montagnes orientales d'Issitis après la disparition de deux villages.",
+            "paragraphs": [
+                "Des survivants décrivent une créature dépassant largement les capacités des milices locales.",
+                "Le Gardien aurait dépêché une escouade spécialisée dans la neutralisation des Engeances supérieures.",
+                "Les routes commerciales traversant la région ont été temporairement fermées.",
+                "Aucune estimation officielle des pertes n'a encore été communiquée."
+            ]
+        },
+
+        {
+            "id": 3,
+            "category": "Sciences",
+            "catColor": "#004499",
+            "date": "Mar. 14 Juin | 10:30 LT",
+            "headline": "Central-X : une nouvelle génération d'artéfacts défensifs validée",
+            "summary": "Le Sarcophage annonce des résultats jugés prometteurs concernant plusieurs prototypes destinés aux agents de terrain.",
+            "paragraphs": [
+                "Les nouveaux artéfacts seraient capables d'améliorer considérablement la résistance aux manifestations de la Corruption.",
+                "Les essais auraient été réalisés dans des conditions contrôlées à bord du Sarcophage.",
+                "La CGU espère équiper plusieurs unités du Protectorat d'ici la fin de l'année.",
+                "Aucune information supplémentaire n'a été communiquée sur les protocoles de recherche employés."
+            ]
+        },
+
+        {
+            "id": 4,
+            "category": "Culture",
+            "catColor": "#990000",
+            "date": "Lun. 13 Juin | 15:22 LT",
+            "headline": "L'Académie ouvre exceptionnellement ses portes aux futurs candidats",
+            "summary": "La prestigieuse Académie de la CGU accueillera les visiteurs durant trois jours afin de présenter ses formations.",
+            "paragraphs": [
+                "Des démonstrations de maniement d'artéfacts ainsi que des simulations tactiques sont prévues.",
+                "Les visiteurs pourront rencontrer plusieurs instructeurs ainsi que d'anciens diplômés.",
+                "L'Académie rappelle que les critères d'admission demeurent extrêmement sélectifs.",
+                "Plus de quinze mille visiteurs sont attendus cette année."
+            ]
+        },
+
+        {
+            "id": 5,
+            "category": "Politique",
+            "catColor": "#660066",
+            "date": "Dim. 12 Juin | 08:00 LT",
+            "headline": "Le Millénium réaffirme son opposition à toute restauration impériale",
+            "summary": "Le Millenium a rappelé que le Trône Blanc devait demeurer vacant afin de préserver l'équilibre mondial.",
+            "paragraphs": [
+                "Cette déclaration intervient après la diffusion de plusieurs manifestes appelant au retour d'un souverain unique.",
+                "Les autorités milléniennes considèrent qu'un tel changement représenterait un risque majeur pour la stabilité de Lenoxia.",
+                "L'Élite aurait été placée en état d'alerte renforcée.",
+                "Aucune menace directe contre la Cité du Millénium n'a cependant été confirmée."
+            ]
+        }
+    ],
+
+    "briefs": [
+        "REACH — Trois arrestations réalisées par le Protectorat (16/06)",
+        "ISSITIS — Intervention de l'Ordre dans les montagnes orientales (15/06)",
+        "CENTRAL-X — Validation de nouveaux artéfacts défensifs (14/06)",
+        "MILLÉNIUM — Préparatifs des cérémonies du Trône Blanc (12/06)",
+        "ACADEMIE — Journées portes ouvertes annoncées (11/06)"
+    ],
+
+    "nav": [
+        "Accueil",
+        "Issitis",
+        "Monde",
+        "CGU",
+        "Sciences",
+        "Faits divers",
+        "Culture",
+        "Météo",
+        "Finance"
+    ],
+
+    "sidebarCategories": [
+        "Issitis",
+        "Monde",
+        "CGU",
+        "Sciences",
+        "Faits divers",
+        "Culture",
+        "Économie",
+        "Météo"
+    ],
+
+    "weather": {
+        "city": "Reach",
+        "temp": "27°C",
+        "desc": "Ciel dégagé"
+    },
+
+    "ad": {
+        "label": "PUBLICITÉ",
+        "title": "Alchimie Steiner™",
+        "lines": [
+            "Savoir alchimique depuis 200 ans",
+            "À partir de 1200 crédits"
+        ]
+    },
+
+    "footer": "©ActuNet Issitis — Publicité — Aide — Contact — Conditions d'utilisation",
+
+    "footerSmall": "Ce site est optimisé pour Netscape Navigator 4.0 et Internet Explorer 5.0 · Résolution recommandée : 800×600",
+
+    "articleFooterHtml": "©ActuNet Issitis &nbsp;|&nbsp;",
+
+    "articleFooterLinks": [
+        "Envoyer cet article",
+        "Imprimer",
+        "Signaler une erreur"
+    ]
+}

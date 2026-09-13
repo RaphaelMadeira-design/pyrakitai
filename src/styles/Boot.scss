@@ -1,0 +1,118 @@
+// Boot screen styles
+$bios-green: #aaffaa;
+$bios-bg: #000000;
+$win98-gray: #c0c0c0;
+$win98-navy: #0a246a;
+
+.boot-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    background: $bios-bg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+
+    &--fade {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &__scanlines {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 2;
+        background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(0, 0, 0, 0.18) 3px,
+        rgba(0, 0, 0, 0.18) 4px
+        );
+    }
+}
+
+// =====================
+// BIOS SCREEN
+// =====================
+.boot-bios {
+    position: absolute;
+    inset: 0;
+    padding: 16px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    color: $bios-green;
+    line-height: 1.55;
+    z-index: 1;
+
+    &__line {
+        display: block;
+        white-space: pre;
+
+        &--dim {
+            color: rgba(170, 255, 170, 0.5);
+        }
+
+        &--highlight {
+            color: #ffffff;
+            font-weight: bold;
+        }
+    }
+
+    &__cursor {
+        display: inline-block;
+        color: $bios-green;
+        animation: blink-cursor 0.8s step-end infinite;
+        margin-top: 4px;
+    }
+}
+
+@keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+// =====================
+// WINDOWS 98 BOOT LOGO
+// =====================
+.boot-win98 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    z-index: 1;
+
+    &__logo {
+        width: 300px;
+        height: auto;
+    }
+
+    &__progress-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__progress-bar {
+        width: 200px;
+        height: 16px;
+        background: #000;
+        border: 2px solid #808080;
+        overflow: hidden;
+        box-shadow:
+        inset -1px -1px 0 #fff,
+        inset 1px 1px 0 #000;
+    }
+
+    &__progress-fill {
+        height: 100%;
+        background: #0a246a;
+        // Blocs individuels style Win98
+        background-image: $win98-navy;
+        transition: width 0.18s steps(1);
+        border-right: 2px solid #4060cc;
+    }
+}

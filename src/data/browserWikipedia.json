@@ -1,0 +1,205 @@
+{
+    "header": {
+        "logo": {
+            "src": "/images/Wikipedia_logo.png",
+            "alt": "Shokupedia",
+            "title": "Shokupédia ???",
+            "name": "Shokupédia",
+            "tagline": "L'encyclopédie libre"
+        },
+        "nav": ["Discussion", "Modifier", "Historique"]
+    },
+    "sidebar": [
+        {
+            "title": "Navigation",
+            "items": ["Accueil", "Portails thématiques", "Article au hasard", "Contact"]
+        },
+        {
+            "title": "Contribuer",
+            "items": ["Débuter sur Shokupédia", "Aide", "Communauté"]
+        },
+        {
+            "title": "Outils",
+            "items": ["Pages liées", "Suivi des pages liées", "Importer un fichier"]
+        }
+    ],
+    "title": "Isen Shura",
+    "subtitleHtml": "<em>Cet article traite d'une personnalité publique. Pour d'autres usages, voir <span class=\"browser__wiki-link\">Shura (homonymie)</span>.</em>",
+    "noticeHtml": "<strong>Cet article est une ébauche concernant une personne physique.</strong> Vous pouvez partager vos connaissances en l'améliorant.",
+    "infobox": {
+        "title": "Isen Shura",
+        "image": {
+            "src": "/images/id.jpg",
+            "alt": "Isen Shura",
+            "credit": "Illustration par Pyr"
+        },
+        "rows": [
+            ["Nom complet", "Isen Shura"],
+            ["Âge", "28 ans"],
+            ["Sexe", "Masculin ♂"],
+            ["Race", "Shokunin"],
+            ["Ethnie", "Astral"],
+            ["Origine", "Las Noches"],
+            ["Affiliation", "CGU, Ordre"],
+            ["Rôle", "Patrouilleur"],
+            ["Alignement", "Neutre"],
+            ["MBTI", "INFJ"]
+        ],
+        "voice": {
+            "src": "/music/voice.mp3",
+            "title": "Extrait vocal"
+        }
+    },
+    "introParagraphs": [
+        "<strong>Isen Shura</strong> (修羅 威仙, <em>Shura Isen</em>), également enregistré au sein de la <span class=\"browser__wiki-link\">Coalition des Gouvernements Unis</span> sous le matricule <strong>#0791</strong>, est un patrouilleur de l'<span class=\"browser__wiki-link\">Ordre</span> affecté à la <span class=\"browser__wiki-link\">Section 7</span>, Équipe 2, en poste dans la métropole de <span class=\"browser__wiki-link\">Reach</span>. Retrouvé inanimé dans le désert blanc de <span class=\"browser__wiki-link\">Las Noches</span> alors qu'il n'était âgé que de dix-neuf ans, il fut recueilli par l'ex-patrouilleur <span class=\"browser__wiki-link\">Naleos Neziaka</span> qui rédigea son premier rapport d'identification.",
+        "Shokunin d'ethnie <span class=\"browser__wiki-link\">Astral</span>, il est notamment reconnaissable à ses iris présentant un motif <em>galactique animé</em> et à une <strong>cicatrice thoracique</strong> dont il ignore l'origine. En dépit d'un tempérament décrit comme indolent et nonchalant, il est réputé pour son efficacité en intervention et pour son opiniâtreté à propos de la disparition récente du <span class=\"browser__wiki-link\">professeur Yuri Vendamir</span>."
+    ],
+    "toc": {
+        "title": "Sommaire",
+        "items": [
+            {
+                "id": "wiki-apparence",
+                "labelHtml": "Apparence",
+                "children": [
+                    { "id": "wiki-physique", "labelHtml": "Physique" },
+                    { "id": "wiki-signes", "labelHtml": "Signes distinctifs" }
+                ]
+            },
+            {
+                "id": "wiki-personnalite",
+                "labelHtml": "Personnalité",
+                "children": [
+                    { "id": "wiki-caractere", "labelHtml": "Caractère" },
+                    { "id": "wiki-qualites", "labelHtml": "Qualités et Défauts" }
+                ]
+            },
+            {
+                "id": "wiki-biographie",
+                "labelHtml": "Biographie",
+                "children": [
+                    { "id": "wiki-chap1", "labelHtml": "Origines inconnues" },
+                    { "id": "wiki-chap2", "labelHtml": "Découverte à Las Noches" },
+                    { "id": "wiki-chap3", "labelHtml": "Intégration à la CGU" },
+                    { "id": "wiki-chap4", "labelHtml": "Affectation à la Section 7" },
+                    { "id": "wiki-chap5", "labelHtml": "L'affaire Vendamir" }
+                ]
+            },
+            {
+                "id": "wiki-aptitudes",
+                "labelHtml": "Aptitudes et compétences",
+                "children": [
+                    { "id": "wiki-competences", "labelHtml": "Compétences générales" },
+                    { "id": "wiki-combat", "labelHtml": "Style de combat" },
+                    { "id": "wiki-jinsei", "labelHtml": "Jinsei" }
+                ]
+            },
+            {
+                "id": "wiki-entourage",
+                "labelHtml": "Entourage",
+                "children": [
+                    { "id": "wiki-cgu", "labelHtml": "Au sein de la CGU" },
+                    { "id": "wiki-civils", "labelHtml": "Relations civiles" }
+                ]
+            },
+            {
+                "id": "wiki-affaires",
+                "labelHtml": "Affaires notables"
+            },
+            {
+                "id": "wiki-references",
+                "labelHtml": "Références"
+            }
+        ]
+    },
+    "sections": [
+        { "level": 2, "id": "wiki-apparence", "titleHtml": "Apparence" },
+        { "level": 3, "id": "wiki-physique", "titleHtml": "Physique", "paragraphs": [
+            "Isen Shura est un homme de taille et de corpulence moyennes — <strong>1,80&nbsp;m</strong> pour <strong>76&nbsp;kg</strong> — dont la silhouette longiligne est accentuée par des épaules larges et de longues jambes<sup>[1]</sup>. Ses cheveux, d'un brun foncé, sont coiffés mais restent délibérément désordonnés, lui conférant une allure négligée.",
+            "Le visage présente des traits <em>fins mais anguleux</em>, structuré par une mâchoire carrée. Il est considéré comme jeune adulte bien qu'aucune date de naissance officielle n'ait pu être établie par les services de l'état civil de <span class=\"browser__wiki-link\">Reach</span>."
+        ] },
+        { "level": 3, "id": "wiki-signes", "titleHtml": "Signes distinctifs", "paragraphs": [
+            "Les <strong>yeux en amande</strong> d'Isen Shura constituent son signe distinctif le plus notable&nbsp;: leurs iris sont caractérisés par un <em>motif galactique animé</em>, composé d'une multitude de points lumineux évoquant des étoiles en mouvement. Ce phénomène, unique dans les archives ethnographiques de la <span class=\"browser__wiki-link\">Coalition des Gouvernements Unis</span>, est parfois cité comme un marqueur possible de son ethnie astrale.",
+            "Il porte également une <strong>cicatrice au niveau du cœur</strong>, de forme irrégulière, dont il ignore lui-même l'origine<sup>[2]</sup>. Photographiée à titre d'archive médicale, elle fait l'objet d'un dossier expurgé au sein de l'Ordre."
+        ] },
+        { "level": 2, "id": "wiki-personnalite", "titleHtml": "Personnalité" },
+        { "level": 3, "id": "wiki-caractere", "titleHtml": "Caractère", "paragraphs": [
+            "Isen Shura est décrit dans son évaluation psychologique interne comme un <em>individu indolent, présentant un tempérament indépendant et une attitude généralement nonchalante</em><sup>[3]</sup>. Il manifeste une tendance marquée à éviter les responsabilités et à limiter son implication aux tâches strictement nécessaires — comportement qui lui a valu de refuser à plusieurs reprises une promotion au grade de <strong>chef d'équipe</strong>.",
+            "Type <strong>INFJ</strong> selon la classification MBTI établie lors de son bilan d'aptitude, il apparaît réservé mais loyal envers un cercle restreint de proches. Il est également sujet à des épisodes de <em>réminiscences exogènes</em> — souvenirs présumés ne lui appartenant pas — dont l'origine demeure indéterminée et pour lesquels une surveillance médicale a été recommandée."
+        ] },
+        { "level": 3, "id": "wiki-qualites", "titleHtml": "Qualités et Défauts", "paragraphs": [
+            "Bien qu'il manifeste peu d'investissement professionnel, Isen se montre <strong>efficace et fiable</strong> lors de ses interventions sur le terrain, en particulier de nuit. Ses supérieurs reconnaissent une capacité d'observation aiguisée, un sens du recoupement documentaire hérité de ses années passées auprès du <span class=\"browser__wiki-link\">professeur Vendamir</span>, ainsi qu'un sang-froid opérationnel.",
+            "Parmi ses défauts principaux figurent son <em>manque d'assiduité aux formations continues</em> — il a manqué à trois reprises le module B-3 relatif aux procédures d'arrestation<sup>[4]</sup> —, son goût prononcé pour le sarcasme, notamment envers le capitaine Malcolm Davis, et sa réticence chronique à respecter les fenêtres opérationnelles imposées par l'armurerie."
+        ] },
+        { "level": 2, "id": "wiki-biographie", "titleHtml": "Biographie" },
+        { "level": 3, "id": "wiki-chap1", "titleHtml": "Origines inconnues", "paragraphs": [
+            "Aucune information vérifiable ne subsiste sur la période antérieure à la <em>Nuit 002</em> du rapport de terrain du désert blanc de <span class=\"browser__wiki-link\">Las Noches</span>. Isen Shura ne possède ni acte de naissance, ni identifiant civil connu antérieurement au dossier constitué par l'<span class=\"browser__wiki-link\">Ordre</span>.",
+            "Ses souvenirs de cette période sont totalement inaccessibles à la suite d'une <strong>amnésie rétrograde</strong> constatée dès son admission au quartier général<sup>[5]</sup>. La langue qu'il parlait alors, non identifiée, n'a jamais été rattachée à un idiome répertorié."
+        ] },
+        { "level": 3, "id": "wiki-chap2", "titleHtml": "Découverte à Las Noches", "paragraphs": [
+            "Isen Shura est officiellement découvert lors d'une <em>mission de patrouille</em> menée par l'agent <span class=\"browser__wiki-link\">Naleos Neziaka</span> (matricule #0077) dans le désert blanc de Las Noches. D'après le rapport <em>ST-235</em>, il fut retrouvé <strong>allongé dans le sable, au pied d'un arbre mort</strong>, au centre d'un cratère de plusieurs mètres de diamètre suggérant une zone d'impact<sup>[5]</sup>.",
+            "Estimé alors à <em>dix-huit ou dix-neuf ans</em>, il portait déjà la cicatrice thoracique caractéristique et présentait tous les signes d'une amnésie profonde. Il fut rapatrié au quartier général à la Nuit 004, tandis que l'agent Neziaka poursuivait la mission initiale."
+        ] },
+        { "level": 3, "id": "wiki-chap3", "titleHtml": "Intégration à la CGU", "paragraphs": [
+            "Pris sous la protection administrative de la <span class=\"browser__wiki-link\">Coalition des Gouvernements Unis</span>, Isen Shura reçoit le matricule <strong>#0791</strong> et intègre le cursus d'agent de terrain, sous la tutelle informelle de Naleos Neziaka — alors capitaine de l'Équipe 2 de la <span class=\"browser__wiki-link\">Section 7</span>.",
+            "Durant cette période, il fait la rencontre du <span class=\"browser__wiki-link\">professeur Yuri Vendamir</span>, historien à la <em>Maison des Ancêtres</em> de l'Académie, qui devient une figure paternelle et lui transmet un goût prononcé pour l'histoire de <span class=\"browser__wiki-link\">Lenoxia</span>, en particulier pour les mythes de l'<em>Ère archaïque</em>."
+        ] },
+        { "level": 3, "id": "wiki-chap4", "titleHtml": "Affectation à la Section 7", "paragraphs": [
+            "À la suite du départ à la retraite forcée de Naleos Neziaka — démis de ses fonctions à la faveur de l'ascension de la commandante <span class=\"browser__wiki-link\">Malenia Valkenhein</span> —, Isen est confirmé à titre de <strong>patrouilleur</strong> permanent de l'Équipe 2, aux côtés du capitaine <span class=\"browser__wiki-link\">Malcolm Davis</span> (#5018), de la téléopératrice <span class=\"browser__wiki-link\">Juni Sedo</span> (#1322) et du coéquipier <span class=\"browser__wiki-link\">Kanza O'Boro</span> (#3054).",
+            "Il refuse à cette période une première promotion en tant que chef d'équipe, invoquant sa préférence pour le terrain. Cette décision, source de tensions récurrentes avec le capitaine Davis, marque durablement son parcours professionnel."
+        ] },
+        { "level": 3, "id": "wiki-chap5", "titleHtml": "L'affaire Vendamir", "paragraphs": [
+            "Quatre mois avant la période documentée, Isen reçoit à trois heures du matin un ultime message du professeur Vendamir, l'informant de son départ précipité de <span class=\"browser__wiki-link\">Reach</span> et lui recommandant, en cas de non-retour, de « chercher le <span class=\"browser__wiki-link\">professeur Anton Kramov</span> »<sup>[6]</sup>. Le professeur disparaît la nuit-même.",
+            "L'enquête interne révèle par la suite l'existence de <em>recherches non communiquées</em> à la CGU portant sur une terre disparue nommée <span class=\"browser__wiki-link\">Ishaka</span> et sur un possible <em>troisième monarque</em> occulté par un sortilège dit <span class=\"browser__wiki-link\">Voile de Shigemori</span>. Bien que officiellement non affecté au dossier <em>SL-011</em> — classé <strong>TOP SECRET</strong> et hors de son niveau d'habilitation —, Isen y consacre l'essentiel de son temps libre."
+        ] },
+        { "level": 2, "id": "wiki-aptitudes", "titleHtml": "Aptitudes et compétences" },
+        { "level": 3, "id": "wiki-competences", "titleHtml": "Compétences générales", "list": [
+            "<strong>Motricité</strong> — Isen est ambidextre depuis son plus jeune âge et possède une excellente coordination œil-main et œil-pied.",
+            "<strong>Ouïe surdéveloppée</strong> — Il perçoit les sons avec une acuité exceptionnelle, ce qui lui permet de détecter des bruits subtils.",
+            "<strong>Langues</strong> — Polyglotte, il maîtrise plusieurs langues courantes de <span class=\"browser__wiki-link\">Lenoxia</span> ainsi que quelques idiomes anciens transmis par le professeur Vendamir.",
+            "<strong>Technologie</strong> — Isen est familier avec les dernières avancées technologiques et connaît plusieurs langages de programmation."
+        ] },
+        { "level": 3, "id": "wiki-combat", "titleHtml": "Style de combat", "paragraphs": [
+            "Isen ne possède pas de style de combat à proprement parler. Sa manière de combattre se rapproche plus du <em>street fighting</em> que des arts martiaux traditionnels. Il emprunte des techniques de <strong>taekwondo</strong> et de <strong>capoeira</strong> qu'il adapte à sa propre manière de bouger. Il se bat majoritairement avec ses jambes. Bien qu'il reste amateur, son style est fluide, imprévisible et chaotique, basé sur les feintes, les changements de rythme mais aussi sur son environnement immédiat.",
+            "Sur le terrain, il est équipé d'une <em>réplique calibrée</em> attribuée à son matricule, d'une <strong>lame de service</strong> ainsi que d'une trousse signalétique standard, entretenues par l'armurière <span class=\"browser__wiki-link\">Orisa Krest</span>. Il privilégie néanmoins le corps à corps chaque fois que la situation le permet."
+        ] },
+        { "level": 3, "id": "wiki-jinsei", "titleHtml": "Jinsei", "paragraphs": [
+            "<strong>N/A</strong> — Aucune manifestation Jinsei documentée n'apparaît dans le dossier CGU du sujet #0791<sup>[7]</sup>. Le module logiciel <em>JINSEI.DLL</em> de son poste personnel est signalé comme <em>extrêmement instable</em> et son exécution est prohibée par la configuration système.",
+            "En dépit de cette absence apparente, certaines sources internes évoquent des <em>anomalies récurrentes</em> autour de sa personne — épisodes de réminiscences exogènes, latences instrumentales inexpliquées, signaux pulsés à intervalles de <strong>47 secondes</strong> autour de son secteur d'affectation<sup>[8]</sup> — dont le lien avec le Jinsei n'a jamais été formellement établi."
+        ] },
+        { "level": 2, "id": "wiki-entourage", "titleHtml": "Entourage" },
+        { "level": 3, "id": "wiki-cgu", "titleHtml": "Au sein de la CGU", "list": [
+            "<strong><span class=\"browser__wiki-link\">Malenia Valkenhein</span></strong> (#7000) — Commandante de la Section 7, supérieure hiérarchique directe.",
+            "<strong><span class=\"browser__wiki-link\">Malcolm Davis</span></strong> (#5018) — Capitaine de l'Équipe 2. Relation professionnelle empreinte de confiance mutuelle malgré une rivalité verbale constante.",
+            "<strong><span class=\"browser__wiki-link\">Juni Sedo</span></strong> (#1322) — Téléopératrice de l'Équipe 2. Voix radio récurrente d'Isen sur le terrain.",
+            "<strong><span class=\"browser__wiki-link\">Kanza O'Boro</span></strong> (#3054) — Coéquipier, poids lourd et amateur de <em>Tekoji</em>.",
+            "<strong><span class=\"browser__wiki-link\">Orisa Krest</span></strong> (#9205) — Armurière, très stricte sur le règlement §4.2.",
+            "<strong><span class=\"browser__wiki-link\">Naleos Neziaka</span></strong> (retraité) — Ancien capitaine de l'Équipe 2, mentor et figure paternelle."
+        ] },
+        { "level": 3, "id": "wiki-civils", "titleHtml": "Relations civiles", "list": [
+            "<strong><span class=\"browser__wiki-link\">Yuri Vendamir</span></strong> — Professeur d'histoire à l'Académie, disparu depuis quatre mois.",
+            "<strong>Sayo</strong> — Amie de longue date résidant à <span class=\"browser__wiki-link\">Reach</span>, organisatrice de soirées régulières.",
+            "<strong>R3n_X</strong> — Contact civil identifié comme <em>hacker</em>, canaux privés uniquement."
+        ] },
+        { "level": 2, "id": "wiki-affaires", "titleHtml": "Affaires notables", "list": [
+            "<strong>SK-408</strong> — Démantèlement d'un réseau narcotrafiquant lié au groupe déviant <em>Dent de Sabre</em> (Reach, juin).",
+            "<strong>SK-417</strong> — Disparition de K'SARI Rina, rattachée à la secte des <span class=\"browser__wiki-link\">Graines du Renouveau</span>.",
+            "<strong>EST-44200</strong> — Enquête dite <em>Amber Eyed Tiger</em>, marquée par la dilatation anormale de l'iris du sujet.",
+            "<strong>SL-011</strong> — Dossier classé <em>TOP SECRET</em> concernant les recherches du Pr. Vendamir sur <em>Ishaka</em> et le <em>Voile de Shigemori</em>. Accès restreint niveau 3."
+        ] }
+    ],
+    "references": {
+        "title": "Références",
+        "id": "wiki-references",
+        "items": [
+            "<strong>1.</strong> Fiche d'identité — <em>PDA CGU // Registre #0791</em>, rubrique « Description physique ».",
+            "<strong>2.</strong> Cliché <em>scar.jpg</em>, disquette chiffrée B: — dossier de l'Ordre, code d'accès 44-2§21b.",
+            "<strong>3.</strong> Rapport d'évaluation psychologique interne CGU, section <em>PROFIL PSYCHOLOGIQUE</em>.",
+            "<strong>4.</strong> Administration RH / CGU, <em>Rappel formation continue B-3 — Procédures d'arrestation</em>, 3ᵉ rappel.",
+            "<strong>5.</strong> Neziaka N. (#0077), <em>Rapport de terrain ST-235 — Désert blanc de Las Noches</em>, Nuits 001 à 004.",
+            "<strong>6.</strong> Journal de communication MSN — <em>Conversation Pr. Vendamir</em>, il y a 4 mois, 03:41.",
+            "<strong>7.</strong> Système CGU, <em>JINSEI.DLL — statut d'exécution</em>, module classé instable.",
+            "<strong>8.</strong> Rapport officieux R3n_X, <em>Ondes du quartier nord — signal pulsé 47&nbsp;s</em>, canal privé."
+        ]
+    },
+    "categories": ["Homme", "CGU", "Ordre", "Section 7", "Patrouilleur", "Astral", "Las Noches", "Jinsei"]
+}

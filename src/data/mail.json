@@ -1,0 +1,617 @@
+{
+    "icons": {
+        "inbox":       "https://win98icons.alexmeub.com/icons/png/outlook_express_tack-1.png",
+        "inboxFolder": "https://win98icons.alexmeub.com/icons/png/mailbox_world-1.png",
+        "sent":        "https://win98icons.alexmeub.com/icons/png/envelope_open_sheet-1.png",
+        "drafts":      "https://win98icons.alexmeub.com/icons/png/write_file-0.png",
+        "trash":       "https://win98icons.alexmeub.com/icons/png/recycle_bin_empty_cool-4.png",
+        "mailRead":    "https://win98icons.alexmeub.com/icons/png/message_envelope_open-1.png",
+        "mailUnread":  "https://win98icons.alexmeub.com/icons/png/envelope_closed-1.png",
+        "attach":      "https://win98icons.alexmeub.com/icons/png/notepad_file-0.png",
+        "newMail":     "https://win98icons.alexmeub.com/icons/png/envelope_closed-0.png",
+        "reply":       "https://win98icons.alexmeub.com/icons/png/outlook_express-0.png",
+        "forward":     "https://win98icons.alexmeub.com/icons/png/media_player_stream_conn1.png",
+        "delete":      "https://win98icons.alexmeub.com/icons/png/media_player_stream_no.png",
+        "print":       "https://win98icons.alexmeub.com/icons/png/printer-5.png",
+        "spam":        "https://win98icons.alexmeub.com/icons/png/certificate_2_no-0.png"
+
+    },
+
+    "folders": [
+        { "id": "inbox",  "label": "Boîte de réception",   "iconKey": "inboxFolder" },
+        { "id": "sent",   "label": "Éléments envoyés",     "iconKey": "sent" },
+        { "id": "drafts", "label": "Brouillons",           "iconKey": "drafts" },
+        { "id": "spam",   "label": "Courrier indésirable", "iconKey": "spam" },
+        { "id": "trash",  "label": "Éléments supprimés",   "iconKey": "trash" }
+    ],
+
+    "mailboxLabel": "Boîte aux lettres — sinsin@hotmail.com",
+
+    "inbox": [
+        {
+            "id": "e1",
+            "from": "Malcolm Davis",
+            "fromAddr": "m.davis@etu.wellston.edu",
+            "subject": "Projet tutoré — on se cale où demain soir ?",
+            "date": "12/06 — 14:05",
+            "unread": false,
+            "body": [
+                "Sin,",
+                "",
+                "Comme dit en cours : on se retrouve tous demain soir pour avancer le projet tutoré (le livrable intermédiaire est pour le 28, faut vraiment qu'on s'y mette).",
+                "",
+                "Reste à trancher le lieu :",
+                "  – la BU (calme, mais ferme à 22h)",
+                "  – le café à côté du campus (ouvert tard, mais bruyant)",
+                "",
+                "Kanza est ok pour les deux. Orisa et Juni penchent pour le café. Toi je te connais, tu vas dire la BU. Si tu convaincs Kanza de voter comme toi, on fait basculer le truc.",
+                "",
+                "Réponds-moi ou dis-le-moi sur MSN, on se voit en cours de toute façon.",
+                "",
+                "— Malcolm"
+            ]
+        },
+        {
+            "id": "e2",
+            "from": "Juni Sedo",
+            "fromAddr": "juni.sedo@etu.wellston.edu",
+            "subject": "Notes de Sémio de l'image :(",
+            "date": "13/06 — 09:47",
+            "unread": true,
+            "body": [
+                "Sin,",
+                "",
+                "Je suis désolée de te redemander ça... j'ai encore perdu mes notes et il me manque le dernier CM de Sémiologie de l'image (celui de Castellan, l'analyse de l'affiche).",
+                "",
+                "Tu es toujours le plus carré du groupe pour ce genre de trucs. Tu pourrais me l'envoyer par mail quand tu as deux minutes ?",
+                "",
+                "Avec les partiels qui arrivent je panique un peu et je fais n'importe quoi ;_;",
+                "",
+                "Merci d'avance, sérieux, tu me sauves.",
+                "",
+                "— Juni"
+            ]
+        },
+        {
+            "id": "e3",
+            "from": "WELLSTON-NET — Administration",
+            "fromAddr": "no-reply@wellston-net.edu",
+            "subject": "Renouvellement de vos identifiants WELLSTON-NET",
+            "date": "14/06 — 00:00",
+            "unread": true,
+            "body": [
+                "Étudiant ASHU'RA, Sin — Matricule #0791",
+                "",
+                "Vos identifiants d'accès à l'intranet WELLSTON-NET ont été régénérés conformément à la charte informatique de l'université (art. WELLS-SEC-04 §2).",
+                "",
+                "Nouvel identifiant : CHANGE_ME",
+                "Nouveau code d'accès : CHANGE_ME",
+                "",
+                "Nos registres indiquent que vous n'avez jamais personnalisé vos identifiants. Nous vous rappelons que ceux-ci sont TEMPORAIRES et doivent impérativement être modifiés par vos soins DANS LES PLUS BREFS DÉLAIS.",
+                "",
+                "Merci de votre coopération.",
+                "",
+                "",
+                "Ce message est généré automatiquement. Ne pas répondre.",
+                "",
+                "— WELLSTON-NET v5.04 / Administration"
+            ]
+        },
+        {
+            "id": "e4",
+            "from": "Naleos — Wellston Tigers",
+            "fromAddr": "naleos@wellston-tigers.club",
+            "subject": "Match de dimanche — infos + feuille à signer",
+            "date": "13/06 — 11:32",
+            "unread": true,
+            "body": [
+                "Sin,",
+                "",
+                "Comme convenu sur MSN, merci encore de dépanner l'équipe dimanche. Matan est cloué au lit et on n'a personne au monticule avec les partiels.",
+                "",
+                "Infos :",
+                "  ▸ Dimanche, 10h00 — Terrain municipal Est (Wellston)",
+                "  ▸ Adversaire : Nuphia State (petit niveau, t'inquiète)",
+                "  ▸ Rendez-vous 9h00 au vestiaire, on te prête une tenue",
+                "  ▸ Poste : lanceur (comme au bon vieux temps, paraît-il)",
+                "",
+                "Tu trouveras en pièce jointe la feuille de match à signer (autorisation joueur remplaçant). Renvoie-la scannée ou ramène-la dimanche.",
+                "",
+                "On compte sur toi, ça va faire plaisir aux gars.",
+                "",
+                "— Naleos, capitaine des Wellston Tigers"
+            ]
+        },
+        {
+            "id": "e5",
+            "from": "R. MAKKEN",
+            "fromAddr": "relais.pie-bavarde@[non-traçable]",
+            "subject": "PIE BAVARDE — transmission attendue",
+            "date": "13/06 — 03:47",
+            "unread": true,
+            "body": [
+                "Agent SIN — Classe 2,",
+                "",
+                "Point de situation, canal privé. Ce message ne passera pas deux fois : lis, retiens, efface.",
+                "",
+                "  1. Ta couverture à Wellston tient. Continue de la faire vivre — cours, camarades, routine. Un étudiant qui disparaît attire l'œil ; un étudiant qui rend ses dossiers en retard, non. (Rends quand même ce dossier de Droit, Brennac commence à s'agacer.)",
+                "  2. Opération PIE BAVARDE : j'attends ton rapport de transmission #12 pour le 28. Concentre-toi sur les canaux EMBER côté campus. Le recrutement passe par vos murs, on en a maintenant la certitude.",
+                "  3. SPECTRE reste silencieux. Trop silencieux. Si tu croises le moindre relais, tu ne touches à rien et tu me préviens. C'est un ordre.",
+                "",
+                "Le Contrôleur K. te fait dire de lever le pied sur les prises de risque. Moi je te dis surtout : ne grille pas dix mois de travail pour un coup d'éclat.",
+                "",
+                "Reste propre.",
+                "",
+                "— R. MAKKEN, Classe 1",
+                "Téléopérateur — Équipe 7"
+            ]
+        },
+        {
+            "id": "e6",
+            "from": "M. Brennac",
+            "fromAddr": "m.brennac@wellston.edu",
+            "subject": "[RAPPEL] Dossier de Droit de l'information — retard",
+            "date": "13/06 — 17:18",
+            "unread": false,
+            "body": [
+                "Monsieur Ashu'ra,",
+                "",
+                "Votre dossier de Droit de l'information ne m'est toujours pas parvenu. La date limite était fixée au 20/06 ; nous y sommes.",
+                "",
+                "Je vous sais sérieux et vos analyses sont solides quand vous vous en donnez la peine — c'est précisément pour cela que ce retard m'étonne de votre part.",
+                "",
+                "Vous avez jusqu'à vendredi. Au-delà, je serai contraint d'appliquer la pénalité prévue au règlement (−1 point par jour de retard).",
+                "",
+                "Cordialement,",
+                "",
+                "— M. BRENNAC",
+                "UFR Information et Communication"
+            ]
+        },
+        {
+            "id": "e7",
+            "from": "SuperEats",
+            "fromAddr": "no-reply@supereats.wl",
+            "subject": "🍜 Votre commande #SR-887412 a été livrée !",
+            "date": "12/06 — 23:41",
+            "unread": false,
+            "body": [
+                "Bonsoir Sin !",
+                "",
+                "Votre commande chez « Nouilles du Vieux Pho — Campus Wellston » a bien été déposée à l'adresse indiquée :",
+                "",
+                "  ▸ 1x Ramen Tonkotsu XL",
+                "  ▸ 1x Gyoza (x6)",
+                "  ▸ 1x Pain à la pâte de haricot sucrée",
+                "  ▸ 1x Thé glacé maison",
+                "",
+                "Votre livreur, Pao Y., a indiqué :",
+                "« Client injoignable au 1er appel. Déposé devant la porte comme demandé. »",
+                "",
+                "Montant : 15,20 ⛁",
+                "Mode : Carte de débit",
+                "",
+                "Notez votre livraison en 1 clic. SuperEats — La faim n'attend pas, vous non plus."
+            ]
+        },
+        {
+            "id": "e8",
+            "from": "BDE Wellston — Caleb",
+            "fromAddr": "bde@wellston.edu",
+            "subject": "🎉 Soirée d'intégration BDE — samedi",
+            "date": "11/06 — 08:00",
+            "unread": false,
+            "body": [
+                "Salut Sin !",
+                "",
+                "Comme promis sur MSN, je te confirme par mail : le BDE organise sa soirée d'intégration pour les nouveaux samedi prochain, à partir de 19h (foyer étudiant, bâtiment C).",
+                "",
+                "Au programme : rencontres, musique, et surtout plein de contacts qui peuvent te servir pour la suite de ta licence.",
+                "",
+                "Je sais que tu n'es « pas sûr d'être dispo » (je cite), mais ça serait vraiment sympa de te voir, même si tu passes juste dire bonjour.",
+                "",
+                "Réponds-moi si tu peux venir, histoire qu'on prévoie.",
+                "",
+                "À samedi j'espère ! ;)",
+                "",
+                "— Caleb, BDE Wellston"
+            ]
+        },
+        {
+            "id": "e9",
+            "from": "Orisa Krest — Bureau des étudiants",
+            "fromAddr": "bureau-etudiants@wellston.edu",
+            "subject": "Ton dossier t'attend (depuis 48h)",
+            "date": "12/06 — 10:09",
+            "unread": false,
+            "body": [
+                "Sin,",
+                "",
+                "Ton dossier d'inscription pédagogique S4 est complet, mais il attend ta signature au bureau des étudiants depuis 48 heures. Ce n'est pas une simple formalité : sans elle, ton inscription reste bloquée.",
+                "",
+                "Passe avant la fermeture (20h). J'ai accepté de t'attendre personnellement — ne me le fais pas regretter.",
+                "",
+                "Et cette fois, apporte ton bordereau de justification d'absences. Je t'ai déjà couvert une fois. Il n'y en aura pas deux.",
+                "",
+                "— Orisa KREST",
+                "Bureau des étudiants — UFR Information et Communication"
+            ]
+        },
+        {
+            "id": "e10",
+            "from": "B.U. Wellston",
+            "fromAddr": "biblio@wellston.edu",
+            "subject": "Retour en retard : « Par-delà le voile »",
+            "date": "10/06 — 18:42",
+            "unread": false,
+            "body": [
+                "Madame, Monsieur,",
+                "",
+                "Nos registres indiquent que l'ouvrage suivant est en votre possession au-delà de la date limite de prêt :",
+                "",
+                "  Titre : Par-delà le voile — essais sur la perception et le réel",
+                "  Auteur : Pr. H. Vendamir",
+                "  Date de retour prévue : 28/05",
+                "  Retard : 13 jours",
+                "",
+                "Montant des pénalités : 2,60 ⛁",
+                "",
+                "Merci de bien vouloir restituer l'ouvrage dans les meilleurs délais. La section « Philosophie » est très sollicitée en période de partiels.",
+                "",
+                "— Bibliothèque Universitaire de Wellston"
+            ]
+        }
+    ],
+
+    "sent": [
+        {
+            "id": "s1",
+            "from": "Moi",
+            "fromAddr": "sinsin@hotmail.com",
+            "subject": "Re: Notes de Sémio de l'image",
+            "date": "13/06 — 22:21",
+            "unread": false,
+            "body": [
+                "Juni,",
+                "",
+                "Pas de souci. CM de Sémio en pièce jointe (Castellan, l'analyse de l'affiche). J'ai laissé mes deux ou trois annotations dans la marge, ça devrait t'aider pour les partiels.",
+                "",
+                "Arrête de t'excuser à chaque fois. Et repose-toi un peu aussi.",
+                "",
+                "— Sin"
+            ]
+        },
+        {
+            "id": "s2",
+            "from": "Moi",
+            "fromAddr": "sinsin@hotmail.com",
+            "subject": "Re: Projet tutoré — on se cale où demain soir ?",
+            "date": "12/06 — 16:31",
+            "unread": false,
+            "body": [
+                "Malcolm,",
+                "",
+                "La BU. Évidemment.",
+                "",
+                "Je m'occupe de Kanza, il votera comme moi. Dis à Orisa et Juni qu'on ira au café une autre fois — pour fêter le rendu, pas pour bosser.",
+                "",
+                "20h demain, salle de travail du fond si elle est libre.",
+                "",
+                "— Sin"
+            ]
+        },
+        {
+            "id": "s3",
+            "from": "Moi",
+            "fromAddr": "sinsin@hotmail.com",
+            "subject": "Re: Match de dimanche — infos + feuille à signer",
+            "date": "13/06 — 12:14",
+            "unread": false,
+            "body": [
+                "Naleos,",
+                "",
+                "C'est noté. Dimanche, 9h au vestiaire.",
+                "",
+                "Feuille signée en pièce jointe. Ça fait un moment que je ne suis pas remonté sur un monticule, on verra ce que ça donne.",
+                "",
+                "Préviens juste les gars que je déteste perdre.",
+                "",
+                "— Sin"
+            ]
+        }
+    ],
+
+    "drafts": [
+        {
+            "id": "d1",
+            "from": "Moi (brouillon)",
+            "fromAddr": "sinsin@hotmail.com",
+            "subject": "(brouillon) PIE BAVARDE — rapport #12",
+            "date": "13/06 — 02:47",
+            "unread": false,
+            "body": [
+                "Makken,",
+                "",
+                "Rapport #12. État de la couverture : stable.",
+                "",
+                "Observations campus (semaine) :",
+                "  – Deux nouveaux tracts déposés au foyer C. Iconographie proche de celle relevée en avril. Photos jointes.",
+                "  – Un étudiant du groupe D approché à deux reprises par un « ancien » extérieur au campus. À confirmer.",
+                "  – Rien de concluant côté SPECTRE.",
+                "",
+                "Concernant le Contrôleur K. et les « prises de risque » —"
+            ]
+        },
+        {
+            "id": "d2",
+            "from": "Moi (brouillon)",
+            "fromAddr": "sinsin@hotmail.com",
+            "subject": "(sans objet)",
+            "date": "12/06 — 01:12",
+            "unread": false,
+            "body": [
+                "Sayo,",
+                "",
+                "Je ne suis pas sûr de passer finalement. Le combat avec Kanza risque de finir tard et j'ai encore"
+            ]
+        }
+    ],
+
+    "spam": [
+        {
+            "id": "sp1",
+            "from": "Le Cercle de l'Aurore",
+            "fromAddr": "contact@cercle-aurore.wl",
+            "subject": "✦ Et si ta vraie place était parmi NOUS, Sin ?",
+            "date": "13/06 — 04:14",
+            "unread": false,
+            "body": [
+                "Cher Sin,",
+                "",
+                "Tu as été REMARQUÉ. Parmi des milliers d'étudiants, ton profil est ressorti : intelligent, solitaire, incompris par un système qui ne te mérite pas. ✦",
+                "",
+                "Le CERCLE DE L'AURORE ouvre ses portes à celles et ceux que l'université laisse sur le bord de la route :",
+                "  ★ Un jeune de Red Dawn District — hier invisible, aujourd'hui ÉCOUTÉ",
+                "  ★ Une étudiante de l'université de Wellston — hier anxieuse, aujourd'hui LIBRE",
+                "  ★ Un ancien détenu — hier condamné, aujourd'hui RENÉ",
+                "",
+                "Nous savons être là quand personne d'autre ne l'est. La première rencontre est discrète, sans engagement, entre gens qui se comprennent.",
+                "",
+                "Réponds simplement « JE VEUX VOIR » et un frère te contactera.",
+                "",
+                "— Le Cercle de l'Aurore",
+                "« Là où le système t'abandonne, nous commençons. »",
+                "",
+                "Se désabonner : inutile. On ne quitte pas l'Aurore."
+            ]
+        },
+        {
+            "id": "sp2",
+            "from": "R3n_X",
+            "fromAddr": "burner-4f2a@ghostmail.temp",
+            "subject": "🔒 [chiffré] ce que tu cherchais — lis vite",
+            "date": "13/06 — 23:08",
+            "unread": false,
+            "body": [
+                "Sin.",
+                "",
+                "Comme promis. J'ai suivi le signal réseau du téléphone que tu as « perdu ».",
+                "",
+                "Dernier ping localisé :",
+                "  ▸ Red Dawn District — entrepôt 12, quai nord",
+                "  ▸ Coordonnées : 34.9876° N, 135.7553° E",
+                "  ▸ Dernière activité : 03h12",
+                "",
+                "Le signal pulse toutes les 47 secondes.",
+                "",
+                "Cette adresse mail est bidon et s'auto-détruit à minuit. Ne réponds pas ici.",
+                "",
+                "Tu me dois un plat de nouilles au sésame de chez Pho.",
+                "",
+                "— R3n_X"
+            ]
+        },
+        {
+            "id": "sp3",
+            "from": "Sécurité WELLSTON-NET",
+            "fromAddr": "securite@wellston-net-verif.wl",
+            "subject": "🔒 ACTION REQUISE — Votre matricule #0791 va être suspendu sous 24h",
+            "date": "13/06 — 06:02",
+            "unread": false,
+            "body": [
+                "Étudiant,",
+                "",
+                "Notre système a détecté une anomalie sur votre compte WELLSTON-NET (matricule #0791).",
+                "",
+                "Pour éviter la SUSPENSION DÉFINITIVE de votre accès, veuillez confirmer votre identité en cliquant sur le lien ci-dessous dans les 24 heures :",
+                "",
+                "  ▶ http://wellston-net-verif.wl/reauth?token=VERIF-0791-XY&matricule=0791",
+                "",
+                "Saisissez votre identifiant et votre code d'accès pour finaliser la vérification.",
+                "",
+                "Nous vous remercions de votre coopération.",
+                "",
+                "— Équipe Sécurité WELLSTON-NET"
+            ]
+        },
+        {
+            "id": "sp4",
+            "from": "Cabinet OLIROK & FRÈRES — Notaires",
+            "fromAddr": "succession.urgente@olirok-notaires.wl",
+            "subject": "Héritage non réclamé — Successeur direct",
+            "date": "11/06 — 23:11",
+            "unread": false,
+            "body": [
+                "Monsieur,",
+                "",
+                "Nos recherches généalogiques approfondies indiquent que vous seriez l'unique successeur en ligne directe d'un défunt homonyme récemment identifié.",
+                "",
+                "La succession comprend :",
+                "  – Une part de propriété (situation cadastrale à clarifier)",
+                "  – Trois (3) reliques inventoriées",
+                "  – Une rente annuelle évaluée à 4 800 000 ⛁",
+                "",
+                "Pour entamer la procédure de validation, merci de nous transmettre :",
+                "  1. Une copie de votre pièce d'identité",
+                "  2. Vos coordonnées bancaires complètes",
+                "  3. Un règlement de 980 ⛁ correspondant aux frais d'ouverture du dossier",
+                "",
+                "Affaire à traiter dans les plus brefs délais. D'autres héritiers présumés se manifestent.",
+                "",
+                "— Maître C. OLIROK",
+                "Cabinet OLIROK & FRÈRES"
+            ]
+        },
+        {
+            "id": "sp5",
+            "from": "MémoBoost Premium",
+            "fromAddr": "boost@memoboost-supplements.co",
+            "subject": "🔥 Cartonne à tes partiels en 14 jours — méthode INFAILLIBLE !",
+            "date": "10/06 — 02:48",
+            "unread": false,
+            "body": [
+                "ATTENTION ÉTUDIANT,",
+                "",
+                "Marre de bosser des nuits entières pour des résultats moyens ? Tes camarades réussissent sans effort pendant que toi tu rames ?",
+                "",
+                "Le Dr. MILUVIA — ancien chercheur — a mis au point une méthode RÉVOLUTIONNAIRE que les facs NE VEULENT PAS que tu connaisses.",
+                "",
+                "Résultats prouvés en 14 jours :",
+                "  💥 +250% de concentration",
+                "  💥 Mémorisation multipliée par 3",
+                "  💥 Effets secondaires : « légers acouphènes » (sans gravité)",
+                "",
+                "Témoignage de Magnus A., 21 ans :",
+                "« J'étais dernier de ma promo. Aujourd'hui je cartonne. Merci MémoBoost. » ⭐⭐⭐⭐⭐",
+                "",
+                "Premier flacon GRATUIT (juste les frais de port : 39,99 ⛁).",
+                "",
+                "ATTENTION : Stock limité.",
+                "",
+                "— L'équipe MémoBoost"
+            ]
+        }
+    ],
+
+    "trash": [
+        {
+            "id": "t1",
+            "from": "BoS-NET",
+            "fromAddr": "admin@bos-net.s7",
+            "subject": "Renouvellement d'authentification — BoS-NET",
+            "date": "10/06 — 00:00",
+            "unread": false,
+            "body": [
+                "Agent SIN — Matricule #0791",
+                "",
+                "Votre jeton d'authentification BoS-NET a été régénéré.",
+                "",
+                "Nouveau jeton : INFINITE-VEIL",
+                "",
+                "",
+                "Pour rappel, dans l'invite de commandes, saisissez la commande suivante :",
+                "auth [JETON]",
+                "",
+                "Un indicateur vous signalera votre niveau d'autorisation sur le réseau.",
+                "",
+                "Détruisez ce message après lecture.",
+                "",
+                "— BoS-NET v5.04 / Administrateur"
+            ]
+        },
+        {
+            "id": "t2",
+            "from": "Comité de l'UFR",
+            "fromAddr": "bulletin@wellston.edu",
+            "subject": "Bulletin étudiant n°47 — Mai/Juin 2026",
+            "date": "01/06 — 07:00",
+            "unread": false,
+            "body": [
+                "Chers étudiants,",
+                "",
+                "Ce mois-ci dans votre bulletin :",
+                "  • Réforme des modalités de contrôle continu : ce qui change",
+                "  • Interview de la responsable de formation, Mme VALKENHEIN — « La réussite de chaque étudiant avant tout »",
+                "  • Le RU ouvre un comptoir de nouilles au bâtiment B-2",
+                "  • Concours photo « Mon coin de révision » — gagnez un week-end à Reach",
+                "",
+                "Bonne lecture,",
+                "— Le Comité de l'UFR Information et Communication"
+            ]
+        },
+        {
+            "id": "t3",
+            "from": "Malcolm Davis",
+            "fromAddr": "m.davis@etu.wellston.edu",
+            "subject": "t'es où ce matin ?",
+            "date": "27/05 — 09:48",
+            "unread": false,
+            "body": [
+                "Sin,",
+                "",
+                "On avait dit révisions à la BU à 9h pour le partiel de Théories de la comm. Il est presque 10h. Kanza dort encore j'imagine.",
+                "",
+                "Si tu réponds pas dans 10 min je commence sans toi (et je prends la bonne place, près de la fenêtre).",
+                "",
+                "— Malcolm"
+            ]
+        },
+        {
+            "id": "t4",
+            "from": "Immobilier ATRIA — Wellston Nord",
+            "fromAddr": "contact@atria-wellston.im",
+            "subject": "Votre alerte : 2 nouveaux biens correspondant à vos critères",
+            "date": "05/06 — 12:00",
+            "unread": false,
+            "body": [
+                "Bonjour,",
+                "",
+                "Deux nouveaux biens correspondent à votre recherche « Studio meublé — proche campus Wellston — < 600 ⛁/mois » :",
+                "",
+                "  1. Studio 24m² — Quartier des Halles — 580 ⛁/mois",
+                "  2. T1 28m² — Wellston Nord-Est — 620 ⛁/mois (légèrement au-dessus)",
+                "",
+                "Connectez-vous à votre espace pour planifier une visite.",
+                "",
+                "— L'équipe ATRIA"
+            ]
+        },
+        {
+            "id": "t5",
+            "from": "M. Brennac",
+            "fromAddr": "m.brennac@wellston.edu",
+            "subject": "[RAPPEL — 1er] Dossier de Droit de l'information",
+            "date": "01/06 — 08:00",
+            "unread": false,
+            "body": [
+                "Monsieur Ashu'ra,",
+                "",
+                "Petit rappel : votre dossier de Droit de l'information est attendu pour le 20/06.",
+                "",
+                "Merci de ne pas laisser traîner, ce module compte double dans la moyenne du semestre.",
+                "",
+                "— M. BRENNAC",
+                "UFR Information et Communication"
+            ]
+        },
+        {
+            "id": "t6",
+            "from": "Juni Sedo",
+            "fromAddr": "juni.sedo@etu.wellston.edu",
+            "subject": "Fiche de lecture — Écriture journalistique",
+            "date": "29/05 — 23:59",
+            "unread": false,
+            "body": [
+                "Sin,",
+                "",
+                "Pour boucler notre fiche de lecture d'Écriture journalistique, il me manque juste ta partie (l'analyse du chapitre 3). Tu es toujours plus précis que moi là-dessus.",
+                "",
+                "Okonkwo veut le rendu au plus tôt pour qu'on puisse se concentrer sur le projet tutoré.",
+                "",
+                "Je compte sur toi ! Et merci encore pour l'autre fois.",
+                "",
+                "— Juni"
+            ]
+        }
+    ]
+}

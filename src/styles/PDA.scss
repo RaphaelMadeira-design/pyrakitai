@@ -1,0 +1,1480 @@
+@use 'Variables' as *;
+@use 'sass:color';
+
+// =====================
+// PDA COLOR SCHEME (LCD Green)
+// =====================
+$pda-bg: #1a1a1a;
+$pda-frame: #2a2a2a;
+$pda-frame-highlight: #3a3a3a;
+$pda-frame-shadow: #0a0a0a;
+
+// LCD Colors - Classic Green
+$lcd-bg: #1a2b1a;
+$lcd-text: #33ff66;
+$lcd-text-dim: #1a8833;
+$lcd-highlight: #44ff77;
+$lcd-shadow: #0a1a0a;
+$lcd-bg-dark: #0b1008;
+
+$pda-button: #333;
+$pda-button-text: #888;
+
+// =====================
+// PDA CONTAINER
+// =====================
+.pda {
+width: 100vw;
+height: 100vh;
+min-height: 100dvh;
+background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 12px;
+box-sizing: border-box;
+overflow: hidden;
+
+&--boot {
+.pda__screen-inner {
+animation: pda-power-on 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+transform-origin: center center;
+}
+}
+
+// =====================
+// PDA FRAME
+// =====================
+&__frame {
+width: 100%;
+max-width: 380px;
+height: 100%;
+max-height: 700px;
+background: linear-gradient(180deg, $pda-frame-highlight 0%, $pda-frame 20%, $pda-frame 80%, $pda-frame-shadow 100%);
+border-radius: 24px;
+padding: 16px;
+display: flex;
+flex-direction: column;
+box-shadow:
+0 4px 20px rgba(0, 0, 0, 0.8),
+inset 0 1px 0 rgba(255, 255, 255, 0.1),
+inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+position: relative;
+}
+
+// =====================
+// LCD SCREEN
+// =====================
+&__screen {
+flex: 1;
+background: $lcd-bg-dark;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+position: relative;
+box-shadow:
+inset 0 2px 8px rgba(0, 0, 0, 0.8),
+inset 0 0 0 2px #111;
+
+&--boot {
+justify-content: center;
+align-items: center;
+background: $lcd-bg-dark;
+}
+}
+
+&__screen-inner {
+flex: 1;
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 100%;
+overflow: hidden;
+position: relative;
+background: $lcd-bg;
+}
+
+&__scanlines {
+position: absolute;
+inset: 0;
+pointer-events: none;
+z-index: 100;
+background: repeating-linear-gradient(
+0deg,
+transparent,
+transparent 2px,
+rgba(0, 0, 0, 0.15) 2px,
+rgba(0, 0, 0, 0.15) 4px
+);
+mix-blend-mode: multiply;
+}
+
+// =====================
+// STATUS BAR
+// =====================
+&__statusbar {
+height: 28px;
+background: linear-gradient(180deg, $lcd-bg-dark 0%, $lcd-bg 100%);
+border-bottom: 1px solid $lcd-shadow;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 10px;
+flex-shrink: 0;
+z-index: 10;
+
+&-title {
+font-family: 'Pixelify Sans', monospace;
+font-size: 12px;
+color: $lcd-text;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+text-shadow: 0 0 8px rgba($lcd-text, 0.5);
+}
+
+&-right { 
+display: flex; 
+align-items: center; 
+gap: 10px; 
+}
+}
+
+&__battery {
+display: flex; align-items: center; gap: 4px;
+font-family: 'Pixelify Sans', monospace;
+font-size: 10px;
+color: $lcd-text-dim;
+
+&-icon {
+width: 18px; height: 10px;
+border: 1px solid $lcd-text-dim;
+border-radius: 2px;
+position: relative;
+
+&::before {
+content: ''; position: absolute;
+left: 1px; top: 1px; bottom: 1px;
+width: calc(var(--level) * 1);
+max-width: 14px;
+background: $lcd-text;
+border-radius: 1px;
+}
+&::after {
+content: ''; position: absolute;
+right: -3px; top: 2px;
+width: 2px; height: 4px;
+background: $lcd-text-dim;
+border-radius: 0 1px 1px 0;
+}
+}
+}
+
+&__time {
+font-family: 'Pixelify Sans', monospace;
+font-size: 12px;
+color: $lcd-text;
+text-shadow: 0 0 8px rgba($lcd-text, 0.5);
+}
+
+// =====================
+// MAIN CONTENT
+// =====================
+&__content {
+flex: 1;
+overflow: hidden;
+position: relative;
+z-index: 1;
+}
+
+&__app-container {
+width: 100%;
+height: 100%;
+overflow-y: auto;
+overflow-x: hidden;
+color: $lcd-text;
+
+
+&::-webkit-scrollbar { width: 6px; }
+&::-webkit-scrollbar-track { background: $lcd-shadow; }
+&::-webkit-scrollbar-thumb { background: $lcd-text-dim; border-radius: 3px; }
+}
+
+// =====================
+// NAVIGATION BAR
+// =====================
+&__navbar {
+height: 44px;
+background: linear-gradient(180deg, $lcd-bg 0%, $lcd-bg-dark 100%);
+border-top: 1px solid $lcd-shadow;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 10px;
+flex-shrink: 0;
+z-index: 10;
+}
+
+> .pda__nav-arrow:first-child { 
+justify-self: start; 
+}
+
+> .pda__nav-arrow:last-child { 
+justify-self: end; 
+}
+
+> .pda__nav-btn--home { 
+justify-self: center; 
+}
+
+&__nav-btn {
+font-size: 11px;
+padding: 6px 10px;
+background: $lcd-shadow;
+border: 1px solid $lcd-text-dim;
+color: $lcd-text;
+border-radius: 4px;
+cursor: pointer;
+transition: all 0.1s;
+text-shadow: 0 0 6px rgba($lcd-text, 0.3);
+
+&:active:not(:disabled) {
+background: $lcd-text;
+color: $lcd-bg;
+text-shadow: none;
+}
+
+&:disabled { 
+opacity: 0.3; 
+cursor: not-allowed; 
+}
+
+&--home {
+background: $lcd-text-dim;
+color: $lcd-bg;
+text-shadow: none;
+font-weight: 600;
+
+&:active { 
+background: $lcd-highlight; 
+}
+}
+}
+
+&__nav-arrow {
+font-size: 16px;
+width: 36px;
+height: 30px;
+background: $lcd-shadow;
+border: 1px solid $lcd-text-dim;
+color: $lcd-text;
+border-radius: 4px;
+cursor: pointer;
+line-height: 1;
+transition: all 0.1s;
+text-shadow: 0 0 6px rgba($lcd-text, 0.3);
+
+&:active:not(:disabled) {
+background: $lcd-text;
+color: $lcd-bg;
+}
+
+&:disabled { 
+opacity: 0.25; 
+cursor: not-allowed; 
+}
+}
+
+&__nav-date {
+display: none; 
+}
+
+// =====================
+// PHYSICAL BUTTONS
+// =====================
+&__buttons {
+display: flex;
+justify-content: center;
+gap: 12px;
+padding: 12px 0 8px;
+}
+
+&__button {
+width: 44px;
+height: 44px;
+background: linear-gradient(180deg, #444 0%, #222 100%);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+box-shadow:
+0 3px 6px rgba(0, 0, 0, 0.5),
+inset 0 1px 0 rgba(255, 255, 255, 0.1);
+transition: all 0.1s;
+border: none;
+outline: none;
+padding: 0;
+color: inherit;
+font: inherit;
+
+&:active {
+transform: scale(0.95);
+box-shadow:
+0 1px 3px rgba(0, 0, 0, 0.5),
+inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+&--active {
+span { 
+color: $lcd-text !important; 
+text-shadow: 0 0 6px rgba($lcd-text, 0.6); 
+}
+}
+
+// ── Bouton POWER centré ────────────────────────
+&--power {
+width: 50px;
+height: 50px;
+background: linear-gradient(180deg, #3a1a1a 0%, #1a0a0a 100%);
+border: 1px solid #2a0a0a;
+box-shadow:
+0 3px 8px rgba(0, 0, 0, 0.6),
+inset 0 1px 0 rgba(255, 90, 90, 0.15);
+
+.pda__power-glyph {
+font-size: 20px;
+color: #7a2a2a;
+text-shadow: none;
+transition: color 0.2s, text-shadow 0.2s;
+}
+
+&:hover .pda__power-glyph { color: #aa3a3a; }
+}
+
+&--power-on {
+background: linear-gradient(180deg, #1f3a1f 0%, #0e1d0e 100%);
+border: 1px solid #0a1a0a;
+box-shadow:
+0 0 12px rgba($lcd-text, 0.35),
+0 3px 8px rgba(0, 0, 0, 0.6),
+inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+.pda__power-glyph {
+color: $lcd-text;
+text-shadow: 0 0 8px rgba($lcd-text, 0.8);
+animation: pda-power-pulse 2.8s ease-in-out infinite;
+}
+}
+
+span {
+font-family: 'Pixelify Sans', monospace;
+font-size: 18px;
+color: #666;
+font-weight: 600;
+}
+}
+
+// =====================
+// BRAND LOGO
+// =====================
+&__brand {
+text-align: center;
+padding-top: 4px;
+
+span {
+font-family: 'Pixelify Sans', monospace;
+font-size: 16px;
+font-weight: 700;
+color: #555;
+letter-spacing: 4px;
+display: block;
+}
+
+small {
+font-family: 'Pixelify Sans', monospace;
+font-size: 8px;
+color: #444;
+letter-spacing: 1px;
+}
+}
+}
+
+// =====================
+// ÉCRAN ÉTEINT
+// =====================
+.pda {
+// L'animation d'extinction ne joue QUE sur une vraie transition on → off
+&--off-anim .pda__screen-inner {
+animation: pda-power-off 0.35s ease-in;
+transform-origin: center center;
+}
+
+&__screen--off {
+background: $lcd-bg-dark;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+position: relative;
+
+&::after {
+content: '';
+position: absolute;
+inset: 0;
+background: repeating-linear-gradient(
+0deg,
+rgba(0, 0, 0, 0.35),
+rgba(0, 0, 0, 0.35) 2px,
+transparent 2px,
+transparent 4px
+);
+mix-blend-mode: multiply;
+opacity: 0.6;
+pointer-events: none;
+}
+}
+}
+
+.pda-off {
+position: absolute;
+inset: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgba(51, 255, 102, 0.15);
+background: $lcd-bg-dark;
+
+&__hint {
+position: relative;
+z-index: 2;
+font-family: 'Pixelify Sans', monospace;
+text-align: center;
+
+&-text {
+font-size: 10px;
+letter-spacing: 2px;
+color: rgba(51, 255, 102, 0.18);
+animation: pda-off-blink 2.8s ease-in-out infinite;
+}
+}
+}
+
+// =====================
+// HOME SCREEN
+// =====================
+.pda-home {
+height: 100%;
+display: flex;
+flex-direction: column;
+padding: 16px;
+box-sizing: border-box;
+
+&__header {
+text-align: center;
+margin-bottom: 20px;
+
+h1 {
+font-size: 22px;
+color: $lcd-highlight;
+margin: 0 0 4px;
+text-shadow: 0 0 12px rgba($lcd-highlight, 0.6);
+letter-spacing: 3px;
+}
+
+p {
+font-size: 10px;
+color: $lcd-text-dim;
+margin: 0;
+letter-spacing: 1px;
+}
+}
+
+&__grid {
+flex: 1;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 14px;
+align-content: start;
+}
+
+&__app {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 8px;
+padding: 22px 8px;
+background: rgba($lcd-text, 0.05);
+border: 1px solid $lcd-text-dim;
+border-radius: 8px;
+cursor: pointer;
+transition: all 0.15s;
+position: relative;
+
+&::before {
+content: '';
+position: absolute;
+inset: 2px;
+border: 1px dashed rgba($lcd-text, 0.15);
+border-radius: 6px;
+pointer-events: none;
+}
+
+&:hover {
+background: rgba($lcd-text, 0.1);
+box-shadow: 0 0 12px rgba($lcd-text, 0.25);
+}
+
+&:active {
+background: $lcd-text;
+transform: scale(0.96);
+
+.pda-home__app-icon,
+.pda-home__app-label { 
+color: $lcd-bg; 
+text-shadow: none; 
+}
+}
+
+&-icon {
+font-size: 32px;
+color: $lcd-text;
+text-shadow: 0 0 10px rgba($lcd-text, 0.5);
+line-height: 1;
+}
+
+&-label {
+font-size: 12px;
+color: $lcd-text;
+text-shadow: 0 0 6px rgba($lcd-text, 0.4);
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+}
+
+&__footer {
+margin-top: 16px;
+padding: 8px 10px;
+border: 1px dashed $lcd-text-dim;
+background: rgba($lcd-text, 0.05);
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+&__date-label {
+font-size: 9px;
+color: $lcd-text-dim;
+letter-spacing: 1.5px;
+}
+
+&__date-val {
+font-size: 13px;
+color: $lcd-highlight;
+font-weight: 700;
+letter-spacing: 1px;
+text-shadow: 0 0 8px rgba($lcd-highlight, 0.5);
+}
+}
+
+// =====================
+// PAGE GENERIC
+// =====================
+.pda-page {
+padding: 12px 14px 20px;
+color: $lcd-text;
+
+&__title {
+font-size: 14px;
+color: $lcd-highlight;
+letter-spacing: 2px;
+text-shadow: 0 0 10px rgba($lcd-highlight, 0.5);
+border-bottom: 1px dashed $lcd-text-dim;
+padding-bottom: 6px;
+margin-bottom: 10px;
+}
+
+&__subtitle {
+font-size: 10px;
+color: $lcd-text-dim;
+margin-bottom: 14px;
+letter-spacing: 1px;
+}
+
+&__section {
+font-size: 11px;
+color: $lcd-highlight;
+margin: 14px 0 8px;
+letter-spacing: 1px;
+text-shadow: 0 0 6px rgba($lcd-highlight, 0.4);
+}
+
+&__note {
+margin-top: 14px;
+font-size: 10px;
+color: $lcd-text-dim;
+border-left: 2px solid $lcd-text-dim;
+padding: 6px 10px;
+background: rgba($lcd-text, 0.03);
+line-height: 1.5;
+
+strong { color: $lcd-text; }
+}
+}
+
+// =====================
+// IDENTITY
+// =====================
+.pda-id {
+&__head {
+display: flex;
+gap: 10px;
+margin-bottom: 8px;
+}
+
+&__avatar {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+&__codename {
+font-size: 11px;
+color: $lcd-highlight;
+letter-spacing: 1px;
+margin-top: 2px;
+text-shadow: 0 0 6px rgba($lcd-highlight, 0.5);
+}
+
+&__tag {
+flex: 1;
+border: 1px solid $lcd-text-dim;
+padding: 8px 10px;
+background: rgba($lcd-text, 0.04);
+font-size: 10px;
+}
+
+&__label {
+color: $lcd-text-dim;
+font-size: 9px;
+letter-spacing: 1px;
+}
+
+&__value {
+color: $lcd-text;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 1px;
+text-shadow: 0 0 6px rgba($lcd-text, 0.4);
+
+&--ok { 
+color: $lcd-highlight; 
+}
+}
+}
+
+.pda-img {
+display: block;
+image-rendering: pixelated;
+image-rendering: -moz-crisp-edges;
+image-rendering: crisp-edges;
+border: 1px solid $lcd-text-dim;
+background: $lcd-shadow;
+box-shadow:
+inset 0 0 8px rgba(0, 0, 0, 0.5),
+0 0 10px rgba($lcd-text, 0.15);
+filter: contrast(1.05);
+}
+
+// Table clé/valeur
+.pda-table {
+width: 100%;
+border-collapse: collapse;
+font-size: 11px;
+margin-top: 4px;
+
+tr {
+border-bottom: 1px dotted rgba($lcd-text-dim, 0.4);
+}
+
+&__k {
+color: $lcd-text-dim;
+padding: 4px 6px 4px 0;
+width: 70px;
+letter-spacing: 1px;
+vertical-align: top;
+}
+
+&__sep {
+color: $lcd-text-dim;
+width: 10px;
+text-align: center;
+}
+
+&__v {
+color: $lcd-text;
+padding: 4px 0 4px 4px;
+text-shadow: 0 0 4px rgba($lcd-text, 0.3);
+word-break: break-word;
+}
+}
+
+// =====================
+// WIKI (description physique / psycho)
+// =====================
+.pda-wiki {
+margin: 6px 0 4px;
+display: flex;
+flex-direction: column;
+gap: 4px;
+padding: 0;
+
+&__intro {
+margin: 4px 0 8px;
+font-size: 11px;
+line-height: 1.55;
+color: $lcd-text;
+font-style: italic;
+padding: 6px 8px;
+border-left: 2px solid $lcd-text-dim;
+background: rgba($lcd-text, 0.04);
+}
+
+&__row {
+display: grid;
+grid-template-columns: 82px 1fr;
+gap: 8px;
+padding: 4px 6px;
+border-bottom: 1px dotted rgba($lcd-text-dim, 0.35);
+margin: 0;
+}
+
+&__k {
+color: $lcd-text-dim;
+font-size: 9px;
+letter-spacing: 1px;
+padding-top: 2px;
+margin: 0;
+}
+
+&__v {
+color: $lcd-text;
+font-size: 11px;
+line-height: 1.45;
+margin: 0;
+text-shadow: 0 0 3px rgba($lcd-text, 0.25);
+}
+}
+
+// =====================
+// STATS
+// =====================
+.pda-vitals {
+display: flex;
+flex-direction: column;
+gap: 6px;
+margin-bottom: 4px;
+}
+
+.pda-vital {
+display: grid;
+grid-template-columns: 32px 1fr auto;
+align-items: center;
+gap: 8px;
+font-size: 11px;
+
+&__label {
+color: $lcd-text-dim;
+letter-spacing: 1px;
+font-size: 10px;
+}
+
+&__bar { 
+display: flex; 
+}
+
+&__val {
+color: $lcd-text;
+font-weight: 700;
+letter-spacing: 0.5px;
+white-space: nowrap;
+
+&--big {
+font-size: 14px;
+color: $lcd-highlight;
+text-shadow: 0 0 8px rgba($lcd-highlight, 0.5);
+grid-column: 2 / 4;
+text-align: right;
+}
+}
+
+&__max { 
+color: $lcd-text-dim; 
+font-weight: 400; 
+}
+}
+
+.pda-stats {
+display: flex;
+flex-direction: column;
+gap: 4px;
+margin-bottom: 4px;
+}
+
+.pda-stat {
+display: grid;
+grid-template-columns: 88px 1fr 32px;
+align-items: center;
+gap: 6px;
+font-size: 10px;
+
+&__name {
+color: $lcd-text-dim;
+letter-spacing: 0.5px;
+}
+
+&__val {
+color: $lcd-text;
+text-align: right;
+font-weight: 700;
+text-shadow: 0 0 4px rgba($lcd-text, 0.3);
+}
+}
+
+// Blockbar (barre en cellules)
+.pda-blockbar {
+display: inline-flex;
+gap: 1px;
+width: 100%;
+height: 10px;
+
+&__cell {
+flex: 1;
+background: $lcd-shadow;
+border: 1px solid rgba($lcd-text-dim, 0.4);
+transition: background 0.3s ease, box-shadow 0.3s ease;
+
+&--on {
+background: $lcd-text;
+border-color: $lcd-text;
+box-shadow: 0 0 4px rgba($lcd-text, 0.6);
+}
+}
+}
+
+.pda-jinsei p {
+font-size: 11px;
+color: $lcd-text;
+line-height: 1.55;
+margin: 0;
+padding: 8px;
+border: 1px dashed $lcd-text-dim;
+background: rgba($lcd-text, 0.04);
+
+strong { 
+color: $lcd-highlight; 
+}
+}
+
+.pda-abilities {
+display: flex;
+flex-direction: column;
+gap: 6px;
+}
+
+.pda-ab {
+display: flex;
+gap: 8px;
+padding: 6px 8px;
+border: 1px solid $lcd-text-dim;
+background: rgba($lcd-text, 0.03);
+
+&--ult {
+border-style: double;
+border-width: 3px;
+background: rgba($lcd-highlight, 0.06);
+
+.pda-ab__key { 
+background: $lcd-highlight; 
+color: $lcd-bg; 
+}
+
+.pda-ab__name { 
+color: $lcd-highlight; 
+}
+}
+
+&__key {
+width: 24px; height: 24px;
+flex-shrink: 0;
+background: $lcd-text;
+color: $lcd-bg;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+font-size: 12px;
+border-radius: 3px;
+}
+
+&__body { 
+flex: 1; 
+min-width: 0; 
+}
+
+&__head {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 6px;
+margin-bottom: 2px;
+}
+
+&__name {
+color: $lcd-text;
+font-size: 11px;
+font-weight: 700;
+text-shadow: 0 0 4px rgba($lcd-text, 0.4);
+}
+
+&__meta {
+color: $lcd-text-dim;
+font-size: 9px;
+letter-spacing: 0.5px;
+white-space: nowrap;
+}
+
+&__desc {
+margin: 0;
+color: $lcd-text-dim;
+font-size: 10px;
+line-height: 1.4;
+}
+}
+
+// =====================
+// HISTOIRE
+// =====================
+.pda-history {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+gap: 4px;
+}
+
+.pda-chap {
+border: 1px solid $lcd-text-dim;
+background: rgba($lcd-text, 0.03);
+
+&--open { 
+background: rgba($lcd-text, 0.08); 
+}
+
+&__head {
+width: 100%;
+display: grid;
+grid-template-columns: 16px auto 1fr;
+gap: 8px;
+align-items: center;
+padding: 8px 10px;
+background: transparent;
+border: none;
+color: $lcd-text;
+font-size: 11px;
+cursor: pointer;
+text-align: left;
+
+&:hover { 
+background: rgba($lcd-text, 0.06); 
+}
+}
+
+&__marker {
+color: $lcd-highlight;
+font-size: 10px;
+}
+
+&__year {
+color: $lcd-highlight;
+font-weight: 700;
+letter-spacing: 1px;
+font-size: 10px;
+white-space: nowrap;
+}
+
+&__title {
+color: $lcd-text;
+letter-spacing: 0.5px;
+}
+
+&__body {
+overflow: hidden;
+border-top: 1px dashed $lcd-text-dim;
+
+p {
+margin: 0;
+padding: 10px 12px;
+font-size: 11px;
+color: $lcd-text;
+line-height: 1.6;
+}
+}
+}
+
+// =====================
+// CONTACTS
+// =====================
+.pda-contacts {
+list-style: none;
+padding: 0;
+margin: 0 0 4px;
+display: flex;
+flex-direction: column;
+gap: 2px;
+}
+
+.pda-contact {
+display: grid;
+grid-template-columns: 18px 1fr 14px;
+align-items: center;
+gap: 8px;
+padding: 8px 10px;
+border: 1px solid $lcd-text-dim;
+background: rgba($lcd-text, 0.04);
+cursor: pointer;
+transition: all 0.12s;
+
+&:hover {
+background: rgba($lcd-text, 0.1);
+box-shadow: 0 0 6px rgba($lcd-text, 0.3);
+}
+
+&:active {
+background: $lcd-text;
+
+.pda-contact__name,
+.pda-contact__msg,
+.pda-contact__dot,
+.pda-contact__chev { 
+color: $lcd-bg; 
+text-shadow: none; 
+}
+}
+
+&--offline {
+opacity: 0.55;
+
+.pda-contact__dot { 
+color: $lcd-text-dim; 
+}
+}
+
+&--away {
+.pda-contact__dot { 
+color: #c8d844; 
+}
+}
+
+&__dot {
+color: $lcd-text;
+font-size: 12px;
+text-shadow: 0 0 6px rgba($lcd-text, 0.6);
+}
+
+&__body {
+display: flex;
+flex-direction: column;
+min-width: 0;
+overflow: hidden;
+}
+
+&__name {
+color: $lcd-text;
+font-size: 12px;
+font-weight: 700;
+letter-spacing: 0.5px;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+&__msg {
+color: $lcd-text-dim;
+font-size: 9px;
+font-style: italic;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+&__chev {
+color: $lcd-text-dim;
+font-size: 12px;
+}
+}
+
+// Contact detail
+.pda-detail {
+display: flex;
+flex-direction: column;
+gap: 6px;
+
+&__row {
+display: grid;
+grid-template-columns: 72px 1fr;
+gap: 8px;
+padding: 4px 6px;
+border-bottom: 1px dotted rgba($lcd-text-dim, 0.4);
+}
+
+&__k {
+color: $lcd-text-dim;
+font-size: 10px;
+letter-spacing: 1px;
+}
+
+&__v {
+color: $lcd-text;
+font-size: 11px;
+font-weight: 700;
+word-break: break-word;
+
+&--online  { 
+color: $lcd-highlight; 
+text-shadow: 0 0 6px rgba($lcd-highlight, 0.5); 
+}
+
+&--away    { 
+color: #dcea55; 
+}
+
+&--offline { 
+color: $lcd-text-dim; 
+}
+}
+
+&__note {
+margin: 0;
+font-size: 11px;
+color: $lcd-text;
+line-height: 1.6;
+padding: 8px 10px;
+border: 1px dashed $lcd-text-dim;
+background: rgba($lcd-text, 0.04);
+}
+}
+
+.pda-btn {
+margin-top: 16px;
+align-self: flex-start;
+font-family: 'Pixelify Sans', monospace;
+font-size: 11px;
+padding: 8px 14px;
+background: $lcd-shadow;
+border: 1px solid $lcd-text-dim;
+color: $lcd-text;
+border-radius: 4px;
+cursor: pointer;
+transition: all 0.1s;
+
+&:hover { 
+background: rgba($lcd-text, 0.1); 
+}
+
+&:active {
+background: $lcd-text;
+color: $lcd-bg;
+}
+}
+
+// =====================
+// CONVERSATION (style terminal retro)
+// =====================
+.pda-conv {
+display: flex;
+flex-direction: column;
+gap: 6px;
+padding: 8px 10px;
+border: 1px solid $lcd-text-dim;
+background: rgba($lcd-text, 0.03);
+max-height: 260px;
+overflow-y: auto;
+
+&::-webkit-scrollbar { 
+width: 5px; 
+}
+
+&::-webkit-scrollbar-track { 
+background: $lcd-shadow; 
+}
+
+&::-webkit-scrollbar-thumb { 
+background: $lcd-text-dim; 
+border-radius: 2px; 
+}
+
+&__date {
+align-self: center;
+font-size: 9px;
+color: $lcd-text-dim;
+letter-spacing: 1px;
+padding: 2px 8px;
+margin: 2px 0 4px;
+}
+
+&__msg {
+display: flex;
+flex-direction: column;
+padding: 3px 4px;
+}
+
+&__msg--self {
+align-items: flex-end;
+text-align: right;
+
+.pda-conv__head  { 
+justify-content: flex-end; 
+}
+
+.pda-conv__from  { 
+color: $lcd-highlight; 
+}
+
+.pda-conv__text  { 
+color: $lcd-highlight; 
+text-shadow: 0 0 6px rgba($lcd-highlight, 0.4); 
+}
+}
+
+&__head {
+display: flex;
+align-items: baseline;
+gap: 6px;
+font-size: 9px;
+color: $lcd-text-dim;
+letter-spacing: 0.5px;
+margin-bottom: 1px;
+}
+
+&__from {
+color: $lcd-text;
+font-weight: 700;
+}
+
+&__time {
+opacity: 0.7;
+}
+
+&__text {
+font-size: 11px;
+color: $lcd-text;
+line-height: 1.45;
+word-break: break-word;
+white-space: pre-wrap;
+
+&--italic { 
+font-style: italic; 
+opacity: 0.8; 
+}
+}
+
+&__sys {
+align-self: center;
+font-size: 10px;
+color: $lcd-text-dim;
+padding: 4px 8px;
+border: 1px dashed $lcd-text-dim;
+background: rgba($lcd-shadow, 0.5);
+letter-spacing: 1px;
+margin: 2px 0;
+}
+}
+
+// =====================
+// BOOT SCREEN
+// =====================
+.pda-boot {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 20px;
+
+&__logo {
+margin-bottom: 40px;
+
+span {
+font-size: 48px;
+font-weight: 700;
+color: $lcd-highlight;
+letter-spacing: 8px;
+display: block;
+text-shadow: 0 0 20px rgba($lcd-highlight, 0.8);
+animation: lcd-flicker 2s infinite;
+}
+
+small {
+font-size: 10px;
+color: $lcd-text-dim;
+letter-spacing: 2px;
+display: block;
+margin-top: 8px;
+}
+}
+
+&__text {
+p {
+font-size: 11px;
+color: $lcd-text;
+margin: 0 0 12px;
+}
+}
+
+&__progress {
+width: 200px;
+height: 12px;
+background: $lcd-shadow;
+border: 1px solid $lcd-text-dim;
+border-radius: 2px;
+margin: 0 auto 20px;
+overflow: hidden;
+
+&-bar {
+height: 100%;
+background: repeating-linear-gradient(
+90deg,
+$lcd-text 0px,
+$lcd-text 8px,
+$lcd-text-dim 8px,
+$lcd-text-dim 12px
+);
+box-shadow: 0 0 10px rgba($lcd-text, 0.5);
+}
+}
+
+&__version {
+font-size: 9px !important;
+color: $lcd-text-dim !important;
+opacity: 0.7;
+}
+}
+
+// =====================
+// ANIMATIONS
+// =====================
+@keyframes pda-power-on {
+0% {
+opacity: 0;
+transform: scale(0, 0.004);
+filter: brightness(2.5);
+}
+25% {
+opacity: 1;
+transform: scale(1, 0.004);
+filter: brightness(3);
+}
+45% {
+opacity: 1;
+transform: scale(1, 0.004);
+filter: brightness(3);
+}
+70% {
+opacity: 1;
+transform: scale(1, 1);
+filter: brightness(1.8);
+}
+100% {
+opacity: 1;
+transform: scale(1, 1);
+filter: brightness(1);
+}
+}
+
+@keyframes pda-power-off {
+0% {
+opacity: 1;
+transform: scale(1, 1);
+filter: brightness(1);
+}
+30% {
+opacity: 1;
+transform: scale(1, 0.006);
+filter: brightness(2.5);
+}
+70% {
+opacity: 1;
+transform: scale(0.6, 0.006);
+filter: brightness(2);
+}
+100% {
+opacity: 0;
+transform: scale(0, 0.004);
+filter: brightness(0);
+}
+}
+
+@keyframes lcd-flicker {
+0%, 100% { opacity: 1; }
+50%      { opacity: 0.97; }
+52%      { opacity: 1; }
+54%      { opacity: 0.98; }
+}
+
+@keyframes pda-off-blink {
+0%, 100% { opacity: 0.25; }
+50%      { opacity: 0.6; }
+}
+
+@keyframes pda-power-pulse {
+0%, 100% {
+opacity: 1;
+text-shadow: 0 0 8px rgba($lcd-text, 0.8);
+}
+50% {
+opacity: 0.85;
+text-shadow: 0 0 12px rgba($lcd-text, 1);
+}
+}
+
+// =====================
+// RESPONSIVE
+// =====================
+@media (max-height: 640px) {
+.pda {
+padding: 8px;
+
+&__frame { padding: 10px; border-radius: 16px; }
+&__statusbar { height: 24px; }
+&__navbar { height: 38px; }
+&__buttons { padding: 8px 0 4px; gap: 10px; }
+&__button { width: 36px; height: 36px; }
+}
+
+.pda-home {
+padding: 12px;
+
+&__header { margin-bottom: 14px;
+h1 { font-size: 18px; }
+}
+&__grid { gap: 10px; }
+&__app {
+padding: 14px 6px;
+&-icon { font-size: 26px; }
+&-label { font-size: 10px; }
+}
+}
+
+.pda-page { padding: 10px 12px 16px; }
+.pda-img  { width: 110px; height: 126px; }
+}
+
+@media (max-height: 500px) {
+.pda__buttons { display: none; }
+.pda__brand   { display: none; }
+}

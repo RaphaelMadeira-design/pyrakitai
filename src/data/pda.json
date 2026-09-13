@@ -1,0 +1,400 @@
+{
+    "self": "isen.s",
+
+    "pdaApps": [
+        { "id": "identite", "label": "Identité", "icon": "◉" },
+        { "id": "stats",    "label": "Pouvoir",  "icon": "◆" },
+        { "id": "histoire", "label": "Histoire", "icon": "▤" },
+        { "id": "contacts", "label": "Contacts", "icon": "☰" }
+    ],
+
+    "gameApps": [
+        { "id": "snake", "label": "Snake", "icon": "§" },
+        { "id": "jump",  "label": "Jump",  "icon": "^" },
+        { "id": "media", "label": "Media", "icon": "♪" }
+    ],
+
+    "pageOrder": ["identite", "stats", "histoire", "contacts"],
+
+    "identity": {
+        "codename": "ISEN",
+        "fullName": "Isen Shura",
+        "id": "#0791",
+        "age": 29,
+        "genre": "Masculin ♂",
+        "ethnicity": "Astral",
+        "role": "Patrouilleur de l'Ordre",
+        "origin": "Las Noches",
+        "race": "???",
+        "alignment": "Neutre",
+        "email": "isen.shura@hotmail.is",
+        "portraitSrc": "/images/id.jpg",
+        "registers": {
+        "id": "#0791",
+        "team": "Équipe 2",
+        "statut": "▣ ACTIF"
+        }
+    },
+
+    "physical": {
+        "intro": "Homme de taille et corpulence situées dans la moyenne, avec une silhouette longiligne accentuée par des épaules larges et de longues jambes. Cheveux bruns, coiffés mais légèrement désordonnés. Traits du visage fins mais anguleux, mâchoire carrée. Yeux en amande, iris caractérisés par la présence d'un motif galactique animé, composé d'une multitude de points lumineux semblables à des étoiles.",
+        "traits": [
+            ["TAILLE",    "1m80"],
+            ["POIDS",     "76kg"],
+            ["CHEVEUX",   "Bruns, coiffés mais légèrement désordonnés"],
+            ["YEUX",      "Amande — motif galactique animé"],
+            ["MARQUES",   "Étrange cicatrice au niveau du cœur"]
+        ]
+    },
+
+    "psycho": {
+        "intro": "Individu indolent, présentant un tempérament indépendant et une attitude généralement nonchalante. Tendance marquée à éviter les responsabilités et à limiter son implication aux tâches strictement nécessaires. Manifeste peu d'investissement professionnel mais se montre efficace et fiable lors de ses interventions. Sujet à des épisodes de réminiscences exogènes dont l'origine demeure indéterminée.",
+        "traits": [
+            ["QUALITÉS",      "Efficace, fiable en intervention"],
+            ["DÉFAUTS",       "Indolent, nonchalant, évite les responsabilités"],
+            ["PARTICULARITÉ", "Réminiscences exogènes d'origine indéterminée"],
+            ["MOTIVATION",    "Comprendre la disparition du Pr. Vendamir"]
+        ]
+    },
+
+    "stats": [
+        { "name": "Perception", "value": 0 },
+        { "name": "Dextérité",  "value": 0 },
+        { "name": "Endurance",  "value": 0 },
+        { "name": "Force",      "value": 0 },
+        { "name": "Résistance", "value": 0 },
+        { "name": "Jinsei",     "value": 0 }
+    ],
+
+    "vitals": {
+        "level":  1,
+        "hp":     { "cur": 800, "max": 800 },
+        "energy": { "cur": 500, "max": 500 },
+        "xp":     { "cur": 50,  "max": 10000 }
+    },
+
+    "jinseiDescription": "N/A — Aucune manifestation Jinsei documentée dans le dossier CGU du sujet #0791.",
+
+    "abilities": [
+        {
+        "key": "A",
+        "name": "N/A",
+        "cost": "—",
+        "dur": "⧗ —",
+        "desc": "Aucune technique spéciale enregistrée au dossier du sujet."
+        }
+    ],
+
+    "historyChapters": [
+        {
+        "id": 1,
+        "year": "COURT TERME",
+        "title": "Objectifs court terme",
+        "body": "Le sujet ne semble que très peu engagé sur le plan professionnel et n'envisage ni évolution ni changement de poste au sein du service. Il montre très peu d'implication dans les différentes affaires qui lui sont assignées mais démontre un certain entrain pour l'affaire concernant la disparition du professeur Yuri Vendamir. [VÉRIFIÉ AUPRÈS DE SES PAIRS]"
+        },
+        {
+        "id": 2,
+        "year": "LONG TERME",
+        "title": "Objectifs long terme",
+        "body": "Au niveau professionnel, le sujet ne se projette pas particulièrement dans un futur éloigné. Il a refusé à plusieurs reprise une promotion pour devenir chef d'équipe. Sur le plan personnel, le souhait de comprendre et trouver un moyen de pallier à ses réminiscences exogènes avant qu'elles ne deviennent envahissantes a été évoqué. [SURVEILLANCE MÉDICALE RECOMMANDÉE]"
+        }
+    ],
+
+    "contacts": [
+        {
+        "id": "juni",
+        "name": "JuJu-07※",
+        "status": "online",
+        "msg": "En ligne",
+        "note": "Téléopératrice de l'Équipe 2. Suit HF-24125VE."
+        },
+        {
+        "id": "malcolm",
+        "name": "M.Davis_44",
+        "status": "away",
+        "msg": "Ne pas déranger",
+        "note": "Capitaine de l'Équipe 2. Enquête EST-44200."
+        },
+        {
+        "id": "oboro",
+        "name": "【TANK】",
+        "status": "online",
+        "msg": "En ligne — Tekoji champion",
+        "note": "Coéquipier. Poids lourd, obsédé de Tekoji."
+        },
+        {
+        "id": "orisa",
+        "name": "✦Orisa✦",
+        "status": "online",
+        "msg": "En ligne",
+        "note": "Armurière CGU. Très stricte sur le règlement."
+        },
+        {
+        "id": "ren",
+        "name": "R3n_X",
+        "status": "away",
+        "msg": "Ne pas déranger — 01110010 01100101 01101110",
+        "note": "Contact civil / hacker. Canaux privés."
+        },
+        {
+        "id": "sayo",
+        "name": "Sayo★oyaS",
+        "status": "online",
+        "msg": "En ligne — Allez voir Une Lumière à Las Noches! Magnifique",
+        "note": "Amie de longue date. Organise des soirées."
+        },
+        {
+        "id": "naleos",
+        "name": "N.",
+        "status": "offline",
+        "msg": "Hors ligne — Retraité. Pas mort.",
+        "note": "Ancien capitaine de l'Équipe 2. Mentor."
+        },
+        {
+        "id": "vendamir",
+        "name": "Pr.Vendamir",
+        "status": "offline",
+        "msg": "Hors ligne",
+        "note": "Professeur d'histoire. Disparu depuis 4 mois."
+        }
+    ],
+
+    "conversations": {
+        "juni": {
+            "date": "Aujourd'hui — 22:14",
+            "messages": [
+                { "from": "Juni-07※", "text": "isen t'es là ?", "time": "22:14" },
+                { "from": "Juni-07※", "text": "j'ai encore perdu HF-24125VE...", "time": "22:14" },
+                { "from": "isen.s",   "text": "même endroit", "time": "22:16" },
+                { "from": "Juni-07※", "text": "oui :( 47 secondes. la 3e fois cette semaine", "time": "22:17" },
+                { "from": "Juni-07※", "text": "je sais que tu vas dire que c'est moi qui suis fatiguée mais je te jure que les feeds bougent tout seuls par moments", "time": "22:18" },
+                { "from": "isen.s",   "text": "tkt je te crois", "time": "22:19" },
+                { "from": "Juni-07※", "text": "merci... t'es le seul je crois", "time": "22:19" },
+                { "from": "Juni-07※", "text": "Davis répond toujours pas au canal sec", "time": "22:20" },
+                { "from": "isen.s",   "text": "il est à fond sur l'affaire des dents de sabre'. laisse", "time": "22:20" },
+                { "from": "Juni-07※", "text": "ok. je t'envoie les coordonnées du dernier ping ?", "time": "22:21" },
+                { "from": "isen.s",   "text": "oui je prends le relais", "time": "22:21" },
+                { "from": "Juni-07※", "text": "isen... fais attention. le secteur me plaît vraiment pas ce soir", "time": "22:22" },
+                { "from": "Juni-07※", "text": "et mange un truc avant de descendre stp ;_;", "time": "22:22" },
+                { "from": "isen.s",   "text": "tkt", "time": "22:23" }
+            ]
+        },
+        "malcolm": {
+            "date": "Aujourd'hui — 16:22",
+            "messages": [
+                { "from": "M.Davis_44", "text": "shura. EST-44200.", "time": "16:22" },
+                { "from": "M.Davis_44", "text": "tu as lu mon mail ?", "time": "16:22" },
+                { "from": "isen.s",     "text": "oui. vendamir avait noté la même chose en 23", "time": "16:24" },
+                { "from": "M.Davis_44", "text": "bien vu, je vais éplucher ça", "time": "16:25" },
+                { "from": "M.Davis_44", "text": "tu vois que tu aurais dû accepter", "time": "16:25" },
+                { "from": "isen.s",     "text": "nan", "time": "16:26" },
+                { "from": "M.Davis_44", "text": "tant pis pour toi", "time": "16:26" },
+                { "from": "M.Davis_44", "text": "le poste était pour toi shura. tu le sais", "time": "16:27" },
+                { "from": "isen.s",     "text": "je voulais pas de bureau. je suis bien comme ça", "time": "16:28" },
+                { "from": "M.Davis_44", "text": "je ne te comprendrai jamais", "time": "16:28" },
+                { "from": "M.Davis_44", "text": "bref. le tracé des graines passe à 200m du dernier contact EST", "time": "16:29" },
+                { "from": "isen.s",     "text": "tu penses que c'est lié au pèlerinage", "time": "16:30" },
+                { "from": "M.Davis_44", "text": "je pense que c'est PAS un pèlerinage", "time": "16:30" },
+                { "from": "M.Davis_44", "text": "et tu vas creuser ça sans en parler à valkenhein", "time": "16:31" },
+                { "from": "isen.s",     "text": "oui capitaine Davis", "time": "16:31" },
+                { "from": "M.Davis_44", "text": "arrête avec ton sarcasme", "time": "16:32" },
+                { "from": "isen.s",     "text": "compris capitaine Davis.", "time": "16:33" },
+                { "from": "M.Davis_44", "text": "et shura.", "time": "16:34" },
+                { "from": "M.Davis_44", "text": "rentre entier ce soir. j'ai pas envie de remplir ton rapport.", "time": "16:34" },
+                { "from": "system",     "text": "[M.Davis_44 est passé en absent]", "time": "16:36" }
+            ]
+        },
+        "oboro": {
+            "date": "Hier — 20:01",
+            "messages": [
+                { "from": "K_O'Boro【TANK】", "text": "ISEN", "time": "20:01" },
+                { "from": "K_O'Boro【TANK】", "text": "DEMAIN. 21H. SALLE. PAS D'EXCUSE.", "time": "20:01" },
+                { "from": "isen.s",          "text": "kanza j'ai un terrain de nuit demain", "time": "20:03" },
+                { "from": "K_O'Boro【TANK】", "text": "T'AS UN TERRAIN TOUS LES SOIRS", "time": "20:03" },
+                { "from": "K_O'Boro【TANK】", "text": "ton crochet du gauche est en train de mourir mon pote", "time": "20:04" },
+                { "from": "isen.s",          "text": "mais cette fois c'est vrai. et mon crochet va très bien", "time": "20:04" },
+                { "from": "K_O'Boro【TANK】", "text": "ahaha la dernière fois tu m'as touché UNE fois", "time": "20:05" },
+                { "from": "K_O'Boro【TANK】", "text": "UNE.", "time": "20:05" },
+                { "from": "isen.s",          "text": "t'as 110 kilos kanza", "time": "20:06" },
+                { "from": "K_O'Boro【TANK】", "text": "112 maintenant 💪", "time": "20:06" },
+                { "from": "K_O'Boro【TANK】", "text": "bon écoute. ce week-end y'a le combat Tekoji vs Vraan", "time": "20:07" },
+                { "from": "K_O'Boro【TANK】", "text": "j'ai 2 places en ringside. tu peux pas refuser ça", "time": "20:07" },
+                { "from": "isen.s",          "text": "wow ringside ?? sérieux ?", "time": "20:08" },
+                { "from": "K_O'Boro【TANK】", "text": "OUAIS", "time": "20:08" },
+                { "from": "isen.s",          "text": "ok pour samedi. mais ce soir je peux pas", "time": "20:09" },
+                { "from": "K_O'Boro【TANK】", "text": "validé. et tu paies les bières.", "time": "20:09" },
+                { "from": "isen.s",          "text": "aller", "time": "20:09" }
+            ]
+        },
+        "orisa": {
+            "date": "Aujourd'hui — 18:40",
+            "messages": [
+                { "from": "✦Orisa-K✦", "text": "Agent Isen Shura.", "time": "18:40" },
+                { "from": "✦Orisa-K✦", "text": "Ton kit attend depuis 48h à l'armurerie. C'est une infraction §4.2.", "time": "18:40" },
+                { "from": "isen.s",     "text": "je sais orisa je passe", "time": "18:42" },
+                { "from": "✦Orisa-K✦", "text": "« Je passe » n'est pas une fenêtre opérationnelle.", "time": "18:43" },
+                { "from": "✦Orisa-K✦", "text": "Donne-moi une heure.", "time": "18:43" },
+                { "from": "isen.s",     "text": "on va dire... 21h30", "time": "18:44" },
+                { "from": "✦Orisa-K✦", "text": "Validé. Je t'attendrai personnellement.", "time": "18:44" },
+                { "from": "✦Orisa-K✦", "text": "Et apporte le bordereau cette fois. Hictor en a perdu un cette semaine, je ne couvrirai pas un deuxième cas.", "time": "18:45" },
+                { "from": "isen.s",     "text": "ça marche", "time": "18:45" },
+                { "from": "✦Orisa-K✦", "text": "Davis a commandé un second holster. Tu es au courant ?", "time": "18:46" },
+                { "from": "isen.s",     "text": "non", "time": "18:47" },
+                { "from": "✦Orisa-K✦", "text": "Hm.", "time": "18:47" },
+                { "from": "✦Orisa-K✦", "text": "Tout ce qui sort de l'armurerie est tracé, Shura. Je veux que ce soit clair pour vous deux.", "time": "18:48" },
+                { "from": "isen.s",     "text": "tu lui diras directement", "time": "18:49" },
+                { "from": "✦Orisa-K✦", "text": "Je le ferai.", "time": "18:49" },
+                { "from": "✦Orisa-K✦", "text": "On se retrouve à 21h30.", "time": "18:50" }
+            ]
+        },
+        "ren": {
+            "date": "Aujourd'hui — 23:02",
+            "messages": [
+                { "from": "R3n_X", "text": "tiens tiens, le grand agent CGU se connecte sur MSN", "time": "23:02" },
+                { "from": "R3n_X", "text": "tu sais que ce protocole est troué de partout ?", "time": "23:02" },
+                { "from": "isen.s", "text": "ouai tu arrêtes pas de me le dire", "time": "23:04" },
+                { "from": "R3n_X", "text": "je dis ça je dis rien. mais ton statut « En ligne » je le vois depuis 3 sauts différents", "time": "23:05" },
+                { "from": "isen.s", "text": "qu'est-ce que tu veux ?", "time": "23:05" },
+                { "from": "R3n_X", "text": "j'ai vu un truc bizarre sur les ondes du quartier nord", "time": "23:06" },
+                { "from": "R3n_X", "text": "un signal qui pulse toutes les 47 secondes. ça te parle ?", "time": "23:06" },
+                { "from": "isen.s", "text": "hm. envoie-moi ça", "time": "23:07" },
+                { "from": "R3n_X", "text": "déjà fait. canal habituel. lis-le sur ta machine perso pas celle du boulot", "time": "23:07" },
+                { "from": "R3n_X", "text": "tu sais ce que je pense de leurs scans", "time": "23:08" },
+                { "from": "isen.s", "text": "oui. merci ren", "time": "23:09" },
+                { "from": "R3n_X", "text": "tu me dois un plat de nouilles au sésame de chez Pho", "time": "23:09" },
+                { "from": "isen.s", "text": "ça coûte une blinde mais... ok", "time": "23:10" }
+            ]
+        },
+        "sayo": {
+            "date": "Aujourd'hui — 17:55",
+            "messages": [
+                { "from": "Sayo★", "text": "iseeeeen", "time": "17:55" },
+                { "from": "Sayo★", "text": "samedi. chez moi. 20h. SOIRÉE.", "time": "17:55" },
+                { "from": "Sayo★", "text": "j'invite plus personne tant que t'as pas dit oui", "time": "17:56" },
+                { "from": "isen.s", "text": "sayo j'ai déjà le combat avec kanza samedi", "time": "17:58" },
+                { "from": "Sayo★", "text": "PFFF encore le sport", "time": "17:58" },
+                { "from": "Sayo★", "text": "bon. APRÈS le combat alors. tu viens avec lui s'il veut", "time": "17:59" },
+                { "from": "isen.s", "text": "ok je demande à kanza", "time": "18:00" },
+                { "from": "Sayo★", "text": "yes !! est-ce que tu peux ramener la même boisson que la dernière fois ??? stp stp", "time": "18:00" },
+                { "from": "Sayo★", "text": "et j'ai invité PLEIN de filles ;)", "time": "18:01" },
+                { "from": "isen.s", "text": "ok je fais ça", "time": "18:02" },
+                { "from": "Sayo★", "text": "je compte sur toi ♥", "time": "18:03" }
+            ]
+        },
+        "naleos": {
+            "date": "Il y a 3 semaines",
+            "messages": [
+                { "from": "N",      "text": "petit. ça fait longtemps", "time": "11:14" },
+                { "from": "isen.s", "text": "capitaine. comment tu vas", "time": "11:20" },
+                { "from": "N",      "text": "vieux. tranquille. j'ai planté des tomates", "time": "11:21" },
+                { "from": "N",      "text": "j'ai appris pour Vendamir. tu tiens le coup ?", "time": "11:22" },
+                { "from": "isen.s", "text": "ça va", "time": "11:24" },
+                { "from": "N",      "text": "« ça va » je l'ai entendu mille fois en 35 ans de service. ça veut dire non.", "time": "11:25" },
+                { "from": "isen.s", "text": "nan ça veut dire « ça va »", "time": "11:26" },
+                { "from": "N",      "text": "écoute petit. la CGU c'est un beau costume. mais c'est qu'un costume.", "time": "11:27" },
+                { "from": "N",      "text": "fais ton job et n'oublie pas de regarder la disquette chiffrée, ça te concerne", "time": "11:28" },
+                { "from": "N",      "text": "le mot de passe est l'endroit où je t'ai trouvé pour la première fois", "time": "11:28" },
+                { "from": "isen.s", "text": "je men occupe dès que possible", "time": "11:29" },
+                { "from": "N",      "text": "et si Davis fait le con, frappe-le pour moi", "time": "11:29" },
+                { "from": "isen.s", "text": "tkt, Orisa s'en charge à ma place", "time": "11:30" },
+                { "from": "system", "text": "[N s'est déconnecté]" }
+            ]
+        },
+        "vendamir": {
+            "date": "Il y a 4 mois",
+            "messages": [
+                { "from": "Pr.Vendamir", "text": "Isen, je dois quitter Reach quelques temps.", "time": "03:41" },
+                { "from": "Pr.Vendamir", "text": "Mes notes sur l'île d'Ishaka sont à mon bureau. Tu sauras où chercher.", "time": "03:42" },
+                { "from": "isen.s",      "text": "professeur ? il est 3h du matin", "time": "03:44" },
+                { "from": "Pr.Vendamir", "text": "Ne montre ça à personne", "time": "03:44" },
+                { "from": "Pr.Vendamir", "text": "Pas même à tes supérieurs de la CGU.", "time": "03:45" },
+                { "from": "isen.s",      "text": "qu'est-ce qui se passe", "time": "03:45" },
+                { "from": "Pr.Vendamir", "text": "Je crois avoir mis la main sur des informations sensibles.", "time": "03:46" },
+                { "from": "Pr.Vendamir", "text": "Et des gens n'ont pas l'air ravis. Ha!", "time": "03:47" },
+                { "from": "Pr.Vendamir", "text": "Si je ne reviens pas, cherche le professeur Anton Kramov.", "time": "03:47" },
+                { "from": "isen.s",      "text": "Kramov est mort il y a plus de 10 ans professeur", "time": "03:48" },
+                { "from": "Pr.Vendamir", "text": "Non.", "time": "03:48", "italic": true },
+                { "from": "system",      "text": "[CONNEXION PERDUE]", "time": "03:48" },
+                { "from": "system",      "text": "Pr.Vendamir n'est plus en ligne depuis 4 mois." }
+            ]
+        }
+    },
+
+    "ui": {
+        "brand": { "top": "CGU//NET", "bottom": "PDA-98" },
+        "defaultBattery": 48,
+        "portraitSize": { "width": 150, "height": 150 },
+        "off": {
+            "testId": "pda-off-screen",
+            "hint": "— appuyer sur ⏻ pour allumer —"
+        },
+        "boot": {
+            "logoTop": "CGU//",
+            "logoBottom": "Personal Digital Assistant",
+            "initText": "Initialisation système",
+            "version": "v2.5b — © 2000 Ordre / CGU",
+            "durationMs": 2500,
+            "progressDurationSec": 2.2
+        },
+        "home": {
+            "defaultTitle": "ISEN.PDA",
+            "defaultSubtitle": "// MENU PRINCIPAL",
+            "gamesTitle": "Jeux & Media",
+            "gamesSubtitle": "// DIVERTISSEMENT",
+            "dateLabel": "DATE SYSTÈME"
+        },
+        "labels": {
+            "menu": "● Menu",
+            "prev": "◂",
+            "next": "▸",
+            "prevTitle": "Page précédente",
+            "nextTitle": "Page suivante",
+            "gamesShort": "Jeux",
+            "fallbackTitle": "ISEN.PDA",
+            "backToContacts": "◀ Liste des contacts",
+            "powerOn": "Allumer",
+            "powerOff": "Éteindre",
+            "powerAria": "Bouton d'alimentation"
+        },
+        "sections": {
+            "identityTitle": "> IDENTITE.DAT",
+            "fiche": "[ FICHE SUJET ]",
+            "physique": "[ DESCRIPTION PHYSIQUE ]",
+            "psycho": "[ PROFIL PSYCHOLOGIQUE ]",
+            "power": "> POWER.SYS",
+            "vitals": "[ VITALS ]",
+            "statistics": "[ STATISTIQUES ]",
+            "jinsei": "[ JINSEI ]",
+            "technique": "[ TECHNIQUE SPÉCIALE ]",
+            "history": "> HISTORY.LOG",
+            "historySubtitle": "2 entrées — objectifs internes",
+            "historyEnd": "> Fin du journal — EOF_",
+            "contacts": "> CONTACTS.ADB",
+            "online": "[ EN LIGNE ]",
+            "offline": "[ HORS LIGNE ]",
+            "note": "[ NOTE ]",
+            "conversation": "[ CONVERSATION ]"
+        },
+        "statusLabels": {
+            "online": "EN LIGNE",
+            "away": "ABSENT",
+            "offline": "HORS LIGNE"
+        },
+        "identityRowLabels": {
+            "fullName": "NOM",
+            "id":    "MATRICULE",
+            "age":      "ÂGE",
+            "genre":    "GENRE",
+            "ethnicity":     "ETHNIE",
+            "role":     "RÔLE",
+            "origin":   "ORIGINE",
+            "race":     "RACE",
+            "alignment":     "ALIGNEMENT"
+        },
+        "identityRegisterLabels": {
+            "id":   "MATRICULE",
+            "team": "ÉQUIPE",
+            "statut": "STATUT AGENT"
+        }
+    }
+}

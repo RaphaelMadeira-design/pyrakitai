@@ -1,0 +1,211 @@
+@use 'Variables' as *;
+
+.win98-window {
+    position: absolute;
+    background-color: $win98-gray;
+    @include border-outset;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &__titlebar {
+        height: 24px;
+        background: linear-gradient(90deg, $win98-blue 0%, $win98-light-blue 100%);
+        display: flex;
+        align-items: center;
+        padding: 0 4px;
+        cursor: grab;
+        flex-shrink: 0;
+
+        &:active {
+            cursor: grabbing;
+        }
+
+        &--inactive {
+            background: linear-gradient(90deg, #7b7b7b 0%, #9b9b9b 100%);
+        }
+    }
+
+    &__title-icon {
+        width: 16px;
+        height: 16px;
+        image-rendering: pixelated;
+        margin-right: 4px;
+        flex-shrink: 0;
+    }
+
+    &__title-text {
+        flex: 1;
+        font-family: $font-system;
+        font-size: 12px;
+        font-weight: bold;
+        color: $win98-white;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__controls {
+        display: flex;
+        gap: 2px;
+        flex-shrink: 0;
+    }
+
+    &__ctrl-btn {
+        width: 18px;
+        height: 18px;
+        background-color: $win98-gray;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        @include border-outset;
+
+        &:active {
+            @include border-inset;
+        }
+
+        &:focus { outline: none; }
+
+        // ─── Icônes (positions recalculées pour 18×18) ────
+        &--minimize {
+            // SVG 6×2 → centré-bas
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='2' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 0h6v2H0z'/%3E%3C/svg%3E");
+            background-position: bottom 2px left 4px;
+        }
+
+        &--maximize {
+            // SVG 9×9 → centré
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='9' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 0H0v9h9V0zM8 2H1v6h7V2z' fill='%23000'/%3E%3C/svg%3E");
+            background-position: center;
+        }
+
+        &--restore {
+            // SVG 8×9 → centré
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M2 0h6v2H2zM7 2h1v4H7zM2 2h1v1H2zM6 5h1v1H6zM0 3h6v2H0zM5 5h1v4H5zM0 5h1v4H0zM1 8h4v1H1z'/%3E%3C/svg%3E");
+            background-position: center;
+        }
+
+        &--help {
+            // SVG 6×9 → centré
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23000' d='M0 1h2v2H0zM1 0h4v1H1zM4 1h2v2H4zM3 3h2v1H3zM2 4h2v2H2zM2 7h2v2H2z'/%3E%3C/svg%3E");
+            background-position: center;
+        }
+
+        &--close {
+            margin-left: 2px;
+            // SVG 8×7 → centré
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
+            background-position: center;
+
+            &:hover {
+                background-color: $pc98-red;
+                background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23fff'/%3E%3C/svg%3E");
+            }
+        }
+    }
+
+    &__menubar {
+        display: flex;
+        align-items: center;
+        padding: 2px 4px;
+        background-color: $win98-gray;
+        border-bottom: 1px solid $win98-dark-gray;
+        flex-shrink: 0;
+        color: $win98-black;
+        gap: 8px;
+
+        span {
+            font-family: $font-system;
+            font-size: 11px;
+            padding: 2px 6px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $win98-navy;
+                color: $win98-white;
+            }
+        }
+    }
+
+    &__toolbar {
+        display: flex;
+        align-items: center;
+        padding: 2px 4px;
+        gap: 2px;
+        background-color: $win98-gray;
+        border-bottom: 1px solid $win98-dark-gray;
+        flex-shrink: 0;
+    }
+
+    &__toolbar-btn {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 2px 8px;
+        background-color: $win98-gray;
+        font-family: $font-system;
+        font-size: 11px;
+        cursor: pointer;
+        @include border-outset;
+
+        &:active {
+            @include border-inset;
+        }
+
+        &--disabled {
+            color: $win98-dark-gray;
+            pointer-events: none;
+        }
+
+        img {
+            width: 16px;
+            height: 16px;
+            image-rendering: pixelated;
+        }
+    }
+
+    &__address-bar {
+        display: flex;
+        align-items: center;
+        padding: 2px 4px;
+        gap: 4px;
+        background-color: $win98-gray;
+        border-bottom: 1px solid $win98-dark-gray;
+        flex-shrink: 0;
+
+        label {
+            font-family: $font-system;
+            font-size: 11px;
+            color: $win98-black;
+        }
+
+        input {
+            flex: 1;
+            height: 18px;
+            font-family: $font-system;
+            font-size: 11px;
+            padding: 0 4px;
+            background: $win98-white;
+            border: none;
+            outline: none;
+            @include border-inset-light;
+        }
+    }
+
+    &__statusbar {
+        height: 20px;
+        background-color: $win98-gray;
+        border-top: 1px solid $win98-dark-gray;
+        display: flex;
+        align-items: center;
+        padding: 0 4px;
+        flex-shrink: 0;
+        color: $win98-black;
+
+        span {
+            font-family: $font-system;
+            font-size: 11px;
+            padding: 0 4px;
+            border-right: 1px solid $win98-dark-gray;
+        }
+    }
+}

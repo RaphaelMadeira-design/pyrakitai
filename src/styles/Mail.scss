@@ -1,0 +1,256 @@
+@use 'Variables' as*;
+
+.mail {
+display: flex;
+flex-direction: column;
+height: 100%;
+background: #c0c0c0;
+font-family: $font-system;
+font-size: 12px;
+color: #000;
+overflow: hidden;
+
+// ─── Menubar ───
+&__menubar {
+background: #c0c0c0;
+padding: 2px 4px;
+border-bottom: 1px solid #808080;
+display: flex;
+gap: 8px;
+font-size: 11px;
+}
+&__menu {
+padding: 2px 6px;
+cursor: pointer;
+&:hover { background: #000080; color: #fff; }
+}
+
+// ─── Toolbar ───
+&__toolbar {
+display: flex;
+align-items: center;
+gap: 2px;
+background: #c0c0c0;
+padding: 3px 4px;
+border-bottom: 1px solid #808080;
+box-shadow: inset 0 -1px 0 #fff;
+}
+&__tbtn {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1px;
+background: #c0c0c0;
+border: 1px solid transparent;
+padding: 3px 6px 1px;
+min-width: 46px;
+cursor: pointer;
+font: inherit;
+color: #000;
+
+img { width: 22px; height: 22px; image-rendering: pixelated; }
+span { font-size: 12px; }
+
+&:hover {
+border: 1px solid #fff #808080 #808080 #fff;
+}
+&:active {
+border: 1px solid #808080 #fff #fff #808080;
+padding: 4px 5px 0 7px;
+}
+}
+&__sep {
+width: 1px;
+height: 28px;
+background: #808080;
+box-shadow: 1px 0 0 #fff;
+margin: 0 4px;
+}
+
+// ─── Body ───
+&__body {
+flex: 1;
+display: flex;
+overflow: hidden;
+border-top: 1px solid #fff;
+border-bottom: 1px solid #808080;
+}
+
+// ─── Sidebar ───
+&__sidebar {
+width: 200px;
+min-width: 160px;
+background: #c0c0c0;
+border-right: 1px solid #808080;
+box-shadow: inset -1px 0 0 #fff;
+display: flex;
+flex-direction: column;
+}
+&__sb-title {
+background: linear-gradient(90deg, #000080, #1084d0);
+color: #fff;
+font-weight: bold;
+padding: 3px 8px;
+font-size: 11px;
+}
+&__sb-tree {
+flex: 1;
+background: #fff;
+border: 1px solid;
+border-color: #808080 #fff #fff #808080;
+margin: 4px;
+padding: 4px;
+overflow: auto;
+}
+&__sb-root {
+display: flex;
+align-items: center;
+gap: 5px;
+padding: 3px 4px;
+font-weight: bold;
+border-bottom: 1px dotted #c0c0c0;
+margin-bottom: 4px;
+img { width: 16px; height: 16px; image-rendering: pixelated; }
+}
+&__folder {
+display: flex;
+align-items: center;
+gap: 5px;
+padding: 3px 4px 3px 22px;
+cursor: pointer;
+
+&:hover {
+background: #e8e8e8;
+}
+
+&.is-active {
+background: #000080;
+color: white;
+
+.mail__badge {
+color: #aaffaa;
+}
+}
+}
+
+&__badge {
+margin-left: auto; // optionnel pour l'aligner à droite
+color: #006600;
+font-weight: bold;
+}
+
+// ─── Right pane ───
+&__right {
+flex: 1;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+
+// List
+&__list {
+flex: 1;
+background: #fff;
+border: 1px solid;
+border-color: #808080 #fff #fff #808080;
+margin: 4px 4px 2px;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+}
+&__list-head {
+display: grid;
+grid-template-columns: 30px 1.2fr 2fr 1fr;
+background: #c0c0c0;
+border-bottom: 1px solid #808080;
+box-shadow: inset 0 -1px 0 #fff;
+font-weight: bold;
+> div {
+padding: 3px 6px;
+border-right: 1px solid #808080;
+box-shadow: inset -1px 0 0 #fff;
+&:last-child { border-right: none; box-shadow: none; }
+}
+}
+&__list-body {
+flex: 1;
+overflow: auto;
+}
+&__row {
+display: grid;
+grid-template-columns: 30px 1.2fr 2fr 1fr;
+align-items: center;
+cursor: default;
+user-select: none;
+> div {
+padding: 2px 6px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.col-flag {
+display: flex;
+justify-content: center;
+img { width: 16px; height: 16px; image-rendering: pixelated; }
+}
+&:hover { background: #e8e8e8; }
+&.is-unread { font-weight: bold; }
+&.is-sel {
+background: #000080;
+color: #fff;
+}
+}
+&__empty {
+text-align: center;
+color: #666;
+padding: 24px;
+font-style: italic;
+}
+
+// Preview
+&__preview {
+height: 45%;
+background: #fff;
+border: 1px solid;
+border-color: #808080 #fff #fff #808080;
+margin: 2px 4px 4px;
+overflow: auto;
+}
+&__prev-head {
+background: #c0c0c0;
+border-bottom: 1px solid #808080;
+box-shadow: inset 0 -1px 0 #fff;
+padding: 6px 10px;
+> div { margin: 1px 0; }
+}
+&__prev-body {
+padding: 10px 14px;
+margin: 0;
+white-space: pre-wrap;
+font-family: $font-system;
+font-size: 12px;
+line-height: 1.5;
+}
+&__prev-empty {
+padding: 24px;
+color: #666;
+font-style: italic;
+text-align: center;
+}
+
+// Status bar
+&__statusbar {
+background: #c0c0c0;
+border-top: 1px solid #fff;
+padding: 2px 6px;
+display: flex;
+gap: 0;
+font-size: 11px;
+> span {
+flex: 1;
+padding: 1px 8px;
+border: 1px solid;
+border-color: #808080 #fff #fff #808080;
+}
+}
+}

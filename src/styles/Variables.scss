@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'WindowsRegular';
+    src: url('../fonts/Windows.woff') format('woff'),
+    url('../fonts/Windows.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    -webkit-font-smoothing: none;
+    font-smooth: never;
+}
+
+// Windows 98 + PC-98 Color Palette
+$win98-gray: #c0c0c0;
+$win98-dark-gray: #808080;
+$win98-light-gray: #dfdfdf;
+$win98-white: #ffffff;
+$win98-black: #000000;
+$win98-navy: #000080;
+$win98-desktop: #008080;
+$win98-blue: #163b5e;
+$win98-light-blue: #1f93ff;
+
+// PC-98 Accents
+$pc98-violet: #800080;
+$pc98-pink: #ff00ff;
+$pc98-red: #c91b1b;
+$pc98-cyan: #00ffff;
+$pc98-deep-purple: #1a0033;
+
+// 3D Border Mixins (Windows 98 style)
+@mixin border-outset {
+    border-top: 2px solid $win98-white;
+    border-left: 2px solid $win98-white;
+    border-right: 2px solid $win98-black;
+    border-bottom: 2px solid $win98-black;
+}
+
+@mixin border-outset-light {
+    border-top: 1px solid $win98-white;
+    border-left: 1px solid $win98-white;
+    border-right: 1px solid $win98-dark-gray;
+    border-bottom: 1px solid $win98-dark-gray;
+}
+
+@mixin border-inset {
+    border-top: 2px solid $win98-black;
+    border-left: 2px solid $win98-black;
+    border-right: 2px solid $win98-white;
+    border-bottom: 2px solid $win98-white;
+}
+
+@mixin border-inset-light {
+    border-top: 1px solid $win98-dark-gray;
+    border-left: 1px solid $win98-dark-gray;
+    border-right: 1px solid $win98-white;
+    border-bottom: 1px solid $win98-white;
+}
+
+// Pixel font
+$font-pixel: 'Pixelify Sans', 'MS Sans Serif', monospace;
+$font-system: 'WindowsRegular', Tahoma, Arial, sans-serif;

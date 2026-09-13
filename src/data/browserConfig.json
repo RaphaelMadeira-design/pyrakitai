@@ -1,0 +1,51 @@
+{
+    "IE_ICON": "https://win98icons.alexmeub.com/icons/png/search_web-0.png",
+    "KONAMI": ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"],
+    "SECRET_SEARCHES": ["résonance", "resonance", "éveil", "eveil", "mémoire", "memoire", "fréquence", "frequence", "528", "raphurst", "academia", "académie"],
+    "SECRET_URLS": ["isen://core", "isen://secret", "about:isen", "isen://memories"],
+    "WIKI_URL": "https://is.shokupedia.org/shokunin/Isen_Shura",
+    "NEWS_URL": "http://www.actunet-news.is/",
+    "TAB_DEFS": {
+        "google": {
+            "id": "google",
+            "label": "nsn.com",
+            "url": "http://www.nsn.com/",
+            "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
+        },
+        "wiki": {
+            "id": "wiki",
+            "label": "Isen Shura — Shokupédia",
+            "url": "https://is.shokupedia.org/shokunin/Isen_Shura",
+            "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
+        },
+        "news": {
+            "id": "news",
+            "label": "ActuNet Actualités",
+            "url": "http://www.actunet-news.is/",
+            "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
+        }
+    },
+    "EXACT_URL_MAP": {
+        "www.nsn.com": "google",
+        "nsn.com": "google",
+        "home.nsn.com": "google",
+        "www.google.jp": "google",
+        "google.jp": "google",
+        "www.google.com": "google",
+        "google.com": "google",
+        "is.shokupedia.org/shokunin/isen_shura": "wiki",
+        "www.actunet-news.is": "news",
+        "actunet-news.is": "news"
+    },
+    "page404": {
+        "errorIcon": "https://win98icons.alexmeub.com/icons/png/msg_error-0.png",
+        "title": "Impossible d'afficher la page",
+        "description": "Internet Explorer ne peut pas afficher la page demandée.",
+        "checks": [
+            "Vérifiez l'adresse saisie",
+            "Contactez l'administrateur réseau."
+        ],
+        "code": "Erreur HTTP 404 — Page introuvable",
+        "hiddenComment": "// Accès non autorisé détecté. Vous n'étiez pas censé trouver cette page. Coordonnées archivées : 34.9876° N, 135.7553° E Fréquence de résonance : 528 Hz Ils savent que tu cherches."
+    }
+}

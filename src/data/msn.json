@@ -1,0 +1,247 @@
+{
+    "credentials": {
+        "email": "sinsin@hotmail.com",
+        "password": "samuraifruitpunch"
+    },
+    "user": {
+        "name": "sinsin",
+        "displayName": "sinsin",
+        "status": "En ligne"
+    },
+    "contacts": [
+        {
+            "id": "juni",
+            "name": "JuJu-07※",
+            "status": "online",
+            "personalMessage": "En ligne",
+            "senderColor": "#0066aa"
+        },
+        {
+            "id": "malcolm",
+            "name": "M.Davis_44",
+            "status": "away",
+            "personalMessage": "Ne pas déranger",
+            "senderColor": "#a8331a"
+        },
+        {
+            "id": "oboro",
+            "name": "【TANK】",
+            "status": "online",
+            "personalMessage": "En ligne — Tekoji champion",
+            "senderColor": "#5a7d1a"
+        },
+        {
+            "id": "orisa",
+            "name": "✦Orisa✦",
+            "status": "online",
+            "personalMessage": "En ligne",
+            "senderColor": "#7a1a5a"
+        },
+        {
+            "id": "ren",
+            "name": "R3n_X",
+            "status": "away",
+            "personalMessage": "Ne pas déranger — 01110010 01100101 01101110",
+            "senderColor": "#1a8a8a"
+        },
+        {
+            "id": "sayo",
+            "name": "Sayo★oyaS",
+            "status": "online",
+            "personalMessage": "En ligne — Plus de cinéma, moins de drama",
+            "senderColor": "#cc007a"
+        },
+        {
+            "id": "naleos",
+            "name": "-NaleosTiger-",
+            "status": "offline",
+            "personalMessage": "Hors ligne — Capitaine des Wellston Tigers",
+            "senderColor": "#4a4a4a"
+        },
+        {
+            "id": "bde",
+            "name": "GrandT0tem",
+            "status": "offline",
+            "personalMessage": "Hors ligne — BDE Wellston",
+            "senderColor": "#171717"
+        }
+    ],
+    "conversations": {
+        "juni": {
+            "date": "Aujourd'hui — 22:14",
+            "messages": [
+                { "from": "Juni-07※", "text": "sin t'es là ?", "time": "22:14" },
+                { "from": "Juni-07※", "text": "j'ai encore perdu mes notes...", "time": "22:14" },
+                { "from": "sinsin",   "text": "il te faut quoi", "time": "22:16" },
+                { "from": "Juni-07※", "text": "le dernier CM de semio de l'image", "time": "22:17" },
+                { "from": "Juni-07※", "text": "stp :)", "time": "22:18" },
+                { "from": "sinsin",   "text": "tkt", "time": "22:19" },
+                { "from": "Juni-07※", "text": "merci... t'es le seul qui m'a répondu", "time": "22:19" },
+                { "from": "Juni-07※", "text": "tu m'envoies par mail ?", "time": "22:20" },
+                { "from": "sinsin",   "text": "oui je fais ça", "time": "22:20" },
+                { "from": "Juni-07※", "text": "tu me sauves la vie", "time": "22:21" },
+                { "from": "sinsin",   "text": "pas de problème", "time": "22:21" },
+                { "from": "Juni-07※", "text": "en plus avec les exams qui arrivent, je fais n'importe quoi ;_;", "time": "22:22" },
+                { "from": "Juni-07※", "text": "je te revaudrai ça", "time": "22:22" },
+                { "from": "sinsin",   "text": "tkt", "time": "22:23" }
+            ]
+        },
+        "malcolm": {
+            "date": "Aujourd'hui — 16:22",
+            "messages": [
+                { "from": "M.Davis_44", "text": "salut", "time": "16:22" },
+                { "from": "M.Davis_44", "text": "tu as lu mon mail ?", "time": "16:22" },
+                { "from": "sinsin",     "text": "yo. oui j'ai vu", "time": "16:24" },
+                { "from": "M.Davis_44", "text": "tout le groupe se retrouve demain soir pour bosser le projet", "time": "16:25" },
+                { "from": "M.Davis_44", "text": "Bu ou dans un café pas loin", "time": "16:25" },
+                { "from": "sinsin",     "text": "je préfère la BU", "time": "16:26" },
+                { "from": "M.Davis_44", "text": "moi aussi", "time": "16:26" },
+                { "from": "M.Davis_44", "text": "Kanza est ok pour les deux mais les filles préfèrent le café", "time": "16:27" },
+                { "from": "sinsin",     "text": "reste qu'à convaincre Kanza de dire qu'il veut la BU et on remporte vote", "time": "16:28" },
+                { "from": "M.Davis_44", "text": "exactement", "time": "16:28" },
+                { "from": "M.Davis_44", "text": "c'est pour ça que je te dis ça, t'es plus proche de lui", "time": "16:29" },
+                { "from": "sinsin",     "text": "je m'en charge", "time": "16:30" },
+                { "from": "M.Davis_44", "text": "cool tu gères", "time": "16:30" },
+                { "from": "M.Davis_44", "text": "de mon côté de je vais voir comment ça se passe avec les autres groupes", "time": "16:31" },
+                { "from": "sinsin",     "text": "ça marche", "time": "16:31" },
+                { "from": "M.Davis_44", "text": "on se voit demain en cours de toute façon", "time": "16:32" },
+                { "from": "sinsin",     "text": "oui, à demain", "time": "16:33" },
+                { "from": "M.Davis_44", "text": "++", "time": "16:34" },
+                { "from": "M.Davis_44", "text": "(check tes mails si on change de plan entre temps)", "time": "16:34" },
+                { "from": "system",     "text": "[M.Davis_44 est passé en absent]", "time": "16:36" }
+            ]
+        },
+        "oboro": {
+            "date": "Hier — 20:01",
+            "messages": [
+                { "from": "K_O'Boro【TANK】", "text": "SIN", "time": "20:01" },
+                { "from": "K_O'Boro【TANK】", "text": "DEMAIN. 21H. SALLE. PAS D'EXCUSE.", "time": "20:01" },
+                { "from": "sinsin",          "text": "kanza je travaille demain soir", "time": "20:03" },
+                { "from": "K_O'Boro【TANK】", "text": "TU TRAVAILLES TOUS LES SOIRS", "time": "20:03" },
+                { "from": "K_O'Boro【TANK】", "text": "ton crochet du gauche est en train de mourir mon pote", "time": "20:04" },
+                { "from": "sinsin",          "text": "faut bien gagner sa vie. et mon crochet va très bien", "time": "20:04" },
+                { "from": "K_O'Boro【TANK】", "text": "ahaha la dernière fois tu m'as touché UNE fois", "time": "20:05" },
+                { "from": "K_O'Boro【TANK】", "text": "UNE.", "time": "20:05" },
+                { "from": "sinsin",          "text": "t'as 120 kilos kanza", "time": "20:06" },
+                { "from": "K_O'Boro【TANK】", "text": "122 maintenant 💪", "time": "20:06" },
+                { "from": "K_O'Boro【TANK】", "text": "bon écoute. ce week-end y'a le combat Tekoji vs Vraan", "time": "20:07" },
+                { "from": "K_O'Boro【TANK】", "text": "j'ai 2 places en ringside. tu peux pas refuser ça", "time": "20:07" },
+                { "from": "sinsin",          "text": "ringside ? sérieux ?", "time": "20:08" },
+                { "from": "K_O'Boro【TANK】", "text": "OUAIS", "time": "20:08" },
+                { "from": "sinsin",          "text": "ok pour samedi. mais demain soir je peux pas", "time": "20:09" },
+                { "from": "K_O'Boro【TANK】", "text": "validé. et tu paies les bières.", "time": "20:09" },
+                { "from": "sinsin",           "text": "aller", "time": "20:09" }
+            ]
+        },
+        "orisa": {
+            "date": "Aujourd'hui — 18:40",
+            "messages": [
+                { "from": "✦Orisa-K✦", "text": "Bonsoir, Sin.", "time": "18:40" },
+                { "from": "✦Orisa-K✦", "text": "Ton dossier attend depuis 48h au bureau des étudiants.", "time": "18:40" },
+                { "from": "sinsin",     "text": "je sais orisa je passe", "time": "18:42" },
+                { "from": "✦Orisa-K✦", "text": "« Je passe » n'est pas une fenêtre opérationnelle.", "time": "18:43" },
+                { "from": "✦Orisa-K✦", "text": "Donne-moi une heure.", "time": "18:43" },
+                { "from": "sinsin",     "text": "on va dire... 20h juste avant que ça ferme", "time": "18:44" },
+                { "from": "✦Orisa-K✦", "text": "Validé. Je t'attendrai personnellement.", "time": "18:44" },
+                { "from": "✦Orisa-K✦", "text": "Et apporte le bordereau pour tes absences cette fois, je ne couvrirai pas un deuxième cas.", "time": "18:45" },
+                { "from": "sinsin",     "text": "ça marche", "time": "18:45" },
+                { "from": "✦Orisa-K✦", "text": "Malcolm prépare notre réunion pour le projet de Production Audiovisuelle. Tu es au courant ?", "time": "18:46" },
+                { "from": "sinsin",     "text": "oui j'ai vu le mail", "time": "18:47" },
+                { "from": "✦Orisa-K✦", "text": "Hm.", "time": "18:47" },
+                { "from": "✦Orisa-K✦", "text": "Avec Juni, on préfère la préparer dans un petit café tranquille.", "time": "18:48" },
+                { "from": "sinsin",     "text": "je suis au courant. je préfère la BU perso", "time": "18:49" },
+                { "from": "✦Orisa-K✦", "text": "Je sais. On en discutera demain.", "time": "18:49" },
+                { "from": "✦Orisa-K✦", "text": "On se retrouve à 20h.", "time": "18:50" }
+            ]
+        },
+        "ren": {
+            "date": "Aujourd'hui — 23:02",
+            "messages": [
+                { "from": "R3n_X", "text": "tiens tiens, qui a enfin décidé de se connecter ?", "time": "23:02" },
+                { "from": "R3n_X", "text": "tu sais que ce protocole est troué de partout ?", "time": "23:02" },
+                { "from": "sinsin", "text": "tu arrêtes pas de me le dire", "time": "23:04" },
+                { "from": "R3n_X", "text": "je dis ça je dis rien. mais ton statut « En ligne » je le vois depuis 3 sauts différents", "time": "23:05" },
+                { "from": "sinsin", "text": "qu'est-ce que tu as pour moi ?", "time": "23:05" },
+                { "from": "R3n_X", "text": "j'ai suivi le signal réseau du téléphone que tu as \"perdu\"", "time": "23:06" },
+                { "from": "R3n_X", "text": "le dernier ping provient d'une antenne située au Red Dawn District", "time": "23:06" },
+                { "from": "sinsin", "text": "parfait, envoie moi l'adresse", "time": "23:07" },
+                { "from": "R3n_X", "text": "déjà fait. via mail crypté", "time": "23:07" },
+                { "from": "R3n_X", "text": "vérifie tes spams. l'adresse mail est bidon et sera supprimée à minuit", "time": "23:08" },
+                { "from": "sinsin", "text": "oui. merci ren", "time": "23:09" },
+                { "from": "R3n_X", "text": "tu me dois un plat de nouilles au sésame de chez Pho", "time": "23:09" },
+                { "from": "sinsin", "text": "ça coûte une blinde mais... ok", "time": "23:10" },
+                { "from": "R3n_X", "text": "mes services et mon silence valent au moins ça", "time": "23:10" }
+            ]
+        },
+        "sayo": {
+            "date": "Aujourd'hui — 17:55",
+            "messages": [
+                { "from": "Sayo★", "text": "siiiiiiiin", "time": "17:55" },
+                { "from": "Sayo★", "text": "samedi. chez moi. 20h. SOIRÉE.", "time": "17:55" },
+                { "from": "Sayo★", "text": "j'invite plus personne tant que t'as pas dit oui", "time": "17:56" },
+                { "from": "sinsin", "text": "sayo j'ai déjà le combat avec kanza samedi", "time": "17:58" },
+                { "from": "Sayo★", "text": "PFFF encore le sport", "time": "17:58" },
+                { "from": "Sayo★", "text": "bon. APRÈS le combat alors. tu viens avec lui s'il veut", "time": "17:59" },
+                { "from": "sinsin", "text": "ok je demande à kanza", "time": "18:00" },
+                { "from": "Sayo★", "text": "yes !! est-ce que tu peux ramener la même boisson que la dernière fois ??? stp stp", "time": "18:00" },
+                { "from": "Sayo★", "text": "et j'ai invité PLEIN de filles ;)", "time": "18:01" },
+                { "from": "sinsin", "text": "ok je fais ça", "time": "18:02" },
+                { "from": "Sayo★", "text": "je compte sur toi ♥", "time": "18:03" }
+            ]
+        },
+        "naleos": {
+            "date": "Il y a 2 jours",
+            "messages": [
+                { "from": "-NaleosTiger-", "text": "yo sin", "time": "11:14" },
+                { "from": "-NaleosTiger-", "text": "quoi de neuf ?", "time": "11:14" },
+                { "from": "sinsin",   "text": "yo naleos", "time": "11:20" },
+                { "from": "sinsin", "text": "ça va bien et toi", "time": "11:21" },
+                { "from": "-NaleosTiger-", "text": "ça va aussi, merci", "time": "11:22" },
+                { "from": "-NaleosTiger-",   "text": "j'ai un petit service à te demander", "time": "11:24" },
+                { "from": "-NaleosTiger-", "text": "mais t'es pas obligé d'accepter", "time": "11:25" },
+                { "from": "sinsin",   "text": "dis toujours", "time": "11:26" },
+                { "from": "-NaleosTiger-", "text": "matan est malade et il pourra pas participer au match de ce week-end", "time": "11:27" },
+                { "from": "-NaleosTiger-", "text": "nos remplaçants ne sont pas dispos non plus avec les exams", "time": "11:28" },
+                { "from": "sinsin", "text": "pas cool", "time": "11:28" },
+                { "from": "-NaleosTiger-", "text": "et la denrière fois quand on s'est fait un petit match, t'avais un bon niveau", "time": "11:29" },
+                { "from": "-NaleosTiger-", "text": "du coup je me demandais si tu voulais bien prendre sa place de lanceur ?", "time": "11:28" },
+                { "from": "sinsin", "text": "pour votre match universitaire de dimanche ?", "time": "11:29" },
+                { "from": "-NaleosTiger-", "text": "oui", "time": "11:29" },
+                { "from": "-NaleosTiger-", "text": "c'est pas un grosse équipe, tu t'en sortiras bien", "time": "11:30" },
+                { "from": "-NaleosTiger-", "text": "ça te dit ?", "time": "11:30" },
+                { "from": "sinsin",   "text": "j'ai pas mal de choses ce week-end mais je peux le faire", "time": "11:32" },
+                { "from": "-NaleosTiger-",   "text": "super mec, tu gères de fou", "time": "11:33" },
+                { "from": "-NaleosTiger-",   "text": "je t'envoies les détails par mail et tu auras un truc à signer", "time": "11:34" },
+                { "from": "sinsin",   "text": "ça marche", "time": "11:35" },
+                { "from": "-NaleosTiger-",   "text": "merci encore, on se voit dimanche ou sur le campus. a+", "time": "11:36" },
+                { "from": "sinsin",   "text": "a+", "time": "11:36" },
+                { "from": "system",   "text": "Dernière connexion : Il y a 6 heures" }
+            ]
+        },
+        "bde": {
+            "date": "Il y a 21 jours",
+            "messages": [
+                { "from": "GrandT0tem", "text": "Bonjour/Bonsoir", "time": "19:41" },
+                { "from": "GrandT0tem", "text": "Je m'appelle Caleb et je suis avec le BDE", "time": "19:42" },
+                { "from": "sinsin",      "text": "yo caleb", "time": "19:44" },
+                { "from": "GrandT0tem", "text": "Sin c'est ça ?", "time": "19:44" },
+                { "from": "GrandT0tem", "text": "Comment tu vas ?", "time": "19:45" },
+                { "from": "sinsin",      "text": "oui et ça va merci", "time": "19:45" },
+                { "from": "GrandT0tem", "text": "Je me permets de te contacter parce que tu es nouveau", "time": "19:46" },
+                { "from": "GrandT0tem", "text": "Et le BDE organise une soirée pour les nouveaux étudiants", "time": "19:47" },
+                { "from": "GrandT0tem", "text": "Histoire de se rencontrer, apprendre à se connaître et passer un bon moment", "time": "19:47" },
+                { "from": "sinsin",      "text": "je vois", "time": "19:48" },
+                { "from": "GrandT0tem", "text": "La soirée aura lieu samedi prochain à partir de 19h", "time": "19:48" },
+                { "from": "GrandT0tem", "text": "Je t'invite à venir, ça serait sympa de te voir", "time": "19:49" },
+                { "from": "sinsin",      "text": "je suis pas sûr d'être dispo mais je vais essayer de passer", "time": "19:50" },
+                { "from": "GrandT0tem", "text": "Pas de soucis, je comprends que tu aies des obligations", "time": "19:51" },
+                { "from": "GrandT0tem", "text": "Mais si tu peux venir, ça serait super !", "time":"19:52" },
+                { "from": "GrandT0tem", "text": "C'est aussi le moment où on vous donne des contacts, ça peut être intéressant pour toi", "time":"19:52" },
+                {"from": "sinsin",      "text": "ok je te tiens au courant", "time":"19:53" },
+                {"from":"GrandT0tem",     "text": "Génial ! J'espère te voir samedi. Salut ! ;)", "time":"19:53" },
+                { "from": "sinsin",      "text": "salut", "time": "19:53" },
+                { "from": "system",      "text": "Dernière connexion : Il y a 4 jours" }
+            ]
+        }
+    }
+}

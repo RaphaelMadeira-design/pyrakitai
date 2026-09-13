@@ -1,0 +1,192 @@
+{
+    "root": {
+        "name": "Explorateur de fichiers",
+        "children": [
+            "musique",
+            "images",
+            "important"
+        ]
+    },
+    "histoire": {
+        "name": "Histoire",
+        "parent": "important",
+        "children": [
+            "chapitre1",
+            "chapitre2",
+            "chapitre3"
+        ]
+    },
+    "chapitre1": {
+        "name": "Chapitre I - Les Origines",
+        "parent": "histoire",
+        "children": [
+            "c1p1",
+            "c1p2",
+            "c1p3"
+        ]
+    },
+    "chapitre2": {
+        "name": "Chapitre II - L'Éveil",
+        "parent": "histoire",
+        "children": [
+            "c2p1",
+            "c2p2"
+        ]
+    },
+    "chapitre3": {
+        "name": "Chapitre III - Le Chemin",
+        "parent": "histoire",
+        "children": [
+            "c3p1"
+        ]
+    },
+    "c1p1": {
+        "name": "Partie 1 - Naissance.txt",
+        "parent": "chapitre1",
+        "type": "file",
+        "content": "Chapitre I - Les Origines\n  Partie 1 - Naissance\n  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  [Chapitre à venir — en cours de rédaction]"
+    },
+    "c1p2": {
+        "name": "Partie 2 - Enfance.txt",
+        "parent": "chapitre1",
+        "type": "file",
+        "content": "Chapitre I - Les Origines\n  Partie 2 - Enfance\n  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  [Chapitre à venir — en cours de rédaction]"
+    },
+    "c1p3": {
+        "name": "Partie 3 - Premier éveil.txt",
+        "parent": "chapitre1",
+        "type": "file",
+        "content": "Chapitre I - Les Origines\n  Partie 3 - Premier éveil\n  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  [Chapitre à venir — en cours de rédaction]"
+    },
+    "c2p1": {
+        "name": "Partie 1 - La Découverte.txt",
+        "parent": "chapitre2",
+        "type": "file",
+        "content": "Chapitre II - L'Éveil\n  Partie 1 - La Découverte\n  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  [Chapitre à venir — en cours de rédaction]"
+    },
+    "c2p2": {
+        "name": "Partie 2 - Premier combat.txt",
+        "parent": "chapitre2",
+        "type": "file",
+        "content": "Chapitre II - L'Éveil\n  Partie 2 - Premier combat\n  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  [Chapitre à venir — en cours de rédaction]"
+    },
+    "c3p1": {
+        "name": "Partie 1 - En cours.txt",
+        "parent": "chapitre3",
+        "type": "file",
+        "content": "Chapitre III - Le Chemin\n  Partie 1 - En cours\n  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  [Chapitre à venir — en cours de rédaction]"
+    },
+    "musique": {
+        "name": "Musique",
+        "parent": "root",
+        "children": [
+            "mus1",
+            "mus2",
+            "mus3",
+            "mus4",
+            "mus5"
+        ]
+    },
+    "mus1": {
+        "name": "dust.mp3",
+        "parent": "musique",
+        "type": "file",
+        "content": null,
+        "musicFile": "/music/track01.mp3"
+    },
+    "mus2": {
+        "name": "sun.mp3",
+        "parent": "musique",
+        "type": "file",
+        "content": null,
+        "musicFile": "/music/track02.mp3"
+    },
+    "mus3": {
+        "name": "interlinked.mp3",
+        "parent": "musique",
+        "type": "file",
+        "content": null,
+        "musicFile": "/music/track03.mp3"
+    },
+    "mus4": {
+        "name": "rnb.mp3",
+        "parent": "musique",
+        "type": "file",
+        "content": null,
+        "musicFile": "/music/track04.mp3"
+    },
+    "mus5": {
+        "name": "fractures.mp3",
+        "parent": "musique",
+        "type": "file",
+        "content": null,
+        "musicFile": "/music/track05.mp3"
+    },
+    "images": {
+        "name": "Images",
+        "parent": "root",
+        "children": [
+            "img1",
+            "img2",
+            "img3",
+            "img4",
+            "img5"
+        ]
+    },
+    "img1": {
+        "name": "1.jpg",
+        "parent": "images",
+        "type": "file",
+        "content": null,
+        "imageFile": "/images/1.jpg"
+    },
+    "img2": {
+        "name": "2.jpg",
+        "parent": "images",
+        "type": "file",
+        "content": null,
+        "imageFile": "/images/2.jpg"
+    },
+    "img3": {
+        "name": "3.jpg",
+        "parent": "images",
+        "type": "file",
+        "content": null,
+        "imageFile": "/images/3.jpg"
+    },
+    "img4": {
+        "name": "4.jpg",
+        "parent": "images",
+        "type": "file",
+        "content": null,
+        "imageFile": "/images/4.jpg"
+    },
+    "img5": {
+        "name": "5.jpg",
+        "parent": "images",
+        "type": "file",
+        "content": null,
+        "imageFile": "/images/5.jpg"
+    },
+    "important": {
+        "name": "Important",
+        "parent": "root",
+        "children": [
+            "histoire",
+            "mdp",
+            "souvenirs"
+        ]
+    },
+    "mdp": {
+        "name": "Mots de passe.txt",
+        "parent": "important",
+        "type": "file",
+        "content": "  MOTS DE PASSE — NE PAS PARTAGER\n  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n  Ordinateur      : sin.OP72#0791\n  Wi-Fi           : zqSd45hBPm7!4aJmM\n  NSN Messenger   : sinsin@hotmail.com / samuraifruitpunch\n  Compte banque    : 6524 JP88 4579 5***\n\n  NOTE : Changer mes identifiants et mot de passe pour l'Intranet\n  (Regarder les mails)"
+    },
+    "souvenirs": {
+        "name": "souvenirs_etranges.txt",
+        "parent": "important",
+        "type": "file",
+        "content": "// Notes prises au réveil — à classer plus tard\n\nJe me souviens d'une mer que je n'ai jamais vue.\nJe me souviens d'un nom qu'on n'a jamais prononcé\ndevant moi. Je me souviens d'avoir été quelqu'un\nd'autre, très longtemps, dans un endroit où le\ntemps n'avait pas la même forme.\n\nLe désert blanc. Toujours le désert blanc.\n\nCes souvenirs ne sont pas à moi. Ils sont à\nquelqu'un — quelque chose — qui dort à\nl'intérieur. Qui rêve à travers moi.\n\nParfois je sens qu'il essaye de parler.\nLes écrans clignotent. Les fichiers se\nrenomment tout seuls.\n\nJe ne devrais pas écrire ceci."
+    }
+}

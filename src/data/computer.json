@@ -1,0 +1,238 @@
+{
+    "computer": {
+        "name": "PC",
+        "children": ["driveA", "driveB", "driveC"],
+        "isRoot": true
+    },
+
+    "driveA": {
+        "name": "Disquette 3½ (A:)",
+        "parent": "computer",
+        "drive": "A",
+        "icon": "floppy",
+        "empty": true
+    },
+
+    "driveB": {
+        "name": "Disquette chiffrée (B:)",
+        "parent": "computer",
+        "drive": "B",
+        "icon": "floppyLocked",
+        "locked": true,
+        "password": "lasnoches",
+        "children": ["b_readme", "b_log", "b_img1", "b_img2"]
+    },
+    "b_readme": {
+        "name": "LISEZ-MOI.txt",
+        "parent": "driveB",
+        "type": "file",
+        "content": "[ DISQUETTE CHIFFRÉE — ACCÈS SERVICE DE L'ORDRE ]\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nCe support contient plusieurs fragments expurgés du dossier officiel de l'Ordre de la CGU concernant le sujet : ISEN SHURA.\n\nCes données sont classées secrète et l'accès à ces informations sensibles est restreint par le code 44-2§21b de la réglementation en cours au sein de tous les services de la Coalition des Gouvernements Unis.\n\nToute reproduction, extraction, transmission ou consultation non autorisée de ces données constitue une violation des protocoles de sécurité de la Coalition des Gouvernements Unis et pourra entraîner l'application immédiate des procédures disciplinaires prévues par le règlement interne.\n\nLes informations présentées dans ce dossier sont susceptibles d'être incomplètes, altérées ou volontairement expurgées afin de préserver les intérêts opérationnels de l'Ordre et la confidentialité des enquêtes en cours."
+    },
+    "b_log": {
+        "name": "rapport_st235.log",
+        "parent": "driveB",
+        "type": "file",
+        "content": ">> RAPPORT DE TERRAIN — DÉSERT BLANC DE LAS NOCHES\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n[ NUIT 001 ]\nAucune étoile au-dessus du désert.\nNous commençons les recherches sur l'artefact ciblé.\nJe me sépare du groupe pour partir vers le nord.\n\n[ NUIT 002 ]\nForme humaine repérée sans rapport avec mission initiale.\nHomme, 18 ou 19 ans maximum.\nTrouvé allongé dans le sable blanc, au pied d'un arbre mort.\nZone d'impact de plusieurs mètres de diamètre autour de sa position.\nJe le récupère.\n\n[ NUIT 003 ]\nLe sujet s'est réveillé. Il parle une langue inconnue.\nPourtant je l'ai compris sans pouvoir répondre.\nIl montre des signes d'amnésie rétrograde.\nPossède une cicatrice au niveau de la poitrine dont il ignore l'origine.\n\n[ NUIT 004]\nRapatriement du sujet au QG.\nJe poursuis la mission initiale.\n\n\nDONNÉES RECUEILLIES\nIdentité : Isen Shura\nGenre : Masculin\nÂge : 19 ans\nEthnie : Astral\nOrigines : Las Noches (???)\n\n\n— Patrouilleur Naloes N. #0077"
+    },
+    "b_img1": {
+        "name": "scar.jpg",
+        "parent": "driveB",
+        "type": "image",
+        "content": null,
+        "imageFile": "/images/scar.jpg"
+    },
+    "b_img2": {
+        "name": "cratere.jpg",
+        "parent": "driveB",
+        "type": "image",
+        "content": null,
+        "imageFile": "/images/cratere.jpg"
+    },
+
+    "driveC": {
+        "name": "Disque local (C:)",
+        "parent": "computer",
+        "drive": "C",
+        "icon": "hdd",
+        "children": ["c_windows", "c_programs", "c_users", "c_config", "c_readme"]
+    },
+
+    "c_windows": {
+        "name": "WINDOWS",
+        "parent": "driveC",
+        "icon": "windowsDir",
+        "children": ["win_system", "win_command", "win_wallpaper", "win_fonts"]
+    },
+        "win_system": {
+        "name": "SYSTEM",
+        "parent": "c_windows",
+        "children": ["sys_kernel", "sys_alterego", "sys_astral"]
+    },
+    "sys_kernel": {
+        "name": "KERNEL.DLL",
+        "parent": "win_system",
+        "type": "file",
+        "locked": true
+    },
+    "sys_alterego": {
+        "name": "ALTER.DLL",
+        "parent": "win_system",
+        "type": "file",
+        "icon": "sys",
+        "trigger": "alterego",
+        "content": "// ALTER.DLL — module ██████\n// version ██.██  — build \"Écho █████████\"\n\n> ATTENTION : module extrêmement instable\n> Exécution prohibée\n> Lecture impossible\n\n[ ERREUR ] Ce fichier ne peut pas être ouvert\n[ ALERTE ] Ce fichier est déjà ouvert\n[ ERREUR ] Ce fichier ne peut pas être ouvert\n[ ALERTE ] Ce fichier est déjà ouvert\n[ ERREUR ] Ce fichier ne peut pas être ouvert\n[ ALERTE ] Ce fichier est déjà ouvert\n[ ERREUR ] Ce fichier ne peut pas être ouvert\n[ ALERTE ] Ce fichier est déjà ouvert\n[ ERREUR ] Ce fichier ne peut pas être ouvert\n[ ALERTE ] Ce fichier est déjà ouvert"
+    },
+    "sys_astral": {
+        "name": "ASTRAL.SYS",
+        "parent": "win_system",
+        "type": "file",
+        "locked": true
+    },
+    "win_command": {
+        "name": "COMMAND",
+        "parent": "c_windows",
+        "type": "shortcut",
+        "target": "cmd",
+        "icon": "bat"
+    },
+    "win_wallpaper": {
+        "name": "wallpaper.bmp",
+        "parent": "c_windows",
+        "type": "file",
+        "content": "[ Image bitmap 800x600 — Fond d'écran système ]\n\"Las Noches, dunes blanches sous une nuit sans étoiles.\""
+    },
+    "win_fonts": {
+        "name": "FONTS",
+        "parent": "c_windows",
+        "children": ["font_archaic"]
+    },
+    "font_archaic": {
+        "name": "ARCHAIC.FON",
+        "parent": "win_fonts",
+        "type": "file",
+        "locked": true
+    },
+
+    "c_programs": {
+        "name": "Program Files",
+        "parent": "driveC",
+        "icon": "programFiles",
+        "children": ["p_powers", "p_mail", "p_browser", "p_msn", "p_intranet","p_media", "p_cmd", "p_games"]
+    },
+    "p_powers": {
+        "name": "Ability Gauge",
+        "parent": "c_programs",
+        "type": "shortcut",
+        "target": "powers",
+        "icon": "https://win98icons.alexmeub.com/icons/png/shell_window5-0.png"
+    },
+    "p_mail": {
+        "name": "Inlook Express",
+        "parent": "c_programs",
+        "type": "shortcut",
+        "target": "mail",
+        "icon": "https://win98icons.alexmeub.com/icons/png/outlook_express-4.png"
+    },
+    "p_browser": {
+        "name": "Internet Voyager",
+        "parent": "c_programs",
+        "type": "shortcut",
+        "target": "browser",
+        "icon": "https://win98icons.alexmeub.com/icons/png/msie2-1.png"
+    },
+    "p_msn": {
+        "name": "NSN Messenger",
+        "parent": "c_programs",
+        "type": "shortcut",
+        "target": "msn",
+        "icon": "msn"
+    },
+    "p_intranet": {
+        "name": "WELLSTON-NET Intranet",
+        "parent": "c_programs",
+        "type": "shortcut",
+        "target": "intranet",
+        "icon": "https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-2.png"
+    },
+    "p_media": {
+        "name": "Vindows Media Player",
+        "parent": "c_programs",
+        "type": "shortcut",
+        "target": "media",
+        "icon": "https://win98icons.alexmeub.com/icons/png/wm-2.png"
+    },
+    "p_cmd": {
+        "name": "Invite de commandes",
+        "parent": "c_programs",
+        "type": "shortcut",
+        "target": "cmd",
+        "icon": "https://win98icons.alexmeub.com/icons/png/console_prompt-0.png"
+    },
+    "p_games": {
+        "name": "Games",
+        "parent": "c_programs",
+        "icon": "games",
+        "children": ["g_snake", "g_jump", "g__virus"]
+    },
+    "g_snake": {
+        "name": "SNAKE.exe",
+        "parent": "p_games",
+        "type": "shortcut",
+        "target": "snake",
+        "icon": "game"
+    },
+    "g_jump": {
+        "name": "JUMP.exe",
+        "parent": "p_games",
+        "type": "shortcut",
+        "target": "jump",
+        "icon": "game"
+    },
+    "g__virus": {
+        "name": "VIRUS.exe",
+        "parent": "p_games",
+        "type": "shortcut",
+        "target": "virus",
+        "icon": "game"
+    },
+    "c_users": {
+        "name": "Users",
+        "parent": "driveC",
+        "children": ["u_sin", "u_admin"]
+    },
+    "u_sin": {
+        "name": "sin",
+        "parent": "c_users",
+        "children": ["u_desktop", "u_mydocs"]
+    },
+    "u_admin": {
+        "name": "admin",
+        "parent": "c_users",
+        "icon": "folder",
+        "disabled": true
+    },
+    "u_desktop": {
+        "name": "Bureau",
+        "parent": "u_sin",
+        "children": []
+    },
+    "u_mydocs": {
+        "name": "Mes Documents",
+        "parent": "u_sin",
+        "icon": "myDocs",
+        "type": "shortcut",
+        "target": "explorer"
+    },
+    "c_config": {
+        "name": "CONFIG.SYS",
+        "parent": "driveC",
+        "type": "file",
+        "content": "DEVICE=C:\\WINDOWS\\HIMEM.SYS\nDOS=HIGH,UMB\nFILES=60\nBUFFERS=30\nDEVICEHIGH=C:\\WINDOWS\\SYSTEM\\ALTEREGO.DLL /STABLE\nDEVICEHIGH=C:\\WINDOWS\\SYSTEM\\ASTRAL.SYS /SILENT"
+    },
+    "c_readme": {
+        "name": "LISEZ-MOI.txt",
+        "parent": "driveC",
+        "type": "file",
+        "content": "PC-98 — Disque local C:\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nStation personnelle attribuée à\nl'agent de 2° Classe, SIN — Bureau of Security.\n\nVous pouvez explorer librement :\n• WINDOWS — système (sensible, ne pas toucher)\n• Program Files — applications installées\n• Users — profils utilisateurs\n\nSi une disquette est insérée dans A:,\nson contenu apparaîtra automatiquement.\nLa disquette B: est chiffrée.\n\n[ Note : tout incident sur ce poste doit être\nrapporté à votre Administrateur Système dans les 24h. ]"
+    }
+}
