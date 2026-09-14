@@ -25,7 +25,7 @@
         { "id": "trash",  "label": "Éléments supprimés",   "iconKey": "trash" }
     ],
 
-    "mailboxLabel": "Boîte aux lettres — sinsin@hotmail.com",
+    "mailboxLabel": "Boîte aux lettres — kaikai7@hotmail.com",
 
     "inbox": [
         {
@@ -36,7 +36,7 @@
             "date": "12/06 — 14:05",
             "unread": false,
             "body": [
-                "Sin,",
+                "Kaï,",
                 "",
                 "Comme dit en cours : on se retrouve tous demain soir pour avancer le projet tutoré (le livrable intermédiaire est pour le 28, faut vraiment qu'on s'y mette).",
                 "",
@@ -59,7 +59,7 @@
             "date": "13/06 — 09:47",
             "unread": true,
             "body": [
-                "Sin,",
+                "Kaï,",
                 "",
                 "Je suis désolée de te redemander ça... j'ai encore perdu mes notes et il me manque le dernier CM de Sémiologie de l'image (celui de Castellan, l'analyse de l'affiche).",
                 "",
@@ -80,7 +80,7 @@
             "date": "14/06 — 00:00",
             "unread": true,
             "body": [
-                "Étudiant ASHU'RA, Sin — Matricule #0791",
+                "Étudiant ASHU'RA, Kaï — Matricule #0791",
                 "",
                 "Vos identifiants d'accès à l'intranet WELLSTON-NET ont été régénérés conformément à la charte informatique de l'université (art. WELLS-SEC-04 §2).",
                 "",
@@ -105,7 +105,7 @@
             "date": "13/06 — 11:32",
             "unread": true,
             "body": [
-                "Sin,",
+                "Kaï,",
                 "",
                 "Comme convenu sur MSN, merci encore de dépanner l'équipe dimanche. Matan est cloué au lit et on n'a personne au monticule avec les partiels.",
                 "",
@@ -130,7 +130,7 @@
             "date": "13/06 — 03:47",
             "unread": true,
             "body": [
-                "Agent SIN — Classe 2,",
+                "Agent Kaï — Classe 2,",
                 "",
                 "Point de situation, canal privé. Ce message ne passera pas deux fois : lis, retiens, efface.",
                 "",
@@ -176,7 +176,7 @@
             "date": "12/06 — 23:41",
             "unread": false,
             "body": [
-                "Bonsoir Sin !",
+                "Bonsoir Kaï !",
                 "",
                 "Votre commande chez « Nouilles du Vieux Pho — Campus Wellston » a bien été déposée à l'adresse indiquée :",
                 "",
@@ -202,7 +202,7 @@
             "date": "11/06 — 08:00",
             "unread": false,
             "body": [
-                "Salut Sin !",
+                "Salut Kaï !",
                 "",
                 "Comme promis sur MSN, je te confirme par mail : le BDE organise sa soirée d'intégration pour les nouveaux samedi prochain, à partir de 19h (foyer étudiant, bâtiment C).",
                 "",
@@ -225,7 +225,7 @@
             "date": "12/06 — 10:09",
             "unread": false,
             "body": [
-                "Sin,",
+                "Kaï,",
                 "",
                 "Ton dossier d'inscription pédagogique S4 est complet, mais il attend ta signature au bureau des étudiants depuis 48 heures. Ce n'est pas une simple formalité : sans elle, ton inscription reste bloquée.",
                 "",
@@ -267,7 +267,7 @@
         {
             "id": "s1",
             "from": "Moi",
-            "fromAddr": "sinsin@hotmail.com",
+            "fromAddr": "kaikai7@hotmail.com",
             "subject": "Re: Notes de Sémio de l'image",
             "date": "13/06 — 22:21",
             "unread": false,
@@ -278,13 +278,13 @@
                 "",
                 "Arrête de t'excuser à chaque fois. Et repose-toi un peu aussi.",
                 "",
-                "— Sin"
+                "— Kaï"
             ]
         },
         {
             "id": "s2",
             "from": "Moi",
-            "fromAddr": "sinsin@hotmail.com",
+            "fromAddr": "kaikai7@hotmail.com",
             "subject": "Re: Projet tutoré — on se cale où demain soir ?",
             "date": "12/06 — 16:31",
             "unread": false,
@@ -297,13 +297,13 @@
                 "",
                 "20h demain, salle de travail du fond si elle est libre.",
                 "",
-                "— Sin"
+                "— Kaï"
             ]
         },
         {
             "id": "s3",
             "from": "Moi",
-            "fromAddr": "sinsin@hotmail.com",
+            "fromAddr": "kaikai7@hotmail.com",
             "subject": "Re: Match de dimanche — infos + feuille à signer",
             "date": "13/06 — 12:14",
             "unread": false,
@@ -316,7 +316,7 @@
                 "",
                 "Préviens juste les gars que je déteste perdre.",
                 "",
-                "— Sin"
+                "— Kaï"
             ]
         }
     ],
@@ -325,7 +325,7 @@
         {
             "id": "d1",
             "from": "Moi (brouillon)",
-            "fromAddr": "sinsin@hotmail.com",
+            "fromAddr": "kaikai7@hotmail.com",
             "subject": "(brouillon) PIE BAVARDE — rapport #12",
             "date": "13/06 — 02:47",
             "unread": false,
@@ -345,7 +345,7 @@
         {
             "id": "d2",
             "from": "Moi (brouillon)",
-            "fromAddr": "sinsin@hotmail.com",
+            "fromAddr": "kaikai7@hotmail.com",
             "subject": "(sans objet)",
             "date": "12/06 — 01:12",
             "unread": false,
@@ -362,11 +362,11 @@
             "id": "sp1",
             "from": "Le Cercle de l'Aurore",
             "fromAddr": "contact@cercle-aurore.wl",
-            "subject": "✦ Et si ta vraie place était parmi NOUS, Sin ?",
+            "subject": "✦ Et si ta vraie place était parmi NOUS, Kaï ?",
             "date": "13/06 — 04:14",
             "unread": false,
             "body": [
-                "Cher Sin,",
+                "Cher Kaï,",
                 "",
                 "Tu as été REMARQUÉ. Parmi des milliers d'étudiants, ton profil est ressorti : intelligent, solitaire, incompris par un système qui ne te mérite pas. ✦",
                 "",
@@ -393,7 +393,7 @@
             "date": "13/06 — 23:08",
             "unread": false,
             "body": [
-                "Sin.",
+                "Kaï.",
                 "",
                 "Comme promis. J'ai suivi le signal réseau du téléphone que tu as « perdu ».",
                 "",
@@ -502,7 +502,7 @@
             "date": "10/06 — 00:00",
             "unread": false,
             "body": [
-                "Agent SIN — Matricule #0791",
+                "Agent Kaï — Matricule #0791",
                 "",
                 "Votre jeton d'authentification BoS-NET a été régénéré.",
                 "",
@@ -547,7 +547,7 @@
             "date": "27/05 — 09:48",
             "unread": false,
             "body": [
-                "Sin,",
+                "Kaï,",
                 "",
                 "On avait dit révisions à la BU à 9h pour le partiel de Théories de la comm. Il est presque 10h. Kanza dort encore j'imagine.",
                 "",
@@ -602,7 +602,7 @@
             "date": "29/05 — 23:59",
             "unread": false,
             "body": [
-                "Sin,",
+                "Kaï,",
                 "",
                 "Pour boucler notre fiche de lecture d'Écriture journalistique, il me manque juste ta partie (l'analyse du chapitre 3). Tu es toujours plus précis que moi là-dessus.",
                 "",
