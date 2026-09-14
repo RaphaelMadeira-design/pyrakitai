@@ -124,6 +124,24 @@
         box-shadow: inset 0 1px 0 #808080;
     }
 
+    &__ledger {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .intranet__table {
+            flex: 1;
+        }
+
+        &-summary {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 24px;
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+    }
+
     // ─── Tables ───────────────────────────────────────
     &__table {
         width: 100%;
@@ -173,6 +191,7 @@
             background: #c0c0c0;
             font-weight: bold;
             padding: 3px 8px;
+            height: 35px;
         }
         tr:hover td { 
             background: #ffffe1; 
@@ -186,55 +205,6 @@
         font-size: 10px;
         letter-spacing: 0.4px;
         border: 1px solid rgba(0,0,0,0.4);
-    }
-
-    // ─── List (reports / personnel) ───────────────────
-    &__list { 
-        list-style: none; 
-        margin: 0; 
-        padding: 0; 
-    }
-    &__listitem {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 16px;
-        padding: 8px 10px;
-        background: $win98-white;
-        margin-bottom: 4px;
-        cursor: pointer;
-        @include border-inset-light;
-        &:hover { 
-            background: #ffffe1; 
-        }
-        &:active {
-            border-color: #808080 #fff #fff #808080;
-        }
-    }
-    &__listcode {
-        font-size: 10px;
-    }
-    &__listtitle {
-        font-weight: bold;
-    }
-
-    &__cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 8px;
-    }
-    &__card {
-        background: $win98-white;
-        border: 1px solid;
-        border-color: #fff #808080 #808080 #fff;
-        padding: 10px;
-        cursor: pointer;
-        &:hover { 
-            background: #ffffe1; 
-        }
-        &:active { 
-            border-color: #808080 #fff #fff #808080; 
-        }
     }
 
     // ─── Document view ─────────────────────────────────
@@ -359,56 +329,6 @@
         text-transform: uppercase;
     }
 
-    // ─── Trombinoscope cards ──────────────────────────────
-    &__cards {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        gap: 12px;
-    }
-    &__card {
-        background: #fff;
-        border: 1px solid #b6b6b6;
-        padding: 12px;
-        cursor: pointer;
-        transition: transform 0.1s;
-
-        &:hover { 
-            background: #fffbe6; 
-        }
-    }
-    &__card-id { 
-        font-family: monospace; 
-        font-size: 10px; 
-        color: #777; 
-    }
-    &__card-name { 
-        font-weight: bold; 
-        font-size: 14px; 
-        margin: 4px 0; 
-        letter-spacing: 0.2px; 
-    }
-    &__card-rank { 
-        font-size: 12px; 
-        color: #555; 
-    }
-    &__card-status {
-        display: inline-block;
-        margin-top: 8px;
-        padding: 2px 8px;
-        font-size: 12px;
-        color: #fff;
-        letter-spacing: 0.4px;
-
-        &.s-actif { 
-            background: #2c7a2c; 
-        }
-        &.s-inactif { 
-            background: #b80000; 
-        }
-        &.s-disparu { 
-            background: #888; 
-        }
-    }
     &__fiche {
         flex: 1;
         border-collapse: separate;
@@ -470,7 +390,7 @@
 
     &__photo-frame {
         margin: 0;
-        flex: 0 0 260px;
+        flex: 0.5;
         background: #c0c0c0;
         @include border-outset;
         padding: 6px;
@@ -577,7 +497,7 @@
         display: flex;
         flex-direction: column;
         align-self: stretch;
-        gap: 18px;
+        gap: 14px;
     }
 
     &__profile-btn {
@@ -742,8 +662,8 @@
     }
 }
 
-// ─── WELLSTON LOGIN (style cohérent avec MSN login) ──────────────────
-.wellston-login {
+// ─── PYRAKI LOGIN (style cohérent avec MSN login) ──────────────────
+.pyraki-login {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -827,7 +747,6 @@
     }
 
     &__form-group {
-        margin-bottom: 10px;
         margin: 0 auto;
     }
 

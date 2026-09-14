@@ -32,9 +32,9 @@ const PROFILE_SECTIONS = [
 ]
 
 // Le token « Confidentiel » est posé via l'invite de commandes (CMD)
-// dans la clé sessionStorage 'wellston_clearance'. On la conserve
+// dans la clé sessionStorage 'pyraki_clearance'. On la conserve
 // pour ne pas casser l'ancien mécanisme d'accès.
-const CLEARANCE_KEY = 'wellston_clearance'
+const CLEARANCE_KEY = 'pyraki_clearance'
 const isAuthorized = () => {
     const v = sessionStorage.getItem(CLEARANCE_KEY)
     return v != null && v !== '0' && v !== ''
@@ -67,30 +67,30 @@ function IntranetLogin({ onLogin }) {
     }
 
     return (
-        <div className="wellston-login" data-testid="intranet-login">
-            <div className="wellston-login__header">
-                <div className="wellston-login__crest" />
+        <div className="pyraki-login" data-testid="intranet-login">
+            <div className="pyraki-login__header">
+                <div className="pyraki-login__crest" />
                 <div>
-                    <div className="wellston-login__title">PYRAKI-NET — TERMINAL UTILISATEUR</div>
-                    <div className="wellston-login__subtitle">
+                    <div className="pyraki-login__title">PYRAKI-NET — TERMINAL UTILISATEUR</div>
+                    <div className="pyraki-login__subtitle">
                         DISTRICT N°6
                     </div>
                 </div>
             </div>
 
-            <div className="wellston-login__body">
-                <form onSubmit={handleSubmit} className="wellston-login__form">
-                    <div className="wellston-login__banner">
+            <div className="pyraki-login__body">
+                <form onSubmit={handleSubmit} className="pyraki-login__form">
+                    <div className="pyraki-login__banner">
                         ACCÈS RESTREINT — AUTHENTIFICATION REQUISE
                     </div>
 
-                    <p className="wellston-login__intro">
+                    <p className="pyraki-login__intro">
                         Terminal privé de <b>Kaï SEDO — Gran Regalia</b>. Toute intrusion est
                         journalisée et signalée à l'administrateur.
                     </p>
 
-                    <div className="wellston-login__form-group">
-                        <label className="wellston-login__label" htmlFor="pyraki-matricule">
+                    <div className="pyraki-login__form-group">
+                        <label className="pyraki-login__label" htmlFor="pyraki-matricule">
                             Identifiant &nbsp;:
                         </label>
                         <input
@@ -107,8 +107,8 @@ function IntranetLogin({ onLogin }) {
                         />
                     </div>
 
-                    <div className="wellston-login__form-group">
-                        <label className="wellston-login__label" htmlFor="pyraki-password">
+                    <div className="pyraki-login__form-group">
+                        <label className="pyraki-login__label" htmlFor="pyraki-password">
                             Code d'accès&nbsp;:
                         </label>
                         <input
@@ -122,9 +122,9 @@ function IntranetLogin({ onLogin }) {
                         />
                     </div>
 
-                    {error && <div className="wellston-login__error">⚠ {error}</div>}
+                    {error && <div className="pyraki-login__error">⚠ {error}</div>}
 
-                    <div className="wellston-login__actions">
+                    <div className="pyraki-login__actions">
                         <button
                             type="submit"
                             className="win98-btn"
@@ -137,7 +137,7 @@ function IntranetLogin({ onLogin }) {
                 </form>
             </div>
 
-            <div className="wellston-login__footer">
+            <div className="pyraki-login__footer">
                 Terminal privé — Enregistrement local uniquement.<br />
                 PYRAKI-NET VERSION 1.02 — TABLEAU DE BORD POUR PROFESSIONNELS INDÉPENDANTS
             </div>
@@ -390,8 +390,8 @@ export default function Intranet({ onOpenWindow }) {
 
                 {/* LEDGER */}
                 {tab === 'ledger' && (
-                    <div>
-                        <div className="pyraki-ledger__summary" data-testid="ledger-summary">
+                    <div className="intranet__ledger">
+                        <div className="intranet__ledger-summary" data-testid="ledger-summary">
                             <div><b>Solde actuel :</b> <span style={{ fontFamily: 'monospace' }}>{OPERATOR.credits.toLocaleString('fr-FR')} ₡</span></div>
                             <div><b>Delta 30j :</b> <span style={{ fontFamily: 'monospace', color: balance >= 0 ? '#2c7a2c' : '#b00' }}>{balance >= 0 ? '+' : ''}{balance.toLocaleString('fr-FR')} ₡</span></div>
                             <div><b>Notation :</b> {OPERATOR.rating} / 5 ★</div>
@@ -439,6 +439,7 @@ export default function Intranet({ onOpenWindow }) {
                                         "Âge": TROMBI.age,
                                         "Genre": TROMBI.genre,
                                         "Race": TROMBI.race,
+                                        "Origine": TROMBI.origin,
                                         "Archétype": TROMBI.archetype,
                                         "MBTI": TROMBI.mbti,
                                         "Alignement": TROMBI.alignment,
@@ -563,9 +564,23 @@ export default function Intranet({ onOpenWindow }) {
                             </button>
                         </div>
                         <div className="intranet__profile-body">
-                            {(openModal.field && TROMBI && TROMBI[openModal.field])
-                                ? TROMBI[openModal.field]
-                                : <span className="intranet__profile-empty">— Donnée non renseignée —</span>}
+                            {openModal.field === 'likesDislikes' && TROMBI?.likesDislikes ? (
+                                <>
+                                    <p>
+                                        <strong>Aime :</strong> {TROMBI.likesDislikes.likes}
+                                    </p>
+
+                                    <p>
+                                        <strong>N'aime pas :</strong> {TROMBI.likesDislikes.dislikes}
+                                    </p>
+                                </>
+                            ) : (
+                                (openModal.field && TROMBI && TROMBI[openModal.field])
+                                    ? TROMBI[openModal.field]
+                                    : <span className="intranet__profile-empty">
+                                        — Donnée non renseignée —
+                                    </span>
+                            )}
                         </div>
                     </section>
                 </div>
