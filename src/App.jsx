@@ -443,7 +443,7 @@ function App() {
         if (id === 'jump') return <JumpGame />
         if (id === 'virus') return <VirusSurvivors />
         if (id === 'mail') return <Mail />
-        if (id === 'intranet') return <Intranet />
+        if (id === 'intranet') return <Intranet onOpenWindow={openWindow} />
         if (id === 'recycle') return <Trash />
         if (id.startsWith("help-")) { return <Help app={win.helpApp} />}
         if (id === 'imageviewer') return <ImageViewer requestedImage={imageToView} />

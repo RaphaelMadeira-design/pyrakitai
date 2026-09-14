@@ -446,6 +446,14 @@
         tr:nth-child(even) td {
             background: #f4f4f4;
         }
+
+        tr#{&}-sep td {
+            background: $win98-gray;
+            height: 10px;
+            padding: 0;
+            font-size: 0;
+            line-height: 0;
+        }
     }
 
 
@@ -597,7 +605,17 @@
             outline: 1px dotted $win98-black;
             outline-offset: -4px;
         }
+
+        &--blue {
+            background: #0038a8;
+            color: $win98-white;
+
+            &:hover {
+                background: #1a55c4;
+            }
+        }
     }
+
 
     // ─── Modal profil ─────────
     &__modal-overlay {

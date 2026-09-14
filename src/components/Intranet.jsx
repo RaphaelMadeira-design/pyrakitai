@@ -23,12 +23,12 @@ const {
 
 // ─── Sections du profil trombinoscope (boutons + modals) ────────
 const PROFILE_SECTIONS = [
-    { key: 'physical',  label: 'Description physique',   field: 'physicalDescription' },
-    { key: 'condition', label: 'Condition physique',      field: 'condition' },
-    { key: 'psych',     label: 'Profil psychologique',    field: 'psychProfile' },
-    { key: 'likes',     label: "Aime et n'aime pas",      field: 'likesDislikes' },
-    { key: 'hobbies',   label: 'Loisirs',                 field: 'hobbies' },
-    { key: 'opinion',   label: 'Opinion hiérarchie',      field: 'opinion' },
+    { key: 'physical',   label: 'Description physique',    field: 'physicalDescription' },
+    { key: 'psych',      label: 'Profil psychologique',    field: 'psychProfile' },
+    { key: 'likes',      label: "Aime et n'aime pas",      field: 'likesDislikes' },
+    { key: 'goal',       label: 'Objectif personnel',      field: 'personalGoal' },
+    { key: 'skills',     label: 'Aptitudes',               field: 'skills' },
+    { key: 'fears',      label: 'Peurs & traumatismes',    field: 'fearsTraumas' },
 ]
 
 // Le token « Confidentiel » est posé via l'invite de commandes (CMD)
@@ -60,7 +60,7 @@ function IntranetLogin({ onLogin }) {
                 onLogin()
             } else {
                 Sounds?.error?.()
-                setError("Identifiant opérateur ou code d'accès invalide. Vérifiez et réessayez.")
+                setError("Identifiant utilisateur ou code d'accès invalide. Vérifiez et réessayez.")
                 setLoading(false)
             }
         }, 900)
@@ -71,9 +71,9 @@ function IntranetLogin({ onLogin }) {
             <div className="wellston-login__header">
                 <div className="wellston-login__crest" />
                 <div>
-                    <div className="wellston-login__title">PYRAKI-NET — TERMINAL OPÉRATEUR</div>
+                    <div className="wellston-login__title">PYRAKI-NET — TERMINAL UTILISATEUR</div>
                     <div className="wellston-login__subtitle">
-                        DISTRICT N°6 · LE DISTRICT ROUGE
+                        DISTRICT N°6
                     </div>
                 </div>
             </div>
@@ -85,13 +85,13 @@ function IntranetLogin({ onLogin }) {
                     </div>
 
                     <p className="wellston-login__intro">
-                        Terminal privé de <b>Kaï SEDO — Récupération</b>. Toute intrusion est
-                        journalisée et signalée à l'opérateur.
+                        Terminal privé de <b>Kaï SEDO — Gran Regalia</b>. Toute intrusion est
+                        journalisée et signalée à l'administrateur.
                     </p>
 
                     <div className="wellston-login__form-group">
                         <label className="wellston-login__label" htmlFor="pyraki-matricule">
-                            Identifiant opérateur&nbsp;:
+                            Identifiant &nbsp;:
                         </label>
                         <input
                             id="pyraki-matricule"
@@ -139,14 +139,14 @@ function IntranetLogin({ onLogin }) {
 
             <div className="wellston-login__footer">
                 Terminal privé — Enregistrement local uniquement.<br />
-                PYRAKI-NET VERSION 1.02 — Récupération &amp; Services Indépendants
+                PYRAKI-NET VERSION 1.02 — TABLEAU DE BORD POUR PROFESSIONNELS INDÉPENDANTS
             </div>
         </div>
     )
 }
 
 // ─── MAIN ───────────────────────────────────────────────────────
-export default function Intranet() {
+export default function Intranet({ onOpenWindow }) {
     const [authed, setAuthed] = useState(
         () => sessionStorage.getItem('pyraki_auth') === '1'
     )
@@ -198,9 +198,9 @@ export default function Intranet() {
             <div className="intranet__header">
                 <div className="intranet__crest"></div>
                 <div className="intranet__title">
-                    <div className="intranet__org">PYRAKI-NET · RÉCUPÉRATION KAÏ SEDO</div>
+                    <div className="intranet__org">PYRAKI-NET · TABLEAU DE BORD</div>
                     <div className="intranet__sub">
-                        Opérateur : {OPERATOR.name} — {OPERATOR.district}
+                        Utilisateur : {OPERATOR.office} — {OPERATOR.name}
                     </div>
                 </div>
                 <div
@@ -427,7 +427,7 @@ export default function Intranet() {
                 {tab === 'trombinoscope' && (
                     <div className="intranet__doc" data-testid="intranet-trombinoscope">
                         <div className="intranet__doc-head">
-                            <div className="intranet__doc-org">DOSSIER OPÉRATEUR — N° {TROMBI.id}</div>
+                            <div className="intranet__doc-org">DOSSIER UTILISATEUR — N° {TROMBI.id}</div>
                             <div className="intranet__stamp classifié">USAGE INTERNE</div>
                         </div>
 
@@ -442,6 +442,16 @@ export default function Intranet() {
                                         "Archétype": TROMBI.archetype,
                                         "MBTI": TROMBI.mbti,
                                         "Alignement": TROMBI.alignment,
+                                    }).map(([k, v]) => (
+                                        <tr key={k}>
+                                            <th>{k}</th>
+                                            <td>{v}</td>
+                                        </tr>
+                                    ))}
+                                    <tr className="intranet__fiche-sep" aria-hidden="true">
+                                        <td colSpan={2}></td>
+                                    </tr>
+                                    {Object.entries({
                                         "Dénomination": TROMBI.office,
                                         "Domiciliation": TROMBI.district,
                                         "Secteur d'activité": TROMBI.activity,
@@ -466,6 +476,14 @@ export default function Intranet() {
                                         {s.label}
                                     </button>
                                 ))}
+                                <button
+                                    type="button"
+                                    className="intranet__profile-btn intranet__profile-btn--blue"
+                                    onClick={() => onOpenWindow?.('powers')}
+                                    data-testid="intranet-profile-btn-ability"
+                                >
+                                    Registre des capacités
+                                </button>
                             </div>
 
                             {TROMBI.image && (
@@ -519,7 +537,7 @@ export default function Intranet() {
 
             {/* Footer */}
             <div className="intranet__footer">
-                PYRAKI-NET — District n°6, Le Rouge — Opérateur : {OPERATOR.codename} ({OPERATOR.name}) — Session : {new Date().toLocaleTimeString('fr-FR')}
+                PYRAKI-NET — Utilisateur : {OPERATOR.name} ({OPERATOR.office}) — Session : {new Date().toLocaleTimeString('fr-FR')}
             </div>
 
             {/* Modal profil trombinoscope */}
