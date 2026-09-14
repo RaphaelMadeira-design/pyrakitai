@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import Sounds from '../components/Sounds'
 import Win98Window from './Win98Window'
 import msnData from '../data/msn.json'
-import '../styles/msn.scss'
+import '../styles/MSN.scss'
 
 // ─── DATA (depuis msn.json) ─────────────────────────────────────
 const CREDENTIALS   = msnData.credentials

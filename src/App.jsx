@@ -143,7 +143,7 @@ const WINDOW_CONFIGS = {
         defaultPosition: { x: 0, y: 0 },
     },
     intranet: {
-        title: 'Intranet — WELLSTON-NET v5.04',
+        title: 'Intranet — PYRAKI-NET v1.02',
         defaultSize: { width: '80%', height: '85%' },
         defaultPosition: { x: 60, y: 30 },
     },
@@ -175,7 +175,7 @@ const LOADING_LABELS = {
     snake: 'SNAKE.exe',
     jump: 'JUMP.exe',
     virus: 'VIRUS.exe',
-    intranet : 'WELLSTON-NET v5.04',
+    intranet : 'PYRAKI-NET v1.02',
 }
 
 const makeNotepadConfig = (fileId, fileName) => ({

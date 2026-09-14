@@ -1,440 +1,278 @@
 {
-    "tasks": [
-        { 
-            "id": 1,  
-            "title": "Révisions partiel — Théories de la communication", 
-            "priority": "CRITIQUE", 
-            "deadline": "24/06", 
-            "status": "EN COURS",   
-            "assigned": "P. HALVORSEN" 
-        },
-        { 
-            "id": 2,  
-            "title": "Rendre le dossier de Droit de l'information",        
-            "priority": "HAUTE",    
-            "deadline": "20/06", 
-            "status": "EN RETARD",  
-            "assigned": "M. BRENNAC" 
-        },
-        { 
-            "id": 3,  
-            "title": "Projet tutoré — livrable intermédiaire (groupe)",    
-            "priority": "HAUTE",    
-            "deadline": "28/06", 
-            "status": "EN COURS",   
-            "assigned": "R. KISKI" 
-        },
-        { 
-            "id": 4,  
-            "title": "Analyse sémiologique d'une affiche",                 
-            "priority": "HAUTE",    
-            "deadline": "25/06", 
-            "status": "PLANIFIÉE",  
-            "assigned": "E. CASTELLAN" 
-        },
-        { 
-            "id": 5,  
-            "title": "Exposé — Sociologie des médias",                     
-            "priority": "MOYENNE",  
-            "deadline": "26/06", 
-            "status": "EN COURS",   
-            "assigned": "P. YUSAKU" 
-        },
-        { 
-            "id": 6,  
-            "title": "Montage vidéo — TD Production audiovisuelle",        
-            "priority": "MOYENNE",  
-            "deadline": "27/06", 
-            "status": "EN COURS",   
-           "assigned": "Y. OKONKWO" },
-        { 
-           "id": 7,  
-           "title": "Recherche de stage (fin de Licence)",               
-            "priority": "MOYENNE",  
-            "deadline": "15/07", 
-            "status": "EN COURS",   
-            "assigned": "Auto-assigné" 
-        },
-        { 
-           "id": 8,  
-           "title": "Fiche de lecture — Écriture journalistique",        
-            "priority": "MOYENNE",  
-            "deadline": "18/06", 
-            "status": "COMPLÉTÉE",  
-            "assigned": "Y. OKONKWO" 
-        },
-        { 
-            "id": 9,  
-            "title": "Devoir maison — Statistiques appliquées aux SHS",   
-            "priority": "BASSE",    
-            "deadline": "30/06", 
-            "status": "À RENDRE",   
-            "assigned": "A. RTELFORD" 
-        },
-        { 
-            "id": 10, 
-            "title": "QCM Anglais en ligne",                              
-            "priority": "BASSE",    
-            "deadline": "12/06", 
-            "status": "COMPLÉTÉE",  
-            "assigned": "J. DANFORTH" 
-        },
-        { 
-            "id": 11, 
-            "title": "Inscription pédagogique S4",                        
-            "priority": "MOYENNE",  
-            "deadline": "10/06", 
-            "status": "COMPLÉTÉE",  
-            "assigned": "Auto-assigné" 
-        },
-        { 
-            "id": 12, 
-            "title": "Rendez-vous PPP — responsable de formation",        
-            "priority": "BASSE",    
-            "deadline": "02/07", 
-            "status": "PLANIFIÉE",  
-            "assigned": "R. KISKI" 
-        }
-    ],
-
+    "operator": {
+        "codename": "KAI-01",
+        "name": "Kaï SEDO",
+        "race": "Samaär",
+        "age": 27,
+        "district": "District n°6 — Le District Rouge",
+        "office": "Ruelle des Verreries, sous-sol 2",
+        "since": "13/03/2024",
+        "credits": 12480,
+        "rating": 4.6
+    },
     "missions": [
         {
-            "id": 1,
-            "title": "Infiltration — Collecte de renseignements sur ████████ ",
+            "id": "M-0142",
+            "title": "Récupérer le pendentif d'Alma'tea",
+            "client": "H. Vergès",
+            "target_item": "Pendentif « Coeur d'Ambre »",
+            "location": "District n°3 — Parc Commercial",
             "priority": "CRITIQUE",
             "deadline": "24/06",
             "status": "EN COURS",
-            "assigned": "Commandement BoS"
+            "reward": 3200,
+            "notes": "Objet dérobé par un pickpocket connu. Descriptif fourni par la cliente. Suspects fréquentent la galerie basse."
         },
         {
-            "id": 2,
-            "title": "Extraction — Document HF-24125VE",
+            "id": "M-0141",
+            "title": "Extraction — Dossier scellé « HF-24125VE »",
+            "client": "Anonyme (Astia ?)",
+            "target_item": "Dossier physique + microfiche",
+            "location": "District n°4 — L'Axiome",
             "priority": "HAUTE",
             "deadline": "22/06",
-            "status": "À RENDRE",
-            "assigned": "Section renseignement"
+            "status": "À LIVRER",
+            "reward": 5400,
+            "notes": "Client paye en crédits blanchis. Ne pas ouvrir le dossier. Livraison neutre convenue à la gare monorail."
         },
         {
-            "id": 3,
-            "title": "Surveillance — Suspect matricule BK-74926SV",
+            "id": "M-0140",
+            "title": "Repérage — Cargaison Astia détournée",
+            "client": "Groupe Astia",
+            "target_item": "Palettes de bio-composants",
+            "location": "District n°8 — Le Bloc Abandonné",
             "priority": "HAUTE",
             "deadline": "26/06",
             "status": "EN COURS",
-            "assigned": "Contrôleur K."
+            "reward": 4100,
+            "notes": "Rumeur d'une brèche au-dessus du mur. Prudence. Contact terrain: Klein W."
         },
         {
-            "id": 4,
-            "title": "Infiltration — Maintien de la couverture",
+            "id": "M-0139",
+            "title": "Filature — Débiteur en fuite",
+            "client": "Prêteur K. Kushala",
+            "target_item": "Localisation du sujet",
+            "location": "District n°2 — Noda Prima",
             "priority": "MOYENNE",
             "deadline": "En continu",
             "status": "EN COURS",
-            "assigned": "Protocole"
+            "reward": 900,
+            "notes": "Sujet évite les caméras. Aucune interaction physique demandée."
         },
         {
-            "id": 5,
-            "title": "Transmission — Rapport de mission #12",
-            "priority": "MOYENNE",
-            "deadline": "28/06",
-            "status": "PLANIFIÉE",
-            "assigned": "Téléopérateur R. MAKKEN"
-        },
-        {
-            "id": 6,
-            "title": "Transmission — Debriefing opérationnel",
+            "id": "M-0138",
+            "title": "Recherche — Chat noir « Kuro » (particulier)",
+            "client": "Mme. Léa Biliam",
+            "target_item": "Chat noir médaille dorée",
+            "location": "District n°6 — Rouge",
             "priority": "BASSE",
             "deadline": "30/06",
-            "status": "BLOQUÉE",
-            "assigned": "Téléopérateur R. MAKKEN"
+            "status": "PLANIFIÉE",
+            "reward": 250,
+            "notes": "Elle nourrit 6 autres chats. Ne pas confondre."
         },
         {
-            "id": 7,
-            "title": "Extraction — Document HF-423751TF",
+            "id": "M-0137",
+            "title": "Livraison — Briquets vintage collector",
+            "client": "Collectionneur anonyme",
+            "target_item": "Lot de 3 Zippos années 40",
+            "location": "District n°5 — Le Nexus",
             "priority": "BASSE",
             "deadline": "02/07",
-            "status": "À RENDRE",
-            "assigned": "Section renseignement"
+            "status": "À LIVRER",
+            "reward": 600,
+            "notes": "Vérifier authenticité avant remise. Kaï s'y connaît."
+        },
+        {
+            "id": "M-0136",
+            "title": "Récupération — Instrument volé « Pyra »",
+            "client": "SennaRin",
+            "target_item": "Guitare custom",
+            "location": "District n°6 — Rouge",
+            "priority": "MOYENNE",
+            "deadline": "18/06",
+            "status": "COMPLÉTÉE",
+            "reward": 1800,
+            "notes": "Rendue en 48h. Client très satisfait. Recommande à d'autres artistes."
+        },
+        {
+            "id": "M-0135",
+            "title": "Refusé — « Retrouver un souvenir perdu »",
+            "client": "Client anonyme",
+            "target_item": "Non spécifié",
+            "location": "—",
+            "priority": "BASSE",
+            "deadline": "—",
+            "status": "REFUSÉE",
+            "reward": 0,
+            "notes": "Demande trop floue. Suspect. Ne pas rappeler."
         }
     ],
-
-    "schedule": {
-        "days": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"],
-        "slots": [
-            {
-                "time": "08:00–10:00",
-                "sessions": {
-                    "Lundi":    { "course": "Théories de la communication (CM)", "room": "Amphi Lenox", "teacher": "P. HALVORSEN" },
-                    "Mardi":    { "course": "Sociologie des médias (CM)",        "room": "Amphi Reach", "teacher": "P. YUSAKU" },
-                    "Mercredi": { "course": "Écriture journalistique (TD)",      "room": "Salle 214",   "teacher": "Y. OKONKWO" },
-                    "Jeudi":    { "course": "Communication numérique & web (CM)","room": "Amphi B",     "teacher": "M. SOLBERG" },
-                    "Vendredi": { "course": "Sémiologie de l'image (CM)",        "room": "Amphi Reach", "teacher": "E. CASTELLAN" }
-                }
-            },
-            {
-                "time": "10:15–12:15",
-                "sessions": {
-                    "Lundi":    { "course": "Sémiologie de l'image (TD)",        "room": "Salle 214",     "teacher": "E. CASTELLAN" },
-                    "Mardi":    { "course": "Statistiques appliquées aux SHS (TD)","room": "Salle info 3","teacher": "A. RTELFORD" },
-                    "Mercredi": { "course": "Droit de l'information (CM)",        "room": "Amphi Lenox",   "teacher": "M. BRENMAC" },
-                    "Jeudi":    { "course": "Production audiovisuelle (TD)",      "room": "Studio Son/Vidéo","teacher": "Y. OKONKWO" },
-                    "Vendredi": { "course": "Méthodologie documentaire",         "room": "B.U. — Salle 3","teacher": "A. RTELFORD" }
-                }
-            },
-            {
-                "time": "13:30–15:30",
-                "sessions": {
-                    "Lundi":    { "course": "Anglais appliqué",                  "room": "Salle 108",     "teacher": "J. FANFORTH" },
-                    "Mardi":    { "course": "Histoire des médias (CM)",          "room": "Amphi B",       "teacher": "R. KISKI", "status": "ANNULÉ" },
-                    "Jeudi":    { "course": "Communication numérique & web (TD)","room": "Salle info 3",  "teacher": "M. SOLBERG" },
-                    "Vendredi": { "course": "Option — Culture & médias (CM)",    "room": "Amphi B",       "teacher": "P. YUSAKU" }
-                }
-            },
-            {
-                "time": "15:45–17:45",
-                "sessions": {
-                    "Mardi":    { "course": "Projet tutoré (groupe)",           "room": "Labo Multimédia","teacher": "R. KISKI" },
-                    "Jeudi":    { "course": "PPP — Projet Personnel & Pro.",    "room": "Salle 108",      "teacher": "R. KISKI" }
-                }
-            }
-        ]
-    },
-
-    "groups": ["A", "B", "C", "D", "E"],
-
-    "trombinoscopeStructure": {
-        "dean": ["7000"],
-        "groupA": {
-            "classmates": ["4215", "9985", "5543", "7120", "5320"]
-        },
-        "groupB": {
-            "classmates": ["5018", "0791", "9205", "3054", "1322"]
-        },
-        "groupC": {
-            "classmates": ["4122", "8761", "6543", "3210", "4778"]
-        },
-        "groupD": {
-            "classmates": ["1225", "0189", "6997", "7880", "9988"]
-        },
-        "groupE": {
-            "classmates": ["4411", "0642", "1006", "4128", "7092"]
-        }
-    },
-
-    "trombinoscope": [
+    "clients": [
         {
-            "id": "7000",
-            "name": "VALKENHEIN, Malenia",
-            "status": "ACTIF"
+            "id": "C-021",
+            "name": "H. Vergès",
+            "type": "Particulier",
+            "district": "District n°3",
+            "trust": 4,
+            "missions_count": 3,
+            "notes": "Bon payeur, un peu trop bavard. Aime négocier."
         },
         {
-            "id": "4215",
-            "name": "KATO, Fubuki",
-            "status": "ACTIF"
+            "id": "C-020",
+            "name": "Groupe Astia",
+            "type": "Corpo",
+            "district": "District n°4",
+            "trust": 3,
+            "missions_count": 5,
+            "notes": "Paye vite mais impose des NDA lourds. Aucune question autorisée."
         },
         {
-            "id": "9985",
-            "name": "MARLIN, Eliz",
-            "status": "ACTIF"
+            "id": "C-019",
+            "name": "K. Kushala",
+            "type": "Prêteur",
+            "district": "District n°2",
+            "trust": 2,
+            "missions_count": 8,
+            "notes": "Utile mais dangereux. Ne jamais prendre ses missions le weekend."
         },
         {
-            "id": "5543",
-            "name": "NIMTARA, Juran",
-            "status": "ACTIF"
+            "id": "C-018",
+            "name": "SennaRin",
+            "type": "Artiste",
+            "district": "District n°7",
+            "trust": 5,
+            "missions_count": 2,
+            "notes": "Recommande Kaï dans le milieu musical. Toujours OK pour un café."
         },
         {
-            "id": "7120",
-            "name": "YI, Lei Fon",
-            "status": "INACTIF"
+            "id": "C-017",
+            "name": "Mme. Léa Biliam",
+            "type": "Particulier",
+            "district": "District n°6",
+            "trust": 5,
+            "missions_count": 4,
+            "notes": "Cliente fidèle. Toujours des petits objets/animaux. Paye en liquide."
         },
         {
-            "id": "5320",
-            "name": "AROKA, Minso",
-            "status": "ACTIF"
-        },
-        {
-            "id": "5018",
-            "name": "DAVIS, Malcolm",
-            "status": "ACTIF"
-        },
-        {
-            "id": "0791",
-            "name": "Kaï SEDO",
-            "age": "27 ans",
-            "genre": "Masculin ♂",
-            "orientation": "Hétérosexuel",
-            "physical": "1m88 / 82kg",
-            "specialization": "Information & Communication",
-            "cycle": "Licence",
-            "year": "3°",
-            "equipment": "Aucun",
-            "mbti": "INFJ",
-            "status": "ACTIF",
-            "alignment": "Neutre",
-            "image": "/images/id.jpg",
-            "physicalDescription": "Du haut de son mètre quatre-vingt-huit (1m88) et pesant près de quatre-vingt-deux kilogrammes (82 kg), Kaï est un homme qui impose naturellement par sa carrure. Difficile de passer inaperçu quand on occupe ainsi l’espace. Il a un visage plutôt carré, avec des traits bien desKaïés et une mâchoire marquée qui lui donnent un air naturellement sérieux. Sa peau est pâle, presque marmoréenne, qui fait ressortir ses yeux en amande d'un noir profond, avec une expression lourde et mélancolique assez intrigante, accentuée par ses sourcils fournis et légèrement froncés, qui lui donnent un air distant ou détaché. Sa coiffure est naturelle et désordonnée, une masse de cheveux châtain foncé épais et ondulés qui tombent un peu au hasard sur son front, tout en encadrant son visage.\n\nSon style vestimentaire est un mélange paradoxal de conformisme et d'indépendance. Il porte en permanence un uniforme scolaire composé d'une veste à col droit, dans un tissu épais de couleur violet foncé, constamment déboutonnée pour révéler un simple t-shirt noir uni. Un pantalon ajusté et assorti ainsi que des tennis blanches épurées complètent sa tenue. Ses mains sont souvent dissimulées dans ses poches dans une posture nonchalante. Il est souvent aperçu avec une cigarette sans tabac entre les lèvres, qu'il allume avec un Zippo dont il ne se sépare jamais.",
-            "psychProfile": "Kaï se montre sérieux, calme et farouchement indépendant. Fier de nature, il ne se laisse jamais marcher sur les pieds et n'hésite pas à exprimer ses opinions, quitte à les imposer malgré lui. Son attitude de délinquant, souvent marquée par une posture nonchalante et un regard un peu trop direct, est combinée à une honnêteté brute qui peut manquer cruellement de tact lors de ses échanges, ce qui le fait parfois passer pour quelqu'un d'irrespectueux. Pourtant, malgré les apparences, il éprouve une profonde aversion pour la violence gratuite et déteste devoir se battre. Il cherche toujours à régler les conflits par un silence méprisant ou une parole tranchante, mais il n'hésitera jamais à faire parler ses poings si la situation l'exige.\n\nMême s'il est d'un naturel plutôt avenant, notamment par ses manières simples et sans chichis, il reste néanmoins sélectif et il faut du temps pour qu'il puisse accorder sa confiance. Son égo l'empêche d'ailleurs bien souvent de demander de l'aide, préférant porter ses fardeaux en solitaire. Mais quand on arrive à passer outre sa carapace, il se révèle être un ami loyal et un allié précieux sur lequel on peut compter, en toutes circonstances. Trahir ce précieux lien est en revanche définitif, car pour lui, il n'existe aucune seconde chance.",
-            "condition": "La capacité de Kaï repose presque entièrement sur une bonne condition physique. Il est un combattant aguerri qui compte autant sur sa force brute que sur ses réflexes. Son imposant gabarit lui donne une puissance d'impact dévastatrice dans ses coups, mais sa carrure n'est pas qu'une question de volume car il est étonnamment rapide et mobile pour un homme de sa taille. Les cigarettes qu'il fume sont sans tabac ni nicotine, qui n'entâchent pas son excellente endurance, digne d'un athlète ou d'un agent entraîné.",
-            "likesDislikes": "Aime : Faire la sieste, l'ordre et la propreté, la littérature philosophique, les vieux desKaïs animés, les footings matinaux, les balades nocturnes en solitaire, la compétition, les chats noirs, le pain à la pâte de haricot sucrée, les jeux de cartes à échanger, collectionner des briquets vintage, la technologie rétro. \n\nN'aime pas : Les réseaux sociaux, les desKaïs animés récents, les films d'horreur, les fruits de mer, les personnes trop extravagantes ou à l'inverse trop effacées, les gens qui se déguKaït et le cosplay, le modèle d'abonnement pour tout sans rien posséder, les moustiques qui empèchent de dormir tranquillement.",
-            "hobbies": "Depuis sa plus tendre enfance, Kaï a toujours été passionné par le sport, et en particulier le baseball. Il a pratiqué ce sport au poste de lanceur pendant de nombreuses années, jusqu'à ce qu'il décide de se concentrer sur ses études. Il continue néanmoins à suivre les matchs et à s'intéresser aux performances des joueurs professionnels. Il est également un grand amateur de production musicale et, à l'aide de logiciels spécialisés, passe beaucoup de temps à créer des morceaux sur son ordinateur, qu'il ne partage jamais avec qui que ce soit.",
-            "opinion": "Kaï est conscient des failles liées au système hiérarchique mis en place, créant des castes dès la naissance et des inégalités qui ne font que s'accentuer avec le temps. Le fait que la valeur d'une personne puisse être jugée sur la puissance et le potentiel de sa capacité innée peut être considéré comme injuste, mais c'est aussi la raison de son existence. Il voit aussi les côtés positifs de cette hiérarchie, notamment dans la cohésion et l'organisation qu'elle apporte dans la société. Son opinion est donc mitigée, mais il reste convaincu que le système est nécessaire pour maintenir l'ordre et la stabilité dans le monde."
-        },
-        {
-            "id": "9205",
-            "name": "KREST, Orisa",
-            "status": "ACTIF"
-        },
-        {
-            "id": "3054",
-            "name": "OBORO, Kanza",
-            "status": "ACTIF"
-        },
-        {
-            "id": "1322",
-            "name": "SEDO, Juni",
-            "status": "ACTIF"
-        },
-        {
-            "id": "4122",
-            "name": "NOVAK, Muqa",
-            "status": "ACTIF"
-        },
-        {
-            "id": "8761",
-            "name": "VON WUDRAND, Clere",
-            "status": "ACTIF"
-        },
-        {
-            "id": "6543",
-            "name": "PAO, Yalang",
-            "status": "INACTIF"
-        },
-        {
-            "id": "3210",
-            "name": "SOROVIC, Pavle",
-            "status": "INACTIF"
-        },
-        {
-            "id": "4778",
-            "name": "ALUMEDA, Hictor",
-            "status": "ACTIF"
-        },
-        {
-            "id": "1225",
-            "name": "PEGAZZI, Yuilia",
-            "status": "ACTIF"
-        },
-        {
-            "id": "0189",
-            "name": "OKAFOR, Chinedu",
-            "status": "ACTIF"
-        },
-        {
-            "id": "6997",
-            "name": "VAN MARSON, Irick",
-            "status": "ACTIF"
-        },
-        {
-            "id": "7880",
-            "name": "LEBLEC, Antowan",
-            "status": "ACTIF"
-        },
-        {
-            "id": "9988",
-            "name": "Rin-Da",
-            "status": "ACTIF"
-        },
-        {
-            "id": "4411",
-            "name": "TURA-BO, Emporo",
-            "status": "INACTIF"
-        },
-        {
-            "id": "0642",
-            "name": "YAMANOKO, Suikyo",
-            "status": "ACTIF"
-        },
-        {
-            "id": "1006",
-            "name": "SWANSON, Konradd",
-            "status": "ACTIF"
-        },
-        {
-            "id": "4128",
-            "name": "MAHAGA, Kaoru",
-            "status": "ACTIF"
-        },
-        {
-            "id": "7092",
-            "name": "HELONG, Zeng",
-            "status": "INACTIF"
+            "id": "C-016",
+            "name": "Anonyme #A7",
+            "type": "Inconnu",
+            "district": "—",
+            "trust": 1,
+            "missions_count": 1,
+            "notes": "Communications chiffrées uniquement. Verser 50% d'avance."
         }
     ],
-
+    "inventory": [
+        {
+            "id": "I-088",
+            "name": "Pendentif « Coeur d'Ambre »",
+            "state": "EN RECHERCHE",
+            "linked_mission": "M-0142",
+            "estimated_value": 3200,
+            "location": "—"
+        },
+        {
+            "id": "I-087",
+            "name": "Dossier scellé HF-24125VE",
+            "state": "EN COFFRE",
+            "linked_mission": "M-0141",
+            "estimated_value": 5400,
+            "location": "Coffre bureau — casier 4"
+        },
+        {
+            "id": "I-086",
+            "name": "Lot Zippos vintage x3",
+            "state": "EN COFFRE",
+            "linked_mission": "M-0137",
+            "estimated_value": 600,
+            "location": "Coffre bureau — casier 2"
+        },
+        {
+            "id": "I-085",
+            "name": "Guitare « Pyra »",
+            "state": "REMISE AU CLIENT",
+            "linked_mission": "M-0136",
+            "estimated_value": 1800,
+            "location": "Livrée le 14/06"
+        },
+        {
+            "id": "I-084",
+            "name": "Carte d'accès Astia (copie)",
+            "state": "CONFISQUÉE",
+            "linked_mission": "M-0140",
+            "estimated_value": 0,
+            "location": "Détruite après usage"
+        }
+    ],
+    "ledger": [
+        { "id": "T-201", "date": "14/06", "label": "Mission M-0136 — SennaRin", "type": "IN", "amount": 1800 },
+        { "id": "T-202", "date": "13/06", "label": "Frais de repérage — District 8", "type": "OUT", "amount": 220 },
+        { "id": "T-203", "date": "12/06", "label": "Loyer bureau", "type": "OUT", "amount": 900 },
+        { "id": "T-204", "date": "11/06", "label": "Mission M-0141 (acompte 50%)", "type": "IN", "amount": 2700 },
+        { "id": "T-205", "date": "10/06", "label": "Achat cigarettes sans tabac", "type": "OUT", "amount": 40 },
+        { "id": "T-206", "date": "09/06", "label": "Mission M-0142 (acompte 30%)", "type": "IN", "amount": 960 },
+        { "id": "T-207", "date": "08/06", "label": "Réparation vélo urbain", "type": "OUT", "amount": 150 }
+    ],
     "logs": [
-        "08:14:09 — [SYS] Connexion WELLSTON-NET (poste #0791)",
-        "08:14:11 — [AUTH] Session ouverte",
-        "08:14:22 — [APP] Ouverture module \"Tâches\"",
-        "08:14:44 — [APP] Modifications enregistrées — Tâche #002",
-        "08:15:01 — [APP] Ouverture module \"Emploi du temps\"",
-        "08:15:12 — [INFO] Séance annulée — Histoire des médias (CM)",
-        "02:15:30 — [APP] Ouverture module \"Trombinoscope\"",
-        "08:16:18 — [APP] Accès à la fiche de l'étudiant — Kaï (0791)",
-        "08:16:45 — [WARN] Email non-traçable détecté. Conservé.",
-        "08:17:02 — [APP] Ouverture module \"Confidentiel\"",
-        "08:17:45 — [WARN] Niveau d'accès insuffisant — Accès refusé",
-        "08:18:11 — [SYS] Latence inhabituelle — pingback 1337ms",
+        "07:52:04 — [SYS] Connexion PYRAKI-NET — Poste KAI-01",
+        "07:52:07 — [AUTH] Session ouverte — District Rouge",
+        "07:53:12 — [APP] Ouverture module « Missions »",
+        "08:01:44 — [MSN] Nouveau message client — C-021 (H. Vergès)",
+        "08:14:22 — [APP] Mission M-0142 créée — Priorité CRITIQUE",
+        "09:02:18 — [FIELD] Repérage District n°3 — Parc Commercial",
+        "10:47:03 — [ALERT] Rumeur suspecte — Ruelle des Verreries — vérifier",
+        "11:12:55 — [APP] Fiche client C-018 mise à jour",
         "11:59:58 — [SYS] Ping entrant inconnu — origine masquée",
-        "11:59:58 — [SYS] Ping entrant inconnu — origine masquée",
-        "11:59:58 — [SYS] Ping entrant inconnu — origine masquée",
-        "13:08:39 — [AUTH] Niveau d'accès modifié",
-        "13:21:26 — [AUTH] Niveau d'accès modifié",
-        "13:47:12 — [USR] Dépôt livrable — Projet tutoré",
-        "14:05:21 — [APP] Réception email — R. KISKI — objet: \"Re: Projet tutoré\"",
+        "13:08:39 — [AUTH] Niveau d'accès confidentiel accordé",
+        "13:47:12 — [USR] Rapport M-0136 archivé",
+        "14:05:21 — [MSN] Contact Astia — K. Kjel",
+        "16:22:08 — [WARN] Cible débiteur perdue — District n°2",
         "18:02:00 — [USR] Déconnexion volontaire"
     ],
-
+    "confidential": {
+        "arrangement": {
+            "title": "ARRANGEMENT — GROUPE ASTIA (confidentiel)",
+            "content": "Astia verse un forfait mensuel de 2 000 crédits pour un « droit de préemption » sur toute récupération concernant leurs biens ou concurrents. Kaï conserve son indépendance et refuse toute exclusivité formelle. Chaque mission Astia est facturée en supplément, sans NDA verbal. Cet arrangement n'apparaît nulle part sur les registres officiels. Ne rien dire à Kushala."
+        },
+        "watchlist": {
+            "title": "LISTE DE VEILLE — CIBLES À NE JAMAIS ACCEPTER",
+            "content": "• D.C.R. — Département de Contrôle des Rauthéens (trop de témoins).\n• Culte du Massacre — quelle que soit la somme proposée.\n• Menschheitsrat — dossiers politiques uniquement.\n• Toute mission impliquant une brèche du District n°8 sans repérage préalable.\n• Anonyme #A7 tant que l'origine des fonds n'est pas remontée."
+        },
+        "protocol": {
+            "title": "PROTOCOLE — EN CAS D'ARRESTATION",
+            "content": "1. Détruire clé cryptographique du terminal (bouton rouge sous le bureau).\n2. Contacter maître Z. Aztal (avocat, D.C.R. — dette de service).\n3. Aucune déclaration avant présence de l'avocat.\n4. Effacer tout enregistrement audio dans le tiroir du bas.\n5. Prévenir Juni SEDO uniquement si détention > 24h."
+        }
+    },
+    "trombinoscope": {
+        "id": "KAI-01",
+        "name": "Kaï SEDO",
+        "age": "25 ans",
+        "genre": "Masculin ♂",
+        "archetype": "Mage tactique",
+        "race": "Samaär",
+        "office": "Gran Regalia",
+        "activity": "Récupération & Services Indépendants",
+        "district": "District n°6",
+        "mbti": "INFJ",
+        "alignment": "Neutre",
+        "status": "ACTIF",
+        "image": "/images/id.jpg",
+        "physicalDescription": "Du haut de son mètre quatre-vingt-huit (1m88) et pesant près de quatre-vingt-deux kilogrammes (82 kg), Kaï est un homme qui impose naturellement par sa carrure. Difficile de passer inaperçu quand on occupe ainsi l'espace. Il a un visage plutôt carré, avec des traits bien dessinés et une mâchoire marquée qui lui donnent un air naturellement sérieux. Sa peau est pâle, presque marmoréenne, qui fait ressortir ses yeux en amande d'un noir profond, avec une expression lourde et mélancolique assez intrigante, accentuée par ses sourcils fournis et légèrement froncés, qui lui donnent un air distant ou détaché. Sa coiffure est naturelle et désordonnée, une masse de cheveux châtain foncé épais et ondulés qui tombent un peu au hasard sur son front, tout en encadrant son visage.\n\nSon style vestimentaire est un mélange paradoxal de conformisme et d'indépendance. Il porte en permanence un uniforme scolaire composé d'une veste à col droit, dans un tissu épais de couleur violet foncé, constamment déboutonnée pour révéler un simple t-shirt noir uni. Un pantalon ajusté et assorti ainsi que des tennis blanches épurées complètent sa tenue. Ses mains sont souvent dissimulées dans ses poches dans une posture nonchalante. Il est souvent aperçu avec une cigarette sans tabac entre les lèvres, qu'il allume avec un Zippo dont il ne se sépare jamais.",
+        "psychProfile": "Kaï se montre sérieux, calme et farouchement indépendant. Fier de nature, il ne se laisse jamais marcher sur les pieds et n'hésite pas à exprimer ses opinions, quitte à les imposer malgré lui. Son attitude de délinquant, souvent marquée par une posture nonchalante et un regard un peu trop direct, est combinée à une honnêteté brute qui peut manquer cruellement de tact lors de ses échanges, ce qui le fait parfois passer pour quelqu'un d'irrespectueux. Pourtant, malgré les apparences, il éprouve une profonde aversion pour la violence gratuite et déteste devoir se battre. Il cherche toujours à régler les conflits par un silence méprisant ou une parole tranchante, mais il n'hésitera jamais à faire parler ses poings si la situation l'exige.\n\nMême s'il est d'un naturel plutôt avenant, notamment par ses manières simples et sans chichis, il reste néanmoins sélectif et il faut du temps pour qu'il puisse accorder sa confiance. Son égo l'empêche d'ailleurs bien souvent de demander de l'aide, préférant porter ses fardeaux en solitaire. Mais quand on arrive à passer outre sa carapace, il se révèle être un ami loyal et un allié précieux sur lequel on peut compter, en toutes circonstances. Trahir ce précieux lien est en revanche définitif, car pour lui, il n'existe aucune seconde chance.",
+        "condition": "La capacité de Kaï repose presque entièrement sur une bonne condition physique. Il est un combattant aguerri qui compte autant sur sa force brute que sur ses réflexes. Son imposant gabarit lui donne une puissance d'impact dévastatrice dans ses coups, mais sa carrure n'est pas qu'une question de volume car il est étonnamment rapide et mobile pour un homme de sa taille. Les cigarettes qu'il fume sont sans tabac ni nicotine, qui n'entâchent pas son excellente endurance, digne d'un athlète ou d'un agent entraîné.",
+        "likesDislikes": "Aime : Faire la sieste, l'ordre et la propreté, la littérature philosophique, les vieux dessins animés, les footings matinaux, les balades nocturnes en solitaire, la compétition, les chats noirs, le pain à la pâte de haricot sucrée, les jeux de cartes à échanger, collectionner des briquets vintage, la technologie rétro.\n\nN'aime pas : Les réseaux sociaux, les dessins animés récents, les films d'horreur, les fruits de mer, les personnes trop extravagantes ou à l'inverse trop effacées, les gens qui se déguisent et le cosplay, le modèle d'abonnement pour tout sans rien posséder, les moustiques qui empêchent de dormir tranquillement.",
+        "hobbies": "Depuis sa plus tendre enfance, Kaï a toujours été passionné par le sport, et en particulier le baseball. Il a pratiqué ce sport au poste de lanceur pendant de nombreuses années, jusqu'à ce qu'il décide de se concentrer sur ses études. Il continue néanmoins à suivre les matchs et à s'intéresser aux performances des joueurs professionnels. Il est également un grand amateur de production musicale et, à l'aide de logiciels spécialisés, passe beaucoup de temps à créer des morceaux sur son ordinateur, qu'il ne partage jamais avec qui que ce soit.",
+        "opinion": "Kaï est conscient des failles liées au système hiérarchique mis en place, créant des castes dès la naissance et des inégalités qui ne font que s'accentuer avec le temps. Le fait que la valeur d'une personne puisse être jugée sur la puissance et le potentiel de sa capacité innée peut être considéré comme injuste, mais c'est aussi la raison de son existence. Il voit aussi les côtés positifs de cette hiérarchie, notamment dans la cohésion et l'organisation qu'elle apporte dans la société. Son opinion est donc mitigée, mais il reste convaincu que le système est nécessaire pour maintenir l'ordre et la stabilité dans le monde."
+    },
     "tabs": [
-        {
-            "id": "tasks",
-            "label": "Tâches",
-            "icon": "https://win98icons.alexmeub.com/icons/png/certificate_checklist-0.png"
-        },
-        {
-            "id": "reports",
-            "label": "Emploi du temps",
-            "icon": "https://win98icons.alexmeub.com/icons/png/calendar-0.png"
-        },
-        {
-            "id": "trombinoscope",
-            "label": "Trombinoscope",
-            "icon": "https://win98icons.alexmeub.com/icons/png/users-1.png"
-        },
-        {
-            "id": "logs",
-            "label": "Journaux",
-            "icon": "https://win98icons.alexmeub.com/icons/png/executable_script-0.png"
-        },
-        {
-            "id": "secure",
-            "label": "Confidentiel",
-            "icon": "https://win98icons.alexmeub.com/icons/png/key_padlock-1.png"
-        }
-    ],
-
-    "secure": {
-            "echo": {
-            "level": 1,
-            "title": "OPÉRATION « VOILE DE L'INFINI »",
-            "content": "ASSIGNATION : Agent Kaï [Classe 2]\nOpération jumellée d'infiltration au sein de l'université de Wellston — Durée : 10 mois\nL'agent est admis à l'université de Wellston en tant qu'étudiant au sein de l'UFR Information et Communication.\nSurveillance incognito, générale et rapprochée au sein du campus universitaire et lors des activités extra-muros.\nÉlaboration de pistes, d'analyses et de rapports sur les activités de l'université et de ses étudiants suspects."
-        },
-            "ambre01": {
-            "level": 2,
-            "title": "OPÉRATION « PIE BAVARDE »",
-            "content": "ASSIGNATION : Agent Kaï [Classe 2] — Agent MAKKEN [Classe 1]\nOpération jumellée de récupération et d'exfiltration de documents sensibles — Durée : 10 mois\nL'agent est admis à l'université de Wellston en tant qu'étudiant au sein de l'UFR Information et Communication.\nInterception et transmission de communications en lien avec les organisations criminelles EMBER et SPECTRE.\nVérification de la fiabilité des sources et de la véracité des informations collectées."
-        },
-            "kogaveil": {
-            "level": 3,
-            "title": "MISSION « ANTIVIRUS »",
-            "content": "ASSIGNATION : HAUTES INSTANCES — ÉQUIPE 3 — ÉQUIPE 4 — ÉQUIPE 7\nMission de sabotage des méthodes et viviers de recrutement des organisations criminelles EMBER et SPECTRE — Durée : Indéterminée\nConcentration sur les lieux de recrutement tels que les centres pénitentiaires, établissements scolaires et lieux de culte.\n13 opérations liées à cette mission — Importance : Critique / Impact : Important / Dangerosité : Élevée — RANG GLOBAL : A\nTAUX D'ÉCHEC ACCEPTABLE : 10% — Taux d'échec actuel : 2,7%"
-        }
-    }
+        { "id": "missions",     "label": "Missions",       "icon": "https://win98icons.alexmeub.com/icons/png/certificate_checklist-0.png" },
+        { "id": "clients",      "label": "Clients",        "icon": "https://win98icons.alexmeub.com/icons/png/users-1.png" },
+        { "id": "inventory",    "label": "Inventaire",     "icon": "https://win98icons.alexmeub.com/icons/png/briefcase-5.png" },
+        { "id": "ledger",       "label": "Comptes",        "icon": "https://win98icons.alexmeub.com/icons/png/address_book-1.png" },
+        { "id": "trombinoscope","label": "Profil",  "icon": "https://win98icons.alexmeub.com/icons/png/user_card.png" },
+        { "id": "logs",         "label": "Journaux",       "icon": "https://win98icons.alexmeub.com/icons/png/executable_script-0.png" },
+        { "id": "confidential", "label": "Confidentiel",   "icon": "https://win98icons.alexmeub.com/icons/png/key_padlock-1.png" }
+    ]
 }
