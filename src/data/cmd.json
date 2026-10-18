@@ -1,11 +1,11 @@
 {
-    "prompt": "C:\\VINDOWS> ",
-    "bootPrompt": "C:\\VINDOWS> ",
+    "prompt": "C:\\WINDOS> ",
+    "bootPrompt": "C:\\WINDOS> ",
     "matrixChars": "アイウエオカキクケコサシスセソタチツテトナニヌネノ0123456789ABCDEF",
 
     "boot": [
-        "Nicrosoft(R) Vindows 98",
-        "(C)Copyright Nicrosoft Corp 5018-MM.",
+        "Astiasoft(R) WindOS 98",
+        "(C)Copyright Astia Corp 5018-MM.",
         ""
     ],
 
@@ -34,7 +34,7 @@
 
         "ver": [
             "",
-            "Nicrosoft Vindows 98 [Version 4.10.2222]",
+            "Astiasoft WindOS 98 [Version 4.10.2222]",
             "Professional Edition — Build 141",
             ""
         ],
@@ -42,7 +42,7 @@
         "whoami": [
             "",
             "┌─────────────────────────────────┐",
-            "│  UTILISATEUR : KAÏ              │",
+            "│  UTILISATEUR : SIN'AÄN          │",
             "│  CLASSE      : 2                │",
             "│  ÉQUIPE      : 7                │",
             "│  STATUT      : [ACTIF]          │",
@@ -53,7 +53,7 @@
 
         "dir": [
             "",
-            " Répertoire de C:\\kai\\SYSTEM32\\locked.dir",
+            " Répertoire de C:\\sin\\SYSTEM32\\locked.dir",
             "",
             "  alterego.log                42 Ko",
             "  RAPPORT_ABILITY.dat        ??? Ko",
@@ -119,7 +119,7 @@
             "┌─────────────────────────────────┐",
             "│ SESSION BoS-NET                 │",
             "│ AUTORISATION : {state}          ",
-            "│ UTILISATEUR : KAÏ               │",
+            "│ UTILISATEUR : SIN'AÄN           │",
             "│ POSTE : BoS-PC98 #0791          │",
             "└─────────────────────────────────┘",
             ""

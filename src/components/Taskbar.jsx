@@ -41,7 +41,7 @@ const getIcon = (id) => {
     return ICONS.start
 }
 
-export default function Taskbar({ windows, onWindowFocus, onWindowToggle, onStartClick, startOpen }) {
+export default function Taskbar({ windows, onWindowToggle, onStartClick, startOpen }) {
     const [time, setTime] = useState('')
     const [date, setDate] = useState('')
 
@@ -71,7 +71,7 @@ export default function Taskbar({ windows, onWindowFocus, onWindowToggle, onStar
                 data-testid="start-button"
                 style={startOpen ? { borderTop: '2px solid #000', borderLeft: '2px solid #000', borderRight: '2px solid #fff', borderBottom: '2px solid #fff' } : {}}
                 >
-                <img src={ICONS.start} alt="Windows" />
+                <img src={ICONS.start} alt="WindOS" />
                 <span>Démarrer</span>
             </button>
 

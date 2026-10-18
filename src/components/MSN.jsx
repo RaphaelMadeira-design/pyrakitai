@@ -52,7 +52,7 @@ function MSNLogin({ onLogin, onClose, onMinimize, onFocus, focused, zIndex }) {
                 </div>
                 <div>
                     <div className="msn-header__title">NSN Messenger</div>
-                    <div className="msn-header__subtitle">La messagerie instantanée Windows</div>
+                    <div className="msn-header__subtitle">La messagerie instantanée WindOS</div>
                 </div>
             </div>
 

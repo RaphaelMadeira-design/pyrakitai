@@ -51,25 +51,18 @@
     &__body {
         display: flex;
         flex-direction: column;
-        gap: 14px;
-        padding: 16px;
-    }
-
-    &__main {
-        display: flex;
         align-items: center;
-        gap: 16px;
+        gap: 12px;
+        padding: 20px 24px 16px;
     }
 
     &__avatar-frame {
-        flex: 0 0 auto;
-        width: 88px;
-        height: 88px;
-        background: $win98-white;
-        @include border-inset;
-        padding: 2px;
+        width: 96px;
+        height: 96px;
+        background: $win98-gray;
+        @include border-outset;
+        padding: 4px;
         box-sizing: border-box;
-        overflow: hidden;
     }
 
     &__avatar {
@@ -77,15 +70,9 @@
         height: 100%;
         object-fit: cover;
         display: block;
+        @include border-inset;
+        box-sizing: border-box;
         filter: contrast(1.05) saturate(0.9);
-    }
-
-    &__fields {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        min-width: 0;
     }
 
     &__user {
@@ -93,7 +80,14 @@
         font-weight: bold;
         letter-spacing: 0.5px;
         color: $win98-black;
-        margin-bottom: 4px;
+    }
+
+    &__field {
+        width: 100%;
+        max-width: 240px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
     }
 
     &__label {
@@ -101,12 +95,42 @@
         color: $win98-black;
     }
 
-    &__actions {
+    &__password {
+        height: 22px;
         display: flex;
-        justify-content: flex-end;
+        align-items: center;
+        cursor: text;
+        user-select: none;
+        letter-spacing: 2px;
+        font-size: 13px;
+        line-height: 1;
+        padding-top: 5px;
+        overflow: hidden;
+    }
+
+    &__caret {
+        display: inline-block;
+        width: 1px;
+        height: 13px;
+        margin-left: 1px;
+        background: $win98-black;
+        animation: login-caret 1s steps(1) infinite;
+    }
+
+    &__actions {
+        width: 100%;
+        max-width: 240px;
+        display: flex;
+        justify-content: center;
 
         .win98-btn {
-            min-width: 90px;
+            min-width: 110px;
+            @include border-outset;
+
+            &:disabled {
+                color: $win98-dark-gray;
+                text-shadow: 1px 1px 0 $win98-white;
+            }
         }
     }
 
@@ -118,4 +142,8 @@
         box-shadow: 0 -1px 0 $win98-white;
         padding-top: 10px;
     }
+}
+
+@keyframes login-caret {
+    50% { opacity: 0; }
 }

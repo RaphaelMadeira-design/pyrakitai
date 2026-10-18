@@ -21,7 +21,7 @@ export default function ShutdownDialog({ onCancel, onShutdownSound, onConfirm })
                         style={{ width: 16, height: 16, imageRendering: 'pixelated' }}
                     />
                     <span className="title-text">
-                        Arrêt de Windows
+                        Arrêt de WindOS
                     </span>
                 </div>
 

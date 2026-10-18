@@ -7,8 +7,6 @@ const {
     hero: HERO,
     power: POWER,
     stats: STATS,
-    hp: HP,
-    energy: ENERGY,
     spells: SPELLS,
     strengths: FORCES,
     weaknesses: FAIBLESSES,
@@ -32,13 +30,11 @@ const isImg = (icon) => typeof icon === 'string' && /\.(png|jpe?g|webp|gif|svg)$
 // ─── COMPONENT ───────────────────────────────────────────────────
 export default function Pouvoirs() {
     const [mounted, setMounted] = useState(false)
-    const [bars, setBars] = useState(false)
     const [openSpell, setOpenSpell] = useState(null)
 
     useEffect(() => {
         const t1 = setTimeout(() => setMounted(true), 60)
-        const t2 = setTimeout(() => setBars(true), 520)
-        return () => { clearTimeout(t1); clearTimeout(t2) }
+        return () => clearTimeout(t1)
     }, [])
 
     // Close modal on Esc
@@ -108,32 +104,14 @@ export default function Pouvoirs() {
                             </div>
                         </div>
 
-                        {/* Bars: Santé / Énergie */}
-                        <div className="moba__bars" data-testid="hero-bars">
-                            <div className="moba__bar moba__bar--hp">
-                                <div className="moba__bar-track">
-                                    <div
-                                        className="moba__bar-fill"
-                                        style={{ width: bars ? `${(HP.current / HP.max) * 100}%` : '0%' }}
-                                    />
-                                    <span className="moba__bar-label">Santé</span>
-                                    <span className="moba__bar-value">{HP.current}HP</span>
-                                </div>
-                            </div>
-                            <div className="moba__bar moba__bar--energy">
-                                <div className="moba__bar-track">
-                                    <div
-                                        className="moba__bar-fill"
-                                        style={{ width: bars ? `${(ENERGY.current / ENERGY.max) * 100}%` : '0%' }}
-                                    />
-                                    <span className="moba__bar-label">Énergie</span>
-                                    <span className="moba__bar-value">{ENERGY.current}EP</span>
-                                </div>
-                            </div>
-                        </div>
-
                         {/* Quick description */}
-                        <p className="moba__desc" data-testid="hero-desc">{HERO.description}</p>
+                        <div className="moba__panel moba__desc-panel" data-testid="hero-desc-panel">
+                            <div className="moba__panel-head">
+                                <span className="moba__panel-title">Description</span>
+                                <span className="moba__panel-dot" />
+                            </div>
+                            <p className="moba__desc" data-testid="hero-desc">{HERO.description}</p>
+                        </div>
 
                         {/* Spells — icon row */}
                         <div className="moba__panel moba__spells-panel">
@@ -177,7 +155,7 @@ export default function Pouvoirs() {
                         </div>
                     </section>
 
-                    {/* RIGHT: bars + radar + equipment */}
+                    {/* RIGHT: radar + traits + arme */}
                     <section className="moba__col moba__col--right">
 
                         {/* Radar */}
@@ -233,7 +211,7 @@ export default function Pouvoirs() {
                             </div>
                         </div>
 
-                        {/* Forces & Faiblesses */}
+                        {/* Forces & Faiblesses
                         <div className="moba__panel moba__traits-panel" data-testid="traits-panel">
                             <div className="moba__panel-head">
                                 <span className="moba__panel-title">AVANTAGES &amp; LIMITES</span>
@@ -261,6 +239,18 @@ export default function Pouvoirs() {
                                     ))}
                                 </ul>
                             </div>
+                        </div>
+
+                        {/* Arme */}
+                        <div className="moba__panel moba__weapon-panel" data-testid="weapon-panel">
+                            <div className="moba__panel-head">
+                                <span className="moba__panel-title">Arme</span>
+                                <span className="moba__panel-dot" />
+                            </div>
+                            <div className="moba__weapon-frame">
+                                <img src="/images/blade.png" alt="Arme" className="moba__weapon-img" data-testid="weapon-img" />
+                            </div>
+                            <p>C'est l'arme principale de Sin'aän, un sabre à l'énergie ek'lka.</p>
                         </div>
                     </section>
 

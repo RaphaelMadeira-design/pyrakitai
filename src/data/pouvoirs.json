@@ -38,6 +38,11 @@
             "name": "DEFENSE", 
             "value": 20, 
             "color": "#ffd24a" 
+        },
+        { 
+            "name": "DEFENSE", 
+            "value": 20, 
+            "color": "#ffd24a" 
         }
     ],
     "spells": [
@@ -96,14 +101,9 @@
         "max": 100 
     },
     "strengths": [
-        "Inéluctabilité psychique : fermer les yeux ou se cacher dans le noir n'interrompt pas le transfert de vision (Phase 1).",
-        "Létalité et burst absolus en duel grâce au combo de téléportations géométriques répétées à portée de sabre (Sort R).",
-        "Excellentes capacités d'espionnage, d'infiltration et de détection des Essems à travers les murs (Sort Q)."
+        "Inéluctabilité psychique : fermer les yeux ou se cacher dans le noir n'interrompt pas le transfert de vision (Phase 1)."
     ],
     "weaknesses": [
-        "Inefficacité cognitive totale (Sort W) sur les individus aveugles de naissance (absence de repères mémoriels de la vue).",
-        "Immunité psychologique des êtres dépourvus de conscience (automates, monstres décérébrés) qui n'ont pas de Surmoi.",
-        "Rigidité mathématique : si les lignes de symétrie calculées par l'œil intersectent des obstacles solides, la téléportation passe au Rouge et échoue.",
-        "Coût énergétique massif de la Constellation (Sort R) provoquant de lourds contrecoups neurologiques en cas d'abus."
+        "Inefficacité cognitive totale (Sort W) sur les individus aveugles de naissance (absence de repères mémoriels de la vue)."
     ]
 }
