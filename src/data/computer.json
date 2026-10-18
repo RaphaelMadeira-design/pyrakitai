@@ -155,7 +155,7 @@
         "icon": "https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-2.png"
     },
     "p_media": {
-        "name": "Vindows Media Player",
+        "name": "WindOS Media Player",
         "parent": "c_programs",
         "type": "shortcut",
         "target": "media",

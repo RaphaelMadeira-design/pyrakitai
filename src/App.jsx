@@ -3,6 +3,7 @@ import './styles/Desktop.scss'
 
 import DesktopIcon from './components/DesktopIcon'
 import Win98Window from './components/Win98Window'
+import LoginScreen from './components/LoginScreen'
 import Taskbar from './components/Taskbar'
 import StartMenu from './components/StartMenu'
 import Pouvoirs from './components/Pouvoirs'
@@ -190,6 +191,7 @@ let zCounter = 100
 function App() {
     const isMobile = useIsMobile()
     const [booted, setBooted] = useState(false)
+    const [loggedIn, setLoggedIn] = useState(false)
     const [windows, setWindows] = useState([])
     const [startOpen, setStartOpen] = useState(false)
     const [showShutdown, setShowShutdown] = useState(false)
@@ -456,12 +458,18 @@ function App() {
 
     const handleReset = useCallback(() => {
         setBooted(false)
+        setLoggedIn(false)
         setWindows([])
         setStartOpen(false)
         setShowShutdown(false)
         setLoading(null)
         setMsnOpen(false)
         setMsnMinimized(false)
+    }, [])
+
+    const handleLock = useCallback(() => {
+        setStartOpen(false)
+        setLoggedIn(false)
     }, [])
 
     if (isMobile) {
@@ -482,10 +490,17 @@ function App() {
                     }}>
 
                     {/* Boot screen */}
-                    {!booted && <BootScreen onDone={() => { setBooted(true); Sounds.startup() }} />}
+                    {!booted && <BootScreen onDone={() => { setBooted(true) }} />}
+
+                    {/* Écran d'accueil (logon) — uniquement après le boot */}
+                    {booted && !loggedIn && (
+                        <LoginScreen onLogin={() => { Sounds.startup(); setLoggedIn(true) }} />
+                    )}
 
                     {/* Wallpaper */}
-                                        <div className={`desktop__wallpaper${windows.some(w => !w.minimized && w.id !== 'msn') ? ' desktop__wallpaper--dimmed' : ''}`} data-testid="desktop-wallpaper" />
+                    {loggedIn && (
+                        <div className={`desktop__wallpaper${windows.some(w => !w.minimized && w.id !== 'msn') ? ' desktop__wallpaper--dimmed' : ''}`} data-testid="desktop-wallpaper" />
+                    )}
 
                     {/* Scan lines overlay */}
                     <div className="scanlines" />
@@ -506,12 +521,14 @@ function App() {
                     )}
 
                     {/* Watermark */}
-                    <div className="desktop__watermark">
-                        <span>PC-98</span>
-                    </div>
+                    {loggedIn && (
+                        <div className="desktop__watermark">
+                            <span>PC-98</span>
+                        </div>
+                    )}
 
                     {/* Desktop Icons */}
-                    {icons.map(icon => (
+                    {loggedIn && icons.map(icon => (
                         <DesktopIcon
                             key={icon.id}
                             id={icon.id}
@@ -526,30 +543,32 @@ function App() {
                     ))}
 
                     {/* Windows container */}
-                    <div className="desktop__content" style={{ position: 'absolute', inset: '0 0 32px 0' }}>
-                        {windows.filter(win => win.id !== 'msn').map(win => (
-                            <Win98Window
-                                key={win.id}
-                                id={win.id}
-                                title={win.title}
-                                zIndex={win.zIndex}
-                                focused={win.focused}
-                                minimized={win.minimized}
-                                defaultSize={win.defaultSize}
-                                defaultPosition={win.defaultPosition}
-                                onClose={closeWindow}
-                                onMinimize={minimizeWindow}
-                                onFocus={focusWindow}
-                                onHelp={
-                                    ["browser", "intranet", "mail", "computer"].includes(win.id)
-                                        ? handleHelp
-                                        : undefined
-                                }
-                            >
-                                {renderWindowContent(win)}
-                            </Win98Window>
-                        ))}
-                    </div>
+                    {loggedIn && (
+                        <div className="desktop__content" style={{ position: 'absolute', inset: '0 0 32px 0' }}>
+                            {windows.filter(win => win.id !== 'msn').map(win => (
+                                <Win98Window
+                                    key={win.id}
+                                    id={win.id}
+                                    title={win.title}
+                                    zIndex={win.zIndex}
+                                    focused={win.focused}
+                                    minimized={win.minimized}
+                                    defaultSize={win.defaultSize}
+                                    defaultPosition={win.defaultPosition}
+                                    onClose={closeWindow}
+                                    onMinimize={minimizeWindow}
+                                    onFocus={focusWindow}
+                                    onHelp={
+                                        ["browser", "intranet", "mail", "computer"].includes(win.id)
+                                            ? handleHelp
+                                            : undefined
+                                    }
+                                >
+                                    {renderWindowContent(win)}
+                                </Win98Window>
+                            ))}
+                        </div>
+                    )}
 
                     {/* Spinner de chargement */}
                     {loading && <Loading label={loading.label} />}
@@ -560,6 +579,7 @@ function App() {
                             onClose={() => setStartOpen(false)}
                             onOpenWindow={openWindow}
                             onShutdown={() => setShowShutdown(true)}
+                            onLock={handleLock}
                         />
                     )}
 
@@ -576,7 +596,7 @@ function App() {
                     )}
 
                     {/* MSN App */}
-                    {msnOpen && (
+                    {msnOpen && loggedIn && (
                         <div
                             className="desktop__content"
                             style={{
@@ -593,13 +613,15 @@ function App() {
                     )}
 
                     {/* Taskbar */}
-                    <Taskbar
-                        windows={windows}
-                        onWindowFocus={focusWindow}
-                        onWindowToggle={toggleWindow}
-                        onStartClick={(e) => { e.stopPropagation(); setStartOpen(prev => !prev); }}
-                        startOpen={startOpen}
-                    />
+                    {loggedIn && (
+                        <Taskbar
+                            windows={windows}
+                            onWindowFocus={focusWindow}
+                            onWindowToggle={toggleWindow}
+                            onStartClick={(e) => { e.stopPropagation(); setStartOpen(prev => !prev); }}
+                            startOpen={startOpen}
+                        />
+                    )}
                 </div>
             )}
         </CRTFrame>

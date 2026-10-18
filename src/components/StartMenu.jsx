@@ -7,6 +7,7 @@ const ICONS = {
     folderExplorer: 'https://win98icons.alexmeub.com/icons/png/directory_explorer-2.png',
     folderClosed: 'https://win98icons.alexmeub.com/icons/png/directory_closed-0.png',
     shutdown:     'https://win98icons.alexmeub.com/icons/png/monitor_blue_grad-0.png',
+    lock:         'https://win98icons.alexmeub.com/icons/png/key_padlock-1.png',
     snake:        'https://win98icons.alexmeub.com/icons/png/joystick_alt-0.png',
     jump:         'https://win98icons.alexmeub.com/icons/png/joystick_alt-0.png',
     virus:        'https://win98icons.alexmeub.com/icons/png/joystick_alt-0.png',
@@ -20,7 +21,7 @@ const ICONS = {
     intranet:     'https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-3.png'
 }
 
-export default function StartMenu({ onClose, onOpenWindow, onShutdown }) {
+export default function StartMenu({ onClose, onOpenWindow, onShutdown, onLock }) {
     const [gamesOpen, setGamesOpen] = useState(false)
     const [docsOpen,  setDocsOpen]  = useState(false)
 
@@ -36,7 +37,7 @@ export default function StartMenu({ onClose, onOpenWindow, onShutdown }) {
 
             <div className="start-menu" onClick={(e) => e.stopPropagation()} onMouseDown={(e) => e.stopPropagation()}>
                 <div className="start-menu__sidebar">
-                    <span><strong>Vindows</strong> 98</span>
+                    <span><strong>WindOS</strong> 98</span>
                 </div>
 
                 <div className="start-menu__content">
@@ -107,7 +108,7 @@ export default function StartMenu({ onClose, onOpenWindow, onShutdown }) {
                         data-testid="start-menu-games"
                         >
                         <img src={ICONS.games} alt="Jeux" />
-                        Jeux
+                        <span>Jeux</span>
                         <span className="start-menu__item__arrow">▶</span>
 
                         {gamesOpen && (
@@ -141,6 +142,11 @@ export default function StartMenu({ onClose, onOpenWindow, onShutdown }) {
                     </div>
 
                     <div className="start-menu__separator" />
+
+                    <div className="start-menu__item" onClick={() => { Sounds.click(); onLock?.(); onClose(); }} data-testid="start-menu-lock">
+                        <img src={ICONS.lock} alt="Verrouiller" />
+                        Verrouiller la session
+                    </div>
 
                     <div className="start-menu__item" onClick={() => { Sounds.error(); onShutdown(); onClose(); }} data-testid="start-menu-shutdown">
                         <img src={ICONS.shutdown} alt="Arrêt" />

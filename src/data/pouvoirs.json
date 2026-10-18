@@ -1,91 +1,90 @@
 {
     "hero": {
-        "firstName": "KAÏ",
-        "lastName": "SEDO",
-        "school": "Wellston",
+        "firstName": "Sin'aän",
+        "lastName": "KITAÏ",
+        "school": "PRAXYS",
         "portrait": "/images/Full - Pose.png",
-        "description": "Kaï peut modeler son aura et créer une silhouette noire et opaque à son image, appelée Alter Ego. Ce clone est capable de se déplacer librement, mais il est limité à une distance de 30 mètres autour de l'utilisateur. Dans sa forme basique, il est tout à fait possible d'attaquer, repousser ou entraver l'Alter Ego. Bien qu'il soit lié à Kaï, le double ne partage pas les états qui l'affligent ni les dégâts qu'il subit et est dépourvu de sensations."
+        "description": "Sin'aän peut matérialiser une silhouette noire et opaque entièrement composé d'ek'lka à son image, appelée Alter Ego, capable de se déplacer librement sur une distance de 50 mètres autour de l'invocateur. Ce double est invisible pour celles et ceux qui ne possèdent pas de vision essémique. Alter Ego est utilisé comme extension de Sin'aän tout en étant indépendant de lui. Ce double assaillit l'ennemi directement ou bien leurs reflets et ombres."
     },
     "power": {
         "name": "ALTER EGO",
-        "tier": "???",
-        "level": "???",
-        "aura": "ULTRA VIOLET",
-        "type": "ÉMETTEUR",
-        "role": "ASSAUT / UTILITAIRE"
+        "essem": "EK'LKA",
+        "concept": "ALTÉRITÉ",
+        "aklen": "INTERMÉDIAIRE",
+        "type": "INVOCATEUR"
     },
     "stats": [
         { 
             "name": "POWER",     
-            "value": 0, 
+            "value": 50, 
             "color": "#ff5e6c" 
         },
         { 
             "name": "SPEED",   
-            "value": 0, 
+            "value": 50, 
             "color": "#5ee6ff" 
         },
         { 
             "name": "TRICK",   
-            "value": 0, 
+            "value": 50, 
             "color": "#a98bff" 
         },
         { 
             "name": "RECOVERY",   
-            "value": 0, 
+            "value": 40, 
             "color": "#5effa1" 
         },
         { 
             "name": "DEFENSE", 
-            "value": 0, 
+            "value": 20, 
             "color": "#ffd24a" 
         }
     ],
     "spells": [
         {
             "key": "Q",
-            "name": "Permutation",
+            "name": "TAILLE FANTÔME",
             "cost": 10,
-            "duration": "1 tour",
-            "recharge": "1 tour",
-            "range": "30 m",
-            "effect": "",
-            "desc": "Sort de mobilité. Kaï intervertit instantanément sa position physique avec celle de son Alter Ego.",
+            "duration": "2 tours",
+            "recharge": "2 tours",
+            "range": "Contact direct",
+            "effect": "Au moment où Kaï dégaine son sabre et tranche le vide à sa propre position, l'énergie cinétique et le tranchant de la lame sont instantanément absorbés par son Ek'lka et transférés à l'emplacement du clone. L'adversaire est subitement frappé par une force de coupe physique et magique dévastatrice provenant du vide.",
+            "desc": "Kaï se fige et adopte une posture traditionnelle de combat, ancrant ses appuis au sol, la main gauche sur le fourreau et la main droite sur la garde de son sabre. À distance, son Alter Ego invisible calque millimétriquement sa posture et se positionne au corps-à-corps avec la cible.",
             "icon": "/images/spell_1.jpg"
         },
         {
             "key": "W",
-            "name": "Déphasage",
-            "cost": 30,
-            "duration": "2 tours",
+            "name": "ATTAQUE MIROIR",
+            "cost": 20,
+            "duration": "Instantané",
             "recharge": "2 tours",
-            "range": "30 m",
-            "effect": "",
-            "desc": "L'Alter Ego se désolidarise de la matière et du plan physique. Il devient totalement intangible.",
+            "range": "50 m",
+            "effect": " L'Alter Ego ne cible pas le corps de chair ou de métal de la victime. Il s'attaque directement à ses extensions conceptuelles présentes dans l'environnement : son reflet dans une vitre/flaque ou son ombre projetée au sol.",
+            "desc": "Le clone invisible exécute un coup de sabre chirurgical directement sur l'ombre ou le reflet de la cible. Par le principe de l'Altérité, la blessure se répercute instantanément, physiquement et au même endroit précis sur le véritable corps de la victime.",
             "icon": "/images/spell_2.jpg"
         },
         {
             "key": "E",
-            "name": "Camouflage",
+            "name": "TRANSPOSITION",
             "cost": 30,
-            "duration": "3 tours",
-            "recharge": "2 tours",
-            "range": "30 m",
-            "effect": "",
-            "desc": " L'Alter Ego devient complètement invisible à l'œil nu. Il reste  repérable par les personnes spécialisées dans la détection d'aura",
+            "duration": "Instantané",
+            "recharge": "1 tour",
+            "range": "25 m",
+            "effect": "Pendant la fraction de seconde où sa paupière se ferme (le temps d'un battement de cils), la frontière entre le Moi (Kaï) et l'Autre (le clone) s'effondre. Leurs masses physiques et essémiques sont interverties.",
+            "desc": "Ce sort est intimement lié à la condition physique de Kaï. Il se déclenche instantanément lorsque Kaï cligne de son unique œil valide.",
             "icon": "/images/spell_3.jpg"
         },
         {
             "key": "R",
-            "name": "Enveloppe",
-            "cost": 80,
-            "duration": "4 tours",
-            "recharge": "6 tours",
-            "range": "Aucune",
-            "effect": "Tant qu'il retient sa respiration, Kaï peut utiliser Déphasage et Camouflage directement.",
-            "desc": " L'Alter Ego rentre à l'intérieur du corps de Kaï et fusionne temporairement avec lui, partageant toutes ses capacités. Le clone peut aussi faire jaillir ses membres depuis n'importe quelle partie du corps de Kaï.",
-            "icon": "/images/spell_4.jpg",
-            "ult": true
+            "name": "KALÉIDOSCOPE",
+            "cost": 50,
+            "duration": "5 tours",
+            "recharge": "7 tours",
+            "range": "Contact direct",
+            "effect": "La cible se retrouve piégée au centre, son image étant projetée et multipliée des centaines de fois dans chaque éclat de verre lévitant. Ce déluge de reflets permet à l'Alter Ego de se démultiplier virtuellement : il assaille la victime de coups de sabre simultanés sous tous les angles à une vitesse suprême. En parallèle, Kaï utilise son propre katana pour frapper et briser les éclats de miroir flottants. Chaque miroir brisé qui reflétait la victime transmet instantanément les dégâts de sa brisure au corps réel de cette dernière.",
+            "desc": "Kaï libère la totalité de son Ek'lka dans un coup de katana circulaire surpuissant qui vient littéralement déchirer et fracturer le tissu spatial de la zone. L'espace tout autour de la cible se fragmente en une multitude de débris magiques flottants, créant un dôme semblable à un gigantesque kaléidoscope de miroirs brisés.",
+            "ult": true,
+            "icon": "/images/spell_4.jpg"
         }
     ],
     "hp": { 
@@ -93,17 +92,18 @@
         "max": 100 
     },
     "energy": { 
-        "current": 80, 
-        "max": 80 
+        "current": 100, 
+        "max": 100 
     },
     "strengths": [
-        "Capacité qui tire entièrement parti de l'effet de surprise",
-        "L'utilisateur d'Alter Ego jouit d'une grande mobilité",
-        "Pouvoir polyvalent et utile hors des affrontements directs"
+        "Inéluctabilité psychique : fermer les yeux ou se cacher dans le noir n'interrompt pas le transfert de vision (Phase 1).",
+        "Létalité et burst absolus en duel grâce au combo de téléportations géométriques répétées à portée de sabre (Sort R).",
+        "Excellentes capacités d'espionnage, d'infiltration et de détection des Essems à travers les murs (Sort Q)."
     ],
     "weaknesses": [
-        "Alter Ego est limité à une distance de 30 mètres autour de l'utilisateur",
-        "La puissance du double est proportionnelle à celle de Kaï",
-        "La silhouette peut être neutralisée par des attaques conventionnelles"
+        "Inefficacité cognitive totale (Sort W) sur les individus aveugles de naissance (absence de repères mémoriels de la vue).",
+        "Immunité psychologique des êtres dépourvus de conscience (automates, monstres décérébrés) qui n'ont pas de Surmoi.",
+        "Rigidité mathématique : si les lignes de symétrie calculées par l'œil intersectent des obstacles solides, la téléportation passe au Rouge et échoue.",
+        "Coût énergétique massif de la Constellation (Sort R) provoquant de lourds contrecoups neurologiques en cas d'abus."
     ]
 }

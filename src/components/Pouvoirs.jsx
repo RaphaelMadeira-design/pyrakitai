@@ -63,10 +63,10 @@ export default function Pouvoirs() {
                 <header className="moba__topbar">
                     <div className="moba__crumb">
                         <span className="moba__crumb-dot" />
-                        DATA CHECK // PROFIL élève <strong>{HERO.lastName} {HERO.firstName}</strong>
+                        DATA CHECK // PROFIL ESSEM <strong>{HERO.lastName} {HERO.firstName}</strong>
                     </div>
                     <div className="moba__rank">
-                        <span className="moba__rank-label">ÉTABLISSEMENT</span>
+                        <span className="moba__rank-label">AFFILIATION</span>
                         <span className="moba__rank-val">{HERO.school}</span>
                         <span className="moba__rank-mat">{HERO.matricule}</span>
                     </div>
@@ -85,29 +85,25 @@ export default function Pouvoirs() {
                                 <span className="moba__panel-dot" />
                             </div>
                             <div className="moba__power-grid">
-                                <div className="moba__power-cell" data-testid="power-name">
-                                    <i>APPELATION</i>
+                                <div className="moba__power-cell moba__power-cell--wide moba__power-cell--aura" data-testid="power-name">
+                                    <i>NOM</i>
                                     <span>{POWER.name}</span>
                                 </div>
-                                <div className="moba__power-cell" data-testid="power-tier">
-                                    <i>TIER</i>
-                                    <span>{POWER.tier}</span>
-                                </div>
-                                <div className="moba__power-cell" data-testid="power-level">
-                                    <i>NIVEAU</i>
-                                    <span>{POWER.level}</span>
-                                </div>
-                                <div className="moba__power-cell moba__power-cell--aura" data-testid="power-aura">
-                                    <i>AURA </i>
-                                    <span>{POWER.aura}</span>
-                                </div>
-                                <div className="moba__power-cell" data-testid="power-type">
-                                    <i>TYPE</i>
+                                <div className="moba__power-cell moba__power-cell">
+                                    <i>ARCHÉTYPE</i>
                                     <span>{POWER.type}</span>
                                 </div>
-                                <div className="moba__power-cell" data-testid="power-role">
-                                    <i>RÔLE</i>
-                                    <span>{POWER.role}</span>
+                                <div className="moba__power-cell moba__power-cell">
+                                    <i>ESSEM</i>
+                                    <span>{POWER.essem}</span>
+                                </div>
+                                <div className="moba__power-cell moba__power-cell">
+                                    <i>CONCEPT</i>
+                                    <span>{POWER.concept}</span>
+                                </div>
+                                <div className="moba__power-cell moba__power-cell">
+                                    <i>AKLËN</i>
+                                    <span>{POWER.aklen}</span>
                                 </div>
                             </div>
                         </div>
