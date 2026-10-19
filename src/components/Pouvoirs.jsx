@@ -250,7 +250,7 @@ export default function Pouvoirs() {
                             <div className="moba__weapon-frame">
                                 <img src="/images/blade.png" alt="Arme" className="moba__weapon-img" data-testid="weapon-img" />
                             </div>
-                            <p>C'est l'arme principale de Sin'aän, un sabre à l'énergie ek'lka.</p>
+                            <p>L'arme principale de Sin'aän est un sabre de guerre Dōtanuki, à la lame massive et lourde, polie comme un miroir impeccable pour lui permettre de traquer son Alter Ego à l'aveugle. Nommé Conséquence, il maîtrise ce sabre avec une précision redoutable qu'il pousse à son paroxysme à travers l’art du Iaidō.</p>
                         </div>
                     </section>
 

@@ -4,7 +4,7 @@
         "lastName": "KITAÏ",
         "school": "PRAXYS",
         "portrait": "/images/Full - Pose.png",
-        "description": "Sin'aän peut matérialiser une silhouette noire et opaque entièrement composé d'ek'lka à son image, appelée Alter Ego, capable de se déplacer librement sur une distance de 50 mètres autour de l'invocateur. Ce double est invisible pour celles et ceux qui ne possèdent pas de vision essémique. Alter Ego est utilisé comme extension de Sin'aän tout en étant indépendant de lui. Ce double assaillit l'ennemi directement ou bien leurs reflets et ombres."
+        "description": "Sin'aän peut matérialiser une silhouette noire et opaque entièrement composé d'ek'lka à son image, appelée Alter Ego, capable de se déplacer librement sur une distance de 50 mètres autour de l'invocateur. Ce double est invisible pour celles et ceux qui ne possèdent pas de vision essémique, mais il est possible de percevoir ses contours sur les surfaces réfléchissantes. Alter Ego s'attaque aux extensions conceptuelles de la cible telles que leurs ombres et leurs reflets, mais peut s'en prendre directement à l'adversaire en répliquant et transférant les assauts de l'invocateur. Les dégâts infligés sont conceptuels car l'intégrité physique de la cible n'a pas été atteinte, mais son corps subit les sensations et les dommages liés à l'attaque."
     },
     "power": {
         "name": "ALTER EGO",
