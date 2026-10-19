@@ -11,7 +11,15 @@
         "essem": "EK'LKA",
         "concept": "ALTÉRITÉ",
         "aklen": "INTERMÉDIAIRE",
-        "type": "INVOCATEUR"
+        "type": "INVOCATEUR",
+        "conceptInfo": "[À compléter] L'Altérité est le concept qui fonde le pouvoir : Sin'aän projette un autre lui-même, un double d'ek'lka qui agit à sa place et frappe les extensions conceptuelles de la cible (ombres, reflets).",
+        "aklenInfo": "[À compléter] L'Aklën (lien) est intermédiaire : le lien entre Sin'aän et son Alter Ego reste stable jusqu'à 50 mètres, assez fort pour transférer ses assauts, mais il demande concentration et posture pour rester précis."
+    },
+    "weapon": {
+        "image": "/images/blade.png",
+        "name": "Conséquence",
+        "type": "Sabre Dōtanuki",
+        "features": "Sabre de guerre à la lame massive et lourde, polie comme un miroir impeccable pour lui permettre de traquer son Alter Ego à l'aveugle. Sin'aän le maîtrise avec une précision redoutable qu'il pousse à son paroxysme à travers l'art du Iaidō."
     },
     "stats": [
         { 

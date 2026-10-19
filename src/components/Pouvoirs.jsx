@@ -10,6 +10,7 @@ const {
     spells: SPELLS,
     strengths: FORCES,
     weaknesses: FAIBLESSES,
+    weapon: WEAPON,
 } = pouvoirsData
 
 // ─── RADAR GEOMETRY ──────────────────────────────────────────────
@@ -24,6 +25,14 @@ const RINGS = [0.25, 0.5, 0.75, 1.0]
 const polyOf = pts => pts.map(p => `${Math.round(p.x)},${Math.round(p.y)}`).join(' ')
 
 // ─── SPELL ICONS ─────────────────────────────────────────────────
+
+const InfoCell = ({ label, value, info, align, testId }) => (
+    <div className={`moba__power-cell moba__power-cell--info moba__power-cell--${align}`} tabIndex={0} data-testid={testId}>
+        <i>{label}<span className="moba__info-mark" aria-hidden="true">?</span></i>
+        <span>{value}</span>
+        <div className="moba__tooltip" role="tooltip" data-testid={`${testId}-tooltip`}>{info}</div>
+    </div>
+)
 
 const isImg = (icon) => typeof icon === 'string' && /\.(png|jpe?g|webp|gif|svg)$/i.test(icon)
 
@@ -93,14 +102,8 @@ export default function Pouvoirs() {
                                     <i>ESSEM</i>
                                     <span>{POWER.essem}</span>
                                 </div>
-                                <div className="moba__power-cell moba__power-cell">
-                                    <i>CONCEPT</i>
-                                    <span>{POWER.concept}</span>
-                                </div>
-                                <div className="moba__power-cell moba__power-cell">
-                                    <i>AKLËN</i>
-                                    <span>{POWER.aklen}</span>
-                                </div>
+                                <InfoCell label="CONCEPT" value={POWER.concept} info={POWER.conceptInfo} align="left" testId="power-concept" />
+                                <InfoCell label="AKLËN" value={POWER.aklen} info={POWER.aklenInfo} align="right" testId="power-aklen" />
                             </div>
                         </div>
 
@@ -248,9 +251,22 @@ export default function Pouvoirs() {
                                 <span className="moba__panel-dot" />
                             </div>
                             <div className="moba__weapon-frame">
-                                <img src="/images/blade.png" alt="Arme" className="moba__weapon-img" data-testid="weapon-img" />
+                                <img src={WEAPON.image} alt={WEAPON.name} className="moba__weapon-img" data-testid="weapon-img" />
                             </div>
-                            <p>L'arme principale de Sin'aän est un sabre de guerre Dōtanuki, à la lame massive et lourde, polie comme un miroir impeccable pour lui permettre de traquer son Alter Ego à l'aveugle. Nommé Conséquence, il maîtrise ce sabre avec une précision redoutable qu'il pousse à son paroxysme à travers l’art du Iaidō.</p>
+                            <dl className="moba__weapon-info" data-testid="weapon-info">
+                                <div className="moba__weapon-row">
+                                    <dt>Nom</dt>
+                                    <dd className="moba__weapon-name" data-testid="weapon-name">{WEAPON.name}</dd>
+                                </div>
+                                <div className="moba__weapon-row">
+                                    <dt>Type</dt>
+                                    <dd data-testid="weapon-type">{WEAPON.type}</dd>
+                                </div>
+                                <div className="moba__weapon-row moba__weapon-row--block">
+                                    <dt>Caractéristiques</dt>
+                                    <dd data-testid="weapon-features">{WEAPON.features}</dd>
+                                </div>
+                            </dl>
                         </div>
                     </section>
 
