@@ -386,11 +386,11 @@ $pixel-font: $font-system;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 10px;
-        height: 10px;
+        width: 9px;
+        height: 9px;
         border-radius: 50%;
         margin-left: 5px;
-        font-size: 6px;
+        font-size: 7px;
         font-style: normal;
         line-height: 1;
         color: $moba-bg-1;
@@ -417,8 +417,12 @@ $pixel-font: $font-system;
         pointer-events: none;
     }
 
-    &__power-cell--left .moba__tooltip { left: 0; }
-    &__power-cell--right .moba__tooltip { right: 0; }
+    &__power-cell--left .moba__tooltip { 
+        left: 0; 
+    }
+    &__power-cell--right .moba__tooltip { 
+        right: 0; 
+    }
 
     &__weapon-img {
         display: block;
@@ -481,6 +485,7 @@ $pixel-font: $font-system;
         padding: 6px 8px;
         background: rgba(8, 18, 40, 0.85);
         border: 1px solid $moba-border;
+        font-size: 10px;
 
         i {
             display: block;
@@ -490,8 +495,8 @@ $pixel-font: $font-system;
             letter-spacing: 1px;
             margin-bottom: 2px;
         }
+        
         span {
-            font-size: 10px;
             color: #fff;
             letter-spacing: 0.5px;
         }
@@ -517,12 +522,9 @@ $pixel-font: $font-system;
     &__spell-row {
         position: relative;
         z-index: 1;
-        display: flex;
-        justify-content: space-between;
-        gap: 8px;
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: minmax(48px, 86px);
+        grid-auto-columns: minmax(48px, 78px);
         justify-content: space-between;
         gap: 8px;
         min-width: 0;
@@ -532,13 +534,13 @@ $pixel-font: $font-system;
         padding: 26px 0 4px;
         margin-top: -26px;
         scrollbar-width: thin;
-        scrollbar-color: #2c4f86 transparent;
+        scrollbar-color: $moba-border transparent;
 
         &::-webkit-scrollbar { 
             height: 6px; 
         }
         &::-webkit-scrollbar-thumb { 
-            background: #2c4f86; 
+            background: $moba-border; 
         }
     }
 

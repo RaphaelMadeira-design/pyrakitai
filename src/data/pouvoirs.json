@@ -55,7 +55,7 @@
     ],
     "spells": [
         {
-            "key": "Q",
+            "key": "A",
             "name": "TAILLE FANTÔME",
             "cost": 10,
             "duration": "2 tours",
@@ -66,7 +66,7 @@
             "icon": "/images/spell_1.jpg"
         },
         {
-            "key": "W",
+            "key": "Z",
             "name": "ATTAQUE MIROIR",
             "cost": 20,
             "duration": "Instantané",
