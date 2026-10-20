@@ -1,20 +1,18 @@
 {
     "operator": {
-        "codename": "KAI-01",
-        "name": "Kaï SEDO",
-        "race": "Samaär",
-        "age": 27,
+        "codename": "SIN-01",
+        "name": "Sin'aän KITAÏ",
+        "race": "Aüne",
         "district": "District n°6",
         "office": "Gran Regalia",
-        "since": "13/03/2024",
         "credits": 12480,
         "rating": 4.6
     },
     "missions": [
         {
             "id": "M-0142",
-            "title": "Récupérer le pendentif d'Alma'tea",
-            "client": "H. Vergès",
+            "title": "Récupération — Trésor familial",
+            "client": "H. CARRION",
             "target_item": "Pendentif « Coeur d'Ambre »",
             "location": "District n°3 — Parc Commercial",
             "priority": "CRITIQUE",
@@ -25,8 +23,8 @@
         },
         {
             "id": "M-0141",
-            "title": "Extraction — Dossier scellé « HF-24125VE »",
-            "client": "Anonyme (Astia ?)",
+            "title": "Extraction — Dossier scellé HF-24125VE",
+            "client": "ANONYME",
             "target_item": "Dossier physique + microfiche",
             "location": "District n°4 — L'Axiome",
             "priority": "HAUTE",
@@ -38,7 +36,7 @@
         {
             "id": "M-0140",
             "title": "Repérage — Cargaison Astia détournée",
-            "client": "Groupe Astia",
+            "client": "M. METKOR",
             "target_item": "Palettes de bio-composants",
             "location": "District n°8 — Le Bloc Abandonné",
             "priority": "HAUTE",
@@ -50,8 +48,8 @@
         {
             "id": "M-0139",
             "title": "Filature — Débiteur en fuite",
-            "client": "Prêteur K. Kushala",
-            "target_item": "Localisation du sujet",
+            "client": "S. KEZIN'ARTAKUÜLTU",
+            "target_item": "Localisation de ████████",
             "location": "District n°2 — Noda Prima",
             "priority": "MOYENNE",
             "deadline": "En continu",
@@ -61,8 +59,8 @@
         },
         {
             "id": "M-0138",
-            "title": "Recherche — Chat noir « Kuro » (particulier)",
-            "client": "Mme. Léa Biliam",
+            "title": "Recherche — Chat noir « Solo »",
+            "client": "L. OBORO",
             "target_item": "Chat noir médaille dorée",
             "location": "District n°6 — Rouge",
             "priority": "BASSE",
@@ -74,20 +72,20 @@
         {
             "id": "M-0137",
             "title": "Livraison — Briquets vintage collector",
-            "client": "Collectionneur anonyme",
-            "target_item": "Lot de 3 Zippos années 40",
+            "client": "ANONYME",
+            "target_item": "Lot de 3 Zippos années 190",
             "location": "District n°5 — Le Nexus",
             "priority": "BASSE",
             "deadline": "02/07",
             "status": "À LIVRER",
             "reward": 600,
-            "notes": "Vérifier authenticité avant remise. Kaï s'y connaît."
+            "notes": "Vérifier authenticité avant remise."
         },
         {
             "id": "M-0136",
-            "title": "Récupération — Instrument volé « Pyra »",
-            "client": "SennaRin",
-            "target_item": "Guitare custom",
+            "title": "Récupération — Instrument volé",
+            "client": "A. SENKAÄNA",
+            "target_item": "Guitare custom Gibsan B-58",
             "location": "District n°6 — Rouge",
             "priority": "MOYENNE",
             "deadline": "18/06",
@@ -97,8 +95,8 @@
         },
         {
             "id": "M-0135",
-            "title": "Refusé — « Retrouver un souvenir perdu »",
-            "client": "Client anonyme",
+            "title": "Recherche — « Retrouver un souvenir perdu »",
+            "client": "ANONYME",
             "target_item": "Non spécifié",
             "location": "—",
             "priority": "BASSE",
@@ -111,8 +109,8 @@
     "clients": [
         {
             "id": "C-021",
-            "name": "H. Vergès",
-            "type": "Particulier",
+            "name": "S. KEZIN'ARTAKUÜLTU",
+            "type": "Prêteur sur gage",
             "district": "District n°3",
             "trust": 4,
             "missions_count": 3,
@@ -120,7 +118,7 @@
         },
         {
             "id": "C-020",
-            "name": "Groupe Astia",
+            "name": "ANONYME",
             "type": "Corpo",
             "district": "District n°4",
             "trust": 3,
@@ -129,8 +127,8 @@
         },
         {
             "id": "C-019",
-            "name": "K. Kushala",
-            "type": "Prêteur",
+            "name": "M. METKOR",
+            "type": "Informateur",
             "district": "District n°2",
             "trust": 2,
             "missions_count": 8,
@@ -138,16 +136,16 @@
         },
         {
             "id": "C-018",
-            "name": "SennaRin",
+            "name": "A. SENKAÄNA",
             "type": "Artiste",
             "district": "District n°7",
             "trust": 5,
             "missions_count": 2,
-            "notes": "Recommande Kaï dans le milieu musical. Toujours OK pour un café."
+            "notes": "Très timide. RDV en extérieur, de journée."
         },
         {
             "id": "C-017",
-            "name": "Mme. Léa Biliam",
+            "name": "L. OBORO",
             "type": "Particulier",
             "district": "District n°6",
             "trust": 5,
@@ -156,9 +154,9 @@
         },
         {
             "id": "C-016",
-            "name": "Anonyme #A7",
+            "name": "ANONYME #A7",
             "type": "Inconnu",
-            "district": "—",
+            "district": "Inconnu",
             "trust": 1,
             "missions_count": 1,
             "notes": "Communications chiffrées uniquement. Verser 50% d'avance."
@@ -170,56 +168,51 @@
             "name": "Pendentif « Coeur d'Ambre »",
             "state": "EN RECHERCHE",
             "linked_mission": "M-0142",
-            "estimated_value": 3200,
-            "location": "—"
+            "estimated_value": 3200
         },
         {
             "id": "I-087",
             "name": "Dossier scellé HF-24125VE",
             "state": "EN COFFRE",
             "linked_mission": "M-0141",
-            "estimated_value": 5400,
-            "location": "Coffre bureau — casier 4"
+            "estimated_value": 5400
         },
         {
             "id": "I-086",
             "name": "Lot Zippos vintage x3",
             "state": "EN COFFRE",
             "linked_mission": "M-0137",
-            "estimated_value": 600,
-            "location": "Coffre bureau — casier 2"
+            "estimated_value": 600
         },
         {
             "id": "I-085",
-            "name": "Guitare « Pyra »",
+            "name": "Guitare Custom Gibsan B-58",
             "state": "REMISE AU CLIENT",
             "linked_mission": "M-0136",
-            "estimated_value": 1800,
-            "location": "Livrée le 14/06"
+            "estimated_value": 1800
         },
         {
             "id": "I-084",
-            "name": "Carte d'accès Astia (copie)",
+            "name": "Carte d'accès (copie)",
             "state": "CONFISQUÉE",
             "linked_mission": "M-0140",
-            "estimated_value": 0,
-            "location": "Détruite après usage"
+            "estimated_value": 0
         }
     ],
     "ledger": [
-        { "id": "T-201", "date": "14/06", "label": "Mission M-0136 — SennaRin", "type": "IN", "amount": 1800 },
+        { "id": "T-201", "date": "14/06", "label": "Mission M-0136", "type": "IN", "amount": 1800 },
         { "id": "T-202", "date": "13/06", "label": "Frais de repérage — District 8", "type": "OUT", "amount": 220 },
         { "id": "T-203", "date": "12/06", "label": "Loyer bureau", "type": "OUT", "amount": 900 },
         { "id": "T-204", "date": "11/06", "label": "Mission M-0141 (acompte 50%)", "type": "IN", "amount": 2700 },
         { "id": "T-205", "date": "10/06", "label": "Achat cigarettes sans tabac", "type": "OUT", "amount": 40 },
         { "id": "T-206", "date": "09/06", "label": "Mission M-0142 (acompte 30%)", "type": "IN", "amount": 960 },
-        { "id": "T-207", "date": "08/06", "label": "Réparation vélo urbain", "type": "OUT", "amount": 150 }
+        { "id": "T-207", "date": "08/06", "label": "Carte de transport", "type": "OUT", "amount": 150 }
     ],
     "logs": [
-        "07:52:04 — [SYS] Connexion PYRAKI-NET — Poste KAI-01",
-        "07:52:07 — [AUTH] Session ouverte — District n°6 — Utilisateur : Kaï SEDO (Gran Regalia)",
+        "07:52:04 — [SYS] Connexion PYRAKI-NET — Poste SIN-01",
+        "07:52:07 — [AUTH] Session ouverte — District n°6 — Utilisateur : Sin'aän KITAÏ (Gran Regalia)",
         "07:53:12 — [APP] Ouverture module « Missions »",
-        "08:01:44 — [MSN] Nouveau message client — C-021 (H. Vergès)",
+        "08:01:44 — [MSG] Nouveau message client — C-021 (S. KEZIN'ARTAKUÜLTU)",
         "08:14:22 — [APP] Mission M-0142 créée — Priorité CRITIQUE",
         "09:02:18 — [FIELD] Repérage District n°3 — Parc Commercial",
         "10:47:03 — [ALERT] Rumeur suspecte — District n°6 — vérifier",
@@ -227,14 +220,14 @@
         "11:59:58 — [SYS] Ping entrant inconnu — origine masquée",
         "13:08:39 — [AUTH] Niveau d'accès confidentiel accordé",
         "13:47:12 — [USR] Rapport M-0136 archivé",
-        "14:05:21 — [MSN] Contact Astia — K. Kjel",
+        "14:05:21 — [MSG] Message entrant — C-017 (L. OBORO)",
         "16:22:08 — [WARN] Cible débiteur perdue — District n°2",
         "18:02:00 — [USR] Déconnexion volontaire"
     ],
     "confidential": {
         "arrangement": {
             "title": "ARRANGEMENT — GROUPE ASTIA (confidentiel)",
-            "content": "Astia verse un forfait mensuel de 2 000 crédits pour un « droit de préemption » sur toute récupération concernant leurs biens ou concurrents. Kaï conserve son indépendance et refuse toute exclusivité formelle. Chaque mission Astia est facturée en supplément, sans NDA verbal. Cet arrangement n'apparaît nulle part sur les registres officiels. Ne rien dire à Kushala."
+            "content": "Astia verse un forfait mensuel de 2 000 crédits pour un « droit de préemption » sur toute récupération concernant leurs biens ou concurrents. Sin'aän conserve son indépendance et refuse toute exclusivité formelle. Chaque mission Astia est facturée en supplément, sans NDA verbal. Cet arrangement n'apparaît nulle part sur les registres officiels. Ne rien dire à Kushala."
         },
         "watchlist": {
             "title": "LISTE DE VEILLE — CIBLES À NE JAMAIS ACCEPTER",
@@ -246,12 +239,12 @@
         }
     },
     "trombinoscope": {
-        "id": "KAI-01",
-        "name": "Kaï SEDO",
-        "age": "35 ans",
+        "id": "SIN-01",
+        "name": "Sin'aän KITAÏ",
+        "age": "201 ans",
         "genre": "Masculin ♂",
         "archetype": "Mage de combat",
-        "race": "Samaär",
+        "race": "Aüne",
         "origin": "Shevar'ulhklyanaïak'ulkä — District n°5",
         "office": "Gran Regalia",
         "activity": "Récupération & Services Indépendants",
@@ -260,15 +253,15 @@
         "alignment": "Neutre",
         "status": "ACTIF",
         "image": "/images/id.jpg",
-        "physicalDescription": "Du haut de son mètre quatre-vingt-onze (1m91) et pesant près de quatre-vingt-huit kilogrammes (88 kg), Kaï est un homme à la carrure athlétique. Il a un visage plutôt carré, avec des traits bien dessinés et une mâchoire marquée qui lui donnent un air naturellement sérieux. Sa peau est pâle, presque marmoréenne, qui fait ressortir ses yeux vairons en amande d'un noir profond, avec une expression lourde et mélancolique assez intrigante, accentuée par ses sourcils fournis et légèrement froncés, qui lui donnent un air distant ou détaché. Sa coiffure est naturelle et désordonnée, une masse de cheveux châtain foncé épais et ondulés qui tombent un peu au hasard sur son front, tout en encadrant son visage.\n\nSon style vestimentaire est un mélange paradoxal de conformisme et d'indépendance. Il porte en permanence un uniforme scolaire composé d'une veste à col droit, dans un tissu épais de couleur violet foncé, constamment déboutonnée pour révéler un simple t-shirt noir uni. Un pantalon ajusté et assorti ainsi que des tennis blanches épurées complètent sa tenue. Ses mains sont souvent dissimulées dans ses poches dans une posture nonchalante. Il est souvent aperçu avec une cigarette sans tabac entre les lèvres, qu'il allume avec un Zippo dont il ne se sépare jamais.",
-        "psychProfile": "Kaï se montre sérieux, calme et farouchement indépendant. Fier de nature, il ne se laisse jamais marcher sur les pieds et n'hésite pas à exprimer ses opinions, quitte à les imposer malgré lui. Son attitude de délinquant, souvent marquée par une posture nonchalante et un regard un peu trop direct, est combinée à une honnêteté brute qui peut manquer cruellement de tact lors de ses échanges, ce qui le fait parfois passer pour quelqu'un d'irrespectueux. Pourtant, malgré les apparences, il éprouve une profonde aversion pour la violence gratuite et déteste devoir se battre. Il cherche toujours à régler les conflits par un silence méprisant ou une parole tranchante, mais il n'hésitera jamais à faire parler ses poings si la situation l'exige.\n\nMême s'il est d'un naturel plutôt avenant, notamment par ses manières simples et sans chichis, il reste néanmoins sélectif et il faut du temps pour qu'il puisse accorder sa confiance. Son égo l'empêche d'ailleurs bien souvent de demander de l'aide, préférant porter ses fardeaux en solitaire. Mais quand on arrive à passer outre sa carapace, il se révèle être un ami loyal et un allié précieux sur lequel on peut compter, en toutes circonstances. Trahir ce précieux lien est en revanche définitif, car pour lui, il n'existe aucune seconde chance.",
-        "skills": "La capacité de Kaï repose presque entièrement sur une bonne condition physique. Il est un combattant aguerri qui compte autant sur sa force brute que sur ses réflexes. Son imposant gabarit lui donne une puissance d'impact dévastatrice dans ses coups, mais sa carrure n'est pas qu'une question de volume car il est étonnamment rapide et mobile pour un homme de sa taille. Les cigarettes qu'il fume sont sans tabac ni nicotine, qui n'entâchent pas son excellente endurance, digne d'un athlète ou d'un agent entraîné.",
+        "physicalDescription": "Du haut de son mètre quatre-vingt-onze (1m91) et pesant près de quatre-vingt-huit kilogrammes (88 kg), Sin'aän est un homme à la carrure athlétique. Il a un visage plutôt carré, avec des traits bien dessinés et une mâchoire marquée qui lui donnent un air naturellement sérieux. Sa peau est pâle, presque marmoréenne, qui fait ressortir ses yeux en amande d'un violet scintillant, avec une expression lourde et mélancolique assez intrigante, accentuée par ses sourcils fournis et légèrement froncés, qui lui donnent un air distant ou détaché. Sa coiffure est naturelle et désordonnée, une masse de cheveux châtain foncé épais et ondulés qui tombent un peu au hasard sur son front, tout en encadrant son visage.\n\nSon style vestimentaire est un mélange paradoxal de conformisme et d'indépendance. Il porte en permanence une veste à col droit, dans un tissu épais de couleur gris clair et avec les manches noires, constamment déboutonnée pour révéler un simple t-shirt noir uni. Un chino marron ajusté ainsi que des tennis blanches épurées complètent sa tenue. Ses mains sont souvent dissimulées dans ses poches dans une posture nonchalante. Il est souvent aperçu avec une cigarette sans tabac entre les lèvres, qu'il allume avec un Zippo dont il ne se sépare jamais.",
+        "psychProfile": "Sin'aän se montre sérieux, calme et farouchement indépendant. Fier de nature, il ne se laisse jamais marcher sur les pieds et n'hésite pas à exprimer ses opinions, quitte à les imposer malgré lui. Son attitude de délinquant, souvent marquée par une posture nonchalante et un regard un peu trop direct, est combinée à une honnêteté brute qui peut manquer cruellement de tact lors de ses échanges, ce qui le fait parfois passer pour quelqu'un d'irrespectueux. Pourtant, malgré les apparences, il éprouve une profonde aversion pour la violence gratuite et déteste devoir se battre. Il cherche toujours à régler les conflits par un silence méprisant ou une parole tranchante, mais il n'hésitera jamais à faire parler ses poings si la situation l'exige.\n\nMême s'il est d'un naturel plutôt avenant, notamment par ses manières simples et sans chichis, il reste néanmoins sélectif et il faut du temps pour qu'il puisse accorder sa confiance. Son égo l'empêche d'ailleurs bien souvent de demander de l'aide, préférant porter ses fardeaux en solitaire. Mais quand on arrive à passer outre sa carapace, il se révèle être un ami loyal et un allié précieux sur lequel on peut compter, en toutes circonstances. Trahir ce précieux lien est en revanche définitif, car pour lui, il n'existe aucune seconde chance.",
+        "skills": "Sin'aän est un combattant aguerri qui compte autant sur sa force brute que sur ses réflexes, doté d'une condition physique digne d'un athlète. Il possède un style de combat instinctif et donc chaotique basé sur la survie, loin des arts martiaux et de leurs philosophies associées.\n\nOutre ses aptitudes physiques, Sin possède des compétences en électronique et passe une bonne partie de son temps libre à bricoler et remettre en état des appareils anciens, qui sont considérés complètement obsolètes ou peu pratiques dans le monde moderne.",
         "likesDislikes": {
             "likes": "L'ordre et la propreté, l'histoire et la littérature mythologique, les vieux dessins animés, les footings matinaux, les balades nocturnes en solitaire, les chats noirs, la pâte de haricot sucrée, les jeux de cartes à échanger, collectionner des briquets vintage, la technologie rétro.",
             "dislikes": "Le désordre, la technologie moderne, les films d'horreur, le poisson et les fruits de mer, les personnes extravagantes ou à l'inverse trop effacées, les gens qui se déguisent, les services à abonnement abusifs, les moustiques qui empêchent de dormir tranquillement."
         },
-        "personalGoal": "Derrière son activité professionnelle de récupérateur se cache une véritable passion pour les vestiges du passé. Kaï s'intéresse particulièrement aux artefacts anciens, aux objets disparus et aux trésors dont l'existence ne subsiste parfois qu'à travers des récits, des archives fragmentaires ou bien des légendes. Il n'est cependant pas du genre à croire aveuglément tout ce qui est raconté dans les ouvrages consacrés à ces reliques. À ses yeux, la plupart de ces trésors ne sont probablement que des légendes embellies au fil du temps.\n\nCe qui l'intéresse davantage, c'est le travail d'investigation qui se cache derrière ces histoires. Recouper les récits, retrouver des documents anciens, suivre les indices laissés par ceux qui les ont recherchés avant lui et, surtout, déterminer si l'objet a réellement existé ou non. Chaque mission qu'on lui confie peut ainsi devenir l'occasion de tomber sur une piste inattendue et de poursuivre ses propres recherches.\n\nEt s'il venait un jour à retrouver l'un de ces trésors, il apprécierait surtout de savoir jusqu'où la légende disait vrai. Après tout, rien ne vaut une bonne vieille enquête pour départager les récits transmis au fil des générations de ce qui a réellement existé.",
-        "fearsTraumas": "Kaï est conscient des failles liées au système hiérarchique mis en place, créant des castes dès la naissance et des inégalités qui ne font que s'accentuer avec le temps. Le fait que la valeur d'une personne puisse être jugée sur la puissance et le potentiel de sa capacité innée peut être considéré comme injuste, mais c'est aussi la raison de son existence. Il voit aussi les côtés positifs de cette hiérarchie, notamment dans la cohésion et l'organisation qu'elle apporte dans la société. Son opinion est donc mitigée, mais il reste convaincu que le système est nécessaire pour maintenir l'ordre et la stabilité dans le monde."
+        "personalGoal": "Derrière son activité professionnelle de récupérateur se cache une véritable passion pour les vestiges du passé. Sin'aän s'intéresse particulièrement aux artefacts anciens, aux objets disparus et aux trésors dont l'existence ne subsiste parfois qu'à travers des récits, des archives fragmentaires ou bien des légendes. Il n'est cependant pas du genre à croire aveuglément tout ce qui est raconté dans les ouvrages consacrés à ces reliques. À ses yeux, la plupart de ces trésors ne sont probablement que des légendes embellies au fil du temps.\n\nCe qui l'intéresse davantage, c'est le travail d'investigation qui se cache derrière ces histoires. Recouper les récits, retrouver des documents anciens, suivre les indices laissés par ceux qui les ont recherchés avant lui et, surtout, déterminer si l'objet a réellement existé ou non. Chaque mission qu'on lui confie peut ainsi devenir l'occasion de tomber sur une piste inattendue et de poursuivre ses propres recherches.\n\nEt s'il venait un jour à retrouver l'un de ces trésors, il apprécierait surtout de savoir jusqu'où la légende disait vrai. Après tout, rien ne vaut une bonne vieille enquête pour départager les récits transmis au fil des générations de ce qui a réellement existé.",
+        "fearsTraumas": "Au cours de sa longue vie, Sin aän a survécu à de nombreux proches et êtres chers, dont les noms et actions se sont perdus dans les méandres du Temps. Ce fardeau nourrit chez lui une certaine mélancolie, une blessure existentielle qu'il tente de camoufler et panser au quotidien. C'est pour tromper cette peur viscérale de l'oubli qu'il s'accroche au passé et s'isole ; en gérant Gran Regalia, en redonnant vie à de vieux objets jugés obsolètes et en étudiant l'histoire, il lutte contre le néant. En préservant les traces du passé et aidant ses clients, Sin'aän cherche à garantir que ses propres actions laisseront une empreinte indélébile sur le monde, quelle que soit sa taille."
     },
     "tabs": [
         { "id": "missions",     "label": "Missions",       "icon": "https://win98icons.alexmeub.com/icons/png/certificate_checklist-0.png" },

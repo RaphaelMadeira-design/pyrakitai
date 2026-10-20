@@ -369,7 +369,6 @@ export default function Intranet({ onOpenWindow }) {
                                 <th>Objet</th>
                                 <th>État</th>
                                 <th>Mission liée</th>
-                                <th>Emplacement</th>
                                 <th style={{ textAlign: 'right' }}>Valeur (₡)</th>
                             </tr>
                         </thead>
@@ -380,7 +379,6 @@ export default function Intranet({ onOpenWindow }) {
                                     <td>{i.name}</td>
                                     <td><span className="intranet__pill" style={{ background: statusColor(i.state) || '#555' }}>{i.state}</span></td>
                                     <td>{i.linked_mission}</td>
-                                    <td>{i.location}</td>
                                     <td style={{ textAlign: 'right', fontFamily: 'monospace' }}>{i.estimated_value.toLocaleString('fr-FR')}</td>
                                 </tr>
                             ))}

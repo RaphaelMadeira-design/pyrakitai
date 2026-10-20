@@ -12,8 +12,8 @@
         "concept": "ALTÉRITÉ",
         "aklen": "INTERMÉDIAIRE",
         "type": "INVOCATEUR",
-        "conceptInfo": "[À compléter] L'Altérité est le concept qui fonde le pouvoir : Sin'aän projette un autre lui-même, un double d'ek'lka qui agit à sa place et frappe les extensions conceptuelles de la cible (ombres, reflets).",
-        "aklenInfo": "[À compléter] L'Aklën (lien) est intermédiaire : le lien entre Sin'aän et son Alter Ego reste stable jusqu'à 50 mètres, assez fort pour transférer ses assauts, mais il demande concentration et posture pour rester précis."
+        "conceptInfo": "Le concept d'Altérité explore la relation entre le Moi et l'Autre. Il met en lumière la manière dont les individus se définissent et se comprennent à travers leurs interactions avec autrui, soulignant la relation en miroir. Dans le contexte de Sin'aän, l'Altérité se manifeste par la capacité à créer un Alter Ego, une entité distincte mais intrinsèquement liée à lui, capable d'interagir avec l'Autre (ombres et reflets) de ses cibles.",
+        "aklenInfo": "Le quotidien de Sin'aän est influencé par l'Altérité, renforçant son lien avec sa capacité unique."
     },
     "weapon": {
         "image": "/images/blade.png",
