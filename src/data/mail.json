@@ -155,7 +155,7 @@
                 "",
                 "Plan sommaire du Bloc Abandonné en pièce jointe. La croix rouge, c'est l'entrepôt. Les palettes y sont depuis dix jours, personne ne vient les chercher. Ça veut dire que quelqu'un attend que ça refroidisse.",
                 "",
-                "  1. La brèche est côté est, au-dessus du mur. Klein l'a vue de ses yeux.",
+                "  1. La brèche est côté est, au-dessus du mur. Un de mes gars l'a vue de ses yeux.",
                 "  2. Deux rondes par nuit, une à minuit, une à 4h. Pas de chien.",
                 "  3. Je veux juste savoir qui a détourné la marchandise. Tu ne déplaces rien.",
                 "",
@@ -168,29 +168,31 @@
         },
         {
             "id": "e6",
-            "from": "Régie Halvar — Gestion locative",
-            "fromAddr": "quittances@regie-halvar.d6",
-            "subject": "Quittance de loyer — Bureau « Gran Regalia » — Juin",
-            "date": "12/06 — 17:18",
-            "unread": false,
+            "from": "Mme O. Halvar — Le Lampion",
+            "fromAddr": "o.halvar@lampion-d6.wl",
+            "subject": "Loyer de juin — RAPPEL (le deuxième)",
+            "date": "14/06 — 06:58",
+            "unread": true,
             "body": [
-                "Monsieur Kitaï,",
+                "Sin'aän,",
                 "",
-                "Nous accusons réception de votre règlement pour le local commercial suivant :",
+                "Je t'écris parce que tu ne réponds pas quand je frappe. Je sais que tu es là, ta lampe est allumée.",
                 "",
-                "  Adresse : 14, passage des Lanternes — District n°6 (quartier Rouge)",
-                "  Désignation : Bureau « Gran Regalia » — rez-de-chaussée + réserve",
-                "  Période : Juin",
-                "  Montant : 900 crédits",
+                "  ▸ Local : 14, passage des Lanternes — rez-de-chaussée + réserve",
+                "  ▸ Loyer de juin : 900 crédits",
+                "  ▸ Échéance : le 5. Nous sommes le 14.",
+                "  ▸ Retard : 9 jours. Je compte, moi.",
                 "",
-                "Suite au courrier de votre avocat, Maître Z. Aztal, la révision du loyer initialement prévue est annulée jusqu'au renouvellement du bail.",
+                "Ensuite, le voisinage. Le vieux Ponce du deuxième se plaint du store métallique après 23h. La fleuriste d'en face se plaint des gens louches qui attendent devant ta porte. Moi, je me plains des deux.",
                 "",
-                "Nous vous rappelons par ailleurs que l'usage du store métallique est interdit après 23h (nuisances sonores signalées par le voisinage).",
+                "Je ne t'augmente pas cette année. Ce n'est pas de la gentillesse, c'est que je n'ai pas envie de refaire le bail.",
                 "",
-                "Cordialement,",
+                "Passe au Lampion quand tu as l'argent. Le comptoir ferme à 2h. Je te garde une assiette, sinon tu vas encore dîner d'un pain à la pâte de haricot.",
                 "",
-                "— Régie Halvar",
-                "Gestion locative du District n°6"
+                "— Mme O. Halvar",
+                "Propriétaire du 14, passage des Lanternes",
+                "",
+                "P.-S. : Le carreau de ta réserve est réparé. Ne me remercie pas, ça faisait courant d'air jusque chez moi."
             ]
         },
         {
@@ -288,6 +290,91 @@
                 "Nous vous rappelons que les ouvrages de la section « Mythologie & Reliques » ne peuvent être prolongés plus de deux fois. Votre carte de lecteur indique 31 emprunts dans cette section depuis le début de l'année.",
                 "",
                 "— Archives & Bibliothèque du District n°5"
+            ]
+        },
+        {
+            "id": "e11",
+            "from": "ph4l3ne_",
+            "fromAddr": "[adresse masquée]",
+            "subject": "(sans objet)",
+            "date": "14/06 — 01:52",
+            "unread": true,
+            "body": [
+                "pas de nom. pas de visage. c'est comme ça qu'on reste tranquilles tous les deux.",
+                "",
+                "rapport #A7 :",
+                "  ▸ relais 1 : ghostmail.temp — district n°1",
+                "  ▸ relais 2 : serveur de cache commercial — district n°4",
+                "  ▸ relais 3 : signal perdu",
+                "",
+                "et le faux mail « sécurité pyraki-net » : domaine créé il y a deux jours, hébergé nulle part. ne clique pas. (je sais que tu cliques pas.)",
+                "",
+                "ce message s'efface pas tout seul. toi, efface-le.",
+                "",
+                "— ph4l3ne"
+            ]
+        },
+        {
+            "id": "e12",
+            "from": "Yesen Ondrae",
+            "fromAddr": "y.ondrae@noda-mail.wl",
+            "subject": "La montre de papa",
+            "date": "09/06 — 19:20",
+            "unread": false,
+            "body": [
+                "Monsieur Kitaï,",
+                "",
+                "Cela fait un mois que vous m'avez rendu la montre de mon père, et je la remonte tous les matins. Je n'avais pas trouvé les mots pour vous écrire avant.",
+                "",
+                "On nous l'avait volée pendant la veillée, au milieu de la famille. Vous l'avez retrouvée chez un brocanteur du District n°3, en vitrine, avec une étiquette à 40 crédits. Quarante crédits.",
+                "",
+                "Vous m'aviez dit de ne pas vous remercier. Je désobéis.",
+                "",
+                "Ma sœur cherche toujours le service à thé de notre grand-mère. Elle passera au bureau, en journée.",
+                "",
+                "— Yesen Ondrae"
+            ]
+        },
+        {
+            "id": "e13",
+            "from": "Bastien Corle — Le Fourneau",
+            "fromAddr": "contact@lefourneau-d6.wl",
+            "subject": "L'enseigne s'allume !",
+            "date": "03/06 — 21:05",
+            "unread": false,
+            "body": [
+                "Monsieur Kitaï,",
+                "",
+                "Vous m'aviez dit de ne pas régler le solde tant que je ne l'avais pas vue allumée. Elle s'allume. Toutes les lettres, même le « u » qui clignotait déjà avant le vol.",
+                "",
+                "Le solde est parti ce soir. Et à partir d'aujourd'hui, votre table au Fourneau est la deuxième près de la fenêtre, et le bouillon vous est offert.",
+                "",
+                "Venez tôt : après 21h, le patron fait la vaisselle, c'est-à-dire moi.",
+                "",
+                "— Bastien Corle",
+                "Le Fourneau — Cuisine du District n°6"
+            ]
+        },
+        {
+            "id": "e14",
+            "from": "R. Dravic",
+            "fromAddr": "r.dravic@noda-mail.wl",
+            "subject": "Re: Re: Re: Votre refus",
+            "date": "07/06 — 00:47",
+            "unread": false,
+            "body": [
+                "Kitaï,",
+                "",
+                "Je ne comprends toujours pas votre refus. Je vous ai proposé le double de votre tarif pour récupérer une bague que J'AI payée.",
+                "",
+                "Vous m'avez répondu, je cite : « Un cadeau n'est pas un objet volé. Elle a le droit de la garder. »",
+                "",
+                "Je vais laisser un avis sur votre bureau partout où c'est possible.",
+                "",
+                "— R. Dravic",
+                "",
+                "",
+                "> Monsieur Dravic, laissez l'avis que vous voulez. La réponse reste non. — S. K."
             ]
         }
     ],
@@ -637,6 +724,23 @@
                 "Passe à la boutique, on en parle autour d'un thé. J'ai aussi reçu deux ou trois briquets qui pourraient t'intéresser.",
                 "",
                 "— Kezin"
+            ]
+        },
+        {
+            "id": "t7",
+            "from": "Mme O. Halvar — Le Lampion",
+            "fromAddr": "o.halvar@lampion-d6.wl",
+            "subject": "Quittance — Mai",
+            "date": "19/05 — 23:30",
+            "unread": false,
+            "body": [
+                "Reçu : 900 crédits, le 19. En retard. Comme d'habitude.",
+                "",
+                "Merci pour les gâteaux à la pâte de haricot de Mme Oboro que tu m'as « laissés en trop ». Ils étaient bons. Ça ne change rien au retard.",
+                "",
+                "Mets un pull, ton bureau est glacial. Je le sens à travers le mur.",
+                "",
+                "— O. H."
             ]
         }
     ]

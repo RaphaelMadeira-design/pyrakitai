@@ -52,18 +52,18 @@
             "senderColor": "#cc007a"
         },
         {
-            "id": "klein",
-            "name": "KleinW",
-            "status": "offline",
-            "personalMessage": "Hors ligne — Terrain",
-            "senderColor": "#4a4a4a"
+            "id": "halvar",
+            "name": "Mme Halvar — Le Lampion",
+            "status": "online",
+            "personalMessage": "En ligne — Loyer le 5. Pas le 6. Pas « avant le 24 ». LE 5.",
+            "senderColor": "#8a4b00"
         },
         {
-            "id": "aztal",
-            "name": "Me Z. Aztal",
-            "status": "offline",
-            "personalMessage": "Hors ligne — Cabinet Aztal, sur rendez-vous",
-            "senderColor": "#171717"
+            "id": "phalene",
+            "name": "ph4l3ne_",
+            "status": "away",
+            "personalMessage": "je n'existe pas",
+            "senderColor": "#4b3c8a"
         }
     ],
     "conversations": {
@@ -155,8 +155,8 @@
                 { "from": "m.k",    "text": "palettes Astia, logo gratté. une dizaine", "time": "23:05" },
                 { "from": "sinsin", "text": "et la brèche ?", "time": "23:05" },
                 { "from": "m.k",    "text": "elle existe. au-dessus du mur, côté est", "time": "23:06" },
-                { "from": "m.k",    "text": "Klein y est passé hier. il a ramassé une carte d'accès par terre", "time": "23:06" },
-                { "from": "sinsin", "text": "elle est chez moi maintenant. confisquée", "time": "23:07" },
+                { "from": "m.k",    "text": "un gosse du quartier y est passé hier. il a ramassé une carte d'accès par terre", "time": "23:06" },
+                { "from": "sinsin", "text": "elle est chez moi maintenant. je la lui ai rachetée", "time": "23:07" },
                 { "from": "m.k",    "text": "tsss. tu gâches tout", "time": "23:07" },
                 { "from": "sinsin", "text": "je fais mon repérage avant d'aller où que ce soit. c'est la règle", "time": "23:08" },
                 { "from": "m.k",    "text": "samedi soir y'a personne. c'est le bon créneau", "time": "23:08" },
@@ -183,43 +183,49 @@
                 { "from": "a.senkaäna ♪", "text": "♪ ♪ merci !!", "time": "18:03" }
             ]
         },
-        "klein": {
-            "date": "Hier — 20:01",
+        "halvar": {
+            "date": "Aujourd'hui — 07:12",
             "messages": [
-                { "from": "KleinW", "text": "sin", "time": "20:01" },
-                { "from": "KleinW", "text": "suis au Bloc. c'est calme", "time": "20:01" },
-                { "from": "sinsin", "text": "tu restes de ce côté du mur", "time": "20:03" },
-                { "from": "KleinW", "text": "oui oui", "time": "20:03" },
-                { "from": "KleinW", "text": "j'ai trouvé une carte d'accès au sol. logo d'une boîte de sécurité", "time": "20:04" },
-                { "from": "sinsin", "text": "tu me la ramènes. tu ne t'en sers pas", "time": "20:05" },
-                { "from": "KleinW", "text": "même pas pour essayer une porte ?", "time": "20:05" },
-                { "from": "sinsin", "text": "non", "time": "20:05" },
-                { "from": "KleinW", "text": "ok ok. je passe au bureau demain matin", "time": "20:06" },
-                { "from": "KleinW", "text": "tu me rembourses le transport ?", "time": "20:07" },
-                { "from": "sinsin", "text": "frais de repérage. comme d'habitude", "time": "20:08" },
-                { "from": "KleinW", "text": "t'es le meilleur patron que j'ai jamais eu", "time": "20:08" },
-                { "from": "sinsin", "text": "je ne suis pas ton patron", "time": "20:09" },
-                { "from": "system", "text": "Dernière connexion : Il y a 18 heures" }
+                { "from": "Mme Halvar — Le Lampion", "text": "Sin'aän.", "time": "07:12" },
+                { "from": "Mme Halvar — Le Lampion", "text": "Le loyer. On est le 14.", "time": "07:12" },
+                { "from": "sinsin", "text": "bonjour madame Halvar", "time": "07:15" },
+                { "from": "Mme Halvar — Le Lampion", "text": "Bonjour mon œil. Le 5, c'est écrit sur le bail. En gros. Je l'ai souligné moi-même.", "time": "07:15" },
+                { "from": "sinsin", "text": "une cliente me verse le solde avant le 24. je vous paie dès que c'est arrivé", "time": "07:16" },
+                { "from": "Mme Halvar — Le Lampion", "text": "« Avant le 24 ». Tu me dis ça tous les mois, avec une date différente.", "time": "07:16" },
+                { "from": "Mme Halvar — Le Lampion", "text": "Et ton store. 23h40 hier soir. Le vieux Ponce du deuxième a cru qu'on bombardait le quartier.", "time": "07:17" },
+                { "from": "sinsin", "text": "je rentrais d'un repérage", "time": "07:18" },
+                { "from": "Mme Halvar — Le Lampion", "text": "Alors tu rentreras par la porte de la réserve. Elle grince moins. Je l'ai huilée.", "time": "07:18" },
+                { "from": "sinsin", "text": "...merci", "time": "07:19" },
+                { "from": "Mme Halvar — Le Lampion", "text": "C'est pour les voisins. Pas pour toi.", "time": "07:19" },
+                { "from": "Mme Halvar — Le Lampion", "text": "Ta lampe est encore restée allumée jusqu'à 3h. Je la vois depuis ma fenêtre.", "time": "07:20" },
+                { "from": "sinsin", "text": "elle est sur mon compteur", "time": "07:20" },
+                { "from": "Mme Halvar — Le Lampion", "text": "Je ne parle pas du compteur. Je parle de toi qui ne dors pas.", "time": "07:21" },
+                { "from": "Mme Halvar — Le Lampion", "text": "Il y a un bol de soupe miso devant ta porte. Il était en trop. Rends-moi le bol.", "time": "07:22" },
+                { "from": "sinsin", "text": "je le rapporte ce soir. avec le loyer si possible", "time": "07:23" },
+                { "from": "Mme Halvar — Le Lampion", "text": "Le bol d'abord. Le loyer, je sais que tu finis toujours par le payer.", "time": "07:23" },
+                { "from": "Mme Halvar — Le Lampion", "text": "Mais ne va pas le répéter aux autres locataires.", "time": "07:24" }
             ]
         },
-        "aztal": {
-            "date": "Il y a 21 jours",
+        "phalene": {
+            "date": "Aujourd'hui — 01:37",
             "messages": [
-                { "from": "Me Z. Aztal", "text": "Bonsoir Monsieur Kitaï.", "time": "19:41" },
-                { "from": "Me Z. Aztal", "text": "Je reviens vers vous concernant le bail de Gran Regalia.", "time": "19:42" },
-                { "from": "sinsin",      "text": "bonsoir maître", "time": "19:44" },
-                { "from": "Me Z. Aztal", "text": "J'ai relu le contrat. La clause de révision du loyer est abusive.", "time": "19:45" },
-                { "from": "Me Z. Aztal", "text": "Votre propriétaire n'a pas le droit de l'augmenter en cours d'année.", "time": "19:45" },
-                { "from": "sinsin",      "text": "je m'en doutais. je reste à 900 alors ?", "time": "19:46" },
-                { "from": "Me Z. Aztal", "text": "Vous restez à 900. Je lui envoie un courrier dès demain.", "time": "19:47" },
-                { "from": "Me Z. Aztal", "text": "Par ailleurs, je vous rappelle de garder une copie de toutes vos factures clients.", "time": "19:48" },
-                { "from": "Me Z. Aztal", "text": "Une activité indépendante attire toujours les contrôles.", "time": "19:48" },
-                { "from": "sinsin",      "text": "tout est classé. vous connaissez mon bureau", "time": "19:49" },
-                { "from": "Me Z. Aztal", "text": "Justement. C'est bien le seul bureau ordonné du District n°6.", "time": "19:50" },
-                { "from": "Me Z. Aztal", "text": "Je ne vous facture pas ce conseil. Considérez que ma dette avance.", "time": "19:51" },
-                { "from": "sinsin",      "text": "merci maître", "time": "19:52" },
-                { "from": "Me Z. Aztal", "text": "Bonne soirée.", "time": "19:53" },
-                { "from": "system",      "text": "Dernière connexion : Il y a 4 jours" }
+                { "from": "ph4l3ne_", "text": "ton #A7.", "time": "01:37" },
+                { "from": "ph4l3ne_", "text": "j'ai remonté le relais ghostmail. trois rebonds : district n°1, un serveur de cache au district n°4, puis rien", "time": "01:37" },
+                { "from": "sinsin", "text": "rien ?", "time": "01:39" },
+                { "from": "ph4l3ne_", "text": "rien. propre. trop propre. les amateurs laissent des miettes, eux non", "time": "01:39" },
+                { "from": "ph4l3ne_", "text": "conseil gratuit : réponds pas. et efface ton brouillon", "time": "01:40" },
+                { "from": "sinsin", "text": "comment tu sais que j'ai un brouillon", "time": "01:40" },
+                { "from": "ph4l3ne_", "text": "tu as toujours un brouillon", "time": "01:40" },
+                { "from": "ph4l3ne_", "text": "autre chose. le mail « sécurité pyraki-net » d'hier matin. faux. domaine enregistré il y a deux jours", "time": "01:41" },
+                { "from": "sinsin", "text": "je n'ai pas cliqué", "time": "01:42" },
+                { "from": "ph4l3ne_", "text": "je sais. j'ai vérifié", "time": "01:42" },
+                { "from": "sinsin", "text": "tu surveilles mon poste ?", "time": "01:42" },
+                { "from": "ph4l3ne_", "text": "je surveille ceux qui surveillent ton poste. nuance", "time": "01:43" },
+                { "from": "sinsin", "text": "combien je te dois", "time": "01:44" },
+                { "from": "ph4l3ne_", "text": "le poste radio en bois que ton amie va t'apporter. les lampes d'origine. pas le meuble", "time": "01:44" },
+                { "from": "sinsin", "text": "comment tu", "time": "01:44" },
+                { "from": "ph4l3ne_", "text": "bonne nuit kitaï", "time": "01:45" },
+                { "from": "system", "text": "[ph4l3ne_ apparaît maintenant hors ligne]", "time": "01:45" }
             ]
         }
     }

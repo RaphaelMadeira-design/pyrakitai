@@ -30,7 +30,7 @@ const INITIAL_TRASH = [
     { id: 't3', name: 'ancien_mdp.txt',               origin: 'C:\\Users\\sin\\Documents\\Important',             size: '512 o',  deletedAt: '21/04 - 18:02' },
     { id: 't4', name: 'DSCN4078.jpeg',      origin: 'C:\\Users\\sin\\Documents\\Images',                size: '76 Ko',  deletedAt: '30/04 - 09:35' },
     { id: 't5', name: 'surveillance_footage_cam298.mp4',            origin: 'C:\\Users\\sin\\Documents',        size: '3,7 Mo', deletedAt: '08/05 - 14:21' },
-    { id: 't6', name: 'parcours_wellston_red-dawn.bmp',       origin: 'C:\\Users\\sin\\Documents\\Images',     size: '912 Ko', deletedAt: '09/05 - 21:08' },
+    { id: 't6', name: 'parcours_district4.bmp',       origin: 'C:\\Users\\sin\\Documents\\Images',     size: '912 Ko', deletedAt: '09/05 - 21:08' },
     { id: 't7', name: 'OVERLOG_install.exe',          origin: 'C:\\Temp',                        size: '1,2 Mo', deletedAt: '11/06 - 11:58' },
     { id: 't8', name: 'archives_vendamir_01.zip',     origin: 'C:\\Users\\sin\\Documents\\Histoire',   size: '8,9 Mo', deletedAt: '13/06 - 16:44' },
 ]
