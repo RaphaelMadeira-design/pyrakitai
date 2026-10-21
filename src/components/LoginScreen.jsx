@@ -2,17 +2,27 @@ import { useEffect, useRef, useState } from 'react'
 import Sounds from './Sounds'
 import '../styles/LoginScreen.scss'
 
+
 const PASSWORD_LENGTH = 16
+const WELCOME_DURATION = 2000
+
 
 // ─── ÉCRAN D'ACCUEIL — affiché uniquement après le boot du PC ───
 // Mot de passe factice : il se tape tout seul au clic sur le champ.
 export default function LoginScreen({ onLogin }) {
     const [typed, setTyped] = useState(0)
     const [typing, setTyping] = useState(false)
+    const [welcome, setWelcome] = useState(false)
     const [leaving, setLeaving] = useState(false)
     const timer = useRef(null)
+    const exitTimers = useRef([])
 
-    useEffect(() => () => clearTimeout(timer.current), [])
+
+    useEffect(() => () => {
+        clearTimeout(timer.current)
+        exitTimers.current.forEach(clearTimeout)
+    }, [])
+
 
     const typeNext = (count) => {
         setTyped(count)
@@ -23,39 +33,57 @@ export default function LoginScreen({ onLogin }) {
         timer.current = setTimeout(() => typeNext(count + 1), 55 + Math.random() * 45)
     }
 
+
     const startTyping = () => {
         if (typing || typed > 0) return
         setTyping(true)
         timer.current = setTimeout(() => typeNext(1), 120)
     }
 
+
     const done = typed >= PASSWORD_LENGTH
+
 
     const submit = (e) => {
         e.preventDefault()
-        if (!done || leaving) return
+        if (!done || welcome) return
         Sounds.doubleClick()
-        setLeaving(true)
-        setTimeout(onLogin, 650)
+        setWelcome(true)
+        exitTimers.current.push(
+            setTimeout(() => setLeaving(true), WELCOME_DURATION),
+            setTimeout(onLogin, WELCOME_DURATION + 650)
+        )
     }
+
 
     return (
         <div className={`login-screen${leaving ? ' login-screen--fade' : ''}`} data-testid="login-screen">
             <div className="login-screen__scanlines" />
 
+
+            {welcome ? (
+                <div className="login-welcome" data-testid="login-welcome">
+                    <img src="/images/Windows_98_logo.png" alt="" className="login-welcome__logo" />
+                    <div className="login-welcome__title" data-testid="login-welcome-title">Bienvenue, Sin'aän</div>
+                    <div className="login-welcome__sub">Ouverture de la session…</div>
+                </div>
+            ) : (
             <div className="login-dialog" data-testid="login-dialog">
                 <div className="login-dialog__titlebar">
                     <span>Ouverture de session WindOS</span>
                 </div>
+
 
                 <form className="login-dialog__body" onSubmit={submit}>
                     <div className="login-dialog__avatar-frame" data-testid="login-avatar">
                         <img src="/images/id.jpg" alt="Kaï SEDO" className="login-dialog__avatar" />
                     </div>
 
+
                     <div className="login-dialog__user" data-testid="login-username">
                         Sin'aän KITAÏ
                     </div>
+
 
                     <div className="login-dialog__field">
                         <span className="login-dialog__label" id="login-password-label">
@@ -75,17 +103,20 @@ export default function LoginScreen({ onLogin }) {
                         </div>
                     </div>
 
+
                     <div className="login-dialog__actions">
                         <button type="submit" className="win98-btn" disabled={!done} data-testid="login-submit">
                             Se connecter
                         </button>
                     </div>
 
+
                     <div className="login-dialog__hint">
                         Après l'ouverture de session, WindOS chargera vos paramètres personnels.
                     </div>
                 </form>
             </div>
+            )}
         </div>
     )
 }
