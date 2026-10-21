@@ -6,6 +6,7 @@ import homeData from '../data/browserHome.json'
 import wikiData from '../data/browserWikipedia.json'
 import newsData from '../data/browserActunet.json'
 import searchData from '../data/browserSearch.json'
+import LampionPage from './LampionPage'
 
 const { IE_ICON, KONAMI, SECRET_SEARCHES, SECRET_URLS, WIKI_URL, NEWS_URL, TAB_DEFS, EXACT_URL_MAP } = config
 
@@ -1106,6 +1107,8 @@ export default function Browser() {
             return <FakeWikipedia onLogoClick={handleLogoClick} />
         if (activeTab === 'news')
             return <FakeNewsPortal />
+        if (activeTab === 'lampion')
+            return <LampionPage />
         return (
             <FakeMSN
                 onSearch={handleInput}

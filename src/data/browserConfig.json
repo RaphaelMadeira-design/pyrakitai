@@ -23,6 +23,12 @@
             "label": "ActuNet Actualités",
             "url": "http://www.actunet-news.is/",
             "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
+        },
+        "lampion": {
+            "id": "lampion",
+            "label": "Le Lampion",
+            "url": "http://www.lampion-d6.wl/",
+            "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
         }
     },
     "EXACT_URL_MAP": {
@@ -35,7 +41,9 @@
         "google.com": "google",
         "is.shokupedia.org/shokunin/isen_shura": "wiki",
         "www.actunet-news.is": "news",
-        "actunet-news.is": "news"
+        "actunet-news.is": "news",
+        "www.lampion-d6.wl": "lampion",
+        "lampion-d6.wl": "lampion"
     },
     "page404": {
         "errorIcon": "https://win98icons.alexmeub.com/icons/png/msg_error-0.png",

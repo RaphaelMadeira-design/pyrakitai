@@ -1,0 +1,66 @@
+{
+    "name": "Le Lampion",
+    "tagline": "Cuisine de quartier — Passage des Lanternes, District 6",
+    "owner": "Mme O. Halvar",
+    "marquee": "Soupe du jour : miso  ◆  Le comptoir ferme à 2h  ◆  Pas de crédit, pas d'ardoise  ◆  Le bol se rend  ◆  Bienvenue au Lampion !",
+    "welcome": "Ici, on mange chaud, on paie comptant et on ne traîne pas devant la porte après minuit. Tout est fait maison par Mme Halvar, qui goûte tout, qui voit tout et qui entend tout à travers les murs.",
+    "menu": [
+        {
+            "title": "Soupes",
+            "items": [
+                { "name": "Soupe miso", "desc": "Tofu, algues, ciboule. Servie dans un bol qu'il faut rendre.", "price": 6 },
+                { "name": "Bouillon des Lanternes", "desc": "Bouillon de bœuf mijoté toute la nuit, nouilles fraîches.", "price": 9 },
+                { "name": "Soupe de la veille", "desc": "Meilleure que le jour même. Demandez ce qu'il reste.", "price": 4 }
+            ]
+        },
+        {
+            "title": "Assiettes",
+            "items": [
+                { "name": "L'assiette de Mme Halvar", "desc": "Plat du jour, riz, légumes marinés. On ne choisit pas.", "price": 12, "special": true },
+                { "name": "Poulet laqué au gingembre", "desc": "Riz blanc, chou sauté.", "price": 11 },
+                { "name": "Poisson grillé du marché", "desc": "Selon l'arrivage. Si le marché est fermé, il n'y en a pas.", "price": 13 },
+                { "name": "Riz sauté du comptoir", "desc": "Œuf, porc, oignons. Le plat des retardataires.", "price": 8 }
+            ]
+        },
+        {
+            "title": "Douceurs",
+            "items": [
+                { "name": "Pain à la pâte de haricot", "desc": "Un dessert. Pas un dîner.", "price": 3 },
+                { "name": "Flan au thé noir", "desc": "Fait le matin, fini le soir.", "price": 5 }
+            ]
+        },
+        {
+            "title": "Boissons",
+            "items": [
+                { "name": "Thé vert", "desc": "Théière à volonté, à table seulement.", "price": 2 },
+                { "name": "Limonade de la maison", "desc": "Citron, gingembre, un peu de miel.", "price": 4 },
+                { "name": "Bière de riz", "desc": "Après 18h. Deux maximum.", "price": 5 }
+            ]
+        }
+    ],
+    "currency": "cr.",
+    "hours": [
+        { "day": "Lundi", "time": "Fermé" },
+        { "day": "Mardi", "time": "11h30 – 14h30  /  18h00 – 2h00" },
+        { "day": "Mercredi", "time": "11h30 – 14h30  /  18h00 – 2h00" },
+        { "day": "Jeudi", "time": "11h30 – 14h30  /  18h00 – 2h00" },
+        { "day": "Vendredi", "time": "11h30 – 14h30  /  18h00 – 2h00" },
+        { "day": "Samedi", "time": "18h00 – 2h00" },
+        { "day": "Dimanche", "time": "12h00 – 15h00" }
+    ],
+    "hoursNote": "Le comptoir ferme à 2h. À 2h01, c'est fermé.",
+    "sign": {
+        "title": "Avis aux locataires",
+        "lines": [
+            "Le loyer est dû le 5 de chaque mois.",
+            "Pas le 6. Pas « avant le 24 ». LE 5.",
+            "Paiement au comptoir, en crédits, aux heures d'ouverture.",
+            "Les quittances se retirent au comptoir. Les bols aussi se rendent au comptoir."
+        ],
+        "signature": "— La propriétaire, O. Halvar"
+    },
+    "address": "Le Lampion — Passage des Lanternes, District 6",
+    "contact": "o.halvar@lampion-d6.wl",
+    "visitors": "004127",
+    "footer": "Site réalisé par le neveu de Mme Halvar. Optimisé pour Internet Voyager 4, résolution 800×600."
+}
