@@ -1,8 +1,3 @@
-/* ==============================================
-   alterego.DLL — Glitch effect & crypted dialog
-   Triggered when SYSTEM/alterego.DLL is opened.
-   ============================================== */
-
 @keyframes alterego-shake {
     0%   { transform: translate(0, 0) }
     10%  { transform: translate(-4px, 2px) skewX(0.6deg) }
@@ -120,9 +115,6 @@
     }
 }
 
-/* ==============================================
-   Crypted dialog content (inside MyComputer)
-   ============================================== */
 .alterego-crypted {
     font-family: 'Courier New', monospace;
     color: #00ff8b;
@@ -148,7 +140,9 @@
         animation: alterego-flicker 0.5s linear infinite;
     }
 
-    &__body { font-size: 13px; }
+    &__body { 
+        font-size: 13px; 
+    }
 
     &__line {
         margin: 3px 0;

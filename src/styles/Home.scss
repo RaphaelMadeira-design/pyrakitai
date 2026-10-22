@@ -1,0 +1,689 @@
+@use 'Variables' as *;
+
+// MSN.com — page d'accueil fin 1999 / 2000 (FR)
+
+.home {
+    min-height: 100%;
+    background: #fff;
+    font-family: $font-system;
+    font-size: 12px;
+    color: #000;
+    user-select: text;
+    line-height: 1.35;
+    max-width: 900px;
+    margin: 0 auto;
+
+    // ── BAND 1 : logo + promo + date ──────────────────────────────────
+
+    &-top {
+        display: grid;
+        grid-template-columns: 180px 1fr 140px;
+        align-items: center;
+        padding: 8px 12px;
+        background: #fff;
+        gap: 10px;
+    }
+
+    &-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 1;
+
+        &-text {
+            font-size: 44px;
+            font-weight: 900;
+            color: #cc0000;
+            font-style: italic;
+            letter-spacing: -3px;
+            text-shadow: 1px 1px 0 #800000;
+        }
+
+        &-sub {
+            font-size: 10px;
+            font-weight: bold;
+            color: #cc0000;
+            margin-top: 2px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    &-promo {
+        text-align: center;
+        font-family: $font-system;
+        font-size: 13px;
+        color: #000;
+        font-weight: normal;
+        line-height: 1.35;
+
+        em {
+            color: #cc0000;
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        span.link {
+            color: #000080;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &-date {
+        text-align: right;
+        font-weight: 900;
+        font-size: 13px;
+        letter-spacing: 1px;
+        color: #000;
+        white-space: nowrap;
+
+        strong {
+            font-size: 22px;
+            margin-left: 4px;
+        }
+    }
+
+    // ── BAND 2 : barre bleue "SEARCH the Web" ─────────────────────────
+
+    &-searchbar {
+        background: #1a3a8a;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        color: #fff;
+
+        &-arrows {
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        &-label {
+            font-size: 13px;
+            letter-spacing: 0.5px;
+
+            strong {
+                color: #fff;
+            }
+        }
+
+        input {
+            flex: 1;
+            height: 18px;
+            background: #fff;
+            border: 1px solid #000;
+            padding: 1px 4px;
+            font-size: 12px;
+            color: #000;
+            outline: none;
+        }
+
+        &-go {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background: radial-gradient(
+                circle at 35% 30%,
+                #fff 0%,
+                #ccc 70%,
+                #888 100%
+            );
+            border: 1px solid #000;
+            color: #000080;
+            font-size: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.3);
+
+            &:hover {
+                background: radial-gradient(
+                    circle at 35% 30%,
+                    #fff 0%,
+                    #ddd 70%,
+                    #999 100%
+                );
+            }
+        }
+    }
+
+    // ── BAND 3 : navigation noire ─────────────────────────────────────
+
+    &-mainnav {
+        background: #fff;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        display: flex;
+        align-items: stretch;
+
+        &-item {
+            padding: 5px 16px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            cursor: pointer;
+            text-decoration: underline;
+            border-right: 1px solid #000;
+            white-space: nowrap;
+
+            &--active {
+                background: #ffffaa;
+            }
+
+            &:hover {
+                color: #cc0000;
+            }
+        }
+
+        &-spacer {
+            flex: 1;
+        }
+
+        &-passport {
+            padding: 4px 12px;
+            font-size: 11px;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            line-height: 1.1;
+
+            em {
+                font-style: normal;
+            }
+
+            strong {
+                color: #006633;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+    // ── BAND 4 : sous-nav bleue ───────────────────────────────────────
+
+    &-subnav {
+        background: #1a3a8a;
+        color: #fff;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 8px 12px;
+        font-size: 12px;
+
+        &-col {
+            strong,
+            span.link {
+                display: block;
+                color: #fff;
+                text-decoration: underline;
+                cursor: pointer;
+                font-weight: bold;
+                line-height: 1.4;
+
+                &:hover {
+                    color: #ffcc00;
+                }
+            }
+        }
+
+        &-ad {
+            background: #f8e8b8;
+            border: 1px solid #000;
+            padding: 4px 8px;
+            color: #000;
+            font-style: italic;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            cursor: pointer;
+
+            strong {
+                font-style: normal;
+                font-weight: bold;
+            }
+
+            em {
+                font-style: normal;
+                font-size: 9px;
+                color: #800000;
+            }
+        }
+    }
+
+    // ── BAND 5 : corps 3 colonnes ─────────────────────────────────────
+
+    &-body {
+        display: grid;
+        grid-template-columns: 180px 1fr 200px;
+        background: #fff;
+
+        @media (max-width: 800px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &-cats {
+        background: #ffffcc;
+        padding: 10px 12px;
+        border-right: 2px solid #1a3a8a;
+
+        &-item {
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+            color: #000;
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 2px 0;
+            line-height: 1.35;
+
+            &:hover {
+                color: #cc0000;
+            }
+
+            em {
+                font-style: italic;
+                color: #cc0000;
+                font-size: 11px;
+                font-weight: bold;
+                margin-left: 4px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-center {
+        padding: 8px 12px;
+        background: #fff;
+        min-width: 0;
+    }
+
+    &-shortcuts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2px 14px;
+        margin-bottom: 14px;
+        font-size: 12px;
+
+        span.link {
+            color: #000080;
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 1px 0;
+
+            &:hover {
+                color: #cc0000;
+            }
+
+            &.is-orange {
+                color: #cc6600;
+            }
+        }
+    }
+
+    &-feature {
+        margin-bottom: 14px;
+
+        &-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            text-decoration: underline;
+            cursor: pointer;
+            line-height: 1.2;
+            margin-bottom: 8px;
+
+            &:hover {
+                color: #cc0000;
+            }
+        }
+
+        &-row {
+            &-1 {
+                width: 100%;
+            }
+
+            &-2 {
+                display: grid;
+                grid-template-columns: 200px 1fr;
+                gap: 16px;
+                align-items: flex-start;
+            }
+        }
+
+        &-img {
+            &-1 {
+                width: 100%;
+                height: 230px;
+                background: #000;
+                border: 1px solid #000;
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+
+                &-credit {
+                    position: absolute;
+                    right: 5px;
+                    bottom: -5px;
+                    transform-origin: right center;
+                    color: #fff;
+                    font-size: 32px;
+                    letter-spacing: 2px;
+                }
+            }
+
+            &-2 {
+                width: 200px;
+                height: 130px;
+                background: #000;
+                border: 1px solid #000;
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+        }
+
+        &-caption {
+            font-size: 12px;
+            color: #000;
+            margin-top: 4px;
+        }
+
+        &-also {
+            h3 {
+                font-size: 14px;
+                font-weight: bold;
+                margin: 0 0 4px;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                font-size: 13px;
+                padding: 1px 0;
+
+                &::before {
+                    content: '· ';
+                    font-weight: bold;
+                }
+
+                span.link {
+                    color: #000080;
+                    text-decoration: underline;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #cc0000;
+                    }
+                }
+            }
+        }
+    }
+
+    &-connect {
+        display: grid;
+        grid-template-columns: 1fr 280px;
+        gap: 10px;
+        align-items: flex-start;
+
+        &-list {
+            h3 {
+                font-size: 14px;
+                font-weight: bold;
+                margin: 0 0 4px;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                font-size: 13px;
+                padding: 1px 0;
+
+                &::before {
+                    content: '· ';
+                    font-weight: bold;
+                }
+
+                span.link {
+                    color: #000080;
+                    text-decoration: underline;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #cc0000;
+                    }
+                }
+            }
+        }
+
+        &-side {
+            display: flex;
+            gap: 6px;
+            align-items: flex-start;
+
+            &-img {
+                width: 130px;
+                height: 110px;
+                background: #ddd;
+                border: 1px solid #000;
+                position: relative;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+
+            &-label {
+                font-size: 13px;
+                color: #000080;
+                text-decoration: underline;
+                cursor: pointer;
+                line-height: 1.25;
+
+                &:hover {
+                    color: #cc0000;
+                }
+            }
+        }
+    }
+
+    &-msgcenter {
+        background: #ffffcc;
+        padding: 10px 12px;
+        border-left: 2px solid #1a3a8a;
+
+        h2 {
+            font-size: 15px;
+            font-weight: bold;
+            color: #000;
+            margin: 0 0 6px;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+            color: #000;
+            margin: 6px 0 2px;
+        }
+
+        input {
+            width: 100%;
+            height: 18px;
+            border: 1px solid #000;
+            background: #fff;
+            font-size: 12px;
+            padding: 1px 3px;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        &-actions {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin: 6px 0;
+
+            button {
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                background: radial-gradient(
+                    circle at 35% 30%,
+                    #fff 0%,
+                    #88aaff 60%,
+                    #003388 100%
+                );
+                border: 1px solid #000;
+                color: #fff;
+                font-size: 9px;
+                font-weight: bold;
+                cursor: pointer;
+                box-shadow: inset -2px -2px 3px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        &-link {
+            display: block;
+            font-size: 13px;
+            color: #000080;
+            text-decoration: underline;
+            cursor: pointer;
+            padding: 1px 0;
+
+            &:hover {
+                color: #cc0000;
+            }
+        }
+
+        h3 {
+            font-size: 15px;
+            font-weight: bold;
+            color: #000;
+            margin: 12px 0 4px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    // ── BAND 6 : barre bleue "AIDE" ───────────────────────────────────
+
+    &-help {
+        background: #1a3a8a;
+        color: #fff;
+        padding: 4px 12px;
+        font-size: 13px;
+        font-weight: bold;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+            color: #ffcc00;
+        }
+    }
+
+    // ── BAND 7 : footer 3 blocs ───────────────────────────────────────
+
+    &-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background: #fff;
+        border-top: 1px solid #000;
+
+        &-block {
+            border-right: 1px solid #000;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            &-hd {
+                background: #1a3a8a;
+                color: #fff;
+                font-size: 13px;
+                font-weight: bold;
+                padding: 3px 10px;
+                letter-spacing: 0.5px;
+            }
+
+            &-body {
+                padding: 8px 10px;
+                font-size: 14px;
+
+                h4 {
+                    font-weight: bold;
+                    margin: 0 0 4px;
+                    font-size: 14px;
+                    color: #000;
+                }
+
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                li {
+                    font-size: 13px;
+                    padding: 1px 0;
+
+                    &::before {
+                        content: '• ';
+                    }
+                }
+
+                span.link {
+                    color: #000080;
+                    text-decoration: underline;
+                    cursor: pointer;
+                    display: block;
+                    padding: 1px 0;
+
+                    &:hover {
+                        color: #cc0000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes msn-blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
