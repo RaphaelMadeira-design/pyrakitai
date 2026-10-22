@@ -26,15 +26,15 @@
         {
             "id": "oboro",
             "name": "Mamie_Oboro (=^･^=)",
-            "status": "online",
-            "personalMessage": "En ligne — 7 chats, 0 regret",
+            "status": "offline",
+            "personalMessage": "Hors ligne — 7 chats, 0 regret",
             "senderColor": "#5a7d1a"
         },
         {
             "id": "kezin",
             "name": "Kezin — Gages & Prêts",
-            "status": "online",
-            "personalMessage": "En ligne — Tout se négocie",
+            "status": "offline",
+            "personalMessage": "Hors ligne — Tout se négocie",
             "senderColor": "#7a1a5a"
         },
         {

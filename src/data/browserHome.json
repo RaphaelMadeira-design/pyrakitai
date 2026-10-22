@@ -1,72 +1,133 @@
 {
     "logo": {
         "text": "nsn",
-        "sub": "Nicrosoft®"
+        "sub": "Astiasoft®"
     },
-    "promoHtml": "Bénéficiez de <em>10€ de réduction</em> dès <em>30€ d'achat</em><br />cette saison sur <span class=\"link\">amazor.com</span>.",
+    "promoHtml": "Bénéficiez de <em>10% de réduction</em> sur tout le matériel de protection<br />cette saison au <span class=\"link\">Parc Commercial — District 3</span>.",
     "date": {
-        "month": "JUIN",
-        "day": "17"
+        "month": "XX",
+        "day": "XX",
+        "year": "An 274"
     },
     "searchbarLabelHtml": "<strong>RECHERCHER</strong> sur le Web",
-    "mainNav": ["Accueil", "Recherche", "Images", "Shopping", "Monde", "People & Chat"],
-    "subNavCols": [
-        ["Téléchargement gratuit", "NSN Messenger Service"],
-        ["Personnaliser cette page", "Obtenez ce que vous aimez"]
+    "mainNav": [
+        "Accueil",
+        "Recherche",
+        "Images",
+        "Shopping",
+        "Monde",
+        "People & Chat"
     ],
-    "subNavAdHtml": "<strong>Envoyez des chocolats Godiva</strong><br />pour cette saison",
-    "subNavAdCta": "Cliquez ici",
+    "subNavCols": [
+        [
+        "Téléchargement gratuit",
+        "NSN Messenger Service"
+        ],
+        [
+        "Personnaliser cette page",
+        "Obtenez ce que vous aimez"
+        ]
+    ],
+    "subNavAdHtml": "<strong>Praxys — Exorcisme à domicile</strong><br />discrétion assurée depuis 40 ans",
+    "subNavAdCta": "Prendre RDV",
     "categories": [
-        "Autos", "Business", "Carrières", "Informatique & Web", "Divertissement",
-        "Jeux", "Santé",
-        { "label": "Loisirs", "isNew": true },
+        "Autos",
+        "Business",
+        "Carrières",
+        "Informatique & Web",
+        "Divertissement",
+        "Jeux",
+        "Santé",
+        {
+        "label": "Loisirs",
+        "isNew": true
+        },
         "Maison & Prêts",
-        { "label": "Guides locaux", "isNew": true },
-        "NSN Update", "Actualités",
-        "Finance perso", "Radio & Vidéo", "Recherche & École", "Sports", "Voyages", "Femmes"
+        {
+        "label": "Guides locaux",
+        "isNew": true
+        },
+        "NSN Update",
+        "Actualités",
+        "Finance perso",
+        "Radio & Vidéo",
+        "Recherche & École",
+        "Sports",
+        "Voyages",
+        "Femmes"
     ],
     "shortcuts": [
-        { "label": "Voyager" },
-        { "label": "Acheter musique" },
-        { "label": "Jeux gratuits" },
-        { "label": "Cartes" },
-        { "label": "Enchères", "orange": true },
-        { "label": "Téléchargements" },
-        { "label": "Se connecter" },
-        { "label": "Cours boursiers" },
-        { "label": "Acheter livres" },
-        { "label": "Cartes virtuelles" },
-        { "label": "Pages perso" },
-        { "label": "Plus…", "orange": true }
+        {
+        "label": "Voyager"
+        },
+        {
+        "label": "Acheter musique"
+        },
+        {
+        "label": "Jeux gratuits"
+        },
+        {
+        "label": "Cartes"
+        },
+        {
+        "label": "Enchères",
+        "orange": true
+        },
+        {
+        "label": "Téléchargements"
+        },
+        {
+        "label": "Se connecter"
+        },
+        {
+        "label": "Cours boursiers"
+        },
+        {
+        "label": "Acheter livres"
+        },
+        {
+        "label": "Cartes virtuelles"
+        },
+        {
+        "label": "Pages perso"
+        },
+        {
+        "label": "Plus…",
+        "orange": true
+        }
     ],
     "feature1": {
-        "title": "À la une : Arrestation de Makan Seo et son lien avec les Dents de Sabre",
+        "title": "À la une : la brèche du District 8 s'étend jusqu'au ciel, le D.C.R. recrute en urgence",
         "image": {
-            "src": "/images/news1.jpg",
-            "credit": "ActuNet",
-            "caption": "Les efforts combinés des forces de police de la ville et des patrouilleurs de l'Ordre ont permis l'arrestation de Makan Seo, dirigeant de l'entreprise pharmaceutique 'Evo-solutions'."
+        "src": "/images/news1.jpg",
+        "credit": "ActuNet Shevar",
+        "caption": "Visible depuis la Toile et la Noda Prima, la faille ouverte au-dessus du Bloc Abandonné inquiète les habitants. Le D.C.R., durement affaibli, fait appel à Praxys et aux volontaires."
         }
     },
     "feature2": {
-        "title": "Flash Info : Trois individus arrêtés par le Protectorat lors d'une opération nocturne à Reach",
+        "title": "Flash Info : le D.C.R. « décimé » après l'attaque d'un Alkinès majeur",
         "image": {
-            "src": "/images/news2.jpg",
-            "caption": "Affaire Seo : trois shokunins ont été arrêté par le Protectorat."
+        "src": "/images/news2.jpg",
+        "caption": "Plusieurs positions connues du Département ont été visées en une seule nuit. Le suspect reste introuvable."
         },
         "alsoTitle": "Aujourd'hui aussi",
         "alsoList": [
-            "10 conseils fiscaux",
-            "Le quotidien d'un shokunin",
-            "Voyages hors saison",
-            "Cuisinez comme un chef"
+        "Kjel Astia : le retour du « mort »",
+        "Concert d'Azura : les dormeurs du Kapahaö",
+        "Bibliothèque : la légende était vraie ?",
+        "Holozone : les sorties du week-end"
         ]
     },
     "connect": {
         "title": "Restez connecté",
-        "list": ["Top téléphones sans fil", "Anxiété en société ?", "Envoyez une e-card"],
+        "list": [
+        "Anomalies temporelles : les bons réflexes",
+        "Vivre avec la magie depuis la Fracture",
+        "Envoyez une e-card"
+        ],
         "side": {
-            "img": "/images/news3.jpg",
-            "label": "Qheselis : Et si c'était votre partenaire idéal ?"
+        "img": "/images/news3.jpg",
+        "label": "District Rouge : trouvez l'âme sœur (ou pire) ce soir"
         }
     },
     "messageCenter": {
@@ -77,27 +138,37 @@
         "signupLabel": "Inscrivez-vous gratuitement",
         "peopleTitle": "People & Chat",
         "peopleLinks": [
-            "Créer une communauté",
-            "Communautés populaires",
-            "Lobby Emoticon Chat",
-            "Nouveautés du chat"
+        "Créer une communauté",
+        "Communautés populaires",
+        "Lobby Emoticon Chat",
+        "Nouveautés du chat"
         ]
     },
     "helpLabel": "AIDE",
     "footerBlocks": [
         {
-            "head": "Exclusivités NSN",
-            "h4": "Envie de gratuit ?",
-            "links": ["Trouvez-en plein ici"]
+        "head": "Exclusivités NSN",
+        "h4": "Envie de gratuit ?",
+        "links": [
+            "Trouvez-en plein ici"
+            ]
         },
         {
-            "head": "Actualités",
-            "h4": "Lenoxia News",
-            "items": ["Sommet climatique d'Issitis — accord signé", "Exposition de l'artiste Von Gong à Reach", "Ouverture d'une nouvelle embassade à Erebor"]
+        "head": "Actualités",
+        "h4": "Shevar News",
+        "items": [
+            "Groupe Astia : Kushala Dorak nommée cheffe de la branche commerciale",
+            "Zaethrune : un avion s'écrase sur un temple sacré",
+            "Le Menschheitsrat manifeste devant le Nexus"
+            ]
         },
         {
-            "head": "Recherche locale",
-            "links": ["Pages jaunes", "Pages blanches", "Météo"]
+        "head": "Recherche locale",
+        "links": [
+            "Pages jaunes",
+            "Pages blanches",
+            "Météo"
+            ]
         }
     ]
 }

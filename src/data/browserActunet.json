@@ -1,162 +1,145 @@
 {
-    "date": "Vendredi 17 Juin",
-
+    "date": "XX/XX — An 274 après la Fracture",
     "tickerItems": [
-        "FLASH : Reach — le Protectorat confirme l'arrestation de trois utilisateurs déviants",
-        "CGU : Le Gardien stationnera près de Reach jusqu'à la fin du mois",
-        "CENTRAL-X : Aucun incident signalé au Gouffre depuis 1837 jours",
-        "SCIENCES : Le Sarcophage valide deux nouveaux prototypes d'artéfacts",
-        "MONDE : Tensions diplomatiques entre Arkhos et Elysia",
-        "FAIT DIVERS : Nouvelle Engeance observée près des Ruines de Nahar",
-        "ORDRE : Plusieurs Patrouilleurs mobilisés dans le nord de Lenoxia"
+        "FLASH : District 8 — la brèche temporelle visible dans le ciel de toute la ville",
+        "D.C.R. : appel à candidatures exceptionnel, recrutement « sans conditions »",
+        "ASTIA : Kjel Astia de retour à Shevar, plusieurs chefs de branche démis",
+        "ALKINÈS : la mairie interpellée sur la présence d'engeances en ville",
+        "ZAETHRUNE : un avion détourné s'écrase sur un temple, deux suspects en fuite",
+        "SCHICKSAL : un agent spécial recherché par des familles de victimes",
+        "CULTURE : le stade Kapahaö rouvre après le concert d'Azura"
     ],
-
     "articles": [
         {
-            "id": 0,
-            "category": "À la une",
-            "catColor": "#aa0000",
-            "date": "Ven. 17 Juin | 07:43 LT",
-            "headline": "Reach : arrestation de Makan Seo, soupçonné de liens avec le groupe déviant « Dents de Sabre »",
-            "summary": "Les autorités de Reach ont confirmé l'arrestation de Makan Seo au terme d'une opération coordonnée menée avec le soutien de l'Ordre. L'individu est soupçonné d'entretenir des liens étroits avec le groupe déviant connu sous le nom de « Dents de Sabre ».",
-            "paragraphs": [
-                "L'arrestation est intervenue en début de semaine dans le district vert de Reach, à l'issue d'une enquête de plusieurs semaines menée par les services de l'Ordre de la CGU. Les autorités indiquent que l'opération s'est déroulée sans incident majeur.",
-                "Selon plusieurs sources proches du dossier, Makan Seo, patron de la firme pharmaceutique 'Evo-solutions', aurait entretenu des contacts réguliers avec plusieurs membres influents des Dents de Sabre, une organisation déjà connue des services du Protectorat pour diverses activités criminelles à travers la région.",
-                "Au cours des perquisitions, les agents auraient saisi plusieurs kilogrammes de substances illicites ainsi qu'un important volume de données numériques actuellement en cours d'analyse.",
-                "Le chef des forces de police n'a pas souhaité préciser si d'autres arrestations étaient prévues, mais a confirmé que l'enquête demeurait active. Plusieurs individus susceptibles d'être liés au réseau feraient encore l'objet d'une surveillance.",
-                "Les Dents de Sabre sont soupçonnées d'être impliquées dans différents trafics opérant dans plusieurs territoires affiliés à la CGU. Certains analystes estiment que le groupe pourrait disposer d'appuis au sein même des réseaux commerciaux locaux.",
-                "Makan Seo demeure présumé innocent jusqu'à son jugement devant les autorités compétentes."
-            ]
+        "id": 0,
+        "category": "À la une",
+        "catColor": "#aa0000",
+        "date": "XX/XX/274 | 07:43",
+        "headline": "District 8 : la brèche s'étend jusqu'au ciel, le D.C.R. appelle à l'aide",
+        "summary": "La faille ouverte au-dessus du Bloc Abandonné ne cesse de grandir. Privé d'une grande partie de ses effectifs, le Département de Contrôle des Rauthéens recrute dans l'urgence pour soutenir Schicksal.",
+        "paragraphs": [
+            "Depuis plusieurs nuits, une lueur anormale est visible au-dessus du Mur qui sépare le District 8 du reste de la ville. Les riverains de la Toile décrivent « une déchirure qui monte jusqu'aux nuages ».",
+            "Selon nos informations, la brèche se serait considérablement élargie après le décès d'un haut responsable de la branche shevarite de Schicksal, dont l'identité n'a pas été communiquée.",
+            "Le D.C.R., encore marqué par les pertes de ces dernières semaines, a ouvert un recrutement exceptionnel. Des agents de l'agence d'exorcisme Praxys ainsi que de simples volontaires auraient déjà été envoyés à l'avant-poste du District 8.",
+            "Des témoins affirment avoir aperçu près de l'avant-poste un jeune homme « qui ne devrait pas être là ». Le nom d'Arnhol Geed, déjà cité dans plusieurs affaires récentes, circule avec insistance sur la Toile.",
+            "Le Département rappelle que l'accès au District 8 est strictement interdit et que toute tentative d'approche sera sanctionnée."
+        ]
         },
-
         {
-            "id": 1,
-            "category": "Faits divers",
-            "catColor": "#336600",
-            "date": "Jeu. 16 Juin | 08:12 LT",
-            "headline": "Reach : trois individus arrêtés par le Protectorat lors d'une opération nocturne",
-            "summary": "Le Protectorat a procédé à plusieurs arrestations dans le district sud de Reach après plusieurs semaines de surveillance.",
-            "paragraphs": [
-                "L'opération a été menée peu avant l'aube par une escouade d'Investigateurs de Première classe.",
-                "Les suspects sont soupçonnés d'avoir utilisé des formes prohibées du Jinsei et d'entretenir des liens avec un groupe déviant local.",
-                "Divers artéfacts non homologués et documents rituels ont été saisis durant la perquisition.",
-                "Les suspects ont été transférés sous haute surveillance en attendant leur jugement."
-            ]
+        "id": 1,
+        "category": "Faits divers",
+        "catColor": "#336600",
+        "date": "XX/XX/274 | 08:12",
+        "headline": "Une nuit sanglante : le D.C.R. frappé au cœur par un Alkinès majeur",
+        "summary": "Plus de 90 % des effectifs présents sur une scène de crime auraient été anéantis, avant que l'attaque ne s'étende à plusieurs positions du Département.",
+        "paragraphs": [
+            "Tout commence par la découverte du corps d'une exorciste dans les décombres d'un immeuble. L'enquête, confiée à l'androïde Jittix, devait rester discrète.",
+            "Mais l'arrivée sur place de Yudah, Alkinès majeur du Massacre, a fait basculer la situation. Une tentative de capture aurait déclenché une riposte d'une violence inédite.",
+            "Les agents Alric et Alfonso sont intervenus sans parvenir à stopper l'entité, qui a ensuite visé toutes les positions connues du D.C.R. Le Département se retrouverait aujourd'hui « décimé et décapité ».",
+            "Le suspect a depuis disparu des radars. Plusieurs collectifs d'habitants réclament l'expulsion des engeances de la ville."
+        ]
         },
-
         {
-            "id": 2,
-            "category": "Monde",
-            "catColor": "#004499",
-            "date": "Mer. 15 Juin | 21:04 LT",
-            "headline": "L'Ordre intervient après l'apparition d'une Engeance supérieure à Issitis",
-            "summary": "Plusieurs Patrouilleurs ont été déployés dans les montagnes orientales d'Issitis après la disparition de deux villages.",
-            "paragraphs": [
-                "Des survivants décrivent une créature dépassant largement les capacités des milices locales.",
-                "Le Gardien aurait dépêché une escouade spécialisée dans la neutralisation des Engeances supérieures.",
-                "Les routes commerciales traversant la région ont été temporairement fermées.",
-                "Aucune estimation officielle des pertes n'a encore été communiquée."
-            ]
+        "id": 2,
+        "category": "Politique",
+        "catColor": "#004499",
+        "date": "XX/XX/274 | 21:04",
+        "headline": "Groupe Astia : le « mort » Kjel Astia réapparaît en plein procès",
+        "summary": "Coup de théâtre au tribunal : le dirigeant, que l'on croyait abattu lors de sa réception à la Noda Prima, a révélé un complot interne.",
+        "paragraphs": [
+            "Lors de sa première visite à Shevar depuis près de 70 ans, Kjel Astia avait été abattu en plein discours au sommet de la plus haute tour du District 2. Son corps avait ensuite mystérieusement disparu.",
+            "Les deux principales témoins, Kushala Dorak et Tiaän'ming Weï, étaient devenues les suspectes désignées. L'un de leurs avocats aurait même été soudoyé.",
+            "C'est en pleine audience que Kjel Astia est réapparu, bien vivant, révélant que plusieurs chefs de branche avaient tenté de le renverser.",
+            "Kushala Dorak a depuis été promue cheffe de la branche commerciale shevarite. Le Groupe Astia n'a pas souhaité commenter le sort des responsables impliqués."
+        ]
         },
-
         {
-            "id": 3,
-            "category": "Sciences",
-            "catColor": "#004499",
-            "date": "Mar. 14 Juin | 10:30 LT",
-            "headline": "Central-X : une nouvelle génération d'artéfacts défensifs validée",
-            "summary": "Le Sarcophage annonce des résultats jugés prometteurs concernant plusieurs prototypes destinés aux agents de terrain.",
-            "paragraphs": [
-                "Les nouveaux artéfacts seraient capables d'améliorer considérablement la résistance aux manifestations de la Corruption.",
-                "Les essais auraient été réalisés dans des conditions contrôlées à bord du Sarcophage.",
-                "La CGU espère équiper plusieurs unités du Protectorat d'ici la fin de l'année.",
-                "Aucune information supplémentaire n'a été communiquée sur les protocoles de recherche employés."
-            ]
+        "id": 3,
+        "category": "Monde",
+        "catColor": "#004499",
+        "date": "XX/XX/274 | 10:30",
+        "headline": "Zaethrune : un avion détourné s'écrase sur un temple sacré",
+        "summary": "Les volontaires shevarites venus aider le nord du continent se retrouvent au cœur d'une catastrophe. Deux suspects sont recherchés pour terrorisme.",
+        "paragraphs": [
+            "Depuis plusieurs semaines, le nord de Zaethrune fait face à des phénomènes surnaturels que les autorités locales ne parviennent pas à contenir. Shevar, allié historique, avait envoyé des volontaires.",
+            "Leur mission : récupérer des clés auprès de sanctuaires locaux afin d'avancer un rituel de scellement de la divinité endormie dans la montagne.",
+            "Le groupe d'exorcistes chargé du rituel aurait été assassiné, avant qu'un avion détourné ne s'écrase sur le temple.",
+            "Deux individus, dont un certain Yao, sont désormais recherchés pour actes de terrorisme. Toute information peut être transmise au D.C.R."
+        ]
         },
-
         {
-            "id": 4,
-            "category": "Culture",
-            "catColor": "#990000",
-            "date": "Lun. 13 Juin | 15:22 LT",
-            "headline": "L'Académie ouvre exceptionnellement ses portes aux futurs candidats",
-            "summary": "La prestigieuse Académie de la CGU accueillera les visiteurs durant trois jours afin de présenter ses formations.",
-            "paragraphs": [
-                "Des démonstrations de maniement d'artéfacts ainsi que des simulations tactiques sont prévues.",
-                "Les visiteurs pourront rencontrer plusieurs instructeurs ainsi que d'anciens diplômés.",
-                "L'Académie rappelle que les critères d'admission demeurent extrêmement sélectifs.",
-                "Plus de quinze mille visiteurs sont attendus cette année."
-            ]
+        "id": 4,
+        "category": "Culture",
+        "catColor": "#990000",
+        "date": "XX/XX/274 | 15:22",
+        "headline": "Concert d'Azura : le stade Kapahaö rouvre après la « nuit des dormeurs »",
+        "summary": "Des milliers de spectateurs s'étaient endormis en plein concert. La chanteuse livre enfin sa version.",
+        "paragraphs": [
+            "Le grand stade Kapahaö était plein à craquer pour le concert événement de la star Azura. Au milieu du show, des milliers de personnes ont sombré dans un sommeil soudain.",
+            "Le D.C.R. évoque officiellement « un incident lié à une entité de passage », sans plus de précisions. Des témoins parlent d'une silhouette ailée dans les gradins et d'un chant « d'une beauté insupportable ».",
+            "Azura, très émue, a remercié son public et assuré qu'elle remonterait sur scène « plus forte que jamais ».",
+            "Le stade rouvrira ses portes ce week-end, avec un dispositif de sécurité renforcé."
+        ]
         },
-
         {
-            "id": 5,
-            "category": "Politique",
-            "catColor": "#660066",
-            "date": "Dim. 12 Juin | 08:00 LT",
-            "headline": "Le Millénium réaffirme son opposition à toute restauration impériale",
-            "summary": "Le Millenium a rappelé que le Trône Blanc devait demeurer vacant afin de préserver l'équilibre mondial.",
-            "paragraphs": [
-                "Cette déclaration intervient après la diffusion de plusieurs manifestes appelant au retour d'un souverain unique.",
-                "Les autorités milléniennes considèrent qu'un tel changement représenterait un risque majeur pour la stabilité de Lenoxia.",
-                "L'Élite aurait été placée en état d'alerte renforcée.",
-                "Aucune menace directe contre la Cité du Millénium n'a cependant été confirmée."
-            ]
+        "id": 5,
+        "category": "Société",
+        "catColor": "#336600",
+        "date": "XX/XX/274 | 18:05",
+        "headline": "La Bibliothèque Ixaä'shykss : la légende urbaine était-elle réelle ?",
+        "summary": "Les influenceurs disparus ont été retrouvés. Tous, sauf un.",
+        "paragraphs": [
+            "Longtemps considérée comme une simple légende de la Toile, la mystérieuse Bibliothèque revient sur le devant de la scène après la réapparition d'un groupe d'influenceurs portés disparus.",
+            "D'après plusieurs sources, un groupe de volontaires aurait franchi une porte grâce à une clé confiée par un certain Esdras, avant de ramener les disparus.",
+            "L'un des influenceurs n'a toutefois pas survécu. Sa famille réclame des explications.",
+            "Les autorités appellent à ne pas tenter de rechercher la Bibliothèque par soi-même."
+        ]
         }
     ],
-
     "briefs": [
-        "REACH — Trois arrestations réalisées par le Protectorat (16/06)",
-        "ISSITIS — Intervention de l'Ordre dans les montagnes orientales (15/06)",
-        "CENTRAL-X — Validation de nouveaux artéfacts défensifs (14/06)",
-        "MILLÉNIUM — Préparatifs des cérémonies du Trône Blanc (12/06)",
-        "ACADEMIE — Journées portes ouvertes annoncées (11/06)"
+        "DISTRICT 8 — La brèche visible dans le ciel, accès toujours interdit (XX/XX/274)",
+        "D.C.R. — Lourdes pertes après l'attaque d'un Alkinès (XX/XX/274)",
+        "NODA PRIMA — Kjel Astia de retour, la branche shevarite remaniée (XX/XX/274)",
+        "ZAETHRUNE — Crash sur un temple, deux suspects en fuite (XX/XX/274)",
+        "KAPAHAÖ — Réouverture du stade ce week-end (XX/XX/274)"
     ],
-
     "nav": [
         "Accueil",
-        "Issitis",
+        "Shevar",
+        "Districts",
         "Monde",
-        "CGU",
-        "Sciences",
+        "Organisations",
         "Faits divers",
         "Culture",
         "Météo",
         "Finance"
     ],
-
     "sidebarCategories": [
-        "Issitis",
+        "Shevar",
+        "Districts",
         "Monde",
-        "CGU",
-        "Sciences",
+        "Organisations",
         "Faits divers",
         "Culture",
         "Économie",
         "Météo"
     ],
-
     "weather": {
-        "city": "Reach",
-        "temp": "27°C",
-        "desc": "Ciel dégagé"
+        "city": "Shevar",
+        "temp": "24°C",
+        "desc": "Ciel voilé — lueur au nord (D8)"
     },
-
     "ad": {
         "label": "PUBLICITÉ",
-        "title": "Alchimie Steiner™",
+        "title": "Praxys™ Exorcismes",
         "lines": [
-            "Savoir alchimique depuis 200 ans",
-            "À partir de 1200 crédits"
+        "Votre sérénité, notre papillon",
+        "Devis gratuit — District 3"
         ]
     },
-
-    "footer": "©ActuNet Issitis — Publicité — Aide — Contact — Conditions d'utilisation",
-
+    "footer": "©ActuNet Shevar — Publicité — Aide — Contact — Conditions d'utilisation",
     "footerSmall": "Ce site est optimisé pour Netscape Navigator 4.0 et Internet Explorer 5.0 · Résolution recommandée : 800×600",
-
-    "articleFooterHtml": "©ActuNet Issitis &nbsp;|&nbsp;",
-
+    "articleFooterHtml": "©ActuNet Shevar &nbsp;|&nbsp;",
     "articleFooterLinks": [
         "Envoyer cet article",
         "Imprimer",
