@@ -73,6 +73,7 @@
         font-size: 10px;
         color: #ccaaff;
         white-space: nowrap;
+        font-family: $font-shevar;
     }
 
     &-search {
@@ -292,6 +293,7 @@
             font-size: 10px;
             color: #666666;
             margin-bottom: 5px;
+            font-family: $font-shevar;
         }
 
         &-summary {
@@ -352,6 +354,7 @@
             font-size: 9px;
             color: #888;
             margin-bottom: 3px;
+            font-family: $font-shevar;
         }
 
         &-sum {
@@ -375,6 +378,7 @@
         &-date {
             color: #888;
             font-size: 10px;
+            font-family: $font-shevar;
         }
     }
 
@@ -416,6 +420,7 @@
             font-size: 10px;
             color: #888;
             margin-bottom: 6px;
+            font-family: $font-shevar;
         }
 
         &-title {

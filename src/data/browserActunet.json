@@ -1,5 +1,5 @@
 {
-    "date": "XX/XX — An 274 après la Fracture",
+    "date": "DATE — An 274",
     "tickerItems": [
         "FLASH : District 8 — la brèche temporelle visible dans le ciel de toute la ville",
         "D.C.R. : appel à candidatures exceptionnel, recrutement « sans conditions »",
@@ -14,7 +14,7 @@
         "id": 0,
         "category": "À la une",
         "catColor": "#aa0000",
-        "date": "XX/XX/274 | 07:43",
+        "date": "DATE | HEURE",
         "headline": "District 8 : la brèche s'étend jusqu'au ciel, le D.C.R. appelle à l'aide",
         "summary": "La faille ouverte au-dessus du Bloc Abandonné ne cesse de grandir. Privé d'une grande partie de ses effectifs, le Département de Contrôle des Rauthéens recrute dans l'urgence pour soutenir Schicksal.",
         "paragraphs": [
@@ -29,7 +29,7 @@
         "id": 1,
         "category": "Faits divers",
         "catColor": "#336600",
-        "date": "XX/XX/274 | 08:12",
+        "date": "NEUF | CINQ",
         "headline": "Une nuit sanglante : le D.C.R. frappé au cœur par un Alkinès majeur",
         "summary": "Plus de 90 % des effectifs présents sur une scène de crime auraient été anéantis, avant que l'attaque ne s'étende à plusieurs positions du Département.",
         "paragraphs": [
@@ -43,7 +43,7 @@
         "id": 2,
         "category": "Politique",
         "catColor": "#004499",
-        "date": "XX/XX/274 | 21:04",
+        "date": "DIX | QUATRE",
         "headline": "Groupe Astia : le « mort » Kjel Astia réapparaît en plein procès",
         "summary": "Coup de théâtre au tribunal : le dirigeant, que l'on croyait abattu lors de sa réception à la Noda Prima, a révélé un complot interne.",
         "paragraphs": [
@@ -57,7 +57,7 @@
         "id": 3,
         "category": "Monde",
         "catColor": "#004499",
-        "date": "XX/XX/274 | 10:30",
+        "date": "ONZE | TROIS",
         "headline": "Zaethrune : un avion détourné s'écrase sur un temple sacré",
         "summary": "Les volontaires shevarites venus aider le nord du continent se retrouvent au cœur d'une catastrophe. Deux suspects sont recherchés pour terrorisme.",
         "paragraphs": [
@@ -71,7 +71,7 @@
         "id": 4,
         "category": "Culture",
         "catColor": "#990000",
-        "date": "XX/XX/274 | 15:22",
+        "date": "DOUZE | DEUX",
         "headline": "Concert d'Azura : le stade Kapahaö rouvre après la « nuit des dormeurs »",
         "summary": "Des milliers de spectateurs s'étaient endormis en plein concert. La chanteuse livre enfin sa version.",
         "paragraphs": [
@@ -85,7 +85,7 @@
         "id": 5,
         "category": "Société",
         "catColor": "#336600",
-        "date": "XX/XX/274 | 18:05",
+        "date": "TREIZE | UN",
         "headline": "La Bibliothèque Ixaä'shykss : la légende urbaine était-elle réelle ?",
         "summary": "Les influenceurs disparus ont été retrouvés. Tous, sauf un.",
         "paragraphs": [
@@ -97,11 +97,11 @@
         }
     ],
     "briefs": [
-        "DISTRICT 8 — La brèche visible dans le ciel, accès toujours interdit (XX/XX/274)",
-        "D.C.R. — Lourdes pertes après l'attaque d'un Alkinès (XX/XX/274)",
-        "NODA PRIMA — Kjel Astia de retour, la branche shevarite remaniée (XX/XX/274)",
-        "ZAETHRUNE — Crash sur un temple, deux suspects en fuite (XX/XX/274)",
-        "KAPAHAÖ — Réouverture du stade ce week-end (XX/XX/274)"
+        "DISTRICT 8 — La brèche visible dans le ciel, accès toujours interdit",
+        "D.C.R. — Lourdes pertes après l'attaque d'un Alkinès",
+        "NODA PRIMA — Kjel Astia de retour, la branche shevarite remaniée",
+        "ZAETHRUNE — Crash sur un temple, deux suspects en fuite",
+        "KAPAHAÖ — Réouverture du stade ce week-end"
     ],
     "nav": [
         "Accueil",
@@ -138,7 +138,7 @@
         ]
     },
     "footer": "©ActuNet Shevar — Publicité — Aide — Contact — Conditions d'utilisation",
-    "footerSmall": "Ce site est optimisé pour Netscape Navigator 4.0 et Internet Explorer 5.0 · Résolution recommandée : 800×600",
+    "footerSmall": "Ce site est optimisé pour Netscape Navigator 4.0 et Internet Voyager 5.0 · Résolution recommandée : 800×600",
     "articleFooterHtml": "©ActuNet Shevar &nbsp;|&nbsp;",
     "articleFooterLinks": [
         "Envoyer cet article",
