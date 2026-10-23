@@ -115,7 +115,7 @@ const WINDOW_CONFIGS = {
     },
     mail: {
         title: 'Courrier électronique — Boîte de réception',
-        defaultSize: { width: 720, height: 520 },
+        defaultSize: { width: '70%', height: '85%' },
         defaultPosition: { x: 100, y: 40 },
     },
     computer: {
