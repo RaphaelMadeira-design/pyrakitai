@@ -13,9 +13,8 @@ import SecretPage from './SecretPage'
 import GlitchSearch from './GlitchSearch'
 import KonamiOverlay from './KonamiOverlay'
 import { FakeGoogleResults, FakeGoogleNoResult } from './GoogleResults'
-import RealGoogleResults from './RealGoogleResults'
 
-const { IE_ICON, GOOGLE_CSE_ID, KONAMI, SECRET_SEARCHES, SECRET_URLS, WIKI_URL, NEWS_URL, TAB_DEFS, EXACT_URL_MAP } = config
+const { IE_ICON, KONAMI, SECRET_SEARCHES, SECRET_URLS, WIKI_URL, NEWS_URL, TAB_DEFS, EXACT_URL_MAP } = config
 
 
 const TARGET_MAP = { wiki: WIKI_URL, news: NEWS_URL }
@@ -268,9 +267,7 @@ export default function Browser() {
         if (contentMode === 'google-results' && searchTopic)
             return <FakeGoogleResults topic={searchTopic} query={searchQuery} onResultClick={handleInput} onSearch={handleInput}/>
         if (contentMode === 'google-noresult')
-            return GOOGLE_CSE_ID
-                ? <RealGoogleResults cseId={GOOGLE_CSE_ID} query={searchQuery} onSearch={handleInput} />
-                : <FakeGoogleNoResult query={searchQuery} onSearch={handleInput} />
+            return <FakeGoogleNoResult query={searchQuery} onSearch={handleInput} />
         if (activeTab === 'secret')
             return <SecretPage />
         if (activeTab === 'wiki')
