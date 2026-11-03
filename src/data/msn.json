@@ -10,223 +10,707 @@
     },
     "contacts": [
         {
-            "id": "juni",
-            "name": "JuJu-07※",
-            "status": "online",
-            "personalMessage": "En ligne",
-            "senderColor": "#0066aa"
+        "id": "juni",
+        "name": "JuJu-07※",
+        "status": "online",
+        "personalMessage": "En ligne",
+        "senderColor": "#0066aa"
         },
         {
-            "id": "carrion",
-            "name": "H.Carrion",
-            "status": "online",
-            "personalMessage": "En ligne — Rendez-moi mon coeur d'ambre",
-            "senderColor": "#a8331a"
+        "id": "carrion",
+        "name": "H.Carrion",
+        "status": "online",
+        "personalMessage": "En ligne — Rendez-moi mon coeur d'ambre",
+        "senderColor": "#a8331a"
         },
         {
-            "id": "oboro",
-            "name": "Mamie_Oboro (=^･^=)",
-            "status": "offline",
-            "personalMessage": "Hors ligne — 7 chats, 0 regret",
-            "senderColor": "#5a7d1a"
+        "id": "oboro",
+        "name": "Mamie_Oboro (=^･^=)",
+        "status": "offline",
+        "personalMessage": "Hors ligne — 7 chats, 0 regret",
+        "senderColor": "#5a7d1a"
         },
         {
-            "id": "kezin",
-            "name": "Kezin — Gages & Prêts",
-            "status": "offline",
-            "personalMessage": "Hors ligne — Tout se négocie",
-            "senderColor": "#7a1a5a"
+        "id": "kezin",
+        "name": "Kezin — Gages & Prêts",
+        "status": "offline",
+        "personalMessage": "Hors ligne — Tout se négocie",
+        "senderColor": "#7a1a5a"
         },
         {
-            "id": "metkor",
-            "name": "m.k",
-            "status": "away",
-            "personalMessage": "Ne pas déranger",
-            "senderColor": "#1a8a8a"
+        "id": "metkor",
+        "name": "m.k",
+        "status": "away",
+        "personalMessage": "Ne pas déranger",
+        "senderColor": "#1a8a8a"
         },
         {
-            "id": "senkaana",
-            "name": "a.senkaäna ♪",
-            "status": "online",
-            "personalMessage": "En ligne — Concert samedi, District n°7",
-            "senderColor": "#cc007a"
+        "id": "senkaana",
+        "name": "a.senkaäna ♪",
+        "status": "online",
+        "personalMessage": "En ligne — Concert samedi, District n°7",
+        "senderColor": "#cc007a"
         },
         {
-            "id": "halvar",
-            "name": "Mme Halvar — Le Lampion",
-            "status": "online",
-            "personalMessage": "En ligne — Loyer le 5. Pas le 6. Pas « avant le 24 ». LE 5.",
-            "senderColor": "#8a4b00"
+        "id": "halvar",
+        "name": "Mme Halvar — Le Lampion",
+        "status": "online",
+        "personalMessage": "En ligne — Loyer le 5. Pas le 6. Pas « avant le 24 ». LE 5.",
+        "senderColor": "#8a4b00"
         },
         {
-            "id": "phalene",
-            "name": "ph4l3ne_",
-            "status": "away",
-            "personalMessage": "je n'existe pas",
-            "senderColor": "#4b3c8a"
+        "id": "phalene",
+        "name": "ph4l3ne_",
+        "status": "away",
+        "personalMessage": "je n'existe pas",
+        "senderColor": "#4b3c8a"
         }
     ],
     "conversations": {
         "juni": {
-            "date": "Aujourd'hui — 22:14",
-            "messages": [
-                { "from": "JuJu-07※", "text": "sin t'es encore au bureau ?", "time": "22:14" },
-                { "from": "JuJu-07※", "text": "je vois ta lampe allumée depuis la rue", "time": "22:14" },
-                { "from": "sinsin",   "text": "je range des dossiers", "time": "22:16" },
-                { "from": "JuJu-07※", "text": "à 22h ?", "time": "22:16" },
-                { "from": "sinsin",   "text": "le désordre m'empêche de dormir", "time": "22:17" },
-                { "from": "JuJu-07※", "text": "c'est pas le désordre, c'est toi qui dors jamais", "time": "22:17" },
-                { "from": "JuJu-07※", "text": "t'as mangé au moins ?", "time": "22:18" },
-                { "from": "sinsin",   "text": "un pain à la pâte de haricot", "time": "22:19" },
-                { "from": "JuJu-07※", "text": "ça compte pas ;_;", "time": "22:19" },
-                { "from": "JuJu-07※", "text": "bon. j'ai trouvé un vieux poste radio chez ma grand-mère, il marche plus", "time": "22:20" },
-                { "from": "JuJu-07※", "text": "je me suis dit que ça te ferait plaisir de le réparer", "time": "22:20" },
-                { "from": "sinsin",   "text": "quel modèle ?", "time": "22:21" },
-                { "from": "JuJu-07※", "text": "aucune idée, il est en bois et il pèse une tonne", "time": "22:21" },
-                { "from": "sinsin",   "text": "apporte-le demain. je t'offre le thé", "time": "22:22" },
-                { "from": "JuJu-07※", "text": "deal ! et rentre chez toi maintenant", "time": "22:22" },
-                { "from": "sinsin",   "text": "oui maman", "time": "22:23" }
-            ]
+        "date": "Aujourd'hui — 22:14",
+        "messages": [
+            {
+            "from": "JuJu-07※",
+            "text": "sin t'es encore au bureau ?",
+            "time": "22:14"
+            },
+            {
+            "from": "JuJu-07※",
+            "text": "je vois ta lampe allumée depuis la rue",
+            "time": "22:14"
+            },
+            {
+            "from": "sinsin",
+            "text": "je négocie avec une pile de dossiers. elle prend beaucoup de place pour quelqu'un qui ne paie pas de loyer",
+            "time": "22:16"
+            },
+            {
+            "from": "JuJu-07※",
+            "text": "à 22h ?",
+            "time": "22:16"
+            },
+            {
+            "from": "sinsin",
+            "text": "je cherchais une facture. j'ai retrouvé une carte que je croyais perdue, donc soirée très productive",
+            "time": "22:17"
+            },
+            {
+            "from": "JuJu-07※",
+            "text": "donc t'as encore oublié l'heure en fouillant dans tes vieux trucs",
+            "time": "22:17"
+            },
+            {
+            "from": "JuJu-07※",
+            "text": "t'as mangé au moins ?",
+            "time": "22:18"
+            },
+            {
+            "from": "sinsin",
+            "text": "ça compte pas ;_; un jour je vais venir avec un vrai repas",
+            "time": "22:19"
+            },
+            {
+            "from": "JuJu-07※",
+            "text": "ça compte pas ;_;",
+            "time": "22:19"
+            },
+            {
+            "from": "JuJu-07※",
+            "text": "bon. j'ai trouvé un vieux poste radio chez ma grand-mère, il marche plus",
+            "time": "22:20"
+            },
+            {
+            "from": "JuJu-07※",
+            "text": "je me suis dit que ça te ferait plaisir de le réparer",
+            "time": "22:20"
+            },
+            {
+            "from": "sinsin",
+            "text": "en bois comment ? avec des boutons ronds ? tu sais parler à mon cœur",
+            "time": "22:21"
+            },
+            {
+            "from": "JuJu-07※",
+            "text": "aucune idée, il est en bois et il pèse une tonne",
+            "time": "22:21"
+            },
+            {
+            "from": "sinsin",
+            "text": "apporte-le demain, je t'offre le thé. et on ouvre tes boosters avant de sortir le tournevis, j'ai des priorités",
+            "time": "22:22"
+            },
+            {
+            "from": "JuJu-07※",
+            "text": "deal ! et rentre chez toi maintenant",
+            "time": "22:22"
+            },
+            {
+            "from": "sinsin",
+            "text": "oui maman :) je ferme. garde-moi un peu de ton autorité pour demain",
+            "time": "22:23"
+            }
+        ]
         },
         "carrion": {
-            "date": "Aujourd'hui — 16:22",
-            "messages": [
-                { "from": "H.Carrion", "text": "Bonjour Monsieur Kitaï", "time": "16:22" },
-                { "from": "H.Carrion", "text": "Excusez-moi de vous déranger encore. Avez-vous du nouveau pour mon pendentif ?", "time": "16:22" },
-                { "from": "sinsin",    "text": "Bonjour Madame Carrion. J'ai fait un repérage ce matin au Parc Commercial", "time": "16:24" },
-                { "from": "sinsin",    "text": "Votre pickpocket a ses habitudes dans la galerie basse. Je sais à qui il revend", "time": "16:25" },
-                { "from": "H.Carrion", "text": "Mon Dieu. Il ne l'a pas encore vendu au moins ?", "time": "16:25" },
-                { "from": "sinsin",    "text": "Pas encore. Un objet avec une gravure aussi personnelle se revend mal, il va attendre", "time": "16:26" },
-                { "from": "H.Carrion", "text": "C'était à ma mère, vous comprenez. Et à sa mère avant elle", "time": "16:27" },
-                { "from": "sinsin",    "text": "Je comprends. Je vous le ramène avant le 24", "time": "16:28" },
-                { "from": "H.Carrion", "text": "Faut-il que je porte plainte en parallèle ?", "time": "16:28" },
-                { "from": "sinsin",    "text": "Si vous voulez. Mais le temps qu'ils ouvrent le dossier, ce sera réglé", "time": "16:29" },
-                { "from": "H.Carrion", "text": "Très bien. Je vous fais confiance", "time": "16:30" },
-                { "from": "H.Carrion", "text": "J'ai bien reçu votre facture d'acompte, le virement est parti", "time": "16:31" },
-                { "from": "sinsin",    "text": "Reçu, merci. Je vous tiens au courant", "time": "16:31" },
-                { "from": "H.Carrion", "text": "Merci infiniment, Monsieur Kitaï", "time": "16:32" },
-                { "from": "system",    "text": "[H.Carrion est passée en absent]", "time": "16:36" }
-            ]
+        "date": "Aujourd'hui — 16:22",
+        "messages": [
+            {
+            "from": "H.Carrion",
+            "text": "Bonjour Monsieur Kitaï",
+            "time": "16:22"
+            },
+            {
+            "from": "H.Carrion",
+            "text": "Excusez-moi de vous déranger encore. Avez-vous du nouveau pour mon pendentif ?",
+            "time": "16:22"
+            },
+            {
+            "from": "sinsin",
+            "text": "Bonjour Madame Carrion ! Vous ne me dérangez pas. Je suis passé au Parc Commercial ce matin",
+            "time": "16:24"
+            },
+            {
+            "from": "sinsin",
+            "text": "J'ai retrouvé les habitudes de notre amateur de bijoux, et la personne à qui il revend",
+            "time": "16:25"
+            },
+            {
+            "from": "H.Carrion",
+            "text": "Mon Dieu. Il ne l'a pas encore vendu au moins ?",
+            "time": "16:25"
+            },
+            {
+            "from": "sinsin",
+            "text": "Pas encore, d'après mes renseignements. La gravure lui complique la tâche : pour une fois, les mots au dos nous rendent service",
+            "time": "16:26"
+            },
+            {
+            "from": "H.Carrion",
+            "text": "C'était à ma mère, vous comprenez. Et à sa mère avant elle",
+            "time": "16:27"
+            },
+            {
+            "from": "sinsin",
+            "text": "Je comprends. Je fais le nécessaire pour vous le ramener avant le 24. Il a une famille qui l'attend",
+            "time": "16:28"
+            },
+            {
+            "from": "H.Carrion",
+            "text": "Faut-il que je porte plainte en parallèle ?",
+            "time": "16:28"
+            },
+            {
+            "from": "sinsin",
+            "text": "Vous pouvez, bien sûr. De mon côté, je continue les recherches ; autant ne pas laisser votre pendentif prendre goût aux vacances",
+            "time": "16:29"
+            },
+            {
+            "from": "H.Carrion",
+            "text": "Très bien. Je vous fais confiance",
+            "time": "16:30"
+            },
+            {
+            "from": "H.Carrion",
+            "text": "J'ai bien reçu votre facture d'acompte, le virement est parti",
+            "time": "16:31"
+            },
+            {
+            "from": "sinsin",
+            "text": "Bien reçu, merci ! Je vous écris dès que j'ai du nouveau. Vous n'aurez pas à me courir après",
+            "time": "16:31"
+            },
+            {
+            "from": "H.Carrion",
+            "text": "Merci infiniment, Monsieur Kitaï",
+            "time": "16:32"
+            },
+            {
+            "from": "system",
+            "text": "[H.Carrion est passée en absent]",
+            "time": "16:36"
+            }
+        ]
         },
         "oboro": {
-            "date": "Aujourd'hui — 14:05",
-            "messages": [
-                { "from": "Mamie_Oboro (=^･^=)", "text": "BONJOUR SIN'AÄN", "time": "14:05" },
-                { "from": "Mamie_Oboro (=^･^=)", "text": "PARDON JE SAIS PAS ENLEVER LES MAJUSCULES", "time": "14:05" },
-                { "from": "sinsin",              "text": "bonjour madame Oboro. c'est la touche avec le cadenas", "time": "14:07" },
-                { "from": "Mamie_Oboro (=^･^=)", "text": "ah voilà merci. solo n'est toujours pas rentré", "time": "14:08" },
-                { "from": "Mamie_Oboro (=^･^=)", "text": "ça fait 4 jours. les autres ont mangé sa part", "time": "14:08" },
-                { "from": "sinsin",              "text": "je commence les recherches dans le quartier Rouge cette semaine", "time": "14:09" },
-                { "from": "sinsin",              "text": "il a toujours sa médaille dorée ?", "time": "14:09" },
-                { "from": "Mamie_Oboro (=^･^=)", "text": "oui avec son nom gravé. il est tout noir avec une moustache blanche", "time": "14:10" },
-                { "from": "sinsin",              "text": "c'est noté. les chats noirs ne passent jamais inaperçus avec moi", "time": "14:11" },
-                { "from": "Mamie_Oboro (=^･^=)", "text": "vous êtes un amour. je vous payerai en liquide comme d'habitude", "time": "14:12" },
-                { "from": "Mamie_Oboro (=^･^=)", "text": "et je vous ferai des gâteaux à la pâte de haricot", "time": "14:12" },
-                { "from": "sinsin",              "text": "ça, je ne refuse jamais", "time": "14:13" },
-                { "from": "Mamie_Oboro (=^･^=)", "text": "attention à ne pas confondre avec Minuit, le chat du boucher. lui il griffe", "time": "14:14" },
-                { "from": "sinsin",              "text": "j'y penserai", "time": "14:14" }
-            ]
+        "date": "Aujourd'hui — 14:05",
+        "messages": [
+            {
+            "from": "Mamie_Oboro (=^･^=)",
+            "text": "BONJOUR SIN'AÄN",
+            "time": "14:05"
+            },
+            {
+            "from": "Mamie_Oboro (=^･^=)",
+            "text": "PARDON JE SAIS PAS ENLEVER LES MAJUSCULES",
+            "time": "14:05"
+            },
+            {
+            "from": "sinsin",
+            "text": "bonjour madame Oboro ! la touche avec le cadenas, à gauche. promis, je vous entends même sans les majuscules :)",
+            "time": "14:07"
+            },
+            {
+            "from": "Mamie_Oboro (=^･^=)",
+            "text": "ah voilà merci. solo n'est toujours pas rentré",
+            "time": "14:08"
+            },
+            {
+            "from": "Mamie_Oboro (=^･^=)",
+            "text": "ça fait 4 jours. les autres ont mangé sa part",
+            "time": "14:08"
+            },
+            {
+            "from": "sinsin",
+            "text": "je pars chercher notre petit fugueur dans le quartier Rouge cette semaine",
+            "time": "14:09"
+            },
+            {
+            "from": "sinsin",
+            "text": "il porte toujours sa médaille dorée ? autant lui éviter un retour avec le mauvais comité d'accueil",
+            "time": "14:09"
+            },
+            {
+            "from": "Mamie_Oboro (=^･^=)",
+            "text": "oui avec son nom gravé. il est tout noir avec une moustache blanche",
+            "time": "14:10"
+            },
+            {
+            "from": "sinsin",
+            "text": "noté : noir, moustache blanche, médaille dorée. monsieur a plus de style que moi",
+            "time": "14:11"
+            },
+            {
+            "from": "Mamie_Oboro (=^･^=)",
+            "text": "vous êtes un amour. je vous payerai en liquide comme d'habitude",
+            "time": "14:12"
+            },
+            {
+            "from": "Mamie_Oboro (=^･^=)",
+            "text": "et je vous ferai des gâteaux à la pâte de haricot",
+            "time": "14:12"
+            },
+            {
+            "from": "sinsin",
+            "text": "là, vous venez de trouver mon point faible. gardez quand même quelques gâteaux pour vous",
+            "time": "14:13"
+            },
+            {
+            "from": "Mamie_Oboro (=^･^=)",
+            "text": "attention à ne pas confondre avec Minuit, le chat du boucher. lui il griffe",
+            "time": "14:14"
+            },
+            {
+            "from": "sinsin",
+            "text": "je demanderai poliment ses papiers à Minuit. de loin, si possible",
+            "time": "14:14"
+            }
+        ]
         },
         "kezin": {
-            "date": "Aujourd'hui — 08:01",
-            "messages": [
-                { "from": "Kezin — Gages & Prêts", "text": "Sin ! Mon récupérateur préféré !", "time": "08:01" },
-                { "from": "Kezin — Gages & Prêts", "text": "Tu as retrouvé ma petite fouine ?", "time": "08:01" },
-                { "from": "sinsin",                "text": "je l'ai perdu hier à Noda Prima. il évite les caméras", "time": "08:04" },
-                { "from": "Kezin — Gages & Prêts", "text": "Évidemment qu'il les évite, il me doit 14 000 crédits !", "time": "08:04" },
-                { "from": "Kezin — Gages & Prêts", "text": "Tu sais qu'il m'avait laissé une montre en gage ? Une fausse. Une FAUSSE, Sin", "time": "08:05" },
-                { "from": "Kezin — Gages & Prêts", "text": "Moi qui ai l'œil depuis quarante ans", "time": "08:05" },
-                { "from": "sinsin",                "text": "je reprends la filature cette semaine. je ne fais que le localiser, comme prévu", "time": "08:06" },
-                { "from": "Kezin — Gages & Prêts", "text": "Oui oui, pas de grabuge. Mais si tu pouvais faire vite...", "time": "08:07" },
-                { "from": "Kezin — Gages & Prêts", "text": "Je te propose 700 au lieu de 900 et je te garde le Zippo de 190 qu'on m'a déposé hier", "time": "08:07" },
-                { "from": "sinsin",                "text": "900. et je regarde le Zippo avant", "time": "08:08" },
-                { "from": "Kezin — Gages & Prêts", "text": "Tu es dur en affaires", "time": "08:08" },
-                { "from": "sinsin",                "text": "c'est le tarif", "time": "08:09" },
-                { "from": "Kezin — Gages & Prêts", "text": "Bon. 900. Mais passe voir le Zippo, il a une gravure, tu vas l'adorer", "time": "08:10" },
-                { "from": "sinsin",                "text": "je passerai jeudi", "time": "08:10" }
-            ]
+        "date": "Aujourd'hui — 08:01",
+        "messages": [
+            {
+            "from": "Kezin — Gages & Prêts",
+            "text": "Sin ! Mon récupérateur préféré !",
+            "time": "08:01"
+            },
+            {
+            "from": "Kezin — Gages & Prêts",
+            "text": "Tu as retrouvé ma petite fouine ?",
+            "time": "08:01"
+            },
+            {
+            "from": "sinsin",
+            "text": "je l'ai perdu hier à Noda Prima. il évite les caméras, il doit avoir peur de son mauvais profil",
+            "time": "08:04"
+            },
+            {
+            "from": "Kezin — Gages & Prêts",
+            "text": "Évidemment qu'il les évite, il me doit 14 000 crédits !",
+            "time": "08:04"
+            },
+            {
+            "from": "Kezin — Gages & Prêts",
+            "text": "Tu sais qu'il m'avait laissé une montre en gage ? Une fausse. Une FAUSSE, Sin",
+            "time": "08:05"
+            },
+            {
+            "from": "Kezin — Gages & Prêts",
+            "text": "Moi qui ai l'œil depuis quarante ans",
+            "time": "08:05"
+            },
+            {
+            "from": "sinsin",
+            "text": "je reprends cette semaine. je le localise, rien de plus : on avait dit filature, pas spectacle de rue",
+            "time": "08:06"
+            },
+            {
+            "from": "Kezin — Gages & Prêts",
+            "text": "Oui oui, pas de grabuge. Mais si tu pouvais faire vite...",
+            "time": "08:07"
+            },
+            {
+            "from": "Kezin — Gages & Prêts",
+            "text": "Je te propose 700 au lieu de 900 et je te garde le Zippo de 190 qu'on m'a déposé hier",
+            "time": "08:07"
+            },
+            {
+            "from": "sinsin",
+            "text": "900, vieux filou :) et je vois le Zippo avant. j'aime les surprises, mais pas sur la facture",
+            "time": "08:08"
+            },
+            {
+            "from": "Kezin — Gages & Prêts",
+            "text": "Tu es dur en affaires",
+            "time": "08:08"
+            },
+            {
+            "from": "sinsin",
+            "text": "je suis tout doux. c'est le tarif qui manque de tendresse",
+            "time": "08:09"
+            },
+            {
+            "from": "Kezin — Gages & Prêts",
+            "text": "Bon. 900. Mais passe voir le Zippo, il a une gravure, tu vas l'adorer",
+            "time": "08:10"
+            },
+            {
+            "from": "sinsin",
+            "text": "jeudi, avec du thé. essaie de ne pas me vendre la bouilloire pendant que je verse",
+            "time": "08:10"
+            }
+        ]
         },
         "metkor": {
-            "date": "Aujourd'hui — 23:02",
-            "messages": [
-                { "from": "m.k",    "text": "t'es seul ?", "time": "23:02" },
-                { "from": "sinsin", "text": "toujours", "time": "23:04" },
-                { "from": "m.k",    "text": "la cargaison. elle a pas bougé du Bloc Abandonné", "time": "23:04" },
-                { "from": "m.k",    "text": "palettes Astia, logo gratté. une dizaine", "time": "23:05" },
-                { "from": "sinsin", "text": "et la brèche ?", "time": "23:05" },
-                { "from": "m.k",    "text": "elle existe. au-dessus du mur, côté est", "time": "23:06" },
-                { "from": "m.k",    "text": "un gosse du quartier y est passé hier. il a ramassé une carte d'accès par terre", "time": "23:06" },
-                { "from": "sinsin", "text": "elle est chez moi maintenant. je la lui ai rachetée", "time": "23:07" },
-                { "from": "m.k",    "text": "tsss. tu gâches tout", "time": "23:07" },
-                { "from": "sinsin", "text": "je fais mon repérage avant d'aller où que ce soit. c'est la règle", "time": "23:08" },
-                { "from": "m.k",    "text": "samedi soir y'a personne. c'est le bon créneau", "time": "23:08" },
-                { "from": "sinsin", "text": "pas le week-end. tu connais mes conditions", "time": "23:09" },
-                { "from": "m.k",    "text": "t'es pénible kitaï", "time": "23:09" },
-                { "from": "sinsin", "text": "lundi. ou tu trouves quelqu'un d'autre", "time": "23:10" },
-                { "from": "m.k",    "text": "lundi. efface cette conversation", "time": "23:10" }
-            ]
+        "date": "Aujourd'hui — 23:02",
+        "messages": [
+            {
+            "from": "m.k",
+            "text": "t'es seul ?",
+            "time": "23:02"
+            },
+            {
+            "from": "sinsin",
+            "text": "oui. moi et un thé qui a connu des jours meilleurs",
+            "time": "23:04"
+            },
+            {
+            "from": "m.k",
+            "text": "la cargaison. elle a pas bougé du Bloc Abandonné",
+            "time": "23:04"
+            },
+            {
+            "from": "m.k",
+            "text": "palettes Astia, logo gratté. une dizaine",
+            "time": "23:05"
+            },
+            {
+            "from": "sinsin",
+            "text": "et la brèche ? elle existe vraiment ou c'est encore une de tes visites guidées imaginaires ?",
+            "time": "23:05"
+            },
+            {
+            "from": "m.k",
+            "text": "elle existe. au-dessus du mur, côté est",
+            "time": "23:06"
+            },
+            {
+            "from": "m.k",
+            "text": "un gosse du quartier y est passé hier. il a ramassé une carte d'accès par terre",
+            "time": "23:06"
+            },
+            {
+            "from": "sinsin",
+            "text": "la carte est chez moi, je la lui ai rachetée. tu vois, parfois il suffit de demander gentiment",
+            "time": "23:07"
+            },
+            {
+            "from": "m.k",
+            "text": "tsss. tu gâches tout",
+            "time": "23:07"
+            },
+            {
+            "from": "sinsin",
+            "text": "je fais mon repérage d'abord. j'aime autant savoir où je mets les bottes",
+            "time": "23:08"
+            },
+            {
+            "from": "m.k",
+            "text": "samedi soir y'a personne. c'est le bon créneau",
+            "time": "23:08"
+            },
+            {
+            "from": "sinsin",
+            "text": "pas le week-end, tu connais mes conditions. même les mauvaises idées peuvent attendre lundi",
+            "time": "23:09"
+            },
+            {
+            "from": "m.k",
+            "text": "t'es pénible kitaï",
+            "time": "23:09"
+            },
+            {
+            "from": "sinsin",
+            "text": "lundi, et je m'occupe de ça. si tu tiens à samedi, il faudra quelqu'un d'autre : je garde mon week-end",
+            "time": "23:10"
+            },
+            {
+            "from": "m.k",
+            "text": "lundi. efface cette conversation",
+            "time": "23:10"
+            }
+        ]
         },
         "senkaana": {
-            "date": "Aujourd'hui — 17:55",
-            "messages": [
-                { "from": "a.senkaäna ♪", "text": "bonsoir... c'est Senkaäna, pour la guitare", "time": "17:55" },
-                { "from": "a.senkaäna ♪", "text": "désolé de vous écrire ici, j'ose pas trop appeler", "time": "17:55" },
-                { "from": "sinsin",       "text": "bonsoir. tout va bien avec la B-58 ?", "time": "17:58" },
-                { "from": "a.senkaäna ♪", "text": "oui ! elle sonne comme avant. je sais pas comment vous remercier", "time": "17:58" },
-                { "from": "a.senkaäna ♪", "text": "j'ai parlé de vous à deux amis du collectif. ils ont aussi perdu du matériel", "time": "17:59" },
-                { "from": "sinsin",       "text": "merci. qu'ils passent au bureau, en journée", "time": "18:00" },
-                { "from": "a.senkaäna ♪", "text": "et... je joue samedi au District n°7. avec elle", "time": "18:00" },
-                { "from": "a.senkaäna ♪", "text": "si vous voulez venir, je vous mets sur la liste", "time": "18:01" },
-                { "from": "sinsin",       "text": "c'est en extérieur ?", "time": "18:01" },
-                { "from": "a.senkaäna ♪", "text": "oui, sur le toit du marché couvert. vers 17h", "time": "18:02" },
-                { "from": "sinsin",       "text": "alors je passerai", "time": "18:02" },
-                { "from": "a.senkaäna ♪", "text": "♪ ♪ merci !!", "time": "18:03" }
-            ]
+        "date": "Aujourd'hui — 17:55",
+        "messages": [
+            {
+            "from": "a.senkaäna ♪",
+            "text": "bonsoir... c'est Senkaäna, pour la guitare",
+            "time": "17:55"
+            },
+            {
+            "from": "a.senkaäna ♪",
+            "text": "désolé de vous écrire ici, j'ose pas trop appeler",
+            "time": "17:55"
+            },
+            {
+            "from": "sinsin",
+            "text": "bonsoir Aren ! vous pouvez m'écrire ici, aucun souci. la B-58 vous fait toujours la conversation ?",
+            "time": "17:58"
+            },
+            {
+            "from": "a.senkaäna ♪",
+            "text": "oui ! elle sonne comme avant. je sais pas comment vous remercier",
+            "time": "17:58"
+            },
+            {
+            "from": "a.senkaäna ♪",
+            "text": "j'ai parlé de vous à deux amis du collectif. ils ont aussi perdu du matériel",
+            "time": "17:59"
+            },
+            {
+            "from": "sinsin",
+            "text": "merci d'avoir pensé à moi ! qu'ils passent en journée, avec ce qu'ils ont comme photos ou références. on regardera ça tranquillement",
+            "time": "18:00"
+            },
+            {
+            "from": "a.senkaäna ♪",
+            "text": "et... je joue samedi au District n°7. avec elle",
+            "time": "18:00"
+            },
+            {
+            "from": "a.senkaäna ♪",
+            "text": "si vous voulez venir, je vous mets sur la liste",
+            "time": "18:01"
+            },
+            {
+            "from": "sinsin",
+            "text": "avec plaisir ! c'est en extérieur ?",
+            "time": "18:01"
+            },
+            {
+            "from": "a.senkaäna ♪",
+            "text": "oui, sur le toit du marché couvert. vers 17h",
+            "time": "18:02"
+            },
+            {
+            "from": "sinsin",
+            "text": "alors je passerai. retrouver une guitare, c'est bien ; l'entendre jouer après, c'est encore mieux",
+            "time": "18:02"
+            },
+            {
+            "from": "a.senkaäna ♪",
+            "text": "♪ ♪ merci !!",
+            "time": "18:03"
+            }
+        ]
         },
         "halvar": {
-            "date": "Aujourd'hui — 07:12",
-            "messages": [
-                { "from": "Mme Halvar — Le Lampion", "text": "Sin'aän.", "time": "07:12" },
-                { "from": "Mme Halvar — Le Lampion", "text": "Le loyer. On est le 14.", "time": "07:12" },
-                { "from": "sinsin", "text": "bonjour madame Halvar", "time": "07:15" },
-                { "from": "Mme Halvar — Le Lampion", "text": "Bonjour mon œil. Le 5, c'est écrit sur le bail. En gros. Je l'ai souligné moi-même.", "time": "07:15" },
-                { "from": "sinsin", "text": "une cliente me verse le solde avant le 24. je vous paie dès que c'est arrivé", "time": "07:16" },
-                { "from": "Mme Halvar — Le Lampion", "text": "« Avant le 24 ». Tu me dis ça tous les mois, avec une date différente.", "time": "07:16" },
-                { "from": "Mme Halvar — Le Lampion", "text": "Et ton store. 23h40 hier soir. Le vieux Ponce du deuxième a cru qu'on bombardait le quartier.", "time": "07:17" },
-                { "from": "sinsin", "text": "je rentrais d'un repérage", "time": "07:18" },
-                { "from": "Mme Halvar — Le Lampion", "text": "Alors tu rentreras par la porte de la réserve. Elle grince moins. Je l'ai huilée.", "time": "07:18" },
-                { "from": "sinsin", "text": "...merci", "time": "07:19" },
-                { "from": "Mme Halvar — Le Lampion", "text": "C'est pour les voisins. Pas pour toi.", "time": "07:19" },
-                { "from": "Mme Halvar — Le Lampion", "text": "Ta lampe est encore restée allumée jusqu'à 3h. Je la vois depuis ma fenêtre.", "time": "07:20" },
-                { "from": "sinsin", "text": "elle est sur mon compteur", "time": "07:20" },
-                { "from": "Mme Halvar — Le Lampion", "text": "Je ne parle pas du compteur. Je parle de toi qui ne dors pas.", "time": "07:21" },
-                { "from": "Mme Halvar — Le Lampion", "text": "Il y a un bol de soupe miso devant ta porte. Il était en trop. Rends-moi le bol.", "time": "07:22" },
-                { "from": "sinsin", "text": "je le rapporte ce soir. avec le loyer si possible", "time": "07:23" },
-                { "from": "Mme Halvar — Le Lampion", "text": "Le bol d'abord. Le loyer, je sais que tu finis toujours par le payer.", "time": "07:23" },
-                { "from": "Mme Halvar — Le Lampion", "text": "Mais ne va pas le répéter aux autres locataires.", "time": "07:24" }
-            ]
+        "date": "Aujourd'hui — 07:12",
+        "messages": [
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "Sin'aän.",
+            "time": "07:12"
+            },
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "Le loyer. On est le 14.",
+            "time": "07:12"
+            },
+            {
+            "from": "sinsin",
+            "text": "bonjour madame Halvar ! je vois qu'on commence la journée par mon sujet favori",
+            "time": "07:15"
+            },
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "Bonjour mon œil. Le 5, c'est écrit sur le bail. En gros. Je l'ai souligné moi-même.",
+            "time": "07:15"
+            },
+            {
+            "from": "sinsin",
+            "text": "une cliente me verse le solde avant le 24. je vous paie dès qu'il arrive, promis. même si je préférerais vous annoncer une meilleure date",
+            "time": "07:16"
+            },
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "« Avant le 24 ». Tu me dis ça tous les mois, avec une date différente.",
+            "time": "07:16"
+            },
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "Et ton store. 23h40 hier soir. Le vieux Ponce du deuxième a cru qu'on bombardait le quartier.",
+            "time": "07:17"
+            },
+            {
+            "from": "sinsin",
+            "text": "je rentrais d'un repérage. le store a voulu annoncer mon retour à tout le quartier, apparemment",
+            "time": "07:18"
+            },
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "Alors tu rentreras par la porte de la réserve. Elle grince moins. Je l'ai huilée.",
+            "time": "07:18"
+            },
+            {
+            "from": "sinsin",
+            "text": "merci. pour les voisins, bien sûr. je leur transmettrai toute ma reconnaissance",
+            "time": "07:19"
+            },
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "C'est pour les voisins. Pas pour toi.",
+            "time": "07:19"
+            },
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "Ta lampe est encore restée allumée jusqu'à 3h. Je la vois depuis ma fenêtre.",
+            "time": "07:20"
+            },
+            {
+            "from": "sinsin",
+            "text": "elle est sur mon compteur, mais je sens que ce n'est pas la question :)",
+            "time": "07:20"
+            },
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "Je ne parle pas du compteur. Je parle de toi qui ne dors pas.",
+            "time": "07:21"
+            },
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "Il y a un bol de soupe miso devant ta porte. Il était en trop. Rends-moi le bol.",
+            "time": "07:22"
+            },
+            {
+            "from": "sinsin",
+            "text": "je rapporte le bol ce soir, et le loyer si le virement est arrivé. merci pour la soupe. vous avez un talent fou pour les portions « en trop »",
+            "time": "07:23"
+            },
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "Le bol d'abord. Le loyer, je sais que tu finis toujours par le payer.",
+            "time": "07:23"
+            },
+            {
+            "from": "Mme Halvar — Le Lampion",
+            "text": "Mais ne va pas le répéter aux autres locataires.",
+            "time": "07:24"
+            }
+        ]
         },
         "phalene": {
-            "date": "Aujourd'hui — 01:37",
-            "messages": [
-                { "from": "ph4l3ne_", "text": "ton #A7.", "time": "01:37" },
-                { "from": "ph4l3ne_", "text": "j'ai remonté le relais ghostmail. trois rebonds : district n°1, un serveur de cache au district n°4, puis rien", "time": "01:37" },
-                { "from": "sinsin", "text": "rien ?", "time": "01:39" },
-                { "from": "ph4l3ne_", "text": "rien. propre. trop propre. les amateurs laissent des miettes, eux non", "time": "01:39" },
-                { "from": "ph4l3ne_", "text": "conseil gratuit : réponds pas. et efface ton brouillon", "time": "01:40" },
-                { "from": "sinsin", "text": "comment tu sais que j'ai un brouillon", "time": "01:40" },
-                { "from": "ph4l3ne_", "text": "tu as toujours un brouillon", "time": "01:40" },
-                { "from": "ph4l3ne_", "text": "autre chose. le mail « sécurité pyraki-net » d'hier matin. faux. domaine enregistré il y a deux jours", "time": "01:41" },
-                { "from": "sinsin", "text": "je n'ai pas cliqué", "time": "01:42" },
-                { "from": "ph4l3ne_", "text": "je sais. j'ai vérifié", "time": "01:42" },
-                { "from": "sinsin", "text": "tu surveilles mon poste ?", "time": "01:42" },
-                { "from": "ph4l3ne_", "text": "je surveille ceux qui surveillent ton poste. nuance", "time": "01:43" },
-                { "from": "sinsin", "text": "combien je te dois", "time": "01:44" },
-                { "from": "ph4l3ne_", "text": "le poste radio en bois que ton amie va t'apporter. les lampes d'origine. pas le meuble", "time": "01:44" },
-                { "from": "sinsin", "text": "comment tu", "time": "01:44" },
-                { "from": "ph4l3ne_", "text": "bonne nuit kitaï", "time": "01:45" },
-                { "from": "system", "text": "[ph4l3ne_ apparaît maintenant hors ligne]", "time": "01:45" }
-            ]
+        "date": "Aujourd'hui — 01:37",
+        "messages": [
+            {
+            "from": "ph4l3ne_",
+            "text": "ton #A7.",
+            "time": "01:37"
+            },
+            {
+            "from": "ph4l3ne_",
+            "text": "j'ai remonté le relais ghostmail. trois rebonds : district n°1, un serveur de cache au district n°4, puis rien",
+            "time": "01:37"
+            },
+            {
+            "from": "sinsin",
+            "text": "rien du tout ? même pas une petite miette pour le récupérateur ?",
+            "time": "01:39"
+            },
+            {
+            "from": "ph4l3ne_",
+            "text": "rien. propre. trop propre. les amateurs laissent des miettes, eux non",
+            "time": "01:39"
+            },
+            {
+            "from": "ph4l3ne_",
+            "text": "conseil gratuit : réponds pas. et efface ton brouillon",
+            "time": "01:40"
+            },
+            {
+            "from": "sinsin",
+            "text": "comment tu sais que j'ai un brouillon ? j'espère au moins que tu apprécies mon style",
+            "time": "01:40"
+            },
+            {
+            "from": "ph4l3ne_",
+            "text": "tu as toujours un brouillon",
+            "time": "01:40"
+            },
+            {
+            "from": "ph4l3ne_",
+            "text": "autre chose. le mail « sécurité pyraki-net » d'hier matin. faux. domaine enregistré il y a deux jours",
+            "time": "01:41"
+            },
+            {
+            "from": "sinsin",
+            "text": "pas cliqué. le bouton était moins séduisant que la menace ne le pensait",
+            "time": "01:42"
+            },
+            {
+            "from": "ph4l3ne_",
+            "text": "je sais. j'ai vérifié",
+            "time": "01:42"
+            },
+            {
+            "from": "sinsin",
+            "text": "tu surveilles mon poste ? je vais finir par te mettre une tasse à côté",
+            "time": "01:42"
+            },
+            {
+            "from": "ph4l3ne_",
+            "text": "je surveille ceux qui surveillent ton poste. nuance",
+            "time": "01:43"
+            },
+            {
+            "from": "sinsin",
+            "text": "bon, combien je te dois pour ce petit numéro ?",
+            "time": "01:44"
+            },
+            {
+            "from": "ph4l3ne_",
+            "text": "le poste radio en bois que ton amie va t'apporter. les lampes d'origine. pas le meuble",
+            "time": "01:44"
+            },
+            {
+            "from": "sinsin",
+            "text": "comment tu... non, les lampes restent avec la radio. on trouvera autre chose",
+            "time": "01:44"
+            },
+            {
+            "from": "ph4l3ne_",
+            "text": "bonne nuit kitaï",
+            "time": "01:45"
+            },
+            {
+            "from": "system",
+            "text": "[ph4l3ne_ apparaît maintenant hors ligne]",
+            "time": "01:45"
+            }
+        ]
         }
     }
 }
