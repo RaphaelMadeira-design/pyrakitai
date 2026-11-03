@@ -610,8 +610,8 @@
     "trash": [
         {
         "id": "t1",
-        "from": "BoS-NET",
-        "fromAddr": "admin@bos-net.s7",
+        "from": "PYRAKI-NET",
+        "fromAddr": "admin@pyraki-net.s7",
         "subject": "Renouvellement d'authentification — PYRAKI-NET",
         "date": "LO / IN / 274 — 18:51",
         "unread": false,

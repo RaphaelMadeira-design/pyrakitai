@@ -107,7 +107,7 @@
             },
             {
             "from": "sinsin",
-            "text": "ça compte pas ;_; un jour je vais venir avec un vrai repas",
+            "text": "un sachet de biscuits. ça compte ?",
             "time": "22:19"
             },
             {
@@ -127,12 +127,12 @@
             },
             {
             "from": "sinsin",
-            "text": "en bois comment ? avec des boutons ronds ? tu sais parler à mon cœur",
+            "text": "une radio ? raconte. elle ressemble à quoi ?",
             "time": "22:21"
             },
             {
             "from": "JuJu-07※",
-            "text": "aucune idée, il est en bois et il pèse une tonne",
+            "text": "aucune idée, il est énore et il pèse une tonne",
             "time": "22:21"
             },
             {
@@ -147,7 +147,7 @@
             },
             {
             "from": "sinsin",
-            "text": "oui maman :) je ferme. garde-moi un peu de ton autorité pour demain",
+            "text": "oui \"maman\" :) je ferme. garde-moi un peu de ton autorité pour demain",
             "time": "22:23"
             }
         ]
@@ -192,7 +192,7 @@
             },
             {
             "from": "sinsin",
-            "text": "Je comprends. Je fais le nécessaire pour vous le ramener avant le 24. Il a une famille qui l'attend",
+            "text": "Je comprends. Je fais le nécessaire pour vous le ramener avant le 24. Il retrouvera sa place chez vous",
             "time": "16:28"
             },
             {
@@ -202,7 +202,7 @@
             },
             {
             "from": "sinsin",
-            "text": "Vous pouvez, bien sûr. De mon côté, je continue les recherches ; autant ne pas laisser votre pendentif prendre goût aux vacances",
+            "text": "Vous pouvez, bien sûr. De mon côté, je continue les recherches, les deux ne s'empêchent pas",
             "time": "16:29"
             },
             {
@@ -247,7 +247,7 @@
             },
             {
             "from": "sinsin",
-            "text": "bonjour madame Oboro ! la touche avec le cadenas, à gauche. promis, je vous entends même sans les majuscules :)",
+            "text": "bonjour madame Oboro ! la touche avec le cadenas, à gauche. promis, je peux vous lire même sans les majuscules :)",
             "time": "14:07"
             },
             {
@@ -262,7 +262,7 @@
             },
             {
             "from": "sinsin",
-            "text": "je pars chercher notre petit fugueur dans le quartier Rouge cette semaine",
+            "text": "je pars chercher notre petit fugueur dans le quartier Rouge cet après-midi",
             "time": "14:09"
             },
             {
@@ -322,7 +322,7 @@
             },
             {
             "from": "sinsin",
-            "text": "je l'ai perdu hier à Noda Prima. il évite les caméras, il doit avoir peur de son mauvais profil",
+            "text": "je l'ai perdu de vue hier à Noda Prima. il évite les caméras, sûrement pas par timidité",
             "time": "08:04"
             },
             {
@@ -342,7 +342,7 @@
             },
             {
             "from": "sinsin",
-            "text": "je reprends cette semaine. je le localise, rien de plus : on avait dit filature, pas spectacle de rue",
+            "text": "je reprends cet après-midi. je le localise, rien de plus : on avait dit filature, pas spectacle de rue",
             "time": "08:06"
             },
             {
@@ -422,17 +422,17 @@
             },
             {
             "from": "sinsin",
-            "text": "la carte est chez moi, je la lui ai rachetée. tu vois, parfois il suffit de demander gentiment",
+            "text": "la carte est chez moi, je la lui ai rachetée. quelques crédits et un sourire, ça suffit parfois",
             "time": "23:07"
             },
             {
             "from": "m.k",
-            "text": "tsss. tu gâches tout",
+            "text": "tsss. t'es trop gentil",
             "time": "23:07"
             },
             {
             "from": "sinsin",
-            "text": "je fais mon repérage d'abord. j'aime autant savoir où je mets les bottes",
+            "text": "je fais mon repérage d'abord. j'aime autant savoir où je mets les pieds",
             "time": "23:08"
             },
             {
@@ -577,12 +577,17 @@
             },
             {
             "from": "sinsin",
-            "text": "merci. pour les voisins, bien sûr. je leur transmettrai toute ma reconnaissance",
+            "text": "Han~ quelle belle attention. je vais me sentir comme un voleur, mais je vous promets de ne pas faire de bruit",
             "time": "07:19"
             },
             {
             "from": "Mme Halvar — Le Lampion",
             "text": "C'est pour les voisins. Pas pour toi.",
+            "time": "07:19"
+            },
+            {
+            "from": "sinsin",
+            "text": "merci. pour les voisins, bien sûr. je leur transmettrai toute ma reconnaissance",
             "time": "07:19"
             },
             {
@@ -592,7 +597,7 @@
             },
             {
             "from": "sinsin",
-            "text": "elle est sur mon compteur, mais je sens que ce n'est pas la question :)",
+            "text": "c'est moi qui paie l'électricité, au moins. mais je sens que ce n'est pas la question :)",
             "time": "07:20"
             },
             {
@@ -637,7 +642,7 @@
             },
             {
             "from": "sinsin",
-            "text": "rien du tout ? même pas une petite miette pour le récupérateur ?",
+            "text": "rien du tout ? même pas une petite miette pour moi ?",
             "time": "01:39"
             },
             {
@@ -667,7 +672,7 @@
             },
             {
             "from": "sinsin",
-            "text": "pas cliqué. le bouton était moins séduisant que la menace ne le pensait",
+            "text": "pas cliqué. il était trop poli pour être honnête",
             "time": "01:42"
             },
             {
@@ -677,12 +682,12 @@
             },
             {
             "from": "sinsin",
-            "text": "tu surveilles mon poste ? je vais finir par te mettre une tasse à côté",
+            "text": "tu surveilles mon poste ? je croyais qu'on ne piratait pas les postes de travail antiques",
             "time": "01:42"
             },
             {
             "from": "ph4l3ne_",
-            "text": "je surveille ceux qui surveillent ton poste. nuance",
+            "text": "... c'est moi qui te l'ai vendu. et je surveille ceux qui surveillent ton poste. nuance",
             "time": "01:43"
             },
             {
@@ -692,7 +697,7 @@
             },
             {
             "from": "ph4l3ne_",
-            "text": "le poste radio en bois que ton amie va t'apporter. les lampes d'origine. pas le meuble",
+            "text": "le poste radio que ton amie va t'apporter. les lampes d'origine. pas le meuble",
             "time": "01:44"
             },
             {
@@ -703,6 +708,11 @@
             {
             "from": "ph4l3ne_",
             "text": "bonne nuit kitaï",
+            "time": "01:45"
+            },
+            {
+            "from": "sinsin",
+            "text": "hzeffhizf egzufhzkfhzk",
             "time": "01:45"
             },
             {

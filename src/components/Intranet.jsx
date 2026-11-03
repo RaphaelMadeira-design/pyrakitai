@@ -95,7 +95,7 @@ function IntranetLogin({ onLogin }) {
                     </div>
 
                     <p className="pyraki-login__intro">
-                        Terminal privé de <b>Kaï SEDO — Gran Regalia</b>. Toute intrusion est
+                        Terminal privé de <b>Sin'aän Kitaï — Gran Regalia</b>. Toute intrusion est
                         journalisée et signalée à l'administrateur.
                     </p>
 
@@ -431,7 +431,7 @@ export default function Intranet({ onOpenWindow }) {
                     </div>
                 )}
 
-                {/* TROMBINOSCOPE — Fiche Kaï SEDO */}
+                {/* TROMBINOSCOPE — Fiche Sin'aän Kitaï */}
                 {tab === 'trombinoscope' && (
                     <div className="intranet__doc" data-testid="intranet-trombinoscope">
                         <div className="intranet__doc-head">

@@ -20,9 +20,9 @@
             "  cls                  Efface l'écran",
             "  echo [msg]           Affiche un message",
             "  ping [host]          Teste la connexion",
-            "  auth [Token]         Authentification BoS-NET",
+            "  auth [Token]         Authentification PYRAKI-NET",
             "  status               Affiche le niveau d'autorisation",
-            "  logout               Ferme la session BoS-NET",
+            "  logout               Ferme la session PYRAKI-NET",
             "  matrix               ???",
             "  hack                 ???",
             "  memory               ???",
@@ -108,7 +108,7 @@
 
         "logout": [
             "",
-            "> Session BoS-NET fermée. Autorisation révoquée.",
+            "> Session PYRAKI-NET fermée. Autorisation révoquée.",
             ""
         ]
     },
@@ -117,10 +117,10 @@
         "status": [
             "",
             "┌─────────────────────────────────┐",
-            "│ SESSION BoS-NET                 │",
+            "│ SESSION PYRAKI-NET              │",
             "│ AUTORISATION : {state}          ",
             "│ UTILISATEUR : SIN'AÄN           │",
-            "│ POSTE : BoS-PC98 #0791          │",
+            "│ POSTE : PC98 #0791              │",
             "└─────────────────────────────────┘",
             ""
         ],
@@ -160,7 +160,7 @@
             "Initialisation du protocole de connexion...",
             "Bypass firewall... [OK]",
             "Injection de paquets... [OK]",
-            "Accès au système BoS-NET CONFIDENTIEL... [OK]",
+            "Accès au système PYRAKI-NET CONFIDENTIEL... [OK]",
             "Déchiffrement des données...",
             "> MÉMOIRE FRAGMENT #1 : \"...origine inconnue...\"",
             "> MÉMOIRE FRAGMENT #2 : [ILLISIBLE]",
@@ -190,7 +190,7 @@
             "> ████████████████████████████████",
             "> ✓ Authentification validée.",
             "> Autorisation accordée — ACCÈS AUTORISÉ.",
-            "> Bienvenue, Agent KAÏ.",
+            "> Bienvenue, Agent KITAÏ.",
             "> ████████████████████████████████",
             ""
         ]
