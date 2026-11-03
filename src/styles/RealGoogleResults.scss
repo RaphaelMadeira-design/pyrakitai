@@ -1,0 +1,78 @@
+// Habillage Win98 des résultats Google (les classes .gsc-* / .gs-* viennent de Google)
+.real-gresults {
+    &__error {
+        padding: 12px 16px;
+        font-size: 12px;
+        color: #c00;
+    }
+
+    &__box {
+        padding: 4px 12px 16px;
+        font-family: 'Times New Roman', Times, serif;
+
+        .gsc-control-cse,
+        .gsc-control-wrapper-cse {
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            font-family: inherit !important;
+        }
+
+        .gsc-result-info {
+            font-size: 11px !important;
+            color: #000 !important;
+            padding-left: 0 !important;
+        }
+
+        .gsc-webResult.gsc-result {
+            background: transparent !important;
+            border: none !important;
+            padding: 6px 0 !important;
+        }
+
+        .gs-title,
+        .gs-title * {
+            color: #0000cc !important;
+            text-decoration: underline !important;
+            font-size: 14px !important;
+            font-family: inherit !important;
+        }
+
+        .gs-visibleUrl,
+        .gs-visibleUrl-breadcrumb {
+            color: #008000 !important;
+            font-size: 11px !important;
+        }
+
+        .gs-snippet {
+            color: #000 !important;
+            font-size: 12px !important;
+            font-family: inherit !important;
+        }
+
+        .gs-image-box,
+        .gs-web-image-box,
+        .gsc-thumbnail,
+        .gsc-url-top {
+            filter: none;
+        }
+
+        .gsc-cursor-box {
+            margin: 12px 0 0 !important;
+            text-align: center;
+
+            .gsc-cursor-page {
+                color: #0000cc !important;
+                background: transparent !important;
+                text-decoration: underline;
+                font-size: 12px;
+            }
+
+            .gsc-cursor-current-page {
+                color: #000 !important;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+}

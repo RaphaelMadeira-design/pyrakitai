@@ -1,34 +1,64 @@
 {
     "IE_ICON": "https://win98icons.alexmeub.com/icons/png/search_web-0.png",
-    "KONAMI": ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"],
-    "SECRET_SEARCHES": ["résonance", "resonance", "éveil", "eveil", "mémoire", "memoire", "fréquence", "frequence", "528", "raphurst", "academia", "académie"],
-    "SECRET_URLS": ["isen://core", "isen://secret", "about:isen", "isen://memories"],
+    "GOOGLE_CSE_ID": "003827392699584210458:aurila98hae",
+    "KONAMI": [
+        "ArrowUp",
+        "ArrowUp",
+        "ArrowDown",
+        "ArrowDown",
+        "ArrowLeft",
+        "ArrowRight",
+        "ArrowLeft",
+        "ArrowRight",
+        "b",
+        "a"
+    ],
+    "SECRET_SEARCHES": [
+        "résonance",
+        "resonance",
+        "éveil",
+        "eveil",
+        "mémoire",
+        "memoire",
+        "fréquence",
+        "frequence",
+        "528",
+        "raphurst",
+        "academia",
+        "académie"
+    ],
+    "SECRET_URLS": [
+        "isen://core",
+        "isen://secret",
+        "about:isen",
+        "isen://memories"
+    ],
     "WIKI_URL": "https://is.shokupedia.org/shokunin/Isen_Shura",
     "NEWS_URL": "http://www.actunet-news.is/",
     "TAB_DEFS": {
         "google": {
-            "id": "google",
-            "label": "nsn.com",
-            "url": "http://www.nsn.com/",
-            "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
+        "id": "google",
+        "label": "nsn.com",
+        "url": "http://www.nsn.com/",
+        "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
         },
         "wiki": {
-            "id": "wiki",
-            "label": "Isen Shura — Shokupédia",
-            "url": "https://is.shokupedia.org/shokunin/Isen_Shura",
-            "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
+        "id": "wiki",
+        "label": "Isen Shura — Shokupédia",
+        "url": "https://is.shokupedia.org/shokunin/Isen_Shura",
+        "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
         },
         "news": {
-            "id": "news",
-            "label": "ActuNet Actualités",
-            "url": "http://www.actunet-news.is/",
-            "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
+        "id": "news",
+        "label": "ActuNet Actualités",
+        "url": "http://www.actunet-news.is/",
+        "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
         },
         "lampion": {
-            "id": "lampion",
-            "label": "Le Lampion",
-            "url": "http://www.lampion-d6.wl/",
-            "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
+        "id": "lampion",
+        "label": "Le Lampion",
+        "url": "http://www.lampion-d6.wl/",
+        "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
         }
     },
     "EXACT_URL_MAP": {
@@ -50,8 +80,8 @@
         "title": "Impossible d'afficher la page",
         "description": "Internet Explorer ne peut pas afficher la page demandée.",
         "checks": [
-            "Vérifiez l'adresse saisie",
-            "Contactez l'administrateur réseau."
+        "Vérifiez l'adresse saisie",
+        "Contactez l'administrateur réseau."
         ],
         "code": "Erreur HTTP 404 — Page introuvable",
         "hiddenComment": "// Accès non autorisé détecté. Vous n'étiez pas censé trouver cette page. Coordonnées archivées : 34.9876° N, 135.7553° E Fréquence de résonance : 528 Hz Ils savent que tu cherches."

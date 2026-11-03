@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import '../styles/CMD.scss'
 import content from '../data/cmd.json'
 
-const STORAGE_KEY = 'wellston_clearance'
+const STORAGE_KEY = 'pyraki_clearance'
 
 const fmt = (lines, vars = {}) =>
 lines.map(line =>
