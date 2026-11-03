@@ -179,3 +179,9 @@
         }
     }
 }
+
+// Fausses dates : jours/mois en ZZZA, l'heure garde la police actuelle
+.fake-date {
+    font-family: $font-shevar;
+    letter-spacing: 1px;
+}

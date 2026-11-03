@@ -683,7 +683,7 @@ $pixel-font: $font-system;
 
     &__radar {
         width: 100%;
-        max-width: 280px;
+        max-width: 300px;
 
         text { 
             font-family: $pixel-font; 
@@ -693,8 +693,8 @@ $pixel-font: $font-system;
     // ── PORTRAIT ──────────────────────────────────────────────
     &__portrait {
         position: relative;
-        width: 200%;
-        height: 200%;
+        width: 155%;
+        height: 155%;
         display: flex;
         align-items: flex-end;
         justify-content: center;

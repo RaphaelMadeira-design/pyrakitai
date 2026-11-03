@@ -90,20 +90,26 @@ export default function Pouvoirs() {
                                 <span className="moba__panel-dot" />
                             </div>
                             <div className="moba__power-grid">
-                                <div className="moba__power-cell moba__power-cell--wide moba__power-cell--aura" data-testid="power-name">
-                                    <i>NOM</i>
-                                    <span>{POWER.name}</span>
-                                </div>
-                                <div className="moba__power-cell moba__power-cell">
-                                    <i>ARCHÉTYPE</i>
-                                    <span>{POWER.type}</span>
-                                </div>
-                                <div className="moba__power-cell moba__power-cell">
+                                <div className="moba__power-cell moba__power-cell--wide moba__power-cell--aura">
                                     <i>ESSEM</i>
                                     <span>{POWER.essem}</span>
                                 </div>
-                                <InfoCell label="CONCEPT" value={POWER.concept} info={POWER.conceptInfo} align="left" testId="power-concept" />
-                                <InfoCell label="AKLËN" value={POWER.aklen} info={POWER.aklenInfo} align="right" testId="power-aklen" />
+                                <div className="moba__power-cell moba__power-cell">
+                                    <i>ARCHÉTYPE</i>
+                                    <span>{POWER.archetype}</span>
+                                </div>
+                                <div className="moba__power-cell moba__power-cell">
+                                    <i>SPÉCIALISATION</i>
+                                    <span>{POWER.specialization}</span>
+                                </div>
+                                <div className="moba__power-cell moba__power-cell">
+                                    <i>DON</i>
+                                    <span>{POWER.gift}</span>
+                                </div>
+                                <div className="moba__power-cell moba__power-cell">
+                                    <i>RUÜVAHN</i>
+                                    <span>{POWER.ruuvahn}</span>
+                                </div>
                             </div>
                         </div>
 
@@ -214,7 +220,7 @@ export default function Pouvoirs() {
                             </div>
                         </div>
 
-                        {/* Forces & Faiblesses
+                        {/* Forces & Faiblesses */}
                         <div className="moba__panel moba__traits-panel" data-testid="traits-panel">
                             <div className="moba__panel-head">
                                 <span className="moba__panel-title">AVANTAGES &amp; LIMITES</span>
@@ -242,31 +248,6 @@ export default function Pouvoirs() {
                                     ))}
                                 </ul>
                             </div>
-                        </div>
-
-                        {/* Arme */}
-                        <div className="moba__panel moba__weapon-panel" data-testid="weapon-panel">
-                            <div className="moba__panel-head">
-                                <span className="moba__panel-title">Arme</span>
-                                <span className="moba__panel-dot" />
-                            </div>
-                            <div className="moba__weapon-frame">
-                                <img src={WEAPON.image} alt={WEAPON.name} className="moba__weapon-img" data-testid="weapon-img" />
-                            </div>
-                            <dl className="moba__weapon-info" data-testid="weapon-info">
-                                <div className="moba__weapon-row">
-                                    <dt>Nom</dt>
-                                    <dd className="moba__weapon-name" data-testid="weapon-name">{WEAPON.name}</dd>
-                                </div>
-                                <div className="moba__weapon-row">
-                                    <dt>Type</dt>
-                                    <dd data-testid="weapon-type">{WEAPON.type}</dd>
-                                </div>
-                                <div className="moba__weapon-row moba__weapon-row--block">
-                                    <dt>Caractéristiques</dt>
-                                    <dd data-testid="weapon-features">{WEAPON.features}</dd>
-                                </div>
-                            </dl>
                         </div>
                     </section>
 
@@ -331,7 +312,7 @@ export default function Pouvoirs() {
 
                             {spell.effect && (
                                 <div className="moba__modal-effect">
-                                    <span className="moba__modal-effect-label">EFFETS</span>
+                                    <span className="moba__modal-effect-label">EFFET</span>
                                     {(Array.isArray(spell.effect) ? spell.effect : [spell.effect]).map((ef, i) => (
                                         <span key={i} className="moba__modal-effect-text">{ef}</span>
                                     ))}

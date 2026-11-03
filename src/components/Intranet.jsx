@@ -21,6 +21,16 @@ const {
     tabs: TABS,
 } = intranetData
 
+
+// ─── Fausses dates (police ZZZA) ────────────────────────────────
+const FAKE_DATES = ['JO/UR', 'HI/ER', 'AV/VT']
+const isDate = (v) => typeof v === 'string' && /^\d{2}\/\d{2}$/.test(v)
+const fakeDate = (v) => {
+    if (!isDate(v)) return v
+    const [d, m] = v.split('/').map(Number)
+    return <span className="fake-date">{FAKE_DATES[(d + m) % FAKE_DATES.length]}</span>
+}
+
 // ─── Sections du profil trombinoscope (boutons + modals) ────────
 const PROFILE_SECTIONS = [
     { key: 'physical',   label: 'Description physique',    field: 'physicalDescription' },
@@ -258,7 +268,7 @@ export default function Intranet({ onOpenWindow }) {
                                     <td>{m.title}</td>
                                     <td>{m.client}</td>
                                     <td><span className="intranet__pill" style={{ background: priColor(m.priority) }}>{m.priority}</span></td>
-                                    <td>{m.deadline}</td>
+                                    <td>{fakeDate(m.deadline)}</td>
                                     <td><span className="intranet__pill" style={{ background: statusColor(m.status) }}>{m.status}</span></td>
                                     <td style={{ textAlign: 'right', fontFamily: 'monospace' }}>{m.reward.toLocaleString('fr-FR')}</td>
                                 </tr>
@@ -284,7 +294,7 @@ export default function Intranet({ onOpenWindow }) {
                                     'Objet cible': openMission.target_item,
                                     'Lieu': openMission.location,
                                     'Priorité': openMission.priority,
-                                    'Échéance': openMission.deadline,
+                                    'Échéance': fakeDate(openMission.deadline),
                                     'Statut': openMission.status,
                                     'Récompense': `${openMission.reward.toLocaleString('fr-FR')} ₡`,
                                 }).map(([k, v]) => (
@@ -408,7 +418,7 @@ export default function Intranet({ onOpenWindow }) {
                                 {LEDGER.map(t => (
                                     <tr key={t.id}>
                                         <td>{t.id}</td>
-                                        <td>{t.date}</td>
+                                        <td>{fakeDate(t.date)}</td>
                                         <td>{t.label}</td>
                                         <td><span className="intranet__pill" style={{ background: t.type === 'IN' ? '#2c7a2c' : '#b00' }}>{t.type === 'IN' ? 'ENTRÉE' : 'SORTIE'}</span></td>
                                         <td style={{ textAlign: 'right', fontFamily: 'monospace', color: t.type === 'IN' ? '#2c7a2c' : '#b00' }}>
