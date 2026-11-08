@@ -2,9 +2,9 @@
     "header": {
         "logo": {
             "src": "/images/Wikipedia_logo.png",
-            "alt": "Shokupedia",
-            "title": "Shokupédia ???",
-            "name": "Shokupédia",
+            "alt": "Mikipedia",
+            "title": "Mikipedia ???",
+            "name": "Mikipedia",
             "tagline": "L'encyclopédie libre"
         },
         "nav": ["Discussion", "Modifier", "Historique"]
@@ -16,7 +16,7 @@
         },
         {
             "title": "Contribuer",
-            "items": ["Débuter sur Shokupédia", "Aide", "Communauté"]
+            "items": ["Débuter sur Mikipedia", "Aide", "Communauté"]
         },
         {
             "title": "Outils",
