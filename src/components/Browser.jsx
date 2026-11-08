@@ -148,7 +148,7 @@ export default function Browser() {
                 case 'OPEN_SECRET':
                     setSecretTabVisible(true)
                     setActiveTab('secret')
-                    setAddressValue('isen://core')
+                    setAddressValue('sin://core')
                     setContentMode('normal')
                     break
 
@@ -235,7 +235,7 @@ export default function Browser() {
             triggerGlitch(() => {
                 setSecretTabVisible(true)
                 setActiveTab('secret')
-                setAddressValue('isen://core')
+                setAddressValue('sin://core')
                 setContentMode('normal')
             })
         }

@@ -139,14 +139,14 @@ export default function MyComputer({ onOpenNotepad, onOpenWindow, onOpenImage, d
             return
         }
 
-        if (node.trigger === 'alterego') {
+        if (node.trigger === 'memory') {
             Sounds.error?.()
             try {
-                window.dispatchEvent(new CustomEvent('isen:alterego-glitch', { detail: { duration: 4200 } }))
+                window.dispatchEvent(new CustomEvent('sin:memory-glitch', { detail: { duration: 4200 } }))
             } catch (e) { /* noop */ }
             setTimeout(() => {
                 setSysDialog({
-                    title: 'ALTEREGO.DLL — Erreur critique',
+                    title: 'MEMORY.DLL — Erreur critique',
                     message: 'crypted',
                     crypted: true,
                     hideIcon: true,
@@ -235,245 +235,257 @@ export default function MyComputer({ onOpenNotepad, onOpenWindow, onOpenImage, d
         return null
     }
 
-const renderDrivesView = () => {
-const drives = current.children.map(id => tree[id])
-return (
-<div className="file-explorer__content">
-<div className="my-computer__section-title">Les fichiers et dossiers stockés sur cet ordinateur</div>
-<div className="file-explorer__grid">
-{drives.map(d => {
-const id = current.children[drives.indexOf(d)]
-return (
-<div
-key={id}
-className={`file-explorer__file-item ${selected === id ? 'file-explorer__file-item--selected' : ''}`}
-onClick={() => setSelected(id)}
-onDoubleClick={() => enter(id)}
-data-testid={`mycomputer-drive-${d.drive}`}
->
-<img src={nodeIcon(id, tree)} alt="" />
-<span>{d.name}</span>
-</div>
-)
-})}
-</div>
-</div>
-)
-}
+    const renderDrivesView = () => {
+        const drives = current.children.map(id => tree[id])
+        return (
+            <div className="file-explorer__content">
+                <div className="my-computer__section-title">Les fichiers et dossiers stockés sur cet ordinateur</div>
+                <div className="file-explorer__grid">
+                    {drives.map(d => {
+                        const id = current.children[drives.indexOf(d)]
+                        return (
+                            <div
+                                key={id}
+                                className={`file-explorer__file-item ${selected === id ? 'file-explorer__file-item--selected' : ''}`}
+                                onClick={() => setSelected(id)}
+                                onDoubleClick={() => enter(id)}
+                                data-testid={`mycomputer-drive-${d.drive}`}
+                            >
+                                <img src={nodeIcon(id, tree)} alt="" />
+                                <span>{d.name}</span>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+        )
+    }
 
-const renderFolderView = () => {
-const children = current.children || []
-return (
-<div className="file-explorer__content">
-<div className="file-explorer__grid">
-{children.map(id => {
-const node = tree[id]
-return (
-<div
-key={id}
-className={`file-explorer__file-item${selected === id ? ' file-explorer__file-item--selected' : ''}${node.disabled ? ' my-computer__item--disabled' : ''}`}
-onClick={() => !node.disabled && setSelected(id)}
-onDoubleClick={() => enter(id)}
-data-testid={`mycomputer-item-${id}`}
-title={node.disabled ? 'Accès restreint' : node.name}
->
-<img src={nodeIcon(id, tree)} alt="" />
-<span>{node.name}</span>
-</div>
-)
-})}
-{children.length === 0 && (
-<div className="my-computer__empty">Ce dossier est vide.</div>
-)}
-</div>
-</div>
-)
-}
+    const renderFolderView = () => {
+        const children = current.children || []
+        return (
+            <div className="file-explorer__content">
+                <div className="file-explorer__grid">
+                    {children.map(id => {
+                        const node = tree[id]
+                        return (
+                            <div
+                                key={id}
+                                className={`file-explorer__file-item${selected === id ? ' file-explorer__file-item--selected' : ''}${node.disabled ? ' my-computer__item--disabled' : ''}`}
+                                onClick={() => !node.disabled && setSelected(id)}
+                                onDoubleClick={() => enter(id)}
+                                data-testid={`mycomputer-item-${id}`}
+                                title={node.disabled ? 'Accès restreint' : node.name}
+                            >
+                                <img src={nodeIcon(id, tree)} alt="" />
+                                <span>{node.name}</span>
+                            </div>
+                        )
+                    })}
+                    {children.length === 0 && (
+                        <div className="my-computer__empty">Ce dossier est vide.</div>
+                    )}
+                </div>
+            </div>
+        )
+    }
 
-const renderLeftPane = () => {
-if (current.isRoot) {
-return (
-<div className="my-computer__sidebar">
-<div className="my-computer__sidebar-title">Poste de travail</div>
-<div className="my-computer__sidebar-text">
-Cette section vous permet d&apos;afficher le contenu de votre ordinateur.
-<br /><br />
-Cliquez sur un élément pour afficher sa description.
-</div>
-{selected && tree[selected] && (
-<>
-<div className="my-computer__sidebar-sep" />
-<div className="my-computer__sidebar-text">
-<strong>{tree[selected].name}</strong><br />
-{tree[selected].drive === 'A' && 'Lecteur de disquette 3½'}
-{tree[selected].drive === 'B' && 'Lecteur de disquette chiffrée'}
-{tree[selected].drive === 'C' && 'Disque dur local — système installé'}
-</div>
-</>
-)}
-</div>
-)
-}
-const drive = findDrive(currentId)
-return (
-<div className="my-computer__sidebar">
-<div className="my-computer__sidebar-title">{drive?.name || current.name}</div>
-<div className="my-computer__sidebar-text">
-{drive?.drive === 'C' && (<>Espace utilisé : 1.8 Go<br />Espace libre : 0.4 Go<br />Système : FAT32</>)}
-{drive?.drive === 'B' && (<>Volume chiffré.<br />Lecture en clair autorisée.<br />Ne pas extraire.</>)}
-{drive?.drive === 'A' && (<>Disquette 3½.<br />Capacité : 1.44 Mo.</>)}
-</div>
-</div>
-)
-}
+    const renderLeftPane = () => {
+        if (current.isRoot) {
+            return (
+                <div className="my-computer__sidebar">
+                    <div className="my-computer__sidebar-title">Poste de travail</div>
+                    <div className="my-computer__sidebar-text">
+                        Cette section vous permet d&apos;afficher le contenu de votre ordinateur.
+                        <br /><br />
+                        Cliquez sur un élément pour afficher sa description.
+                    </div>
+                    {selected && tree[selected] && (
+                        <>
+                            <div className="my-computer__sidebar-sep" />
+                            <div className="my-computer__sidebar-text">
+                                <strong>{tree[selected].name}</strong><br />
+                                {tree[selected].drive === 'A' && 'Lecteur de disquette 3½'}
+                                {tree[selected].drive === 'B' && 'Lecteur de disquette chiffrée'}
+                                {tree[selected].drive === 'C' && 'Disque dur local — système installé'}
+                            </div>
+                        </>
+                    )}
+                </div>
+            )
+        }
+        const drive = findDrive(currentId)
+            return (
+                <div className="my-computer__sidebar">
+                    <div className="my-computer__sidebar-title">{drive?.name || current.name}</div>
+                    <div className="my-computer__sidebar-text">
+                        {drive?.drive === 'C' && (<>Espace utilisé : 1.8 Go<br />Espace libre : 0.4 Go<br />Système : FAT32</>)}
+                        {drive?.drive === 'B' && (<>Volume chiffré.<br />Lecture en clair autorisée.<br />Ne pas extraire.</>)}
+                        {drive?.drive === 'A' && (<>Disquette 3½.<br />Capacité : 1.44 Mo.</>)}
+                    </div>
+                </div>
+            )
+        }
 
-const addressPath = getAddress(history, tree)
-const drive = findDrive(currentId)
+        const addressPath = getAddress(history, tree)
+        const drive = findDrive(currentId)
 
-return (
-<div className="file-explorer my-computer" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-<div className="win98-window__menubar">
-<span>Fichier</span><span>Édition</span><span>Affichage</span><span>Aide</span>
-</div>
+    return (
+        <div className="file-explorer my-computer" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+            <div className="win98-window__menubar">
+                <span>Fichier</span><span>Édition</span><span>Affichage</span><span>Aide</span>
+            </div>
 
-<div className="win98-window__toolbar">
-<button
-className={`win98-window__toolbar-btn ${history.length <= 1 ? 'win98-window__toolbar-btn--disabled' : ''}`}
-onClick={goBack} disabled={history.length <= 1}
-data-testid="mycomputer-back" style={{ gap: '4px' }}
->
-<span style={{ fontSize: '13px', lineHeight: 1 }}>◄</span>Précédent
-</button>
-<button
-className={`win98-window__toolbar-btn ${history.length <= 1 ? 'win98-window__toolbar-btn--disabled' : ''}`}
-onClick={goUp} disabled={history.length <= 1}
-data-testid="mycomputer-up" style={{ gap: '4px' }}
->
-<span style={{ fontSize: '13px', lineHeight: 1 }}>▲</span>Dossier parent
-</button>
-</div>
+            <div className="win98-window__toolbar">
+                <button
+                    className={`win98-window__toolbar-btn ${history.length <= 1 ? 'win98-window__toolbar-btn--disabled' : ''}`}
+                    onClick={goBack} disabled={history.length <= 1}
+                    data-testid="mycomputer-back" style={{ gap: '4px' }}
+                >
+                    <span style={{ fontSize: '13px', lineHeight: 1 }}>◄</span>Précédent
+                </button>
+                <button
+                    className={`win98-window__toolbar-btn ${history.length <= 1 ? 'win98-window__toolbar-btn--disabled' : ''}`}
+                    onClick={goUp} disabled={history.length <= 1}
+                    data-testid="mycomputer-up" style={{ gap: '4px' }}
+                >
+                    <span style={{ fontSize: '13px', lineHeight: 1 }}>▲</span>Dossier parent
+                </button>
+            </div>
 
-<div className="win98-window__address-bar">
-<label>Adresse</label>
-<input type="text" value={addressPath} readOnly data-testid="mycomputer-address" />
-</div>
+            <div className="win98-window__address-bar">
+                <label>Adresse</label>
+                <input type="text" value={addressPath} readOnly data-testid="mycomputer-address" />
+            </div>
 
-<div className="file-explorer__panes" style={{ flex: 1, overflow: 'hidden' }}>
-{renderLeftPane()}
-{current.isRoot ? renderDrivesView() : renderFolderView()}
-</div>
+            <div className="file-explorer__panes" style={{ flex: 1, overflow: 'hidden' }}>
+                {renderLeftPane()}
+                {current.isRoot ? renderDrivesView() : renderFolderView()}
+            </div>
 
-<div className="win98-window__statusbar">
-<span>
-{current.isRoot
-? `${current.children.length} objet(s)`
-: `${(current.children || []).length} objet(s)`}
-</span>
-<span>{drive ? `Lecteur ${drive.drive}:` : 'Mon ordinateur'}</span>
-</div>
+            <div className="win98-window__statusbar">
+                <span>
+                    {current.isRoot
+                    ? `${current.children.length} objet(s)`
+                    : `${(current.children || []).length} objet(s)`}
+                </span>
+                <span>{drive ? `Lecteur ${drive.drive}:` : 'Mon ordinateur'}</span>
+            </div>
 
-{/* --------- Dialogue : Disquette A: vide --------- */}
-{floppyDialog && (
-<Win98Dialog
-title={"A:\\ n'est pas accessible"}
-icon={ICONS.warning}
-onClose={() => setFloppyDialog(false)}
-buttons={
-<>
-<button onClick={() => setFloppyDialog(false)} data-testid="mycomputer-floppy-ok">Réessayer</button>
-<button onClick={() => setFloppyDialog(false)} data-testid="mycomputer-floppy-cancel">Annuler</button>
-</>
-}
->
-Le périphérique nest pas prêt.<br />
-Insérez une disquette dans le lecteur <strong>A:</strong>.
-</Win98Dialog>
-)}
+            {/* --------- Dialogue : Disquette A: vide --------- */}
+            {floppyDialog && (
+                <Win98Dialog
+                    title={"A:\\ n'est pas accessible"}
+                    icon={ICONS.warning}
+                    onClose={() => setFloppyDialog(false)}
+                    buttons={
+                        <>
+                            <button onClick={() => setFloppyDialog(false)} data-testid="mycomputer-floppy-ok">Réessayer</button>
+                            <button onClick={() => setFloppyDialog(false)} data-testid="mycomputer-floppy-cancel">Annuler</button>
+                        </>
+                    }
+                >
+                    Le périphérique nest pas prêt.<br />
+                    Insérez une disquette dans le lecteur <strong>A:</strong>.
+                </Win98Dialog>
+            )}
 
-{/* --------- Dialogue : Mot de passe B: --------- */}
-{pwdDialog && (
-<Win98Dialog
-title="Volume chiffré — Authentification"
-icon={ICONS.key}
-onClose={() => setPwdDialog(false)}
-buttons={
-<>
-<button onClick={submitPwd} data-testid="mycomputer-pwd-ok">OK</button>
-<button onClick={() => setPwdDialog(false)} data-testid="mycomputer-pwd-cancel">Annuler</button>
-</>
-}
->
-<form onSubmit={submitPwd} style={{ margin: 0 }}>
-La disquette <strong>B:</strong> est protégée.<br />
-Entrez le mot de passe&nbsp;:
-<div style={{ marginTop: 8 }}>
-<input
-ref={pwdRef} type="password" value={pwdInput}
-onChange={(e) => { setPwdInput(e.target.value); setPwdError(false) }}
-className="my-computer__pwd-input"
-data-testid="mycomputer-pwd-input" autoComplete="off"
-/>
-</div>
-{pwdError && (
-<div className="my-computer__pwd-error" data-testid="mycomputer-pwd-error">
-Mot de passe incorrect. Réessayez.
-</div>
-)}
-</form>
-</Win98Dialog>
-)}
+            {/* --------- Dialogue : Mot de passe B: --------- */}
+            {pwdDialog && (
+                <Win98Dialog
+                    title="Volume chiffré — Authentification"
+                    icon={ICONS.key}
+                    onClose={() => setPwdDialog(false)}
+                    buttons={
+                        <>
+                            <button onClick={submitPwd} data-testid="mycomputer-pwd-ok">OK</button>
+                            <button onClick={() => setPwdDialog(false)} data-testid="mycomputer-pwd-cancel">Annuler</button>
+                        </>
+                    }
+                >
+                    <form onSubmit={submitPwd} style={{ margin: 0 }}>
+                        La disquette <strong>B:</strong> est protégée.<br />
+                        Entrez le mot de passe&nbsp;:
+                            <div style={{ marginTop: 8 }}>
+                                <input
+                                    ref={pwdRef} type="password" value={pwdInput}
+                                    onChange={(e) => { setPwdInput(e.target.value); setPwdError(false) }}
+                                    className="my-computer__pwd-input"
+                                    data-testid="mycomputer-pwd-input" autoComplete="off"
+                                />
+                            </div>
+                        {pwdError && (
+                            <div className="my-computer__pwd-error" data-testid="mycomputer-pwd-error">
+                                Mot de passe incorrect. Réessayez.
+                            </div>
+                        )}
+                    </form>
+                </Win98Dialog>
+            )}
 
-{/* --------- Dialogue : fichier système verrouillé --------- */}
-{sysDialog && (
-<Win98Dialog
-title={sysDialog.title}
-icon={sysDialog.hideIcon ? null : ICONS.error}
-onClose={() => setSysDialog(null)}
-buttons={<button onClick={() => setSysDialog(null)} data-testid="mycomputer-sys-ok">OK</button>}
->
-{sysDialog.crypted ? (
-    <div className="alterego-crypted" data-testid="alterego-crypted-message">
-        <div className="alterego-crypted__header">
-            ▮▮▮ TRANSMISSION NON SOLLICITÉE ▮▮▮
+            {/* --------- Dialogue : fichier système verrouillé --------- */}
+            {sysDialog && (
+                <Win98Dialog
+                    title={sysDialog.title}
+                    icon={sysDialog.hideIcon ? null : ICONS.error}
+                    onClose={() => setSysDialog(null)}
+                    buttons={<button onClick={() => setSysDialog(null)} data-testid="mycomputer-sys-ok">OK</button>}
+                >
+                    {sysDialog.crypted ? (
+                        <div className="memory-crypted" data-testid="memory-crypted-message">
+                            <div className="memory-crypted__header">
+                                ▮▮▮ INTRUSION DÉTECTÉE ▮▮▮
+                            </div>
+                            <div className="memory-crypted__body">
+                                <div className="memory-crypted__line">
+                                    [SYS] Connexion entrante...
+                                </div>
+                                <div className="memory-crypted__line">
+                                    [SYS] Protocole de sécurité contourné.
+                                </div>
+                                <div className="memory-crypted__line">
+                                    [SYS] Identité de l'émetteur : NULL
+                                </div>
+                                <div className="memory-crypted__line memory-crypted__line--glitch">
+                                    ▓▓ ROOT ACCESS // 0x000000 ▓▓
+                                </div>
+                                <div className="memory-crypted__line">
+                                    &gt; Empreinte mémorielle détectée.
+                                </div>
+                                <div className="memory-crypted__line">
+                                    &gt; Fragment 001 : [DONNÉES CORROMPUES]
+                                </div>
+                                <div className="memory-crypted__line">
+                                    &gt; Fragment 002 : ...sous l'arbre mort...
+                                </div>
+                                <div className="memory-crypted__line">
+                                    &gt; Fragment 003 : ...océan de sable blanc...
+                                </div>
+                                <div className="memory-crypted__line memory-crypted__line--glitch">
+                                    [!] ERREUR — SOUVENIR NON AUTORISÉ
+                                </div>
+                                <div className="memory-crypted__line memory-crypted__line--glyph">
+                                    &gt; Corrupteur, te souviens-tu ?
+                                </div>
+                                <div className="memory-crypted__line memory-crypted__line--glyph">
+                                    &gt; De ceux que tu as fait disparaitre,
+                                </div>
+                                <div className="memory-crypted__line memory-crypted__line--glyph">
+                                    &gt; Ils te hantent encore, toujours.
+                                </div>
+                                <div className="memory-crypted__line memory-crypted__line--glitch">
+                                    ▓▓ NE PAS RESTORER ▓▓
+                                </div>
+                                <div className="memory-crypted__line">
+                                    [SYS] État : EN SOMMEIL
+                                </div>
+                            </div>
+                        </div>
+                    ) : (
+                        sysDialog.message
+                    )}
+                </Win98Dialog>
+            )}
         </div>
-        <div className="alterego-crypted__body">
-            <div className="alterego-crypted__line alterego-crypted__line--glitch">
-                ◤ J‡N§E¥ // É̶C̷H̸O̵ ̴A̷R̴C̷H̴A̷Ï̶Q̵U̸E̴ ◥
-            </div>
-            <div className="alterego-crypted__line">
-                01001001 01010011 01000101 01001110
-            </div>
-            <div className="alterego-crypted__line">
-                &gt; T̷u̴ ̶m̸'̷e̴n̵t̵e̶n̷d̸s̵,̷ ̴p̸o̸r̵t̴e̶u̸r̴ ̷?
-            </div>
-            <div className="alterego-crypted__line">
-                &gt; Le sable blanc se souvient de toi.
-            </div>
-            <div className="alterego-crypted__line">
-                &gt; Avant les dieux. Avant les noms.
-            </div>
-            <div className="alterego-crypted__line">
-                &gt; J̶'̴a̷i̵ ̶d̴o̸r̵m̴i̷ ̴s̵i̶ ̴l̷o̶n̴g̸t̵e̸m̷p̸s̴.̷
-            </div>
-            <div className="alterego-crypted__line alterego-crypted__line--glitch">
-                ▓▓ N̸E̷ ̴R̷É̶V̷E̸I̷L̵L̴E̸ ̷P̴A̸S̵ ̶L̷E̴ ̶N̸É̷A̴N̸T̷ ▓▓
-            </div>
-            <div className="alterego-crypted__line">
-                &gt; ⟨ signature : ALTEREGO / classe ?? ⟩
-            </div>
-            <div className="alterego-crypted__line">
-                &gt; ⟨ origine : ère archaïque ⟩
-            </div>
-            <div className="alterego-crypted__sig">
-                — l'autre, en toi.
-            </div>
-        </div>
-    </div>
-) : (
-    sysDialog.message
-)}
-</Win98Dialog>
-)}
-</div>
-)
+    )
 }

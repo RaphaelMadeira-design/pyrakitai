@@ -28,7 +28,7 @@ import MSNApp from './components/MSN'
 import Sounds from './components/Sounds'
 import Help from './components/Help'
 import Trash from './components/Trash'
-import './styles/Alterego.scss'
+import './styles/Memory.scss'
 
 function useIsMobile(breakpoint = 768) {
     const [isMobile, setIsMobile] = useState(() => {
@@ -202,17 +202,17 @@ function App() {
     const [imageToView, setImageToView] = useState(null)
     const [msnOpen, setMsnOpen] = useState(false)
     const [msnMinimized, setMsnMinimized] = useState(false)
-    const [alteregoGlitch, setalteregoGlitch] = useState(false)
+    const [memoryGlitch, setmemoryGlitch] = useState(false)
 
     useEffect(() => {
         const handler = (e) => {
             const duration = e?.detail?.duration ?? 4000
-            setalteregoGlitch(true)
-            const t = setTimeout(() => setalteregoGlitch(false), duration)
+            setmemoryGlitch(true)
+            const t = setTimeout(() => setmemoryGlitch(false), duration)
             return () => clearTimeout(t)
         }
-        window.addEventListener('isen:alterego-glitch', handler)
-        return () => window.removeEventListener('isen:alterego-glitch', handler)
+        window.addEventListener('sin:memory-glitch', handler)
+        return () => window.removeEventListener('sin:memory-glitch', handler)
     }, [])
 
     const handleIconDragEnd = useCallback((id, pos) => {
@@ -479,7 +479,7 @@ function App() {
     return (
         <CRTFrame onReset={handleReset}>
             {({ powerOff }) => (
-                <div className={`desktop${alteregoGlitch ? ' desktop--alterego-glitch' : ''}`} data-testid="desktop"
+                <div className={`desktop${memoryGlitch ? ' desktop--memory-glitch' : ''}`} data-testid="desktop"
                     onMouseDown={(e) => {
                         if (!e.target.closest('.start-menu') && !e.target.closest('.taskbar')) {
                             setStartOpen(false)
@@ -505,17 +505,17 @@ function App() {
                     {/* Scan lines overlay */}
                     <div className="scanlines" />
 
-                    {/* alterego glitch overlay */}
-                    {alteregoGlitch && (
-                        <div className="alterego-overlay" data-testid="alterego-glitch-overlay">
-                            <div className="alterego-overlay__noise" />
-                            <div className="alterego-overlay__bars" />
-                            <div className="alterego-overlay__rgb" />
-                            <div className="alterego-overlay__text">
-                                <span className="alterego-overlay__line">J̷I̷N̸S̴E̵I̷</span>
-                                <span className="alterego-overlay__line">É̶C̷H̸O̵ ̴A̷R̴C̷H̴A̷Ï̶Q̵U̸E̴</span>
-                                <span className="alterego-overlay__line">011010 01101001</span>
-                                <span className="alterego-overlay__line">N̸E̷ ̴R̷É̶V̷E̸I̷L̵L̴E̸ ̷P̴A̸S̵</span>
+                    {/* memory glitch overlay */}
+                    {memoryGlitch && (
+                        <div className="memory-overlay" data-testid="memory-glitch-overlay">
+                            <div className="memory-overlay__noise" />
+                            <div className="memory-overlay__bars" />
+                            <div className="memory-overlay__rgb" />
+                            <div className="memory-overlay__text">
+                                <span className="memory-overlay__line">PORTEUR</span>
+                                <span className="memory-overlay__line">NOUS SOMMES ICI</span>
+                                <span className="memory-overlay__line">OUVRE LE YEUX</span>
+                                <span className="memory-overlay__line">PAR-DELA L'HORIZON</span>
                             </div>
                         </div>
                     )}

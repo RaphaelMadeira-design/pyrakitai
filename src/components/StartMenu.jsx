@@ -42,8 +42,8 @@ export default function StartMenu({ onClose, onOpenWindow, onShutdown, onLock })
 
                 <div className="start-menu__content">
                     <div className="start-menu__item" onClick={() => handle('intranet')} data-testid="start-menu-intranet">
-                        <img src={ICONS.intranet} alt="WELLSTON-NET" />
-                        WELLSTON-NET v5.04
+                        <img src={ICONS.intranet} alt="PYRAKI-NET" />
+                        PYRAKI-NET v1.02
                     </div>
 
                     <div className="start-menu__item" onClick={() => handle('powers')} data-testid="start-menu-powers">

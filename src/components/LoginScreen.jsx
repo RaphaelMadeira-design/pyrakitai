@@ -76,7 +76,7 @@ export default function LoginScreen({ onLogin }) {
 
                 <form className="login-dialog__body" onSubmit={submit}>
                     <div className="login-dialog__avatar-frame" data-testid="login-avatar">
-                        <img src="/images/id.jpg" alt="Kaï SEDO" className="login-dialog__avatar" />
+                        <img src="/images/account.jpg" alt="Avatar compte" className="login-dialog__avatar" />
                     </div>
 
 

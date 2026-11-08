@@ -157,7 +157,7 @@ export default function FileExplorer({ onOpenNotepad, onPlayMusic, onOpenImage, 
                 <label>Adresse</label>
                 <input
                     type="text"
-                    value={`C:\\Users\\isen.shura\\${addressPath}`}
+                    value={`C:\\Users\\sinaan.kitai\\${addressPath}`}
                     readOnly
                     data-testid="explorer-address"
                 />
@@ -200,7 +200,7 @@ export default function FileExplorer({ onOpenNotepad, onPlayMusic, onOpenImage, 
 
             <div className="win98-window__statusbar">
                 <span>{children.length} objet(s)</span>
-                <span>{`C:\\Users\\isen.shura\\${addressPath}`}</span>
+                <span>{`C:\\Users\\sinaan.kitai\\${addressPath}`}</span>
             </div>
         </div>
     )

@@ -28,10 +28,10 @@
         "académie"
     ],
     "SECRET_URLS": [
-        "isen://core",
-        "isen://secret",
-        "about:isen",
-        "isen://memories"
+        "sin://core",
+        "sin://secret",
+        "about:sin",
+        "sin://memories"
     ],
     "WIKI_URL": "https://is.shokupedia.org/shokunin/Isen_Shura",
     "NEWS_URL": "http://www.actunet-news.is/",
