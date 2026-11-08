@@ -1,180 +1,189 @@
 @use 'Variables' as *;
 
 .snake-game {
-display: flex;
-flex-direction: column;
-height: 100%;
-background: $win98-gray;
-font-family: $font-system;
-font-size: 11px;
-user-select: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: $win98-gray;
+    font-family: $font-system;
+    font-size: 11px;
+    user-select: none;
 
-// ── Barre de score ──────────────────────────────────────────────
-&__score-bar {
-display: flex;
-align-items: center;
-gap: 16px;
-padding: 3px 8px;
-background: $win98-gray;
-border-bottom: 1px solid $win98-dark-gray;
-flex-shrink: 0;
+    // ── Barre de score ──────────────────────────────────────────────
+    &__score-bar {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 3px 8px;
+        background: $win98-gray;
+        border-bottom: 1px solid $win98-dark-gray;
+        flex-shrink: 0;
 
-&-item {
-font-family: $font-system;
-font-size: 11px;
-color: $win98-black;
+        &-item {
+            font-family: $font-system;
+            font-size: 11px;
+            color: $win98-black;
 
-b { font-weight: bold; }
+            b { 
+                font-weight: bold; 
+            }
 
-&--playing { color: #008000; }
-&--paused  { color: #800000; }
-}
-}
+            &--playing { 
+                color: #008000; 
+            }
 
-// ── Zone canvas ─────────────────────────────────────────────────
-&__canvas-wrapper {
-flex: 1;
-display: flex;
-align-items: center;
-justify-content: center;
-background: $win98-dark-gray;
-position: relative;
-overflow: hidden;
-padding: 4px;
-}
+            &--paused  { 
+                color: #800000; 
+            }
+        }
+    }
 
-&__canvas {
-display: block;
-border: 2px solid;
-border-color: $win98-dark-gray $win98-white $win98-white $win98-dark-gray;
-image-rendering: pixelated;
-max-width: 100%;
-max-height: 100%;
-}
+    // ── Zone canvas ─────────────────────────────────────────────────
+    &__canvas-wrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $win98-dark-gray;
+        position: relative;
+        overflow: hidden;
+        padding: 4px;
+    }
 
-// ── Overlay (menu / pause / game over) ──────────────────────────
-&__overlay {
-position: absolute;
-inset: 0;
-background: rgba(0, 0, 0, 0.55);
-display: flex;
-align-items: center;
-justify-content: center;
-z-index: 10;
-}
+    &__canvas {
+        display: block;
+        border: 2px solid;
+        border-color: $win98-dark-gray $win98-white $win98-white $win98-dark-gray;
+        image-rendering: pixelated;
+        max-width: 100%;
+        max-height: 100%;
+    }
 
-// ── Boîte de dialogue Win98 ─────────────────────────────────────
-&__dialog {
-background: $win98-gray;
-border: 2px solid;
-border-color: $win98-white $win98-dark-gray $win98-dark-gray $win98-white;
-min-width: 260px;
-box-shadow: 2px 2px 0 $win98-black;
+    // ── Overlay (menu / pause / game over) ──────────────────────────
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.55);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+    }
 
-&-title {
-background: linear-gradient(90deg, $win98-navy 0%, $pc98-violet 100%);
-color: $win98-white;
-padding: 3px 8px;
-font-weight: bold;
-font-size: 11px;
-font-family: $font-system;
-display: flex;
-align-items: center;
-gap: 4px;
+    // ── Boîte de dialogue Win98 ─────────────────────────────────────
+    &__dialog {
+        background: $win98-gray;
+        border: 2px solid;
+        border-color: $win98-white $win98-dark-gray $win98-dark-gray $win98-white;
+        min-width: 260px;
+        box-shadow: 2px 2px 0 $win98-black;
 
-img {
-width: 16px;
-height: 16px;
-image-rendering: pixelated;
-}
+        &-title {
+            background: linear-gradient(90deg, $win98-navy 0%, $pc98-violet 100%);
+            color: $win98-white;
+            padding: 3px 8px;
+            font-weight: bold;
+            font-size: 11px;
+            font-family: $font-system;
+            display: flex;
+            align-items: center;
+            gap: 4px;
 
-&--danger {
-background: #800000;
-}
-}
+            img {
+                width: 16px;
+                height: 16px;
+                image-rendering: pixelated;
+            }
 
-&-body {
-padding: 12px 16px;
-display: flex;
-flex-direction: column;
-gap: 10px;
-}
+            &--danger {
+                background: #800000;
+            }
+        }
 
-&-text {
-margin: 0;
-font-family: $font-system;
-font-size: 11px;
-line-height: 1.6;
+        &-body {
+            padding: 12px 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
-b { font-weight: bold; }
-}
+        &-text {
+            margin: 0;
+            font-family: $font-system;
+            font-size: 11px;
+            line-height: 1.6;
 
-&-record {
-color: #cc0000;
-}
-}
+            b { 
+                font-weight: bold; 
+            }
+        }
 
-// ── Ligne de sélection de vitesse ───────────────────────────────
-&__speed-row {
-display: flex;
-align-items: center;
-gap: 6px;
+        &-record {
+            color: #cc0000;
+        }
+    }
 
-label {
-font-family: $font-system;
-font-size: 11px;
-margin-right: 4px;
-}
-}
+    // ── Ligne de sélection de vitesse ───────────────────────────────
+    &__speed-row {
+        display: flex;
+        align-items: center;
+        gap: 6px;
 
-// ── Boutons style Win98 ─────────────────────────────────────────
-&__btn {
-padding: 3px 10px;
-background: $win98-gray;
-border: 2px solid;
-border-color: $win98-white $win98-dark-gray $win98-dark-gray $win98-white;
-font-family: $font-system;
-font-size: 11px;
-cursor: pointer;
-color: $win98-black;
+        label {
+            font-family: $font-system;
+            font-size: 11px;
+            margin-right: 4px;
+        }
+    }
 
-&:active {
-border-color: $win98-dark-gray $win98-white $win98-white $win98-dark-gray;
-}
+    // ── Boutons style Win98 ─────────────────────────────────────────
+    &__btn {
+        padding: 3px 10px;
+        background: $win98-gray;
+        border: 2px solid;
+        border-color: $win98-white $win98-dark-gray $win98-dark-gray $win98-white;
+        font-family: $font-system;
+        font-size: 11px;
+        cursor: pointer;
+        color: $win98-black;
 
-&--active {
-border-color: $win98-dark-gray $win98-white $win98-white $win98-dark-gray;
-font-weight: bold;
-}
+        &:active {
+            border-color: $win98-dark-gray $win98-white $win98-white $win98-dark-gray;
+        }
 
-&--primary {
-padding: 4px 20px;
-font-weight: bold;
-}
-}
+        &--active {
+            border-color: $win98-dark-gray $win98-white $win98-white $win98-dark-gray;
+            font-weight: bold;
+        }
 
-// ── Rangée de boutons ───────────────────────────────────────────
-&__btn-row {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 8px;
-}
+        &--primary {
+            padding: 4px 20px;
+            font-weight: bold;
+        }
+    }
 
-// ── Barre de statut ─────────────────────────────────────────────
-&__status-bar {
-display: flex;
-align-items: center;
-padding: 2px 4px;
-background: $win98-gray;
-border-top: 1px solid $win98-dark-gray;
-flex-shrink: 0;
+    // ── Rangée de boutons ───────────────────────────────────────────
+    &__btn-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
 
-span {
-font-family: $font-system;
-font-size: 11px;
-padding: 0 6px;
-border-right: 1px solid $win98-dark-gray;
-}
-}
+    // ── Barre de statut ─────────────────────────────────────────────
+    &__status-bar {
+        display: flex;
+        align-items: center;
+        padding: 2px 4px;
+        background: $win98-gray;
+        border-top: 1px solid $win98-dark-gray;
+        flex-shrink: 0;
+
+        span {
+            font-family: $font-system;
+            font-size: 11px;
+            padding: 0 6px;
+            border-right: 1px solid $win98-dark-gray;
+        }
+    }
 }
