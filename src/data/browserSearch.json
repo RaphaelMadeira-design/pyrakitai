@@ -1,6 +1,6 @@
 {
     "googleResults": {
-        "submitLabel": "Recherche Google",
+        "submitLabel": "Recherche Wiggle",
         "header": {
             "logo": [
                 { "letter": "W", "color": "#4285F4" },
@@ -229,6 +229,76 @@
                     "title": "D.C.R. — Portail d'information officiel du Ministère de la Sécurité",
                     "url": "www.dcr-shevar.gov",
                     "desc": "Alertes de brèches en direct, recrutement d'agents de terrain, signalement d'anomalies magiques et consignes d'isolement pour les objets contaminés."
+                },
+                {
+                    "title": "Recrutement D.C.R. — Devenez agent de terrain",
+                    "url": "www.dcr-shevar.gov/recrutement/agents-terrain",
+                    "desc": "Sessions d'aptitude ouvertes aux citoyens majeurs sans signature d'essem. Formation de six mois au Fort de la Noda Prima. Prime de risque et logement de fonction en District 2."
+                },
+                {
+                    "title": "Signaler une anomalie — Formulaire n°R-12",
+                    "url": "www.dcr-shevar.gov/signalement/anomalie",
+                    "desc": "Objet contaminé, comportement suspect, fluctuation magnétique inexpliquée ? Ne touchez à rien. Une équipe d'isolement sera dépêchée dans les plus brefs délais."
+                },
+                {
+                    "title": "Le D.C.R. accusé d'arrestations arbitraires dans le District 6 — ActuNet",
+                    "url": "www.actunet-news.sv/enquetes/dcr-district-6",
+                    "desc": "... plusieurs habitants affirment avoir été fichés sans motif après un contrôle de routine. Le Département dément et rappelle que « toute signature d'essem non déclarée constitue une menace »."
+                },
+                {
+                    "title": "Rapport annuel du D.C.R. — Synthèse publique",
+                    "url": "archives.dcr-shevar.gov/rapports/synthese-publique",
+                    "desc": "Nombre d'entités neutralisées, brèches contenues et objets confisqués. Certaines sections ont été retirées pour raisons de sécurité nationale."
+                }
+            ]
+        },
+        {
+            "keys": [
+                "groupe astia",
+                "astia",
+                "astia corp",
+                "astiasoft",
+                "kjel astia"
+            ],
+            "displayQuery": "Groupe Astia",
+            "resultsCount": "24 600",
+            "seconds": "0,22",
+            "real": {
+                "title": "Groupe Astia — Guide de Shevar'",
+                "url": "wiki-shevar.fr/organisations/groupe-astia",
+                "target": "https://wiki-shevar.fr/organisations/groupe-astia",
+                "desc": "Mégacorporation tentaculaire présente sur toute la Noda Prima : infrastructures, télécommunications, logiciels Astiasoft et réseau social Ad Astria."
+            },
+            "fakes": [
+                {
+                    "title": "Groupe Astia — Site corporatif officiel",
+                    "url": "www.astia-corpo.sv",
+                    "desc": "« Bâtir le monde de demain, aujourd'hui. » Découvrez nos branches : commerciale, technologique, énergétique et sécurité. Espace investisseurs et carrières."
+                },
+                {
+                    "title": "Astiasoft® WindOS 98 — Support et mises à jour",
+                    "url": "support.astiasoft.sv/windos98",
+                    "desc": "Téléchargez les derniers correctifs de sécurité pour votre terminal. Note : la version 4.10.2222 n'est plus prise en charge dans les districts périphériques."
+                },
+                {
+                    "title": "Groupe Astia : Kushala Dorak nommée cheffe de la branche commerciale — ActuNet",
+                    "url": "www.actunet-news.sv/economie/astia-dorak-nomination",
+                    "desc": "... après le retour inattendu de Kjel Astia et la destitution de plusieurs chefs de branche, la direction shevarite a été entièrement remaniée."
+                },
+                {
+                    "title": "Astia Corp — Offres d'emploi (District 2)",
+                    "url": "www.astia-corpo.sv/carrieres/district-2",
+                    "desc": "Postes à pourvoir : analyste de flux, technicien réseau Ad Astria, agent de sécurité des entrepôts. Discrétion exigée, clause de confidentialité obligatoire."
+                },
+                {
+                    "title": "'Des caisses Astia sans logo au marché noir ?' — Forums Libres",
+                    "url": "www.forum-toile.sv/sujet/23988",
+                    "desc": "— Vu une dizaine de palettes Astia au logo gratté près des docks. Quelqu'un sait d'où ça sort ? | 41 réponses. [Sujet verrouillé par la modération]"
+                },
+                {
+                    "title": "ActuNet maintient ses révélations malgré la plainte d'Astia",
+                    "url": "www.pressewatch.sv/actunet-vs-astia",
+                    "desc": "Le Groupe Astia a déposé plainte pour diffamation. La rédaction d'ActuNet refuse de retirer ses articles et dénonce une tentative d'intimidation."
                 }
             ]
         },
@@ -238,6 +308,7 @@
                 "réseau social",
                 "reseau social",
                 "adastria",
+                "astria",
                 "ad astria net"
             ],
             "displayQuery": "Ad Astria",
@@ -245,8 +316,8 @@
             "seconds": "0,18",
             "real": {
                 "title": "Ad Astria — Le réseau social de la cité-état de Shevar'",
-                "url": "www.ad-astria.sv",
-                "target": "news",
+                "url": "wiki-shevar.fr/reseau",
+                "target": "https://wiki-shevar.fr/reseau",
                 "desc": "Portail communautaire de Shevar' : Flux des districts, profils citoyens, annonces corporatistes et messagerie chiffrée. Connecté en continu au réseau PYRAKI-NET."
             },
             "fakes": [
@@ -264,11 +335,6 @@
                     "title": "Fédération des Médias Numériques de Shevar' — Statut : Ad Astria",
                     "url": "www.fmn-shevar.sv/membres/ad-astria",
                     "desc": "Fiche de conformité — Réseau de diffusion de masse. Modération gérée par les algorithmes de sécurité du Groupe Astia. Surveillance des rumeurs sur la Fracture."
-                },
-                {
-                    "title": "'Pourquoi mon post sur la brèche du District 8 a sauté ?' — Forums Libres",
-                    "url": "www.forum-toile.sv/sujet/23418",
-                    "desc": "— Quelqu'un a fait un screen du fil Ad Astria concernant la brèche au-dessus du mur avant la censure ? Mon feed a complètement été réinitialisé par le protocole de sécurité. | 12 réponses."
                 },
                 {
                     "title": "Ad Astria Net : Archives des flux publics (Noda Prima & Parc Commercial)",

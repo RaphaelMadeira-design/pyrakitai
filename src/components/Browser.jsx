@@ -14,11 +14,11 @@ import GlitchSearch from './GlitchSearch'
 import KonamiOverlay from './KonamiOverlay'
 import { FakeGoogleResults, FakeGoogleNoResult } from './GoogleResults'
 
-const { IE_ICON, KONAMI, SECRET_SEARCHES, SECRET_URLS, WIKI_URL, NEWS_URL, LAMPION_URL, TAB_DEFS, EXACT_URL_MAP } = config
+const { IE_ICON, KONAMI, SECRET_SEARCHES, SECRET_URLS, WIKI_URL, NEWS_URL, LAMPION_URL, DCR_URL, ASTIA_URL, RESEAU_URL, TAB_DEFS, EXACT_URL_MAP } = config
 
 
 const TARGET_MAP = { wiki: WIKI_URL, news: NEWS_URL, lampion: LAMPION_URL }
-const DCR_URL = 'https://wiki-shevar.fr/organisations/dcr'
+const EXTERNAL_PAGES = [DCR_URL, ASTIA_URL, RESEAU_URL]
 
 const SEARCH_TOPICS = searchData.topics.map(t => ({
     ...t,
@@ -34,15 +34,11 @@ function matchTopic(query) {
     return null
 }
 
-// ─────────────────────────────────────────────
-// 🧭 CENTRAL SEARCH / ROUTING ENGINE
-// ─────────────────────────────────────────────
-
 const normalizeUrl = (s) =>
     s.trim().toLowerCase().replace(/^https?:\/\//, '').replace(/\/+$/, '')
 
 const buildGoogleUrl = (q) =>
-    `http://www.google.jp/search?q=${encodeURIComponent(q).replace(/%20/g, '+')}`
+    `http://www.wiggle.sv/search?q=${encodeURIComponent(q).replace(/%20/g, '+')}`
 
 const isSecretSearch = (query, SECRET_SEARCHES) => {
     const q = query.trim().toLowerCase()
@@ -79,8 +75,9 @@ function resolveInput(raw, ctx) {
     }
 
     // La fiche D.C.R. du wiki s'affiche dans le navigateur fictif.
-    if (norm === normalizeUrl(DCR_URL)) {
-        return { type: 'OPEN_DCR' }
+    const externalUrl = EXTERNAL_PAGES.find(url => normalizeUrl(url) === norm)
+    if (externalUrl) {
+        return { type: 'OPEN_EXTERNAL', url: externalUrl }
     }
 
     // 4. GOOGLE TOPIC
@@ -112,6 +109,7 @@ export default function Browser() {
     const [konamiIdx, setKonamiIdx] = useState(0)
     const [showKonami, setShowKonami] = useState(false)
     const [contentMode, setContentMode] = useState('normal')
+    const [externalUrl, setExternalUrl] = useState(DCR_URL)
     const [glitchQuery, setGlitchQuery] = useState('')
     const [searchQuery, setSearchQuery] = useState('')
     const [searchTopic, setSearchTopic] = useState(null)
@@ -166,11 +164,12 @@ export default function Browser() {
                     setAddressValue(TAB_DEFS[action.tabId].url)
                     break
 
-                case 'OPEN_DCR':
+                case 'OPEN_EXTERNAL':
                     openTab('google')
                     setActiveTab('google')
                     setContentMode('external-page')
-                    setAddressValue(DCR_URL)
+                    setExternalUrl(action.url)
+                    setAddressValue(action.url)
                     setExternalReload(value => value + 1)
                     break
 
@@ -293,8 +292,8 @@ export default function Browser() {
             return <iframe
                 key={externalReload}
                 className="browser__external-page"
-                src={DCR_URL}
-                title="D.C.R. — Wiki Shevar"
+                src={externalUrl}
+                title="Wiki Shevar"
                 sandbox="allow-scripts allow-same-origin"
                 referrerPolicy="strict-origin-when-cross-origin"
             />
