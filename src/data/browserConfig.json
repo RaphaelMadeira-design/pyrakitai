@@ -35,6 +35,7 @@
     ],
     "WIKI_URL": "https://is.shokupedia.org/shokunin/Isen_Shura",
     "NEWS_URL": "http://www.actunet-news.is/",
+    "LAMPION_URL": "http://www.lampion-d6.sv/",
     "TAB_DEFS": {
         "google": {
         "id": "google",
@@ -57,7 +58,7 @@
         "lampion": {
         "id": "lampion",
         "label": "Le Lampion",
-        "url": "http://www.lampion-d6.wl/",
+        "url": "http://www.lampion-d6.sv/",
         "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
         }
     },
@@ -72,8 +73,8 @@
         "is.shokupedia.org/shokunin/isen_shura": "wiki",
         "www.actunet-news.is": "news",
         "actunet-news.is": "news",
-        "www.lampion-d6.wl": "lampion",
-        "lampion-d6.wl": "lampion"
+        "www.lampion-d6.sv": "lampion",
+        "lampion-d6.sv": "lampion"
     },
     "page404": {
         "errorIcon": "https://win98icons.alexmeub.com/icons/png/msg_error-0.png",

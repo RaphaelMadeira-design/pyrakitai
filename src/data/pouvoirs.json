@@ -13,12 +13,6 @@
         "ruuvahn": "???",
         "gift": "IN'LKAÄM"
     },
-    "weapon": {
-        "image": "/images/blade.png",
-        "name": "Conséquence",
-        "type": "Sabre Dōtanuki",
-        "features": "Sabre de guerre à la lame massive et lourde, polie comme un miroir impeccable pour lui permettre de traquer son Alter Ego à l'aveugle. Sin'aän le maîtrise avec une précision redoutable qu'il pousse à son paroxysme à travers l'art du Iaidō."
-    },
     "stats": [
         { 
             "name": "???",     

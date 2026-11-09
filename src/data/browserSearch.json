@@ -1,4 +1,40 @@
 {
+    "googleResults": {
+        "submitLabel": "Recherche Google",
+        "header": {
+            "logo": [
+                { "letter": "G", "color": "#4285F4" },
+                { "letter": "o", "color": "#EA4335" },
+                { "letter": "o", "color": "#FBBC05" },
+                { "letter": "g", "color": "#4285F4" },
+                { "letter": "l", "color": "#34A853" },
+                { "letter": "e", "color": "#EA4335" }
+            ]
+        },
+        "tabs": [
+            { "label": "Tous", "active": true },
+            { "label": "Images", "active": false },
+            { "label": "Actualités", "active": false },
+            { "label": "Vidéos", "active": false }
+        ],
+        "pagerLogo": [
+            { "letter": "G", "color": "#4285F4" },
+            { "letter": "o", "color": "#EA4335" },
+            { "letter": "o", "color": "#FBBC05" },
+            { "letter": "g", "color": "#4285F4" },
+            { "letter": "l", "color": "#34A853" },
+            { "letter": "e", "color": "#EA4335" }
+        ]
+    },
+    "noResult": {
+        "suggestionsTitle": "Essayez ces suggestions :",
+        "suggestions": [
+            "Vérifiez l'orthographe des termes de recherche.",
+            "Essayez d'autres mots-clés.",
+            "Utilisez des mots-clés plus généraux."
+        ]
+    },
+
     "topics": [
         {
             "keys": [
@@ -16,51 +52,51 @@
             "resultsCount": "2 340",
             "seconds": "0,24",
             "real": {
-                "title": "Sin'aän Kitaï — Mikipedia, l'encyclopédie libre",
-                "url": "sv.mikipedia.org/aune/Sinaan_Kitai",
+                "title": "Sin'aän Kitaï — Encyclopédie de Shevar'",
+                "url": "wiki-shevar.fr/races/aune/Sinaan_Kitai",
                 "target": "wiki",
-                "desc": "Isen Shura (修羅 威仙, Shura Isen), également enregistré au sein de la Coalition des Gouvernements Unis sous le matricule #0791, est un patrouilleur de l'Ordre affecté à ..."
+                "desc": "Sin'aän Kitaï (SIN-01) est un citoyen d'origine Aüne recensé à Shevar'. Gérant indépendant du bureau de récupération Gran Regalia dans le District n°6, il est enregistré comme invocateur de classe Démoniste maîtrisant l'Orhen..."
             },
             "fakes": [
                 {
                     "title": "Registre municipal de Shevar — Kitaï, S.",
                     "url": "www.shevar.metro.sv/registre/kitai-s#428046",
-                    "desc": "Citoyen recensé. Dernière mise à jour partielle. Certaines lignes du recensement sont marquées « données confidentielles »."
+                    "desc": "Citoyen recensé. Dernière mise à jour partielle. Résidence principale : District Rouge. Certaines lignes du recensement sont marquées « données confidentielles »."
                 },
                 {
-                    "title": "Isen_Shura (@1sen_shura) — photos & messages",
-                    "url": "www.photoroll.is/1sen_shura",
-                    "desc": "Profil public — 24 photos, 51 abonnés. Dernier post : \"Burgers que 'Chez Koga' avec l'équipe 2, Issitis, 19h22\". Aucun message depuis 8 jours."
+                    "title": "Sin'aän Kitaï (@sin_01) — Profil Ad Astria",
+                    "url": "www.ad-astria.sv/sin_01",
+                    "desc": "Profil public — 14 publications, 184 abonnés. Dernier statut : \"Les cyber-briquets vintage de la galerie basse sont authentiques. Mission classée.\". Aucun message depuis 2 jours."
                 },
                 {
-                    "title": "SuperEats — Profil de ShuraIsen98",
-                    "url": "www.superearts.lx/profil/gold_members/viewprofile?t=88471",
-                    "desc": "Isen Shura, membre SuperEats Gold depuis le 14/02. Commandes passées : 168. Adresse favorite : Poke-Man Poke - Bowls. Méthode de retrait préférée : Livraison Express."
+                    "title": "Gran Regalia — Avis clients & notations",
+                    "url": "www.shevarnet.sv/commerces/gran-regalia?t=88471",
+                    "desc": "Note globale : 4.6/5. Bureau de récupération et d'investigation. Dernier avis : \"Instrument customisé retrouvé intact dans le District Rouge en moins de 48 heures. Recommandé.\""
                 },
                 {
-                    "title": "Registre Jinséique International",
-                    "url": "jinsei-index.org/j=45g154d738",
-                    "desc": "... enregistrés. Shura, Isen — Ordre, Coalition des Gouvernements Unis — Qualité, quantité, nature et type officiellement enregistrés. Shuraba, Mokonji — Ordre ..."
+                    "title": "Index du Département de Contrôle des Rauthéens (D.C.R.)",
+                    "url": "dcr-network.shevar.gov/suspects/sin-01",
+                    "desc": "... profil enregistré sous le matricule #SIN-01. Utilisateur d'Orhen à visée offensive (condensation). Invocateur indépendant sous surveillance modérée. Fréquente le District n°6 et le Parc Commercial..."
                 },
                 {
-                    "title": "Pronostics de Isen1111 — Rang Argent",
-                    "url": "betbetbet.is/classement/6089",
-                    "desc": "01. Tenku Striders — 114 pts  |  02. Bunkyo City Bolts — 112 pts  |  03. White Sparrows — 108 pts  |  04. Kanda Ravens — 104 pts ... SuperEats, partenaire officiel de la fédération."
+                    "title": "Shevardex — Fiche de carte n°213 : Sin'aän Kitaï",
+                    "url": "shevardex.wiki-shevar.fr/cartes/213",
+                    "desc": "Rareté : Rare | Type : Invocateur / Démoniste | Effet signature : Appose une Malédiction orhenique qui draine la vitalité de la cible à chaque tour et sert de balise de repérage."
                 },
                 {
-                    "title": "Maison des Ancêtres — Liste des admis au diplôme",
-                    "url": "www.ancetres.academie-cgu.gouv/licence/histoire",
-                    "desc": "... Shoka, Pol. Admis. Mention Cum Laude — Shura, Isen. Admis. Mention Magna Cum Laude — Shyzuk, Milo. Admis. Mention Cum Laude — Sikovski, Kimail. Admis. Mention Cum Laude... "
+                    "title": "Le Nexus — Archives de la Galerie d'Art Historique",
+                    "url": "www.nexus-arts.shevar/archives/expositions/lames",
+                    "desc": "... Sabre Dōtanuki nommé « Conséquence ». Lame de guerre massive polie comme un miroir, conçue spécifiquement pour le combat aveugle contre l'Alter Ego. Actuellement détenu par un tiers indépendant..."
                 },
                 {
-                    "title": "Shura (homonymie) — Shokupédia",
-                    "url": "is.shokupedia.org/wiki/Shura_(homonymie)",
-                    "desc": "Page d'homonymie : Shura peut désigner un patronyme humain, une lignée de la branche inférieure apparentée au clan Shigemori, ou une région montagneuse à Ionia..."
+                    "title": "Le Lampion — Cuisine de quartier — District 6",
+                    "url": "o.halvar@lampion-d6.wl",
+                    "desc": "... Passage des Lanternes. Avis aux locataires : Le loyer des bureaux adjacents (incluant le Gran Regalia) est dû le 5 de chaque mois. Pas le 6. LE 5. Paiement au comptoir en crédits..."
                 },
                 {
-                    "title": "Recrutez un Iseno Shuba — AnnuairePro",
-                    "url": "www.annuairepro.rc/prestataire/iseno_shuba",
-                    "desc": "Plombier à Reach, 41 ans. En activité depuis 23 ans. Note clients : 4,3 / 5."
+                    "title": "Recrutez un Récupérateur Aüne — Annuaire Pro de la Toile",
+                    "url": "www.annuairepro-toile.sv/prestataire/recherche_objets",
+                    "desc": "Spécialiste de la recherche d'objets perdus et de l'extraction de dossiers confidentiels. Interventions dans toute la cité-état (y compris l'Axiome et le Bloc Abandonné)."
                 }
             ]
         },
@@ -76,297 +112,175 @@
             "resultsCount": "5 710",
             "seconds": "0,18",
             "real": {
-                "title": "ActuNet Actualités — Toutes les dépêches en direct",
+                "title": "ActuNet Actualités — Toutes les dépêches en direct de Shevar'",
                 "url": "www.actunet-news.is",
                 "target": "news",
-                "desc": "Portail d'information : Issitis, Monde, Faits divers, Sports, Sciences. Édition quotidienne depuis 50 ans. Ticker en continu, édition du jour..."
+                "desc": "Portail d'information : Cité-État, Faits divers, Mégacorporations, Sciences essémiques. Édition quotidienne. Ticker en continu, édition du jour..."
             },
             "fakes": [
                 {
-                    "title": "ActuNet — Pages Jaunes Internet",
-                    "url": "www.pj-internet.rc/annuaire/a/actunet",
-                    "desc": "Référencement officiel du portail ActuNet. Catégorie : Presse en ligne / Information générale. Siège : Reach"
+                    "title": "ActuNet — Annuaire Réseau du Parc Commercial",
+                    "url": "www.pj-internet.sv/annuaire/a/actunet",
+                    "desc": "Référencement officiel du portail ActuNet. Catégorie : Presse d'information générale de Shevar'. Siège social : La Noda Prima."
                 },
                 {
-                    "title": "ActuNet Pro — hébergement web dès 20¥/mois",
-                    "url": "www.actunet-pro.is/hebergement",
-                    "desc": "Offres d'hébergement mutualisé, nom de domaine .is inclus, support FTP. Ne concerne pas le portail ActuNet Actualités."
+                    "title": "ActuNet Pro — Hébergement de terminaux et flux PYRAKI-NET",
+                    "url": "www.actunet-pro.sv/hebergement",
+                    "desc": "Offres d'hébergement mutualisé pour les commerces indépendants, nom de domaine inclus. Ne concerne pas le portail d'actualités."
                 },
                 {
-                    "title": "Fédération de presse numérique — membre : ActuNet",
-                    "url": "www.fpn.lx/membres/actunet",
-                    "desc": "Fiche associative — ActuNet Actualités (IS). Rédacteur en chef : [données protégées]."
+                    "title": "Fédération de la Presse Numérique — Membre : ActuNet",
+                    "url": "www.fpn.shevar/membres/actunet",
+                    "desc": "Fiche associative — ActuNet Actualités. Rédacteur en chef : [Données protégées par contrat Astia]."
                 },
                 {
-                    "title": "\"Pourquoi ActuNet a retiré son article ?\" — Forum Médias",
-                    "url": "www.forum-medias.rc/sujet/23418",
-                    "desc": "— Quelqu'un a sauvegardé l'article sur l'histoire de l'espèce de secte avant qu'ils le suppriment ? Je le trouve plus nulle part.  |  12 réponses."
+                    "title": "\"Pourquoi ActuNet a retiré son article sur le D.C.R. ?\" — Flux Pyraki-Net",
+                    "url": "www.pyraki-forums.sv/sujet/23418",
+                    "desc": "— Quelqu'un a sauvegardé l'article d'ActuNet sur la décimation du D.C.R. par l'Alkinès du Massacre avant qu'il soit censuré par la Noda Prima ? Je ne le trouve plus nulle part. | 12 réponses."
                 },
                 {
-                    "title": "ActuNet : archives hebdomadaires (mars–avril)",
-                    "url": "archives.actunet-news.is/03-04",
-                    "desc": "Accès aux numéros archivés. Certaines éditions de novembre sont manquantes : « édition non distribuée pour raisons indépendantes de notre volonté »."
+                    "title": "ActuNet : Archives hebdomadaires (Période post-Fracture)",
+                    "url": "archives.actunet-news.sv/03-04",
+                    "desc": "Accès aux numéros archivés. Certaines éditions récentes sont manquantes : « Édition non distribuée en raison de perturbations magnétiques liées à la lune Aralys »."
                 },
                 {
-                    "title": "ActuNet contre-attaque après une plainte anonyme",
-                    "url": "www.pressewatch.rc/actunet-plainte-anonyme",
-                    "desc": "Le portail d'actualités maintient ses publications sur l'affaire du ministre Backenbauer', malgré une demande de retrait reçue début janvier."
+                    "title": "ActuNet maintient ses révélations malgré la plainte d'Astia",
+                    "url": "www.pressewatch.sv/actunet-vs-astia",
+                    "desc": "Le portail d'actualités refuse de retirer son enquête exclusive sur les palettes de bio-composants détournées vers le Bloc Abandonné (District n°8)."
                 },
                 {
-                    "title": "Webring ActuNet — sites partenaires",
-                    "url": "webring.actunet-news.is/partenaires",
-                    "desc": "Liste des sites frères : Météo-Express, Sports-IS, Tech99. Optimisé pour Internet Voyager 5.0 et Webscape Navigator 4.0."
+                    "title": "Webring ActuNet — Réseau d'information officiel",
+                    "url": "webring.actunet-news.sv/partenaires",
+                    "desc": "Liste des flux partenaires : Météo-Essem, Chrono-Monorail, Tech-Axiome. Optimisé pour les terminaux Pyraki de génération 4."
                 },
                 {
-                    "title": "Ven Jokolek (journaliste) — Profil ActuNet",
-                    "url": "www.actunet-news.is/redaction/ven-jokolek",
-                    "desc": "Ven est l'un des journalistes sportifs les plus emblématiques d'ActuNet, dont il est désormais rédacteur en chef."
+                    "title": "Explosion dans le District n°1 : Le point avec la rédaction d'ActuNet",
+                    "url": "www.actunet-news.is/redaction/faits-divers",
+                    "desc": "Dernière dépêche : La mercenaire Ena Ryoshi retrouvée morte après l'effondrement partiel de la zone résidentielle. La piste criminelle est privilégiée."
                 }
             ]
         },
         {
             "keys": [
-                "cgu",
-                "coalition",
-                "coalition des gouvernements unis"
+                "le lampion",
+                "lampion",
+                "halvar",
+                "mme halvar",
+                "lampion district 6",
+                "restaurant",
+                "restau",
+                "resto"
             ],
-            "displayQuery": "Coalition des Gouvernements Unis",
+            "displayQuery": "Le Lampion",
+            "resultsCount": "412",
+            "seconds": "0,15",
+            "real": {
+                "title": "Le Lampion — Cuisine de quartier & Logements — District 6",
+                "url": "www.lampion-d6.sv",
+                "target": "lampion",
+                "desc": "Passage des Lanternes, District 6. Cuisine de quartier par Mme O. Halvar. Ici on mange chaud, on paie comptant et on rend son bol. Avis aux locataires : loyer des bureaux adjacents dû le 5 de chaque mois."
+            },
+            "fakes": [
+                {
+                    "title": "Gran Regalia — Registre comptable interne (Fuite réseau)",
+                    "url": "www.pyraki-leaks.sv/transactions/sin-01",
+                    "desc": "... 12/06 : Débit de 900 cr. libellé « Loyer bureau » à destination de o.halvar@lampion-d6.wl. Transaction enregistrée avec une semaine de retard sur l'échéance fixée par la propriétaire..."
+                },
+                {
+                    "title": "Guide Gastronomique de la Holozone — Les bouillons du District 6",
+                    "url": "www.holofood.sv/critiques/lampion-lanternes",
+                    "desc": "Critique du 'Bouillon des Lanternes' (9 cr.) : Une institution immuable gérée d'une main de fer. Horaires stricts : le comptoir ferme à 2h00, à 2h01 c'est fermé. Pas d'ardoise acceptée."
+                },
+                {
+                    "title": "Ad Astria — Statut de @l_oboro (L. Oboro)",
+                    "url": "www.ad-astria.sv/l_oboro/status/9942",
+                    "desc": "\"Perdu Solo, mon chat noir à médaille dorée près du Passage des Lanternes. Si quelqu'un le voit traîner près du comptoir de Mme Halvar... Ne le confondez pas avec les 6 autres qu'elle nourrit.\""
+                }
+            ]
+        },
+        {
+            "keys": [
+                "d.c.r.",
+                "dcr",
+                "département de contrôle des rauthéens",
+                "departement de controle des rautheens"
+            ],
+            "displayQuery": "Département de Contrôle des Rauthéens",
             "resultsCount": "918",
             "seconds": "0,31",
             "real": {
-                "title": "Coalition des Gouvernements Unis — mentionnée sur la fiche Isen Shura (Shokupédia)",
-                "url": "is.shokupedia.org/shokunin/Isen_Shura#CGU",
+                "title": "Département de Contrôle des Rauthéens (D.C.R.) — Guide de Shevar'",
+                "url": "wiki-shevar.fr/organisations/dcr",
                 "target": "wiki",
-                "desc": "Organisation intergouvernementale chargée de maintenir la paix et lutter contre la Corruption sur Lenoxia."
+                "desc": "Organisme gouvernemental militarisé chargé de surveiller, recenser et éliminer les menaces surnaturelles et les entités occultes nées de la Fracture."
             },
             "fakes": [
                 {
-                    "title": "CGU — portail officiel",
-                    "url": "www.cgu.gov",
-                    "desc": "Actualités, recrutement, signalement d'activité corruptrice et informations aux citoyens."
-                },
-                {
-                    "title": "Combien coûte réellement la guerre contre la Corruption ?",
-                    "url": "www.economie-lenoxia.is/dossiers/cout-cgu",
-                    "desc": "Rapport économique sur les dépenses militaires et la production d'artéfacts."
-                },
-                {
-                    "title": "Manifestation devant le siège de la CGU à Reach",
-                    "url": "www.lenoxia-daily.is/societe/manifestation-reach",
-                    "desc": "Plusieurs associations dénoncent les méthodes du Protectorat et du Central-X."
-                },
-                {
-                    "title": "Black List CGU : fuite massive de données ?",
-                    "url": "www.cyberwatch.is/alerte/blacklist",
-                    "desc": "Des documents attribués au Protectorat circuleraient actuellement sur plusieurs réseaux clandestins. Mais leur véracité n'a pas été prouvée."
-                },
-                {
-                    "title": "Ancien agent : « La CGU n'est pas ce qu'elle prétend être »",
-                    "url": "www.letemoin-anonyme.rc/interview/ancien-agent",
-                    "desc": "Interview controversée d'un ancien membre ayant quitté l'organisation il y a sept ans."
-                },
-                {
-                    "title": "Que deviennent les criminels envoyés au Central-X ?",
-                    "url": "www.forum-medias.jp/sujet/19874",
-                    "desc": "— Personne n'en revient jamais. C'est déjà une réponse. | 354 réponses."
-                },
-                {
-                    "title": "CGU ou gouvernement mondial ? Débat",
-                    "url": "www.sociologie-lenoxia.lx/essai/cgu-pouvoir",
-                    "desc": "Analyse universitaire portant sur l'influence croissante de la Coalition dans les affaires internationales."
-                },
-                {
-                    "title": "Signaler un utilisateur suspect du Jinsei",
-                    "url": "services.cgu.gov/signalement",
-                    "desc": "Service citoyen permettant de transmettre anonymement des informations au Protectorat."
+                    "title": "D.C.R. — Portail d'information officiel du Ministère de la Sécurité",
+                    "url": "www.dcr-shevar.gov",
+                    "desc": "Alertes de brèches en direct, recrutement d'agents de terrain, signalement d'anomalies magiques et consignes d'isolement pour les objets contaminés."
                 }
             ]
         },
         {
             "keys": [
-                "ordre",
-                "l'ordre",
-                "patrouilleurs",
-                "ordre cgu"
+                "ad astria",
+                "réseau social",
+                "reseau social",
+                "adastria",
+                "ad astria net"
             ],
-            "displayQuery": "L'Ordre CGU",
-            "resultsCount": "2 904",
-            "seconds": "0,22",
+            "displayQuery": "Ad Astria",
+            "resultsCount": "5 710",
+            "seconds": "0,18",
             "real": {
-                "title": "L'Ordre — mentionné sur la fiche Isen Shura (Shokupédia)",
-                "url": "is.shokupedia.org/shokunin/Isen_Shura#Ordre",
-                "target": "wiki",
-                "desc": "Branche d'intervention principale de la Coalition des Gouvernements Unis. Isen Shura y officie comme agent de terrain."
+                "title": "Ad Astria — Le réseau social de la cité-état de Shevar'",
+                "url": "www.ad-astria.sv",
+                "target": "news",
+                "desc": "Portail communautaire de Shevar' : Flux des districts, profils citoyens, annonces corporatistes et messagerie chiffrée. Connecté en continu au réseau PYRAKI-NET."
             },
             "fakes": [
                 {
-                    "title": "Rejoindre l'Ordre — portail officiel de la CGU",
-                    "url": "recrutement.cgu.gov/ordre",
-                    "desc": "Devenez Patrouilleur et protégez les peuples de Lenoxia. Candidatures ouvertes aux diplômés de l'Académie."
+                    "title": "Groupe Astia — Référencement des infrastructures",
+                    "url": "www.astia-corpo.sv/infrastructures/ad-astria",
+                    "desc": "Propriété exclusive de la mégacorporation Astia. Réseau de communication global déployé vingt ans avant la Fracture. Maintenance des serveurs de la Noda Prima."
                 },
                 {
-                    "title": "Le Gardien aperçu au-dessus de la ville de Reach",
-                    "url": "http://www.actunet-news.is/monde/gardien-elysia",
-                    "desc": "Le quartier général mobile de l'Ordre a stationné trois jours au-dessus de Reach avant de reprendre sa route vers le sud."
+                    "title": "Ad Astria Pro — Canaux professionnels sécurisés pour Mégacorporations",
+                    "url": "www.ad-astria.sv/pro/corporate-hebergement",
+                    "desc": "Offres de salons privés chiffrés pour les cadres de l'Axiome et d'Astia. Protection absolue contre les interceptions de données tactiques et les agences d'exorcisme."
                 },
                 {
-                    "title": "Est-ce que les Patrouilleurs possèdent un uniforme ?",
-                    "url": "www.shokunin-times.jp/opinion/patrouilleurs",
-                    "desc": "Selon plusieurs membres de l'Ordre, l'indépendance reste au cœur de leur identité, même au sein de la CGU."
+                    "title": "Fédération des Médias Numériques de Shevar' — Statut : Ad Astria",
+                    "url": "www.fmn-shevar.sv/membres/ad-astria",
+                    "desc": "Fiche de conformité — Réseau de diffusion de masse. Modération gérée par les algorithmes de sécurité du Groupe Astia. Surveillance des rumeurs sur la Fracture."
                 },
                 {
-                    "title": "Le Gardien — plans non officiels (archive)",
-                    "url": "www.deepnet.is/archives/gardien",
-                    "desc": "Schémas supposés du QG volant de l'Ordre. Authenticité impossible à vérifier."
+                    "title": "'Pourquoi mon post sur la brèche du District 8 a sauté ?' — Forums Libres",
+                    "url": "www.forum-toile.sv/sujet/23418",
+                    "desc": "— Quelqu'un a fait un screen du fil Ad Astria concernant la brèche au-dessus du mur avant la censure ? Mon feed a complètement été réinitialisé par le protocole de sécurité. | 12 réponses."
                 },
                 {
-                    "title": "Puis-je faire appel à l'Ordre et aux Patrouilleurs pour régler un problème ?",
-                    "url": "www.forum-medias.jp/sujet/25388",
-                    "desc": "... sait si c'est possible ou légal ? Je vais vous racontez mon souci et je ne pense pas que la police soit ... | 112 réponses."
+                    "title": "Ad Astria Net : Archives des flux publics (Noda Prima & Parc Commercial)",
+                    "url": "archives.ad-astria.sv/flux-districts/02-03",
+                    "desc": "Consultation des historiques de communication. Note : Les données du District n°8 (Le Bloc Abandonné) et du District n°0 (Le Hub) sont inaccessibles ou inexistantes."
                 },
                 {
-                    "title": "Les dix Patrouilleurs les plus célèbres du siècle",
-                    "url": "www.legendes-lenoxia.is/top10/q=?uhf4x248-patrouilleurs",
-                    "desc": "Classement non officiel des agents ayant marqué l'histoire récente de l'Ordre."
+                    "title": "Gusoyn Corporation — Communiqué officiel sur Ad Astria",
+                    "url": "www.gusoyn-corp.sv/presse/communique-ad-astria",
+                    "desc": "La corporation humanitaire dément les rumeurs de détournement de bio-composants circulant sur le réseau social et réaffirme son engagement dans la Holozone."
                 },
                 {
-                    "title": "Ordre, aide et politique : le rôle d'un Patrouilleur",
-                    "url": "www.lenoxia-daily.is/politique/intervention",
-                    "desc": "L'Ordre est la branche d'intervention principale de la Coalition des Gouvernements Unis et les Patrouilleurs constituent ... | 11 commentaires."
+                    "title": "Webring Shevar-Net — Portails connectés à Ad Astria",
+                    "url": "webring.shevar-net.sv/partenaires",
+                    "desc": "Liste des applications intégrées : ShevarDex Online, Météo-Aralys, Traqueur de Monorail. Optimisé pour les terminaux holographiques de dernière génération."
                 },
                 {
-                    "title": "Peut-on vivre dans le Gardien ?",
-                    "url": "questions.lenoxia.is/peut-on-vivre-gardien",
-                    "desc": "Oui. De nombreux Patrouilleurs résident de façon permanente au sein du quartier général mobile."
-                }
-            ]
-        },
-        {
-            "keys": [
-                "lampion",
-                "halvar",
-                "passage des lanternes"
-            ],
-            "displayQuery": "Le Lampion",
-            "resultsCount": "87",
-            "seconds": "0,11",
-            "real": {
-                "title": "Le Lampion — Cuisine de quartier, Passage des Lanternes",
-                "url": "www.lampion-d6.wl",
-                "target": "http://www.lampion-d6.wl/",
-                "desc": "La carte de Mme Halvar, les horaires d'ouverture et un avis aux locataires. Le comptoir ferme à 2h."
-            },
-            "fakes": [
-                {
-                    "title": "Annuaire du District 6 — Restauration",
-                    "url": "www.annuaire-d6.wl/restauration/lampion",
-                    "desc": "Le Lampion, cantine de quartier. Propriétaire : O. Halvar. Avis : « Très bon, mais on vous surveille pendant que vous mangez »."
-                },
-                {
-                    "title": "Forum Quartiers — « La soupe miso du Lampion »",
-                    "url": "forum.quartiers.wl/d6/t=3312",
-                    "desc": "... j'ai oublié de rendre le bol une fois. Une seule fois. Elle m'a reconnu trois semaines plus tard au marché ..."
+                    "title": "Innominat — Profil utilisateur non répertorié",
+                    "url": "www.ad-astria.sv/utilisateurs/unknown-shadow",
+                    "desc": "Ce profil n'existe pas ou a été restreint par une autorité supérieure. Connexion directe détectée via l'application terminal.exe."
                 }
             ]
         }
-    ],
-    "googleResults": {
-        "header": {
-            "logo": [
-                {
-                    "letter": "W",
-                    "color": "#0000cc"
-                },
-                {
-                    "letter": "i",
-                    "color": "#cc0000"
-                },
-                {
-                    "letter": "g",
-                    "color": "#cc9900"
-                },
-                {
-                    "letter": "g",
-                    "color": "#0000cc"
-                },
-                {
-                    "letter": "l",
-                    "color": "#339900"
-                },
-                {
-                    "letter": "e",
-                    "color": "#cc0000"
-                }
-            ]
-        },
-        "tabs": [
-            {
-                "label": "Web",
-                "active": true
-            },
-            {
-                "label": "Images"
-            },
-            {
-                "label": "Groupes"
-            },
-            {
-                "label": "Annuaire"
-            },
-            {
-                "label": "Actualités"
-            }
-        ],
-        "pagerLogo": [
-            {
-                "letter": "W",
-                "color": "#0000cc"
-            },
-            {
-                "letter": "i",
-                "color": "#cc0000"
-            },
-            {
-                "letter": "g",
-                "color": "#cc9900"
-            },
-            {
-                "letter": "g",
-                "color": "#cc9900"
-            },
-            {
-                "letter": "g",
-                "color": "#0000cc"
-            },
-            {
-                "letter": "g",
-                "color": "#339900"
-            },
-            {
-                "letter": "g",
-                "color": "#cc0000"
-            },
-            {
-                "letter": "g",
-                "color": "#0000cc"
-            },
-            {
-                "letter": "l",
-                "color": "#339900"
-            },
-            {
-                "letter": "e",
-                "color": "#cc0000"
-            }
-        ],
-        "submitLabel": "Recherche Google"
-    },
-    "noResult": {
-        "suggestionsTitle": "Suggestions :",
-        "suggestions": [
-            "Vérifiez l'orthographe des termes recherchés.",
-            "Essayez des mots-clés différents.",
-            "Essayez des mots-clés plus généraux."
-        ]
-    }
+    ]
 }
