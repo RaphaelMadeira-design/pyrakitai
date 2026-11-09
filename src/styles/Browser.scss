@@ -118,7 +118,6 @@
         border-bottom: 2px solid $win98-dark-gray;
         padding: 4px 4px 0;
         flex-shrink: 0;
-        gap: 2px;
     }
 
     &__tab {
@@ -134,13 +133,11 @@
         @include border-outset-light;
         border-bottom: none;
         position: relative;
-        top: 2px;
         max-width: 160px;
 
         &--active {
             background: $win98-white;
             z-index: 1;
-            top: 2px;
             border-bottom-color: $win98-white;
             font-weight: bold;
         }
@@ -183,6 +180,21 @@
                 color: #fff;
             }
         }
+
+        &--new {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 16px;
+            width: 16px;
+            margin: auto 8px;
+            font-family: $font-pixel;
+            font-size: 12px;
+            font-weight: light;
+            padding: 8px 8px;
+            @include border-outset-light;
+        }
+
 
         // ── Onglet secret ──────────────────────────────────────────────
 

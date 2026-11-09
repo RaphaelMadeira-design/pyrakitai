@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import '../styles/Browser.scss'
 import config from '../data/browserConfig.json'
 import secretData from '../data/browserSecret.json'
@@ -116,6 +116,10 @@ export default function Browser() {
     const [status, setStatus] = useState('Terminé')
     const [addressSaved, setAddressSaved] = useState('')
     const [externalReload, setExternalReload] = useState(0)
+    const [newTabs, setNewTabs] = useState([])   // onglets nsn ouverts via "+"
+    const newTabCounter = useRef(0)
+
+    const isNsnTab = (id) => id === 'google' || id.startsWith('nsn-')
 
     const openTab = useCallback((id) => {
         setOpenedTabs(prev => (prev.includes(id) ? prev : [...prev, id]))
@@ -165,8 +169,10 @@ export default function Browser() {
                     break
 
                 case 'OPEN_EXTERNAL':
-                    openTab('google')
-                    setActiveTab('google')
+                    if (!isNsnTab(activeTab)) {
+                        openTab('google')
+                        setActiveTab('google')
+                    }
                     setContentMode('external-page')
                     setExternalUrl(action.url)
                     setAddressValue(action.url)
@@ -174,8 +180,10 @@ export default function Browser() {
                     break
 
                 case 'GOOGLE_RESULTS':
-                    openTab('google')
-                    setActiveTab('google')
+                    if (!isNsnTab(activeTab)) {
+                        openTab('google')
+                        setActiveTab('google')
+                    }
                     setSearchQuery(action.query)
                     setSearchTopic(action.topic)
                     setContentMode('google-results')
@@ -183,8 +191,10 @@ export default function Browser() {
                     break
 
                 case 'GOOGLE_NORESULT':
-                    openTab('google')
-                    setActiveTab('google')
+                    if (!isNsnTab(activeTab)) {
+                        openTab('google')
+                        setActiveTab('google')
+                    }
                     setSearchQuery(action.query)
                     setSearchTopic(null)
                     setContentMode('google-noresult')
@@ -192,7 +202,7 @@ export default function Browser() {
                     break
                 }
             })
-    }, [triggerGlitch, openTab])
+    }, [triggerGlitch, openTab, activeTab])
 
     const handleAddressFocus = () => {
         setAddressSaved(addressValue)
@@ -204,6 +214,7 @@ export default function Browser() {
 
     const tabs = [
         ...openedTabs.map(id => TAB_DEFS[id]),
+        ...newTabs,
         ...(secretTabVisible ? [secretData.secretTab] : []),
     ]
 
@@ -211,6 +222,8 @@ export default function Browser() {
         if (id === 'google') return
         if (id === 'secret') {
             setSecretTabVisible(false)
+        } else if (id.startsWith('nsn-')) {
+            setNewTabs(prev => prev.filter(t => t.id !== id))
         } else {
             setOpenedTabs(prev => prev.filter(t => t !== id))
         }
@@ -219,6 +232,16 @@ export default function Browser() {
             setAddressValue(TAB_DEFS.google.url)
             setContentMode('normal')
         }
+    }
+
+    // ── Nouvel onglet nsn (bouton "+") ─────────────────────────────
+    const handleNewTab = () => {
+        newTabCounter.current += 1
+        const id = `nsn-${newTabCounter.current}`
+        setNewTabs(prev => [...prev, { ...TAB_DEFS.google, id }])
+        setActiveTab(id)
+        setAddressValue(TAB_DEFS.google.url)
+        setContentMode('normal')
     }
 
     // ── Konami ─────────────────────────────────────────────────────
@@ -379,6 +402,15 @@ export default function Browser() {
                         )}
                     </button>
                 ))}
+                <button
+                    className="browser__tab browser__tab--new"
+                    title="Nouvel onglet"
+                    aria-label="Nouvel onglet"
+                    onClick={handleNewTab}
+                    data-testid="tab-new"
+                >
+                    +
+                </button>
                 <div className="browser__tabs-fill" />
             </div>
 

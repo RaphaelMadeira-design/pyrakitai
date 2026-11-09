@@ -33,7 +33,7 @@
         "about:sin",
         "sin://memories"
     ],
-    "WIKI_URL": "https://is.shokupedia.org/shokunin/Isen_Shura",
+    "WIKI_URL": "sv.mikipedia.org/Sinaan_Kitai",
     "NEWS_URL": "http://www.actunet-news.is/",
     "LAMPION_URL": "http://www.lampion-d6.sv/",
     "ASTIA_URL": "https://wiki-shevar.fr/organisations/groupe-astia",
@@ -48,8 +48,8 @@
         },
         "wiki": {
         "id": "wiki",
-        "label": "Isen Shura — Shokupédia",
-        "url": "https://is.shokupedia.org/shokunin/Isen_Shura",
+        "label": "Sin'aän Kitaï — Mikipedia",
+        "url": "sv.mikipedia.org/Sinaan_Kitai",
         "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
         },
         "news": {
@@ -73,7 +73,7 @@
         "wiggle.sv": "google",
         "www.wiggle.com": "google",
         "wiggle.com": "google",
-        "is.shokupedia.org/shokunin/isen_shura": "wiki",
+        "sv.mikipedia.org/Sinaan_Kitai": "wiki",
         "www.actunet-news.is": "news",
         "actunet-news.is": "news",
         "www.lampion-d6.sv": "lampion",

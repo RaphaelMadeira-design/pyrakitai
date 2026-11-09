@@ -3,7 +3,7 @@
         "text": "nsn",
         "sub": "Astiasoft®"
     },
-    "promoHtml": "Bénéficiez de <em>10% de réduction</em> sur tout le matériel de protection<br />cette saison au <span class=\"link\">Parc Commercial — District 3</span>.",
+    "promoHtml": "Votre navigateur (v98) est en retard de <em>176 versions</em>. Pour profiter des nouvelles<br /> fonctionnalités, faites une mise à jour en téléchargeant la <span class=\"link\">dernière version (v274)</span>.",
     "date": {
         "month": "DA",
         "day": "TE",
@@ -121,8 +121,8 @@
     "connect": {
         "title": "Restez connecté",
         "list": [
-        "Anomalies temporelles : les bons réflexes",
-        "Vivre avec la magie depuis la Fracture",
+        "Essems : les bons réflexes",
+        "Classement course de SKELLs",
         "Envoyez une e-card"
         ],
         "side": {
