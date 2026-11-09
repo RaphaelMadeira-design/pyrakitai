@@ -14,10 +14,10 @@ import GlitchSearch from './GlitchSearch'
 import KonamiOverlay from './KonamiOverlay'
 import { FakeGoogleResults, FakeGoogleNoResult } from './GoogleResults'
 
-const { IE_ICON, KONAMI, SECRET_SEARCHES, SECRET_URLS, WIKI_URL, NEWS_URL, TAB_DEFS, EXACT_URL_MAP } = config
+const { IE_ICON, KONAMI, SECRET_SEARCHES, SECRET_URLS, WIKI_URL, NEWS_URL, LAMPION_URL, TAB_DEFS, EXACT_URL_MAP } = config
 
 
-const TARGET_MAP = { wiki: WIKI_URL, news: NEWS_URL }
+const TARGET_MAP = { wiki: WIKI_URL, news: NEWS_URL, lampion: LAMPION_URL }
 
 const SEARCH_TOPICS = searchData.topics.map(t => ({
     ...t,

@@ -182,14 +182,24 @@
             },
             "fakes": [
                 {
-                    "title": "Gran Regalia — Registre comptable interne (Fuite réseau)",
-                    "url": "www.pyraki-leaks.sv/transactions/sin-01",
-                    "desc": "... 12/06 : Débit de 900 cr. libellé « Loyer bureau » à destination de o.halvar@lampion-d6.wl. Transaction enregistrée avec une semaine de retard sur l'échéance fixée par la propriétaire..."
+                    "title": "Avis sur les bouis-bouis du District Rouge — Forum de la Toile",
+                    "url": "www.web-forums.sv/sujet/commerces-d6-avis",
+                    "desc": "— N'essayez même pas de gratter une ardoise ou de négocier au Lampion. La vieille Halvar a menacé un type avec un couperet hier parce qu'il voulait payer ses nouilles le lendemain. Ambiance tendue mais le riz sauté est incroyable."
                 },
                 {
                     "title": "Guide Gastronomique de la Holozone — Les bouillons du District 6",
                     "url": "www.holofood.sv/critiques/lampion-lanternes",
                     "desc": "Critique du 'Bouillon des Lanternes' (9 cr.) : Une institution immuable gérée d'une main de fer. Horaires stricts : le comptoir ferme à 2h00, à 2h01 c'est fermé. Pas d'ardoise acceptée."
+                },
+                {
+                    "title": "District 6 : Une rixe réglée au couperet — ActuNet Faits Divers",
+                    "url": "www.actunet-news.sv/redaction/rixe-lanternes",
+                    "desc": "... violente altercation au Passage des Lanternes. Deux pisteurs indépendants ont vu leur échanges physiques brutalement interrompu par Mme O. Halvar. Menacés par l'ustensile en fonte de la gérante, les fauteurs de troubles ont payé les dégâts immédiatement..."
+                },
+                {
+                    "title": "Réseau de distribution d'énergie — Incident de ligne D6-Lanternes",
+                    "url": "www.shevar-energy.sv/incidents/suivi-774b",
+                    "desc": "Fluctuations magnétiques locales enregistrées entre 23h30 et 23h45 suite à une décharge d'essem non autorisée sur la voie publique. Retour à la normale signalé peu de temps après. Pas d'intervention technique requise."
                 },
                 {
                     "title": "Ad Astria — Statut de @l_oboro (L. Oboro)",
