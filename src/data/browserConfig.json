@@ -49,7 +49,7 @@
         "wiki": {
         "id": "wiki",
         "label": "Sin'aän Kitaï — Mikipedia",
-        "url": "sv.mikipedia.org/Sinaan_Kitai",
+        "url": "http://www.sv.mikipedia.org/Sinaan_Kitai",
         "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
         },
         "news": {
@@ -73,7 +73,7 @@
         "wiggle.sv": "google",
         "www.wiggle.com": "google",
         "wiggle.com": "google",
-        "sv.mikipedia.org/Sinaan_Kitai": "wiki",
+        "sv.mikipedia.org/sinaan_kitai": "wiki",
         "www.actunet-news.is": "news",
         "actunet-news.is": "news",
         "www.lampion-d6.sv": "lampion",
