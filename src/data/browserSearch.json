@@ -3,9 +3,9 @@
         "submitLabel": "Recherche Google",
         "header": {
             "logo": [
-                { "letter": "G", "color": "#4285F4" },
-                { "letter": "o", "color": "#EA4335" },
-                { "letter": "o", "color": "#FBBC05" },
+                { "letter": "W", "color": "#4285F4" },
+                { "letter": "i", "color": "#EA4335" },
+                { "letter": "g", "color": "#FBBC05" },
                 { "letter": "g", "color": "#4285F4" },
                 { "letter": "l", "color": "#34A853" },
                 { "letter": "e", "color": "#EA4335" }
@@ -18,9 +18,9 @@
             { "label": "Vidéos", "active": false }
         ],
         "pagerLogo": [
-            { "letter": "G", "color": "#4285F4" },
-            { "letter": "o", "color": "#EA4335" },
-            { "letter": "o", "color": "#FBBC05" },
+            { "letter": "W", "color": "#4285F4" },
+            { "letter": "i", "color": "#EA4335" },
+            { "letter": "g", "color": "#FBBC05" },
             { "letter": "g", "color": "#4285F4" },
             { "letter": "l", "color": "#34A853" },
             { "letter": "e", "color": "#EA4335" }
@@ -221,7 +221,7 @@
             "real": {
                 "title": "Département de Contrôle des Rauthéens (D.C.R.) — Guide de Shevar'",
                 "url": "wiki-shevar.fr/organisations/dcr",
-                "target": "wiki",
+                "target": "https://wiki-shevar.fr/organisations/dcr",
                 "desc": "Organisme gouvernemental militarisé chargé de surveiller, recenser et éliminer les menaces surnaturelles et les entités occultes nées de la Fracture."
             },
             "fakes": [

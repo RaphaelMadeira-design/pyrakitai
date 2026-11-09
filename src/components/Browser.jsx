@@ -18,6 +18,7 @@ const { IE_ICON, KONAMI, SECRET_SEARCHES, SECRET_URLS, WIKI_URL, NEWS_URL, LAMPI
 
 
 const TARGET_MAP = { wiki: WIKI_URL, news: NEWS_URL, lampion: LAMPION_URL }
+const DCR_URL = 'https://wiki-shevar.fr/organisations/dcr'
 
 const SEARCH_TOPICS = searchData.topics.map(t => ({
     ...t,
@@ -77,6 +78,11 @@ function resolveInput(raw, ctx) {
         return { type: 'OPEN_TAB', tabId }
     }
 
+    // La fiche D.C.R. du wiki s'affiche dans le navigateur fictif.
+    if (norm === normalizeUrl(DCR_URL)) {
+        return { type: 'OPEN_DCR' }
+    }
+
     // 4. GOOGLE TOPIC
     const topic = matchTopic(trimmed)
     if (topic) {
@@ -111,6 +117,7 @@ export default function Browser() {
     const [searchTopic, setSearchTopic] = useState(null)
     const [status, setStatus] = useState('Terminé')
     const [addressSaved, setAddressSaved] = useState('')
+    const [externalReload, setExternalReload] = useState(0)
 
     const openTab = useCallback((id) => {
         setOpenedTabs(prev => (prev.includes(id) ? prev : [...prev, id]))
@@ -157,6 +164,14 @@ export default function Browser() {
                     setActiveTab(action.tabId)
                     setContentMode('normal')
                     setAddressValue(TAB_DEFS[action.tabId].url)
+                    break
+
+                case 'OPEN_DCR':
+                    openTab('google')
+                    setActiveTab('google')
+                    setContentMode('external-page')
+                    setAddressValue(DCR_URL)
+                    setExternalReload(value => value + 1)
                     break
 
                 case 'GOOGLE_RESULTS':
@@ -260,8 +275,29 @@ export default function Browser() {
         setContentMode('normal')
     }
 
+    const handleBack = () => {
+        if (contentMode === 'external-page' && searchTopic) {
+            setContentMode('google-results')
+            setActiveTab('google')
+            setAddressValue(buildGoogleUrl(searchQuery))
+            return
+        }
+        setContentMode('normal')
+        setActiveTab('google')
+        setAddressValue(TAB_DEFS.google.url)
+    }
+
     // ── Rendu contenu ──────────────────────────────────────────────
     const renderContent = () => {
+        if (contentMode === 'external-page')
+            return <iframe
+                key={externalReload}
+                className="browser__external-page"
+                src={DCR_URL}
+                title="D.C.R. — Wiki Shevar"
+                sandbox="allow-scripts allow-same-origin"
+                referrerPolicy="strict-origin-when-cross-origin"
+            />
         if (contentMode === 'glitch-search')
             return <GlitchSearch query={glitchQuery} />
         if (contentMode === 'google-results' && searchTopic)
@@ -291,7 +327,7 @@ export default function Browser() {
             <div className="browser__navbar">
                 <div className="browser__nav-btns">
                     <button className="browser__nav-btn" title="Précédent"
-                        onClick={() => { setContentMode('normal'); setActiveTab('google'); setAddressValue(TAB_DEFS.google.url) }}>◄</button>
+                        onClick={handleBack}>◄</button>
                     <button className="browser__nav-btn" title="Suivant">►</button>
                     <button className="browser__nav-btn browser__nav-btn--stop" title="Arrêter">✕</button>
                     <button className="browser__nav-btn" title="Actualiser" onClick={() => handleInput(addressValue)}>↺</button>
