@@ -226,6 +226,6 @@
         "name": "LISEZ-MOI.txt",
         "parent": "driveC",
         "type": "file",
-        "content": "PC-98 — Disque local C:\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nStation personnelle attribuée à\nl'agent de 2° Classe, SIN — Bureau of Security.\n\nVous pouvez explorer librement :\n• WINDOWS — système (sensible, ne pas toucher)\n• Program Files — applications installées\n• Users — profils utilisateurs\n\nSi une disquette est insérée dans A:,\nson contenu apparaîtra automatiquement.\nLa disquette B: est chiffrée.\n\n[ Note : tout incident sur ce poste doit être\nrapporté à votre Administrateur Système dans les 24h. ]"
+        "content": "PC-98 — Disque local C:\n━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nStation personnelle attribuée à\n l'utilisateur SIN-01.\n\nVous pouvez explorer librement :\n• WINDOWS — système (sensible, ne pas toucher)\n• Program Files — applications installées\n• Users — profils utilisateurs\n\nSi une disquette est insérée dans A:,\nson contenu apparaîtra automatiquement.\nLa disquette B: est chiffrée.\n\n[ Note : tout incident sur ce poste doit être\nrapporté à votre Administrateur Système dans les 24h. ]"
     }
 }
