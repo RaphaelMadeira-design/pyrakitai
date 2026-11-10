@@ -22,7 +22,7 @@ const {
 } = intranetData
 
 
-// ─── Fausses dates (police ZZZA) ────────────────────────────────
+// ─── Fausses dates ────────────────────────────────
 const FAKE_DATES = ['JO/UR', 'HI/ER', 'AV/VT']
 const isDate = (v) => typeof v === 'string' && /^\d{2}\/\d{2}$/.test(v)
 const fakeDate = (v) => {
@@ -454,7 +454,7 @@ export default function Intranet({ onOpenWindow }) {
                                     }).map(([k, v]) => (
                                         <tr key={k}>
                                             <th>{k}</th>
-                                            <td>{v}</td>
+                                            <td className={k === 'Origine' ? 'intranet__fiche-shevar' : undefined}>{v}</td>
                                         </tr>
                                     ))}
                                     <tr className="intranet__fiche-sep" aria-hidden="true">

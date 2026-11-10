@@ -363,6 +363,12 @@
             color: #000;
         }
 
+        td.intranet__fiche-shevar {
+            font-family: $font-shevar;
+            font-size: 9px;
+        }
+
+
         tr:nth-child(even) td {
             background: #f4f4f4;
         }

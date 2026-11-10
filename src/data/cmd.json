@@ -43,8 +43,8 @@
             "",
             "┌─────────────────────────────────┐",
             "│  UTILISATEUR : SIN'AÄN          │",
-            "│  CLASSE      : 2                │",
-            "│  ÉQUIPE      : 7                │",
+            "│  CLASSE      : DÉMONISTE        │",
+            "│  ESSEM       : ORHEN            │",
             "│  STATUT      : [ACTIF]          │",
             "│  CLEARANCE   : CODE 1           │",
             "└─────────────────────────────────┘",
@@ -190,7 +190,7 @@
             "> ████████████████████████████████",
             "> ✓ Authentification validée.",
             "> Autorisation accordée — ACCÈS AUTORISÉ.",
-            "> Bienvenue, Agent KITAÏ.",
+            "> Bienvenue, M. KITAÏ.",
             "> ████████████████████████████████",
             ""
         ]
