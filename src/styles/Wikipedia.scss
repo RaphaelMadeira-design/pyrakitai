@@ -343,6 +343,11 @@
         cursor: pointer; 
     }
 
+    &__specialfont { 
+        font-family: $font-shevar;
+        font-size: 8px; 
+    }
+
     &__list { 
         padding-left: 24px; 
         

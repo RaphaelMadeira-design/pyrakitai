@@ -70,7 +70,16 @@ function WikiAudioPlayer({ voice }) {
 
 export default function Wikipedia({ onLogoClick }) {
     const w = wikiData
-    const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    const scrollTo = (id) => {
+        const target = document.getElementById(id)
+        const container = target?.closest('.browser__content')
+        if (!target || !container) return
+        const top = target.getBoundingClientRect().top
+            - container.getBoundingClientRect().top
+            + container.scrollTop
+        container.scrollTo({ top, behavior: 'smooth' })
+    }
+
     return (
         <div className="wiki" data-testid="wiki-page">
             <div className="wiki__header">

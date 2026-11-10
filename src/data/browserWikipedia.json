@@ -50,7 +50,7 @@
         }
     },
     "introParagraphs": [
-        "<strong>Sin'aän Kitaï</strong> (Sin'aän Kitaï) est un citoyen shevarite, ainsi que l'énigmatique et quelque peu loufoque gérant du <strong>Gran Regalia</strong>, un bureau proposant des services de récupération d'objets perdus ou volés installé dans le district rouge, réputé pour sa discrétion et son efficacité.",
+        "<strong>Sin'aän Kitaï</strong> (<span class=\"wiki__specialfont\">Sin'aan Kitai</span>) est un citoyen shevarite, ainsi que l'énigmatique et quelque peu loufoque gérant du <strong>Gran Regalia</strong>, un bureau proposant des services de récupération d'objets perdus ou volés installé dans le district rouge, réputé pour sa discrétion et son efficacité.",
         "Outre son activité principale de récupérateur, Sin'aän est reconnu comme un avide collectionneur de technologies désuètes, de reliques anciennes et de documents historiques. En dehors des missions, le Gran Regalia est utilisé comme atelier de restauration de matériel ancien ainsi que de boutique d'antiquités, où il propose des objets rares à la vente ou à l'échange."
     ],
     "toc": {
@@ -117,8 +117,7 @@
             "Son style vestimentaire est un mélange paradoxal de tradition et de modernité. Sin'aän porte en permanence une veste de type haori, dans un tissu fluide de couleur violette à motifs floraux et avec des bandes blanches, qui est constamment ouverte pour révéler une sorte de tunique croisée noire. Un pantalon cargo bouffant ajusté en salopette, avec des bretelles lâches qui pendent le long de ses cuisses, ainsi que des bottines en cuir marron complètent sa tenue."
         ] },
         { "level": 3, "id": "wiki-signes", "titleHtml": "Signes distinctifs", "paragraphs": [
-            "Ses yeux sont constamment clos et pourtant, il est capable de percevoir l'intégralité de son environnement comme s'ils étaient ouverts.",
-            "Ses cheveux sont d'un rouge pourpre très vif, ce qui est inhabituel et attire l'attention."
+            "Ses yeux sont constamment clos et pourtant, il est capable de percevoir l'intégralité de son environnement comme s'ils étaient ouverts. Ses cheveux sont d'un rouge pourpre très vif, ce qui est inhabituel et attire l'attention."
         ] },
         { "level": 2, "id": "wiki-personnalite", "titleHtml": "Personnalité" },
         { "level": 3, "id": "wiki-caractere", "titleHtml": "Caractère", "paragraphs": [

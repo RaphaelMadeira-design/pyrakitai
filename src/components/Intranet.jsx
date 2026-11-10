@@ -5,7 +5,7 @@ import Sounds from '../components/Sounds'
 
 // ─── PYRAKI-NET CREDENTIALS ─────────────────────────────────────
 const PYRAKI_CREDENTIALS = {
-    matricule: 'KAI-01',
+    matricule: 'SIN-01',
     password: 'getback',
 }
 
@@ -109,7 +109,7 @@ function IntranetLogin({ onLogin }) {
                             className="win98-input"
                             value={matricule}
                             onChange={(e) => setMatricule(e.target.value)}
-                            placeholder="Ex. KAI-01"
+                            placeholder="Ex. Matricule utilisateur"
                             autoFocus
                             autoComplete="off"
                             spellCheck={false}
