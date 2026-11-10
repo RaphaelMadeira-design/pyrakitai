@@ -55,7 +55,7 @@
                 "title": "Sin'aän Kitaï — Encyclopédie de Shevar'",
                 "url": "sv.mikipedia.org/Sinaan_Kitai",
                 "target": "wiki",
-                "desc": "Sin'aän Kitaï (SIN-01) est un citoyen d'origine Aüne recensé à Shevar'. Gérant indépendant du bureau de récupération Gran Regalia dans le District n°6, il est enregistré comme invocateur de classe Démoniste maîtrisant l'Orhen..."
+                "desc": "Sin'aän Kitaï est un citoyen d'origine Aüne recensé à Shevar’ulhklyanaïak’ulkä. Gérant indépendant du bureau de récupération Gran Regalia dans le District n°6, il est enregistré comme..."
             },
             "fakes": [
                 {
@@ -64,33 +64,23 @@
                     "desc": "Citoyen recensé. Dernière mise à jour partielle. Résidence principale : District Rouge. Certaines lignes du recensement sont marquées « données confidentielles »."
                 },
                 {
-                    "title": "Sin'aän Kitaï (@sin_01) — Profil Ad Astria",
-                    "url": "www.ad-astria.sv/sin_01",
-                    "desc": "Profil public — 14 publications, 184 abonnés. Dernier statut : \"Les cyber-briquets vintage de la galerie basse sont authentiques. Mission classée.\". Aucun message depuis 2 jours."
-                },
-                {
                     "title": "Gran Regalia — Avis clients & notations",
                     "url": "www.shevarnet.sv/commerces/gran-regalia?t=88471",
                     "desc": "Note globale : 4.6/5. Bureau de récupération et d'investigation. Dernier avis : \"Instrument customisé retrouvé intact dans le District Rouge en moins de 48 heures. Recommandé.\""
                 },
                 {
                     "title": "Index du Département de Contrôle des Rauthéens (D.C.R.)",
-                    "url": "dcr-network.shevar.gov/suspects/sin-01",
-                    "desc": "... profil enregistré sous le matricule #SIN-01. Utilisateur d'Orhen à visée offensive (condensation). Invocateur indépendant sous surveillance modérée. Fréquente le District n°6 et le Parc Commercial..."
-                },
-                {
-                    "title": "Shevardex — Fiche de carte n°213 : Sin'aän Kitaï",
-                    "url": "shevardex.wiki-shevar.fr/cartes/213",
-                    "desc": "Rareté : Rare | Type : Invocateur / Démoniste | Effet signature : Appose une Malédiction orhenique qui draine la vitalité de la cible à chaque tour et sert de balise de repérage."
+                    "url": "dcr-network.shevar.gov/suspects/sin-0791",
+                    "desc": "... profil enregistré sous le matricule #SIN-0791. Utilisateur d'Orhen à visée offensive (condensation). Invocateur indépendant sous surveillance modérée. Fréquente le District n°6 et le Parc Commercial..."
                 },
                 {
                     "title": "Le Nexus — Archives de la Galerie d'Art Historique",
                     "url": "www.nexus-arts.shevar/archives/expositions/lames",
-                    "desc": "... Sabre Dōtanuki nommé « Conséquence ». Lame de guerre massive polie comme un miroir, conçue spécifiquement pour le combat aveugle contre l'Alter Ego. Actuellement détenu par un tiers indépendant..."
+                    "desc": "... Sabre Dōtanuki nommé « Conséquence ». Lame de guerre massive polie comme un miroir. Actuellement détenu par un tiers indépendant du nom de Sin'aän Kitaï..."
                 },
                 {
                     "title": "Le Lampion — Cuisine de quartier — District 6",
-                    "url": "o.halvar@lampion-d6.wl",
+                    "url": "o.halvar@lampion-d6.sv",
                     "desc": "... Passage des Lanternes. Avis aux locataires : Le loyer des bureaux adjacents (incluant le Gran Regalia) est dû le 5 de chaque mois. Pas le 6. LE 5. Paiement au comptoir en crédits..."
                 },
                 {
@@ -132,11 +122,6 @@
                     "title": "Fédération de la Presse Numérique — Membre : ActuNet",
                     "url": "www.fpn.shevar/membres/actunet",
                     "desc": "Fiche associative — ActuNet Actualités. Rédacteur en chef : [Données protégées par contrat Astia]."
-                },
-                {
-                    "title": "\"Pourquoi ActuNet a retiré son article sur le D.C.R. ?\" — Flux Pyraki-Net",
-                    "url": "www.pyraki-forums.sv/sujet/23418",
-                    "desc": "— Quelqu'un a sauvegardé l'article d'ActuNet sur la décimation du D.C.R. par l'Alkinès du Massacre avant qu'il soit censuré par la Noda Prima ? Je ne le trouve plus nulle part. | 12 réponses."
                 },
                 {
                     "title": "ActuNet : Archives hebdomadaires (Période post-Fracture)",
