@@ -1478,3 +1478,13 @@ padding: 14px 6px;
 .pda__buttons { display: none; }
 .pda__brand   { display: none; }
 }
+// Police Shevar (lieu d’origine)
+.pda-shevar {
+    font-size: 7px;
+    font-family: $font-shevar;
+}
+
+// Listes Forces / Faiblesses
+ul.pda-wiki {
+    list-style: none;
+}

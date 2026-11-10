@@ -7,25 +7,37 @@ import JumpGame from './JumpGame'
 import MediaPlayer from './MediaPlayer'
 
 import pdaData from '../data/pda.json'
+import intranetData from '../data/intranet.json'
+import pouvoirsData from '../data/pouvoirs.json'
+import msnData from '../data/msn.json'
 
 // ─── DONNÉES EXTERNALISÉES ───────────────────────────────────────
 const {
-    self:            SELF,
-    pdaApps:         PDA_APPS,
-    gameApps:        GAME_APPS,
-    pageOrder:       PAGE_ORDER,
-    identity:        IDENTITY,
-    physical:        PHYSICAL,
-    psycho:          PSYCHO,
-    stats:           STATS_LIST,
-    vitals:          VITALS,
-    jinseiDescription: JINSEI_DESC,
-    abilities:       ABILITIES,
-    historyChapters: HISTORY_CHAPTERS,
-    contacts:        CONTACTS_LIST,
-    conversations:   CONVERSATIONS,
-    ui:              UI,
+    pdaApps:        PDA_APPS,
+    gameApps:       GAME_APPS,
+    pageOrder:      PAGE_ORDER,
+    physicalTraits: PHYSICAL_TRAITS,
+    psychoTraits:   PSYCHO_TRAITS,
+    contactNotes:   CONTACT_NOTES,
+    ui:             UI,
 } = pdaData
+
+const PROFILE  = intranetData.trombinoscope
+const POWER    = pouvoirsData
+const SELF     = msnData.user.name
+const EMAIL    = msnData.credentials.email
+
+const CONTACTS_LIST = msnData.contacts.map(c => ({
+    id:     c.id,
+    name:   c.name,
+    status: c.status,
+    msg:    c.personalMessage,
+    note:   CONTACT_NOTES[c.id] || '—',
+}))
+const CONVERSATIONS = msnData.conversations
+
+// Découpe un texte long en paragraphes (sur les lignes vides)
+const toParagraphs = (text = '') => text.split(/\n\s*\n/).filter(Boolean)
 
 // ═══════════════════════════════════════════════════════════════════
 // COMPOSANT PRINCIPAL
@@ -377,14 +389,17 @@ export default function PDAView() {
     const L = UI.identityRowLabels
     const R = UI.identityRegisterLabels
     const rows = [
-        [L.fullName, IDENTITY.fullName],
-        [L.id,    IDENTITY.id],
-        [L.age,      `${IDENTITY.age} ans`],
-        [L.origin,    IDENTITY.origin],
-        [L.race,     IDENTITY.race],
-        [L.role,     IDENTITY.role],
-        [L.ethnicity,   IDENTITY.ethnicity],
-        [L.alignment,     IDENTITY.alignment],
+        [L.fullName,  PROFILE.name],
+        [L.id,        PROFILE.id],
+        [L.age,       PROFILE.age],
+        [L.genre,     PROFILE.genre],
+        [L.race,      PROFILE.race],
+        [L.origin,    PROFILE.origin],
+        [L.archetype, PROFILE.archetype],
+        [L.activity,  PROFILE.activity],
+        [L.district,  PROFILE.district],
+        [L.mbti,      PROFILE.mbti],
+        [L.alignment, PROFILE.alignment],
     ]
 
     return (
@@ -394,18 +409,18 @@ export default function PDAView() {
         <div className="pda-id__head">
             <div className="pda-id__avatar">
             <PDAGreenImage
-                src={IDENTITY.portraitSrc}
+                src={PROFILE.image}
                 width={UI.portraitSize.width}
                 height={UI.portraitSize.height}
             />
             </div>
             <div className="pda-id__tag">
             <div className="pda-id__label">{R.id}</div>
-            <div className="pda-id__value">{IDENTITY.registers.id}</div>
-            <div className="pda-id__label" style={{ marginTop: 8 }}>{R.team}</div>
-            <div className="pda-id__value">{IDENTITY.registers.team}</div>
+            <div className="pda-id__value">{PROFILE.id}</div>
+            <div className="pda-id__label" style={{ marginTop: 8 }}>{R.office}</div>
+            <div className="pda-id__value">{PROFILE.office}</div>
             <div className="pda-id__label" style={{ marginTop: 8 }}>{R.statut}</div>
-            <div className="pda-id__value pda-id__value--ok">{IDENTITY.registers.statut}</div>
+            <div className="pda-id__value pda-id__value--ok">▣ {PROFILE.status}</div>
             </div>
         </div>
 
@@ -416,21 +431,23 @@ export default function PDAView() {
                 <tr key={k}>
                 <td className="pda-table__k">{k}</td>
                 <td className="pda-table__sep">:</td>
-                <td className="pda-table__v">{v}</td>
+                <td className={`pda-table__v${k === L.origin ? ' pda-shevar' : ''}`}>{v}</td>
                 </tr>
             ))}
             </tbody>
         </table>
 
         <div className="pda-page__note">
-            &gt; E-mail : <strong>{IDENTITY.email}</strong>
+            &gt; E-mail : <strong>{EMAIL}</strong>
         </div>
 
         {/* ── DESCRIPTION PHYSIQUE ─────────────────── */}
         <div className="pda-page__section">{UI.sections.physique}</div>
-        <p className="pda-wiki__intro">{PHYSICAL.intro}</p>
+        {toParagraphs(PROFILE.physicalDescription).map((t, i) => (
+            <p key={i} className="pda-wiki__intro">{t}</p>
+        ))}
         <dl className="pda-wiki">
-            {PHYSICAL.traits.map(([k, v]) => (
+            {PHYSICAL_TRAITS.map(([k, v]) => (
             <div key={k} className="pda-wiki__row">
                 <dt className="pda-wiki__k">{k}</dt>
                 <dd className="pda-wiki__v">{v}</dd>
@@ -440,9 +457,11 @@ export default function PDAView() {
 
         {/* ── PROFIL PSYCHOLOGIQUE ─────────────────── */}
         <div className="pda-page__section">{UI.sections.psycho}</div>
-        <p className="pda-wiki__intro">{PSYCHO.intro}</p>
+        {toParagraphs(PROFILE.psychProfile).map((t, i) => (
+            <p key={i} className="pda-wiki__intro">{t}</p>
+        ))}
         <dl className="pda-wiki">
-            {PSYCHO.traits.map(([k, v]) => (
+            {PSYCHO_TRAITS.map(([k, v]) => (
             <div key={k} className="pda-wiki__row">
                 <dt className="pda-wiki__k">{k}</dt>
                 <dd className="pda-wiki__v">{v}</dd>
@@ -471,16 +490,14 @@ export default function PDAView() {
 
         <div className="pda-page__section">{UI.sections.vitals}</div>
         <div className="pda-vitals">
-            <VitalRow label="LVL" value={VITALS.level} pctValue={0} hideBar />
-            <VitalRow label="PV"  value={VITALS.hp.cur}     max={VITALS.hp.max}     pctValue={mounted ? pct(VITALS.hp.cur,     VITALS.hp.max)     : 0} />
-            <VitalRow label="EN"  value={VITALS.energy.cur} max={VITALS.energy.max} pctValue={mounted ? pct(VITALS.energy.cur, VITALS.energy.max) : 0} />
-            <VitalRow label="XP"  value={VITALS.xp.cur}     max={VITALS.xp.max}     pctValue={mounted ? pct(VITALS.xp.cur,     VITALS.xp.max)     : 0} />
+            <VitalRow label="PV" value={POWER.hp.current}     max={POWER.hp.max}     pctValue={mounted ? pct(POWER.hp.current,     POWER.hp.max)     : 0} />
+            <VitalRow label="EN" value={POWER.energy.current} max={POWER.energy.max} pctValue={mounted ? pct(POWER.energy.current, POWER.energy.max) : 0} />
         </div>
 
         <div className="pda-page__section">{UI.sections.statistics}</div>
         <div className="pda-stats">
-            {STATS_LIST.map(s => (
-            <div key={s.name} className="pda-stat">
+            {POWER.stats.map((s, i) => (
+            <div key={i} className="pda-stat">
                 <span className="pda-stat__name">{s.name.toUpperCase()}</span>
                 <span className="pda-stat__bar">
                 <BlockBar value={mounted ? s.value : 0} />
@@ -490,26 +507,52 @@ export default function PDAView() {
             ))}
         </div>
 
-        <div className="pda-page__section">{UI.sections.jinsei}</div>
+        <div className="pda-page__section">{UI.sections.essem}</div>
+        <table className="pda-table">
+            <tbody>
+            {Object.entries(UI.powerLabels).map(([key, label]) => (
+                <tr key={key}>
+                <td className="pda-table__k">{label}</td>
+                <td className="pda-table__sep">:</td>
+                <td className="pda-table__v">{POWER.power[key]}</td>
+                </tr>
+            ))}
+            </tbody>
+        </table>
         <div className="pda-jinsei">
-            <p>{JINSEI_DESC}</p>
+            <p>{POWER.hero.description}</p>
         </div>
 
         <div className="pda-page__section">{UI.sections.technique}</div>
         <div className="pda-abilities">
-            {ABILITIES.map(a => (
+            {POWER.spells.map(a => (
             <div key={a.key} className={`pda-ab ${a.ult ? 'pda-ab--ult' : ''}`} data-testid={`pda-ability-${a.key}`}>
                 <div className="pda-ab__key">{a.key}</div>
                 <div className="pda-ab__body">
                 <div className="pda-ab__head">
                     <span className="pda-ab__name">{a.name}</span>
-                    <span className="pda-ab__meta">◉ RANG {a.cost} · {a.dur}</span>
+                    <span className="pda-ab__meta">◉ {a.cost} EN · ⧗ {a.duration} · ↻ {a.recharge} · ⌖ {a.range}</span>
                 </div>
                 <p className="pda-ab__desc">{a.desc}</p>
+                <p className="pda-ab__desc">&gt; {a.effect}</p>
                 </div>
             </div>
             ))}
         </div>
+
+        <div className="pda-page__section">{UI.sections.strengths}</div>
+        <ul className="pda-wiki">
+            {POWER.strengths.map((t, i) => (
+            <li key={i} className="pda-wiki__v">+ {t}</li>
+            ))}
+        </ul>
+
+        <div className="pda-page__section">{UI.sections.weaknesses}</div>
+        <ul className="pda-wiki">
+            {POWER.weaknesses.map((t, i) => (
+            <li key={i} className="pda-wiki__v">- {t}</li>
+            ))}
+        </ul>
         </div>
     )
     }
@@ -550,10 +593,18 @@ export default function PDAView() {
     function PDAHistoire() {
     const [openId, setOpenId] = useState(1)
 
+    // Les entrées du dossier viennent du profil Intranet
+    const HISTORY_CHAPTERS = Object.keys(UI.historyTitles).map((field, i) => ({
+        id:    i + 1,
+        year:  UI.historyTags[field],
+        title: UI.historyTitles[field],
+        field,
+    }))
+
     return (
         <div className="pda-page" data-testid="pda-page-histoire">
         <div className="pda-page__title">{UI.sections.history}</div>
-        <div className="pda-page__subtitle">{UI.sections.historySubtitle}</div>
+        <div className="pda-page__subtitle">{HISTORY_CHAPTERS.length} {UI.sections.historySubtitle}</div>
 
         <ul className="pda-history">
             {HISTORY_CHAPTERS.map(ch => {
@@ -576,7 +627,14 @@ export default function PDAView() {
                     transition={{ duration: 0.18 }}
                     className="pda-chap__body"
                     >
-                    <p>{ch.body}</p>
+                    {ch.field === 'likesDislikes' ? (
+                        <>
+                        <p><strong>{UI.labels.likes}</strong> {PROFILE.likesDislikes.likes}</p>
+                        <p><strong>{UI.labels.dislikes}</strong> {PROFILE.likesDislikes.dislikes}</p>
+                        </>
+                    ) : (
+                        toParagraphs(PROFILE[ch.field]).map((t, i) => <p key={i}>{t}</p>)
+                    )}
                     </motion.div>
                 )}
                 </li>
