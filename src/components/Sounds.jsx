@@ -1,6 +1,3 @@
-// ============= Sounds =============
-// Only two sounds remain: the PC startup chime and the PC shutdown chime.
-
 let audioCtx = null
 
 function getCtx() {
@@ -9,8 +6,6 @@ function getCtx() {
     return audioCtx
 }
 
-// Plays a chord: every note is one oscillator with a fading volume,
-// started after its own delay.
 function playChord(notes) {
     const ctx = getCtx()
     notes.forEach(n => {
@@ -30,7 +25,7 @@ function playChord(notes) {
 }
 
 const Sounds = {
-    // Windows 98 startup chime — 4-note ascending chord
+    // Windows 98 startup
     startup() {
         playChord([
             { freq: 523.25, delay: 0,    dur: 0.6,  vol: 0.05,  type: 'sine' },     // C5
@@ -45,7 +40,7 @@ const Sounds = {
         ])
     },
 
-    // Shutdown — descending chord
+    // Shutdown
     shutdown() {
         playChord([
             { freq: 784, delay: 0,    dur: 0.4, vol: 0.04,  type: 'sine' },
