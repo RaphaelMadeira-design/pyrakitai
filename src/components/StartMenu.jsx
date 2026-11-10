@@ -1,5 +1,4 @@
 import { useState, useCallback } from 'react'
-import Sounds from '../components/Sounds'
 
 const ICONS = {
     start:        'https://win98icons.alexmeub.com/icons/png/windows-0.png',
@@ -26,7 +25,6 @@ export default function StartMenu({ onClose, onOpenWindow, onShutdown, onLock })
     const [docsOpen,  setDocsOpen]  = useState(false)
 
     const handle = useCallback((id, options = {}) => {
-        Sounds.click()
         onOpenWindow(id, options)
         onClose()
     }, [onOpenWindow, onClose])
@@ -143,12 +141,12 @@ export default function StartMenu({ onClose, onOpenWindow, onShutdown, onLock })
 
                     <div className="start-menu__separator" />
 
-                    <div className="start-menu__item" onClick={() => { Sounds.click(); onLock?.(); onClose(); }} data-testid="start-menu-lock">
+          <div className="start-menu__item" onClick={() => {onLock?.(); onClose(); }} data-testid="start-menu-lock">
                         <img src={ICONS.lock} alt="Verrouiller" />
                         Verrouiller la session
                     </div>
 
-                    <div className="start-menu__item" onClick={() => { Sounds.error(); onShutdown(); onClose(); }} data-testid="start-menu-shutdown">
+          <div className="start-menu__item" onClick={() => {onShutdown(); onClose(); }} data-testid="start-menu-shutdown">
                         <img src={ICONS.shutdown} alt="Arrêt" />
                         <strong>Arrêter...</strong>
                     </div>

@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react'
-import Sounds from '../components/Sounds'
 import '../styles/Boot.scss'
 
 const BIOS_LINES = [
@@ -171,7 +170,6 @@ export default function BootScreen({ onDone }) {
         if (phase !== 'bios') return
         if (visibleBios.length < BIOS_LINES.length) return
         const end = setTimeout(() => { 
-            Sounds.biosBeep()
             setPhase('win98') 
         }, 350)
         return () => clearTimeout(end)
@@ -216,7 +214,6 @@ export default function BootScreen({ onDone }) {
         const onKey = (e) => {
             if (phase === 'bios' && e.key === 'Delete') {
                 e.preventDefault()
-                Sounds.biosBeep()
                 setSetupCol(0)
                 setSetupSel(0)
                 setSetupPage(null)
@@ -234,18 +231,15 @@ export default function BootScreen({ onDone }) {
                 const rows = SETUP_PAGES[setupPage]
                 if (e.key === 'Escape') {
                     e.preventDefault()
-                    Sounds.click()
                     setSetupPage(null)
                 } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
                     e.preventDefault()
-                    Sounds.click()
                     const d = e.key === 'ArrowUp' ? -1 : 1
                     setSetupRow(r => (r + d + rows.length) % rows.length)
                 } else if (['+', '-', '=', 'PageUp', 'PageDown'].includes(e.key)) {
                     e.preventDefault()
                     const options = rows[setupRow][2]
                     if (!options) return
-                    Sounds.click()
                     const d = (e.key === '-' || e.key === 'PageDown') ? -1 : 1
                     const key = `${setupPage}|${setupRow}`
                     setSetupEdits(prev => {
@@ -260,21 +254,17 @@ export default function BootScreen({ onDone }) {
 
             if (e.key === 'Escape' || e.key === 'F10') {
                 e.preventDefault()
-                Sounds.biosBeep()
                 setPhase('win98')
             } else if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
                 e.preventDefault()
-                Sounds.click()
                 const len = cols[setupCol].length
                 const d = e.key === 'ArrowUp' ? -1 : 1
                 setSetupSel(s => (s + d + len) % len)
             } else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
                 e.preventDefault()
-                Sounds.click()
                 setSetupCol(c => (c === 0 ? 1 : 0))
             } else if (e.key === 'Enter') {
                 e.preventDefault()
-                Sounds.biosBeep()
                 setSetupRow(0)
                 setSetupPage(cols[setupCol][setupSel].replace('► ', '').trim())
             }

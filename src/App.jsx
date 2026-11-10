@@ -255,7 +255,6 @@ function App() {
             setMsnOpen(true)
             setMsnMinimized(false)
             setStartOpen(false)
-            Sounds.windowOpen()
             return
         }
         if (id.startsWith("help-")) {
@@ -292,7 +291,6 @@ function App() {
                 ]
             })
 
-            Sounds.windowOpen()
             return
         }
         const skipLoading = NO_LOADING_WINDOWS.has(id) || id.startsWith('notepad-')
@@ -314,7 +312,6 @@ function App() {
             if (existing) return prev
 
             if (skipLoading) {
-                Sounds.windowOpen()
                 return [
                     ...prev.map(w => ({ ...w, focused: false })),
                     { id, ...WINDOW_CONFIGS[id], initialFolder: options.initialFolder, helpApp: options.helpApp, minimized: false, focused: true, zIndex: ++zCounter }
@@ -325,7 +322,6 @@ function App() {
             setLoading({ id, label: LOADING_LABELS[id] || id })
             setTimeout(() => {
                 setLoading(null)
-                Sounds.windowOpen()
                 setWindows(prev2 => {
                     if (prev2.find(w => w.id === id)) return prev2
                     return [
@@ -341,10 +337,8 @@ function App() {
     const closeWindow = useCallback((id) => {
         if (id === 'msn') { 
             setMsnOpen(false)
-            Sounds.windowClose()
             return 
         }
-        Sounds.windowClose()
         setWindows(prev => prev.filter(w => w.id !== id))
     }, [])
 

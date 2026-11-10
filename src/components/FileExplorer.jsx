@@ -1,5 +1,4 @@
 import { useState, useMemo } from 'react'
-import Sounds from '../components/Sounds'
 import fileTreeData from '../data/fileExplorer.json'
 
 const ICONS = {
@@ -90,7 +89,6 @@ export default function FileExplorer({ onOpenNotepad, onPlayMusic, onOpenImage, 
 
     const navigateFolder = (id) => {
         if (id === currentFolder) return
-        Sounds.navigate?.()
         setPath(getPathTo(id))
         setCurrentFolder(id)
         setSelectedItem(null)

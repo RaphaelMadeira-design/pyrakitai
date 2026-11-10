@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
-import Sounds from '../components/Sounds'
 import Win98Window from './Win98Window'
 import msnData from '../data/msn.json'
 import '../styles/MSN.scss'
@@ -22,10 +21,8 @@ function MSNLogin({ onLogin, onClose, onMinimize, onFocus, focused, zIndex }) {
         setLoading(true)
         setTimeout(() => {
             if (email.trim() === CREDENTIALS.email && password === CREDENTIALS.password) {
-                Sounds.msnNotify()
                 onLogin()
             } else {
-                Sounds.error()
                 setError('Adresse de messagerie ou mot de passe incorrect. Vérifiez vos informations et réessayez.')
                 setLoading(false)
             }
@@ -295,7 +292,6 @@ export default function MSNApp({ onClose, onMinimize }) {
 
     const openChat = (id) => {
         if (!openChats.includes(id)) {
-            Sounds.msnNotify()
             setOpenChats(p => [...p, id])
             bringToFront(`msn-chat-${id}`)
         } else {

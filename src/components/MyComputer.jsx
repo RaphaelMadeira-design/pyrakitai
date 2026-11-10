@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
-import Sounds from '../components/Sounds'
 import treeData from '../data/computer.json'
 import '../styles/MyComputer.scss'
 
@@ -135,12 +134,10 @@ export default function MyComputer({ onOpenNotepad, onOpenWindow, onOpenImage, d
         if (!node) return
 
         if (node.disabled) {
-            Sounds.error?.()
             return
         }
 
         if (node.trigger === 'memory') {
-            Sounds.error?.()
             try {
                 window.dispatchEvent(new CustomEvent('sin:memory-glitch', { detail: { duration: 4200 } }))
             } catch (e) { /* noop */ }
@@ -155,24 +152,20 @@ export default function MyComputer({ onOpenNotepad, onOpenWindow, onOpenImage, d
         }
 
         if (node.type === 'shortcut') {
-            Sounds.click?.()
             if (onOpenWindow && node.target) onOpenWindow(node.target)
             return
         }
         if (node.empty) {
-            Sounds.error?.()
             setFloppyDialog(true)
             return
         }
         if (node.locked && !unlocked && node.drive === 'B') {
-            Sounds.error?.()
             setPwdInput('')
             setPwdError(false)
             setPwdDialog(true)
             return
         }
         if (node.type === 'file' && node.locked) {
-            Sounds.error?.()
             setSysDialog({
                 title: 'Accès refusé',
                 message: `Le fichier "${node.name}" est protégé par le système et ne peut pas être ouvert.`
@@ -180,12 +173,10 @@ export default function MyComputer({ onOpenNotepad, onOpenWindow, onOpenImage, d
             return
         }
         if (node.type === 'file') {
-            Sounds.click?.()
             onOpenNotepad?.({ id, name: node.name, content: node.content })
             return
         }
         if (node.type === 'image') {
-            Sounds.click?.()
             const parent = tree[node.parent]
             const siblings = (parent?.children || [])
                 .map(cid => tree[cid])
@@ -194,20 +185,17 @@ export default function MyComputer({ onOpenNotepad, onOpenWindow, onOpenImage, d
             onOpenImage?.({ file: node.imageFile, name: node.name, siblings })
             return
         }
-        Sounds.navigate?.()
         setHistory(h => [...h, id])
         setSelected(null)
     }
 
     const goBack = () => {
         if (history.length <= 1) return
-        Sounds.navigate?.()
         setHistory(h => h.slice(0, -1))
         setSelected(null)
     }
     const goUp = goBack
     const goHome = () => {
-        Sounds.navigate?.()
         setHistory(['computer'])
         setSelected(null)
     }
@@ -216,12 +204,10 @@ export default function MyComputer({ onOpenNotepad, onOpenWindow, onOpenImage, d
         e?.preventDefault?.()
         const target = tree.driveB
         if (pwdInput.trim().toLowerCase() === target.password) {
-            Sounds.click?.()
             setUnlocked(true)
             setPwdDialog(false)
             setHistory(h => [...h, 'driveB'])
         } else {
-            Sounds.error?.()
             setPwdError(true)
         }
     }

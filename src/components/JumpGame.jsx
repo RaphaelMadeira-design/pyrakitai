@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
-import Sounds from '../components/Sounds'
 import '../styles/JumpGame.scss'
 
 const W = 480
@@ -262,7 +261,6 @@ const ox2 = obs.x + OBS_W - 4
 const oy2 = GROUND_Y
 
 if (px2 > ox1 && px1 < ox2 && py2 > oy1 && py1 < oy2) {
-Sounds.gameOver()
 setHiScore(prev => Math.max(prev, Math.floor(s.score)))
 setPhaseSync('over')
 return
@@ -278,7 +276,6 @@ const jump = useCallback(() => {
 const s = stateRef.current
 if (!s) return
 if (s.player.grounded) {
-Sounds.gameJump()
 s.player.vy        = JUMP_FORCE
 s.player.grounded  = false
 s.player.jumpHeld  = true   // ← démarre le maintien
@@ -326,7 +323,6 @@ useEffect(() => () => cancelAnimationFrame(rafRef.current), [])
 
 // ── Handlers ─────────────────────────────────────────────────────
 const handleStart = () => {
-Sounds.gameStart()
 initState()
 setPhaseSync('playing')
 lastRef.current = null
@@ -336,7 +332,6 @@ rafRef.current = requestAnimationFrame(gameLoop)
 }
 
 const handleRestart = () => {
-Sounds.gameStart()
 cancelAnimationFrame(rafRef.current)
 initState()
 setPhaseSync('playing')

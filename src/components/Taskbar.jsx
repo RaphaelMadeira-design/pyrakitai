@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import Sounds from '../components/Sounds'
 
 const ICONS = {
     start: 'https://win98icons.alexmeub.com/icons/png/windows-0.png',
@@ -83,7 +82,7 @@ export default function Taskbar({ windows, onWindowToggle, onStartClick, startOp
                     <button
                         key={win.id}
                         className={`taskbar__item ${win.focused ? 'taskbar__item--active' : ''}`}
-                        onClick={() => { Sounds.click(); onWindowToggle(win.id) }}
+            onClick={() => {onWindowToggle(win.id) }}
                         data-testid={`taskbar-item-${win.id}`}
                         >
                         <img src={getIcon(win.id)} alt={win.title} />

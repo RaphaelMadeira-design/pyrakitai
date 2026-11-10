@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import Sounds from '../components/Sounds'
 import '../styles/Trash.scss'
 
 const ICONS = {
@@ -43,7 +42,6 @@ export default function Trash() {
     const isEmpty = items.length === 0
 
     const handleEmpty = () => {
-        Sounds.windowClose?.()
         setItems([])
         setSelected(null)
         setConfirmEmpty(false)

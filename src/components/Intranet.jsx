@@ -1,7 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import '../styles/Intranet.scss'
 import intranetData from '../data/intranet.json'
-import Sounds from '../components/Sounds'
 
 // ─── PYRAKI-NET CREDENTIALS ─────────────────────────────────────
 const PYRAKI_CREDENTIALS = {
@@ -65,11 +64,9 @@ function IntranetLogin({ onLogin }) {
                 matricule.trim().toUpperCase() === PYRAKI_CREDENTIALS.matricule &&
                 password === PYRAKI_CREDENTIALS.password
             ) {
-                Sounds?.msnNotify?.()
                 sessionStorage.setItem('pyraki_auth', '1')
                 onLogin()
             } else {
-                Sounds?.error?.()
                 setError("Identifiant utilisateur ou code d'accès invalide. Vérifiez et réessayez.")
                 setLoading(false)
             }

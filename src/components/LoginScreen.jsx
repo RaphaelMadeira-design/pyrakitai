@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import Sounds from './Sounds'
 import '../styles/LoginScreen.scss'
 
 
@@ -47,7 +46,6 @@ export default function LoginScreen({ onLogin }) {
     const submit = (e) => {
         e.preventDefault()
         if (!done || welcome) return
-        Sounds.doubleClick()
         setWelcome(true)
         exitTimers.current.push(
             setTimeout(() => setLeaving(true), WELCOME_DURATION),
