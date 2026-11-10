@@ -19,6 +19,12 @@ const DRAFTS = DRAFTS_RAW.map(normalizeMail)
 const SPAM   = SPAM_RAW.map(normalizeMail)
 const TRASH  = TRASH_RAW.map(normalizeMail)
 
+// Met les lettres du calendrier (HI, ER, JO…) en police Shevar
+const renderDate = (date) => date.split(/([A-Za-z]+)/).map((part, i) =>
+    i % 2 === 1 ? <span key={i} className="font-date">{part}</span> : part
+)
+
+
 // Table des dossiers -> tableau de messages
 const FOLDER_MESSAGES = {
     inbox: INBOX,
@@ -133,7 +139,7 @@ export default function Mail() {
                                 <div className="mail__prev-head">
                                     <div><b>De :</b> {selected.from} &lt;{selected.fromAddr}&gt;</div>
                                     <div><b>Objet :</b> {selected.subject}</div>
-                                    <div><b>Date :</b> {selected.date}</div>
+                                    <div><b>Date :</b> {renderDate(selected.date)}</div>
                                 </div>
                                 <pre className="mail__prev-body">{selected.body}</pre>
                             </>
