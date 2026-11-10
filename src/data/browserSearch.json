@@ -103,7 +103,7 @@
             "seconds": "0,18",
             "real": {
                 "title": "ActuNet Actualités — Toutes les dépêches en direct de Shevar'",
-                "url": "www.actunet-news.is",
+                "url": "www.actunet-news.sv",
                 "target": "news",
                 "desc": "Portail d'information : Cité-État, Faits divers, Mégacorporations, Sciences essémiques. Édition quotidienne. Ticker en continu, édition du jour..."
             },
@@ -124,7 +124,7 @@
                     "desc": "Fiche associative — ActuNet Actualités. Rédacteur en chef : [Données protégées par contrat Astia]."
                 },
                 {
-                    "title": "ActuNet : Archives hebdomadaires (Période post-Fracture)",
+                    "title": "ActuNet : Archives hebdomadaires",
                     "url": "archives.actunet-news.sv/03-04",
                     "desc": "Accès aux numéros archivés. Certaines éditions récentes sont manquantes : « Édition non distribuée en raison de perturbations magnétiques liées à la lune Aralys »."
                 },
@@ -140,7 +140,7 @@
                 },
                 {
                     "title": "Explosion dans le District n°1 : Le point avec la rédaction d'ActuNet",
-                    "url": "www.actunet-news.is/redaction/faits-divers",
+                    "url": "www.actunet-news.sv/redaction/faits-divers",
                     "desc": "Dernière dépêche : La mercenaire Ena Ryoshi retrouvée morte après l'effondrement partiel de la zone résidentielle. La piste criminelle est privilégiée."
                 }
             ]

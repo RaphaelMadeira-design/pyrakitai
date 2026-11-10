@@ -34,7 +34,7 @@
         "sin://memories"
     ],
     "WIKI_URL": "sv.mikipedia.org/Sinaan_Kitai",
-    "NEWS_URL": "http://www.actunet-news.is/",
+    "NEWS_URL": "http://www.actunet-news.sv/",
     "LAMPION_URL": "http://www.lampion-d6.sv/",
     "ASTIA_URL": "https://wiki-shevar.fr/organisations/groupe-astia",
     "DCR_URL": "https://wiki-shevar.fr/organisations/dcr",
@@ -55,7 +55,7 @@
         "news": {
         "id": "news",
         "label": "ActuNet Actualités",
-        "url": "http://www.actunet-news.is/",
+        "url": "http://www.actunet-news.sv/",
         "icon": "https://win98icons.alexmeub.com/icons/png/web_file-0.png"
         },
         "lampion": {
@@ -74,8 +74,8 @@
         "www.wiggle.com": "google",
         "wiggle.com": "google",
         "sv.mikipedia.org/sinaan_kitai": "wiki",
-        "www.actunet-news.is": "news",
-        "actunet-news.is": "news",
+        "www.actunet-news.sv": "news",
+        "actunet-news.sv": "news",
         "www.lampion-d6.sv": "lampion",
         "lampion-d6.sv": "lampion"
     },
