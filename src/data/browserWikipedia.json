@@ -76,11 +76,11 @@
                 "id": "wiki-biographie",
                 "labelHtml": "Biographie",
                 "children": [
-                    { "id": "wiki-chap1", "labelHtml": "Origines inconnues" },
-                    { "id": "wiki-chap2", "labelHtml": "Découverte à Las Noches" },
-                    { "id": "wiki-chap3", "labelHtml": "Intégration à la CGU" },
-                    { "id": "wiki-chap4", "labelHtml": "Affectation à la Section 7" },
-                    { "id": "wiki-chap5", "labelHtml": "L'affaire Vendamir" }
+                    { "id": "wiki-chap1", "labelHtml": "Chapitre 1" },
+                    { "id": "wiki-chap2", "labelHtml": "Chapitre 2" },
+                    { "id": "wiki-chap3", "labelHtml": "Chapitre 3" },
+                    { "id": "wiki-chap4", "labelHtml": "Chapitre 4" },
+                    { "id": "wiki-chap5", "labelHtml": "Chapitre 5" }
                 ]
             },
             {
@@ -89,20 +89,20 @@
                 "children": [
                     { "id": "wiki-competences", "labelHtml": "Compétences générales" },
                     { "id": "wiki-combat", "labelHtml": "Style de combat" },
-                    { "id": "wiki-jinsei", "labelHtml": "Jinsei" }
+                    { "id": "wiki-essem", "labelHtml": "Essem" }
                 ]
             },
             {
                 "id": "wiki-entourage",
                 "labelHtml": "Entourage",
                 "children": [
-                    { "id": "wiki-cgu", "labelHtml": "Au sein de la CGU" },
+                    { "id": "wiki-pros", "labelHtml": "Relations professionnelles" },
                     { "id": "wiki-civils", "labelHtml": "Relations civiles" }
                 ]
             },
             {
-                "id": "wiki-affaires",
-                "labelHtml": "Affaires notables"
+                "id": "wiki-faits",
+                "labelHtml": "Faits notables"
             },
             {
                 "id": "wiki-references",
@@ -164,7 +164,7 @@
             "..."
         ] },
         { "level": 2, "id": "wiki-entourage", "titleHtml": "Entourage" },
-        { "level": 3, "id": "wiki-cgu", "titleHtml": "Relations professionnelles", "list": [
+        { "level": 3, "id": "wiki-pros", "titleHtml": "Relations professionnelles", "list": [
             "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
             "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
             "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
@@ -178,7 +178,7 @@
             "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
             "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description."
         ] },
-        { "level": 2, "id": "wiki-affaires", "titleHtml": "Faits notables", "list": [
+        { "level": 2, "id": "wiki-faits", "titleHtml": "Faits notables", "list": [
             "<strong>Mission</strong> — Description.",
             "<strong>Mission</strong> — Description.",
             "<strong>Mission</strong> — Description."
