@@ -35,7 +35,7 @@ const PROFILE_SECTIONS = [
     { key: 'physical',   label: 'Description physique',    field: 'physicalDescription' },
     { key: 'psych',      label: 'Profil psychologique',    field: 'psychProfile' },
     { key: 'likes',      label: "Aime et n'aime pas",      field: 'likesDislikes' },
-    { key: 'goal',       label: 'Objectif personnel',      field: 'personalGoal' },
+    { key: 'goal',       label: 'Objectifs personnels',      field: 'personalGoal' },
     { key: 'skills',     label: 'Aptitudes',               field: 'skills' },
     { key: 'fears',      label: 'Peurs & traumatismes',    field: 'fearsTraumas' },
 ]

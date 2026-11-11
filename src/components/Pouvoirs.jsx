@@ -10,7 +10,6 @@ const {
     spells: SPELLS,
     strengths: FORCES,
     weaknesses: FAIBLESSES,
-    weapon: WEAPON,
 } = pouvoirsData
 
 // ─── RADAR GEOMETRY ──────────────────────────────────────────────
@@ -18,8 +17,8 @@ const CX = 90, CY = 90, R = 60
 const ANGLES = STATS.map((_, i) => -Math.PI / 2 + (2 * Math.PI * i) / STATS.length)
 const OUTER = ANGLES.map(a => ({ x: CX + R * Math.cos(a), y: CY + R * Math.sin(a) }))
 const DATA = STATS.map((s, i) => ({
-    x: CX + R * (s.value / 100) * Math.cos(ANGLES[i]),
-    y: CY + R * (s.value / 100) * Math.sin(ANGLES[i]),
+    x: CX + R * (s.value / 20) * Math.cos(ANGLES[i]),
+    y: CY + R * (s.value / 20) * Math.sin(ANGLES[i]),
 }))
 const RINGS = [0.25, 0.5, 0.75, 1.0]
 const polyOf = pts => pts.map(p => `${Math.round(p.x)},${Math.round(p.y)}`).join(' ')

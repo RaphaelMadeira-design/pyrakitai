@@ -15,28 +15,43 @@
     },
     "stats": [
         { 
-            "name": "???",     
-            "value": 0, 
+            "name": "CONSTITUTION",     
+            "value": 18, 
             "color": "#ff5e6c" 
         },
         { 
-            "name": "???",   
-            "value": 0, 
+            "name": "DEXTÉRITÉ",   
+            "value": 14, 
             "color": "#5ee6ff" 
         },
         { 
-            "name": "???",   
-            "value": 0, 
+            "name": "FORCE",   
+            "value": 16, 
             "color": "#a98bff" 
         },
         { 
-            "name": "???",   
-            "value": 0, 
+            "name": "CHARISME",   
+            "value": 10, 
             "color": "#5effa1" 
         },
         { 
-            "name": "???", 
-            "value": 0, 
+            "name": "PERCEPTION", 
+            "value": 10, 
+            "color": "#ffd24a" 
+        },
+        { 
+            "name": "ÉNERGIE", 
+            "value": 18, 
+            "color": "#ffd24a" 
+        },
+        { 
+            "name": "VOLONTÉ", 
+            "value": 12, 
+            "color": "#ffd24a" 
+        },
+        { 
+            "name": "INTELLIGENCE", 
+            "value": 12, 
             "color": "#ffd24a" 
         }
     ],

@@ -38,7 +38,7 @@
             ["Âge", "198 ans"],
             ["Sexe", "Masculin ♂"],
             ["Race", "Aüne"],
-            ["Origine", "Shevar'ulhklyanaïak'ulkä"],
+            ["Origine", "Sima'ch"],
             ["Affiliation", "Indépendant"],
             ["Rôle", "Récupérateur"],
             ["Alignement", "Neutre"],
@@ -50,7 +50,7 @@
         }
     },
     "introParagraphs": [
-        "<strong>Sin'aän Kitaï</strong> (<span class=\"wiki__specialfont\">Sin'aan Kitai</span>) est un citoyen shevarite, ainsi que l'énigmatique et quelque peu loufoque gérant du <strong>Gran Regalia</strong>, un bureau proposant des services de récupération d'objets perdus ou volés installé dans le district rouge, réputé pour sa discrétion et son efficacité.",
+        "<strong>Sin'aän Kitaï</strong> (<span class=\"wiki__specialfont\">Sin'aan Kitai</span>) est un citoyen shevarite, ainsi que l'énigmatique et quelque peu loufoque gérant du <strong>Gran Regalia</strong>, un bureau proposant des services de récupération d'objets perdus ou volés installé dans le <em>district rouge</em>, réputé pour sa discrétion et son efficacité.",
         "Outre son activité principale de récupérateur, Sin'aän est reconnu comme un avide collectionneur de technologies désuètes, de reliques anciennes et de documents historiques. En dehors des missions, le Gran Regalia est utilisé comme atelier de restauration de matériel ancien ainsi que de boutique d'antiquités, où il propose des objets rares à la vente ou à l'échange."
     ],
     "toc": {
@@ -68,8 +68,7 @@
                 "id": "wiki-personnalite",
                 "labelHtml": "Personnalité",
                 "children": [
-                    { "id": "wiki-caractere", "labelHtml": "Caractère" },
-                    { "id": "wiki-qualites", "labelHtml": "Qualités et Défauts" }
+                    { "id": "wiki-caractere", "labelHtml": "Caractère" }
                 ]
             },
             {
@@ -116,17 +115,13 @@
             "Mesurant <strong>1m88</strong> et pesant près de <strong>85kg</strong>, Sin'aän est un homme à la carrure athlétique et agile. Il a un visage plutôt ovale avec des traits fins bien dessinés. Sa peau est doucement hâlée et fait ressortir ses yeux en amande toujours clos, un petit grain de beauté sous l'œil gauche, ainsi qu'une expression sereine et apaisée assez intrigante, qui est accentuée par le léger sourire mystérieux qui se dessine sur ses lèvres, ce qui renforce cet air détaché ou imperturbable. Sa coiffure est naturelle et désordonnée, une masse de cheveux rouge pourpre épais et ébouriffés, vaguement tirés vers l'arrière et qui tombent un peu au hasard sur son front.",
             "Son style vestimentaire est un mélange paradoxal de tradition et de modernité. Sin'aän porte en permanence une veste de type haori, dans un tissu fluide de couleur violette à motifs floraux et avec des bandes blanches, qui est constamment ouverte pour révéler une sorte de tunique croisée noire. Un pantalon cargo bouffant ajusté en salopette, avec des bretelles lâches qui pendent le long de ses cuisses, ainsi que des bottines en cuir marron complètent sa tenue."
         ] },
-        { "level": 3, "id": "wiki-signes", "titleHtml": "Signes distinctifs", "paragraphs": [
-            "Ses yeux sont constamment clos et pourtant, il est capable de percevoir l'intégralité de son environnement comme s'ils étaient ouverts. Ses cheveux sont d'un rouge pourpre très vif, ce qui est inhabituel et attire l'attention."
+        { "level": 3, "id": "wiki-signes", "titleHtml": "Signe distinctif", "paragraphs": [
+            "Ses yeux ont l'air constamment clos et pourtant, il est capable de percevoir l'intégralité de son environnement comme s'ils étaient ouverts, ce qui peut en décontenancer certains et en intriguer d'autres. Sin'aän s'en amuse et a pour habitude de dire qu'ils sont simplement très plissés."
         ] },
         { "level": 2, "id": "wiki-personnalite", "titleHtml": "Personnalité" },
         { "level": 3, "id": "wiki-caractere", "titleHtml": "Caractère", "paragraphs": [
-            "Sin'aän se montre serein, avenant et farouchement indépendant. D'un naturel enjoué, il ne se laisse jamais miner par les soucis et préfère désamorcer les tensions par l'humour, quitte à paraître un brin insouciant. Son attitude de bon vivant, constamment marquée par une posture décontractée et un sourire indécrottable, est combinée à une douceur naturelle qui déborde parfois de familiarité lors de ses échanges, ce qui le fait parfois passer pour quelqu'un d'excentrique. Pourtant, malgré les apparences, il éprouve une profonde aversion pour les conflits et déteste la violence sous toutes ses formes. Il cherche toujours à régler les disputes par une plaisanterie bien sentie ou un rire communicatif, mais sa vivacité en fera un adversaire redoutable si la situation l'exige.",
+            "Sin'aän se montre <strong>serein</strong>, <strong>avenant</strong> et farouchement <strong>indépendant</strong>. D'un naturel enjoué, il ne se laisse jamais miner par les soucis et préfère désamorcer les tensions par l'humour, quitte à paraître un brin insouciant. Son attitude de bon vivant, constamment marquée par une posture décontractée et un sourire indécrottable, est combinée à une douceur naturelle qui déborde parfois de familiarité lors de ses échanges, ce qui le fait parfois passer pour quelqu'un d'excentrique. Pourtant, malgré les apparences, il éprouve une profonde aversion pour les conflits et déteste la violence sous toutes ses formes. Il cherche toujours à régler les disputes par une plaisanterie bien sentie ou un rire communicatif, mais sa vivacité en fera un adversaire redoutable si la situation l'exige.",
             "Même s'il est d'un naturel très sociable, notamment par ses manières chaleureuses et spontanées, il reste néanmoins insaisissable et il faut du temps pour qu'il puisse dévoiler sa véritable intimité. Sa fierté l'empêche d'ailleurs bien souvent de montrer ses failles, préférant dissimuler ses peines sous un masque de gaieté. Mais quand on arrive à passer outre sa légèreté, il se révèle être un ami dévoué et un pilier précieux sur lequel on peut compter, en toutes circonstances. Briser la confiance qu'il offre si généreusement est en revanche définitif, car pour lui, le pardon n'efface jamais la trahison."
-        ] },
-        { "level": 3, "id": "wiki-qualites", "titleHtml": "Qualités et Défauts", "paragraphs": [
-            "...",
-            "...."
         ] },
         { "level": 2, "id": "wiki-biographie", "titleHtml": "Biographie" },
         { "level": 3, "id": "wiki-chap1", "titleHtml": "Chapitre 1", "paragraphs": [

@@ -118,7 +118,12 @@ export default function Wikipedia({ onLogoClick }) {
                         <table className="wiki__infobox-table">
                             <tbody>
                                 {w.infobox.rows.map(([k, v], i) => (
-                                    <tr key={i}><th>{k}</th><td>{v}</td></tr>
+                                    <tr key={i}>
+                                        <th>{k}</th>
+                                        <td className={k === 'Origine' ? 'wiki__specialfont' : undefined}>
+                                            {v}
+                                        </td>
+                                    </tr>
                                 ))}
                             </tbody>
                         </table>
