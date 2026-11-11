@@ -46,7 +46,7 @@ export default function StartMenu({ onClose, onOpenWindow, onShutdown, onLock })
 
                     <div className="start-menu__item" onClick={() => handle('powers')} data-testid="start-menu-powers">
                         <img src={ICONS.powers} alt="Jinsei" />
-                        ABILITY_GAUGE.exe
+                        ESSEMS_REGISTRY.exe
                     </div>
 
                     <div className="start-menu__item" onClick={() => handle('browser')} data-testid="start-menu-browser">

@@ -89,7 +89,7 @@ const INITIAL_ICONS = [
 
 const WINDOW_CONFIGS = {
     powers: {
-        title: 'Registre des capacités — ABILITY_GAUGE.exe',
+        title: 'Registre des Essems — ESSEMS_REGISTRY.exe',
         defaultSize: { width: '87%', height: '95%' },
         defaultPosition: { x: 150, y: 20 },
     },
@@ -172,7 +172,7 @@ const NO_LOADING_WINDOWS = new Set([
 ])
 
 const LOADING_LABELS = {
-    powers: 'ABILITY_GAUGE.exe',
+    powers: 'ESSEMS_REGISTRY.exe',
     snake: 'SNAKE.exe',
     jump: 'JUMP.exe',
     virus: 'VIRUS.exe',
