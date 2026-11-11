@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
-import Win98Window from './Win98Window'
-import { nextZ } from './zIndex'
+import Win98Window, { nextZ } from './Win98Window'
 import msnData from '../data/msn.json'
 import '../styles/MSN.scss'
 
@@ -289,7 +288,6 @@ export default function MSNApp({ onClose, onMinimize, onHelp, minimized = false 
         setFocusedId(id)
     }, [])
 
-    // Initialize focus/z for the first window shown
     useEffect(() => {
         const id = phase === 'login' ? 'msn-login' : 'msn-contacts'
         if (zMap[id] === undefined) bringToFront(id)
@@ -304,8 +302,6 @@ export default function MSNApp({ onClose, onMinimize, onHelp, minimized = false 
         }
     }
     const closeChat = (id) => setOpenChats(p => p.filter(c => c !== id))
-
-    // Wrap callbacks: shared Win98Window passes id, but MSN's onClose/onMinimize ignore it
     const closeWrap = () => onClose()
     const minimizeWrap = () => onMinimize()
 

@@ -12,7 +12,18 @@ const ICON_QUESTION = `${ICONS}help_question_mark-0.png`
 
 const ABOUT = 'about'
 
-// N° de produit stable pour chaque application (purement décoratif)
+export const getHelpKey = (windowId = '') =>
+    windowId.startsWith('notepad-') ? 'notepad' : windowId
+
+export const hasHelp = (windowId) => Boolean(HELP.apps[getHelpKey(windowId)])
+
+export const getHelpTitle = (key) => {
+    const app = HELP.apps[key]
+    return app ? `Rubriques d'aide : ${app.name}` : 'Aide'
+}
+
+export const HELP_ICON = `${ICONS}help_book_big-0.png`
+
 function productId(key) {
     let h = 0
     for (const c of key) h = (h * 31 + c.charCodeAt(0)) >>> 0

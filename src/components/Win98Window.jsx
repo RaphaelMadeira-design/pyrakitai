@@ -1,6 +1,9 @@
 import { useRef, useState, useCallback } from 'react'
 import { Rnd } from 'react-rnd'
 
+let counter = 100
+export const nextZ = () => ++counter
+
 const ICONS = {
     powers: 'https://win98icons.alexmeub.com/icons/png/executable_script-0.png',
     explorer: 'https://win98icons.alexmeub.com/icons/png/directory_explorer-1.png',
