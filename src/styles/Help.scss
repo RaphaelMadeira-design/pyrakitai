@@ -1,0 +1,317 @@
+@use 'Variables' as *;
+
+.help {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    background-color: $win98-gray;
+    color: $win98-black;
+    font-family: $font-system;
+    font-size: 11px;
+
+    &--empty {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: $win98-white;
+        img { width: 32px; height: 32px; image-rendering: pixelated; }
+    }
+
+    // ── Barre d'outils ───────────────────────────────
+    &__toolbar {
+        display: flex;
+        gap: 2px;
+        padding: 3px 4px;
+        border-bottom: 1px solid $win98-dark-gray;
+        box-shadow: 0 1px 0 $win98-white;
+        flex-shrink: 0;
+    }
+
+    &__tool {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 58px;
+        padding: 2px 6px;
+        background: transparent;
+        border: 1px solid transparent;
+        font-family: $font-system;
+        font-size: 11px;
+        color: $win98-black;
+        cursor: pointer;
+
+        &:hover:not(:disabled) { @include border-outset-light; }
+        &:active:not(:disabled) { @include border-inset-light; }
+
+        &:disabled {
+            color: $win98-dark-gray;
+            text-shadow: 1px 1px 0 $win98-white;
+            cursor: default;
+        }
+    }
+
+    &__tool-icon {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    // ── Corps ───────────────────────────────────────
+    &__body {
+        flex: 1;
+        min-height: 0;
+        display: flex;
+        gap: 4px;
+        padding: 4px;
+    }
+
+    &__nav {
+        width: 200px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    &__tabs {
+        display: flex;
+        padding-left: 2px;
+    }
+
+    &__tab {
+        padding: 2px 10px;
+        margin-right: -1px;
+        background: $win98-gray;
+        font-family: $font-system;
+        font-size: 11px;
+        cursor: pointer;
+        border-top: 1px solid $win98-white;
+        border-left: 1px solid $win98-white;
+        border-right: 1px solid $win98-black;
+        border-bottom: none;
+        border-radius: 3px 3px 0 0;
+        position: relative;
+        top: 2px;
+
+        &--active {
+            top: 0;
+            padding-bottom: 4px;
+            z-index: 1;
+            font-weight: bold;
+        }
+    }
+
+    &__panel {
+        flex: 1;
+        min-height: 0;
+        overflow: auto;
+        background-color: $win98-white;
+        @include border-inset;
+        padding: 4px;
+    }
+
+    // ── Sommaire ────────────────────────────────────
+    &__tree {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 16px;
+        }
+    }
+
+    &__node {
+        display: flex;
+        align-items: flex-start;
+        gap: 4px;
+        width: 100%;
+        padding: 1px 2px;
+        background: transparent;
+        border: 1px dotted transparent;
+        font-family: $font-system;
+        font-size: 11px;
+        color: $win98-black;
+        text-align: left;
+        cursor: pointer;
+
+        img { width: 16px; height: 16px; image-rendering: pixelated; flex-shrink: 0; }
+        span { padding: 1px 2px; }
+
+        &--active span {
+            background-color: $win98-navy;
+            color: $win98-white;
+        }
+
+        &:focus-visible { border-color: $win98-black; outline: none; }
+    }
+
+    // ── Index ───────────────────────────────────────
+    &__index {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        height: 100%;
+    }
+
+    &__index-input {
+        font-family: $font-system;
+        font-size: 11px;
+        padding: 2px 3px;
+        @include border-inset;
+        outline: none;
+    }
+
+    &__index-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__index-item {
+        width: 100%;
+        background: transparent;
+        border: none;
+        padding: 1px 3px;
+        text-align: left;
+        font-family: $font-system;
+        font-size: 11px;
+        cursor: pointer;
+
+        &:hover, &--active {
+            background-color: $win98-navy;
+            color: $win98-white;
+        }
+    }
+
+    // ── Contenu ─────────────────────────────────────
+    &__content {
+        flex: 1;
+        min-width: 0;
+        overflow: auto;
+        background-color: $win98-white;
+        @include border-inset;
+        padding: 12px 16px;
+        font-size: 12px;
+        line-height: 1.5;
+
+        p { margin: 0 0 8px; }
+    }
+
+    &__topic-title {
+        margin: 0 0 10px;
+        font-size: 15px;
+        color: $win98-navy;
+        border-bottom: 1px solid $win98-light-gray;
+        padding-bottom: 4px;
+    }
+
+    &__steps, &__items {
+        margin: 0 0 10px;
+        padding-left: 22px;
+        li { margin-bottom: 3px; }
+    }
+
+    &__keys {
+        border-collapse: collapse;
+        margin: 4px 0 10px;
+        width: 100%;
+
+        th, td {
+            border: 1px solid $win98-light-gray;
+            padding: 3px 6px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        th {
+            width: 38%;
+            background-color: #f2f2f2;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+    }
+
+    &__note {
+        display: flex;
+        gap: 8px;
+        align-items: flex-start;
+        padding: 6px 8px;
+        margin: 8px 0;
+        border: 1px solid $win98-dark-gray;
+        background-color: #ffffe1;
+
+        img { width: 32px; height: 32px; image-rendering: pixelated; flex-shrink: 0; }
+        p { margin: 0; }
+
+        &--warn { background-color: #fff2e6; }
+    }
+
+    &__related {
+        margin-top: 14px !important;
+        padding-top: 6px;
+        border-top: 1px solid $win98-light-gray;
+    }
+
+    &__link {
+        background: none;
+        border: none;
+        padding: 0;
+        font: inherit;
+        color: #0000ee;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover { color: $pc98-red; }
+    }
+
+    &__muted { color: $win98-dark-gray; }
+
+    // ── À propos ────────────────────────────────────
+    &__about-head {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .help__topic-title { border: none; margin: 0; padding: 0; }
+    }
+
+    &__about-icon {
+        width: 32px;
+        height: 32px;
+        image-rendering: pixelated;
+    }
+
+    &__about-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 12px 0 8px;
+        padding: 8px 10px;
+        background: linear-gradient(90deg, $win98-blue 0%, $win98-light-blue 100%);
+        color: $win98-white;
+
+        .help__muted { color: $win98-light-gray; }
+    }
+
+    &__about-logo {
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    &__slogan {
+        font-style: italic;
+        text-align: center;
+        margin: 10px 0 !important;
+    }
+
+    &__legal {
+        font-size: 10px;
+        color: $win98-dark-gray;
+        line-height: 1.4;
+    }
+}

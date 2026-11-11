@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react'
 import Win98Window from './Win98Window'
+import { nextZ } from './zIndex'
 import msnData from '../data/msn.json'
 import '../styles/MSN.scss'
 
@@ -10,7 +11,7 @@ const CONTACTS      = msnData.contacts
 const CONVERSATIONS = msnData.conversations
 
 // ─── MSN LOGIN ──────────────────────────────────────────────────
-function MSNLogin({ onLogin, onClose, onMinimize, onFocus, focused, zIndex }) {
+function MSNLogin({ onLogin, onClose, onMinimize, onHelp, onFocus, focused, zIndex, minimized }) {
     const [email, setEmail]       = useState('')
     const [password, setPassword] = useState('')
     const [error, setError]       = useState('')
@@ -36,9 +37,11 @@ function MSNLogin({ onLogin, onClose, onMinimize, onFocus, focused, zIndex }) {
             icon="/images/icons/16x16/messenger.png"
             onClose={onClose}
             onMinimize={onMinimize}
+            onHelp={onHelp}
             onFocus={onFocus}
             focused={focused}
             zIndex={zIndex}
+            minimized={minimized}
             defaultPosition={{ x: 200, y: 60 }}
             defaultSize={{ width: 340, height: 360 }}
             hideMaximize
@@ -108,7 +111,7 @@ function MSNLogin({ onLogin, onClose, onMinimize, onFocus, focused, zIndex }) {
 }
 
 // ─── MSN CONTACT LIST ────────────────────────────────────────────
-function MSNContactList({ onOpenChat, onClose, onMinimize, onFocus, focused, zIndex }) {
+function MSNContactList({ onOpenChat, onClose, onMinimize, onHelp, onFocus, focused, zIndex, minimized }) {
     const [expanded, setExpanded] = useState({ online: true, offline: true })
 
     const online  = CONTACTS.filter(c => c.status === 'online' || c.status === 'away')
@@ -122,9 +125,11 @@ function MSNContactList({ onOpenChat, onClose, onMinimize, onFocus, focused, zIn
             icon="/images/icons/16x16/messenger.png"
             onClose={onClose}
             onMinimize={onMinimize}
+            onHelp={onHelp}
             onFocus={onFocus}
             focused={focused}
             zIndex={zIndex}
+            minimized={minimized}
             defaultPosition={{ x: 90, y: 70 }}
             defaultSize={{ width: 260, height: 430 }}
         >
@@ -157,7 +162,7 @@ function MSNContactList({ onOpenChat, onClose, onMinimize, onFocus, focused, zIn
             <div className="msn-contacts__toolbar">
                 <button className="win98-btn msn-toolbar-btn">Contacts</button>
                 <button className="win98-btn msn-toolbar-btn">Outils</button>
-                <button className="win98-btn msn-toolbar-btn">Aide</button>
+                <button className="win98-btn msn-toolbar-btn" onClick={onHelp}>Aide</button>
             </div>
         </Win98Window>
     )
@@ -183,7 +188,7 @@ function ContactItem({ contact, onDoubleClick }) {
 }
 
 // ─── MSN CHAT WINDOW ─────────────────────────────────────────────
-function MSNChat({ contact, index, onClose, onFocus, focused, zIndex }) {
+function MSNChat({ contact, index, onClose, onFocus, focused, zIndex, minimized }) {
     const chatRef = useRef(null)
     const conv    = CONVERSATIONS[contact.id]
 
@@ -200,6 +205,7 @@ function MSNChat({ contact, index, onClose, onFocus, focused, zIndex }) {
             onFocus={onFocus}
             focused={focused}
             zIndex={zIndex}
+            minimized={minimized}
             defaultPosition={{ x: 370 + index * 30, y: 70 + index * 20 }}
             defaultSize={{ width: 390, height: 440 }}
         >
@@ -270,17 +276,16 @@ function MSNChat({ contact, index, onClose, onFocus, focused, zIndex }) {
 }
 
 // ─── MAIN MSN APP ────────────────────────────────────────────────
-let msnZCounter = 100
 
-export default function MSNApp({ onClose, onMinimize }) {
+export default function MSNApp({ onClose, onMinimize, onHelp, minimized = false }) {
     const [phase, setPhase]         = useState('login')
     const [openChats, setOpenChats] = useState([])
     const [focusedId, setFocusedId] = useState(null)
     const [zMap, setZMap]           = useState({})
 
     const bringToFront = useCallback((id) => {
-        msnZCounter += 1
-        setZMap(prev => ({ ...prev, [id]: msnZCounter }))
+        const z = nextZ()
+        setZMap(prev => ({ ...prev, [id]: z }))
         setFocusedId(id)
     }, [])
 
@@ -312,17 +317,21 @@ export default function MSNApp({ onClose, onMinimize }) {
                     onClose={closeWrap}
                     onFocus={bringToFront}
                     onMinimize={minimizeWrap}
+                    onHelp={onHelp}
                     focused={focusedId === 'msn-login'}
                     zIndex={zMap['msn-login']}
+                    minimized={minimized}
                 />
             ) : (
                 <MSNContactList
                     onOpenChat={openChat}
                     onClose={closeWrap}
                     onMinimize={minimizeWrap}
+                    onHelp={onHelp}
                     onFocus={bringToFront}
                     focused={focusedId === 'msn-contacts'}
                     zIndex={zMap['msn-contacts']}
+                    minimized={minimized}
                 />
             )}
 
@@ -338,6 +347,7 @@ export default function MSNApp({ onClose, onMinimize }) {
                         onFocus={bringToFront}
                         focused={focusedId === winId}
                         zIndex={zMap[winId] ?? 100}
+                        minimized={minimized}
                     />
                 )
             })}

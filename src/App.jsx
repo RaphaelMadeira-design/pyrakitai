@@ -27,6 +27,8 @@ import Browser from './components/Browser'
 import MSNApp from './components/MSN'
 import Sounds from './components/Sounds'
 import Help from './components/Help'
+import { hasHelp, getHelpKey, getHelpTitle, HELP_ICON } from './components/helpRegistry'
+import { nextZ } from './components/zIndex'
 import Trash from './components/Trash'
 import './styles/Memory.scss'
 
@@ -149,9 +151,9 @@ const WINDOW_CONFIGS = {
         defaultPosition: { x: 60, y: 30 },
     },
     help: {
-    title: "Aide",
-    defaultSize: { width: 540, height: 420 },
-    defaultPosition: { x: 120, y: 60 },
+        title: 'Aide',
+        defaultSize: { width: 680, height: 480 },
+        defaultPosition: { x: 140, y: 50 },
     },
     recycle: {
         title: 'Corbeille',
@@ -186,7 +188,6 @@ const makeNotepadConfig = (fileId, fileName) => ({
     notepadFile: { id: fileId, name: fileName },
 })
 
-let zCounter = 100
 
 function App() {
     const isMobile = useIsMobile()
@@ -234,7 +235,7 @@ function App() {
                 if (prev.find(w => w.id === 'msn')) return prev
                 return [
                 ...prev.map(w => ({ ...w, focused: false })),
-                    { id: 'msn', title: 'NSN Messenger', minimized: false, focused: true, zIndex: ++zCounter }
+                    { id: 'msn', title: 'NSN Messenger', minimized: false, focused: true, zIndex: nextZ() }
                 ]
             })
         } else {
@@ -268,7 +269,7 @@ function App() {
                                 ...w,
                                 minimized: false,
                                 focused: true,
-                                zIndex: ++zCounter,
+                                zIndex: nextZ(),
                             }
                             : { ...w, focused: false }
                     )
@@ -280,13 +281,14 @@ function App() {
                     ...prev.map(w => ({ ...w, focused: false })),
                     {
                         id,
-                        title: `Aide - ${options.helpApp}`,
+                        title: getHelpTitle(options.helpApp),
+                        icon: HELP_ICON,
                         defaultSize,
                         defaultPosition,
                         helpApp: options.helpApp,
                         minimized: false,
                         focused: true,
-                        zIndex: ++zCounter,
+                        zIndex: nextZ(),
                     }
                 ]
             })
@@ -299,7 +301,7 @@ function App() {
             if (existing) {
                 return prev.map(w =>
                     w.id === id
-                    ? { ...w, minimized: false, focused: true, zIndex: ++zCounter, ...(options.initialFolder ? { initialFolder: options.initialFolder } : {}) }
+                    ? { ...w, minimized: false, focused: true, zIndex: nextZ(), ...(options.initialFolder ? { initialFolder: options.initialFolder } : {}) }
                     : { ...w, focused: false }
                 )
             }
@@ -314,7 +316,7 @@ function App() {
             if (skipLoading) {
                 return [
                     ...prev.map(w => ({ ...w, focused: false })),
-                    { id, ...WINDOW_CONFIGS[id], initialFolder: options.initialFolder, helpApp: options.helpApp, minimized: false, focused: true, zIndex: ++zCounter }
+                    { id, ...WINDOW_CONFIGS[id], initialFolder: options.initialFolder, helpApp: options.helpApp, minimized: false, focused: true, zIndex: nextZ() }
                 ]
             }
 
@@ -326,7 +328,7 @@ function App() {
                     if (prev2.find(w => w.id === id)) return prev2
                     return [
                         ...prev2.map(w => ({ ...w, focused: false })),
-                        { id, ...WINDOW_CONFIGS[id], initialFolder: options.initialFolder, helpApp: options.helpApp, minimized: false, focused: true, zIndex: ++zCounter }
+                        { id, ...WINDOW_CONFIGS[id], initialFolder: options.initialFolder, helpApp: options.helpApp, minimized: false, focused: true, zIndex: nextZ() }
                     ]
                 })
             }, delay)
@@ -351,14 +353,15 @@ function App() {
     const focusWindow = useCallback((id) => {
         setWindows(prev => prev.map(w =>
             w.id === id
-            ? { ...w, focused: true, zIndex: ++zCounter }
+            ? { ...w, focused: true, zIndex: nextZ() }
             : { ...w, focused: false }
         ))
     }, [])
 
     const handleHelp = useCallback((id) => {
-        openWindow(`help-${id}`, {
-            helpApp: id,
+        const key = getHelpKey(id)
+        openWindow(`help-${key}`, {
+            helpApp: key,
         })
     }, [openWindow])
 
@@ -378,7 +381,7 @@ function App() {
             if (win.minimized) {
                 return prev.map(w =>
                     w.id === id
-                    ? { ...w, minimized: false, focused: true, zIndex: ++zCounter }
+                    ? { ...w, minimized: false, focused: true, zIndex: nextZ() }
                     : { ...w, focused: false }
                 )
             }
@@ -389,7 +392,7 @@ function App() {
             }
             return prev.map(w =>
                 w.id === id
-                ? { ...w, focused: true, zIndex: ++zCounter }
+                ? { ...w, focused: true, zIndex: nextZ() }
                 : { ...w, focused: false }
             )
         })
@@ -402,7 +405,7 @@ function App() {
             if (existing) {
                 return prev.map(w =>
                     w.id === winId
-                    ? { ...w, minimized: false, focused: true, zIndex: ++zCounter }
+                    ? { ...w, minimized: false, focused: true, zIndex: nextZ() }
                     : { ...w, focused: false }
                 )
             }
@@ -414,7 +417,7 @@ function App() {
                     notepadContent: content,
                     minimized: false,
                     focused: true,
-                    zIndex: ++zCounter,
+                    zIndex: nextZ(),
                 },
             ]
         })
@@ -552,15 +555,23 @@ function App() {
                                     onClose={closeWindow}
                                     onMinimize={minimizeWindow}
                                     onFocus={focusWindow}
-                                    onHelp={
-                                        ["browser", "intranet", "mail", "computer"].includes(win.id)
-                                            ? handleHelp
-                                            : undefined
-                                    }
+                                    icon={win.icon}
+                                    onHelp={hasHelp(win.id) ? handleHelp : undefined}
                                 >
                                     {renderWindowContent(win)}
                                 </Win98Window>
                             ))}
+
+                            {/* NSN Messenger : dans le même conteneur que les autres fenêtres
+                                pour que l'ordre d'affichage (premier plan) soit partagé */}
+                            {msnOpen && (
+                                <MSNApp
+                                    minimized={msnMinimized}
+                                    onClose={() => { setMsnOpen(false); setMsnMinimized(false) }}
+                                    onMinimize={() => setMsnMinimized(true)}
+                                    onHelp={() => handleHelp('msn')}
+                                />
+                            )}
                         </div>
                     )}
 
@@ -587,23 +598,6 @@ function App() {
                                 powerOff()
                             }}
                         />
-                    )}
-
-                    {/* MSN App */}
-                    {msnOpen && loggedIn && (
-                        <div
-                            className="desktop__content"
-                            style={{
-                                position: 'absolute',
-                                inset: '0 0 32px 0',
-                                display: msnMinimized ? 'none' : undefined,
-                            }}
-                        >
-                            <MSNApp
-                                onClose={() => { setMsnOpen(false); setMsnMinimized(false) }}
-                                onMinimize={() => setMsnMinimized(true)}
-                            />
-                        </div>
                     )}
 
                     {/* Taskbar */}

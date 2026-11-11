@@ -1,39 +1,987 @@
 {
-    "browser": {
-        "title": "Aide d'Internet Explorer",
-        "sections": [
-            {
-                "title": "Navigation",
-                "text": "Utilisez la barre d'adresse pour accéder à un site."
-            },
-            {
-                "title": "Recherche",
-                "text": "Tapez un mot-clé pour effectuer une recherche."
-            }
-        ]
+    "publisher": {
+        "developer": "Astiasoft®",
+        "group": "Groupe Astia — Branche technologique",
+        "copyright": "(C) Copyright Astia Corp 5018-MM. Tous droits réservés.",
+        "licensedTo": "Sin'aän Kitaï",
+        "support": "support.astiasoft.sv",
+        "slogan": "« Bâtir le monde de demain, aujourd'hui. »",
+        "legal": "Avertissement : ce logiciel est protégé par la législation shevarite sur le droit d'auteur et par les traités de la Noda Prima. Toute reproduction, désassemblage ou distribution non autorisée, totale ou partielle, expose son auteur à des poursuites engagées par le service juridique du Groupe Astia."
     },
-
-    "intranet": {
-        "title": "Aide de CGU-NET",
-        "sections": [
-            {
-                "title": "Présentation",
-                "text": "CGU-NET est le réseau interne de l'université."
-            },
-            {
-                "title": "Documents",
-                "text": "Vous pouvez consulter les archives et les annonces internes."
-            }
-        ]
-    },
-
-    "mail": {
-        "title": "Aide Outlook Express",
-        "sections": [
-            {
-                "title": "Lire un courrier",
-                "text": "Cliquez sur un message dans la liste."
-            }
-        ]
+    "apps": {
+        "browser": {
+            "name": "Internet Voyager",
+            "icon": "https://win98icons.alexmeub.com/icons/png/msie2-1.png",
+            "version": "98.0",
+            "build": "Build 2222 — Édition Shevar'",
+            "description": "Internet Voyager est le navigateur officiel de WindOS 98. Il vous ouvre les portes de la Toile shevarite : actualités, encyclopédies, forums et services en ligne, le tout propulsé par le moteur de recherche nsn.",
+            "topics": [
+                {
+                    "title": "Bienvenue dans Internet Voyager",
+                    "keywords": [
+                        "présentation",
+                        "navigateur",
+                        "toile"
+                    ],
+                    "text": [
+                        "Internet Voyager vous permet de consulter les sites de la Toile depuis votre terminal WindOS.",
+                        "Le navigateur s'ouvre sur la page d'accueil nsn, le portail de recherche d'Astiasoft®, qui rassemble l'actualité du jour et un champ de recherche."
+                    ]
+                },
+                {
+                    "title": "Naviguer sur la Toile",
+                    "keywords": [
+                        "adresse",
+                        "url",
+                        "précédent",
+                        "actualiser",
+                        "accueil"
+                    ],
+                    "text": [
+                        "Pour vous rendre sur un site, tapez son adresse dans la barre d'adresse puis appuyez sur Entrée."
+                    ],
+                    "keys": [
+                        [
+                            "◄",
+                            "Revenir à la page précédente"
+                        ],
+                        [
+                            "►",
+                            "Aller à la page suivante"
+                        ],
+                        [
+                            "✕",
+                            "Arrêter le chargement de la page"
+                        ],
+                        [
+                            "↺",
+                            "Actualiser la page en cours"
+                        ],
+                        [
+                            "🏠",
+                            "Revenir à la page d'accueil nsn"
+                        ]
+                    ],
+                    "tip": "Cliquez sur les liens soulignés pour passer d'une page à l'autre sans retaper d'adresse."
+                },
+                {
+                    "title": "Rechercher avec nsn",
+                    "keywords": [
+                        "recherche",
+                        "nsn",
+                        "mot-clé",
+                        "résultats"
+                    ],
+                    "steps": [
+                        "Ouvrez la page d'accueil nsn.",
+                        "Tapez un ou plusieurs mots-clés (un nom, un lieu, un événement…).",
+                        "Appuyez sur Entrée : nsn affiche la liste des pages correspondantes.",
+                        "Cliquez sur un résultat pour ouvrir la page."
+                    ],
+                    "tip": "Si aucun résultat ne s'affiche, essayez un terme plus court ou une autre orthographe."
+                },
+                {
+                    "title": "Utiliser les onglets",
+                    "keywords": [
+                        "onglet",
+                        "nouvel onglet",
+                        "fermer"
+                    ],
+                    "text": [
+                        "Internet Voyager peut afficher plusieurs pages à la fois grâce aux onglets."
+                    ],
+                    "items": [
+                        "Cliquez sur le bouton « + » pour ouvrir un nouvel onglet sur la page nsn.",
+                        "Cliquez sur un onglet pour l'afficher.",
+                        "Cliquez sur la croix d'un onglet pour le fermer."
+                    ]
+                },
+                {
+                    "title": "Sécurité et confidentialité",
+                    "keywords": [
+                        "sécurité",
+                        "site",
+                        "certificat",
+                        "confidentialité"
+                    ],
+                    "text": [
+                        "Certains sites de la Toile ne sont pas certifiés par Astiasoft®. Leur contenu peut être instable, incomplet ou volontairement trompeur.",
+                        "Pour votre sécurité, Internet Voyager peut vous empêcher d'accéder à certaines pages."
+                    ],
+                    "warning": "Ne communiquez jamais vos identifiants ni vos codes d'accès sur un site dont vous ne connaissez pas l'origine."
+                },
+                {
+                    "title": "Mettre à jour le navigateur",
+                    "keywords": [
+                        "mise à jour",
+                        "version",
+                        "v274"
+                    ],
+                    "text": [
+                        "Une nouvelle version d'Internet Voyager (v274) est disponible au téléchargement sur le portail nsn.",
+                        "Les mises à jour corrigent des failles de sécurité et améliorent l'affichage des sites récents."
+                    ],
+                    "warning": "La version 98 n'est plus prise en charge dans les districts périphériques."
+                }
+            ]
+        },
+        "mail": {
+            "name": "Inlook Express",
+            "icon": "https://win98icons.alexmeub.com/icons/png/outlook_express-4.png",
+            "version": "5.0",
+            "build": "Build 2919.6700",
+            "description": "Inlook Express est le client de messagerie fourni avec WindOS 98. Il vous permet de recevoir, de lire et de classer votre courrier électronique en toute sécurité.",
+            "topics": [
+                {
+                    "title": "Présentation d'Inlook Express",
+                    "keywords": [
+                        "présentation",
+                        "courrier",
+                        "messagerie"
+                    ],
+                    "text": [
+                        "La fenêtre d'Inlook Express est divisée en trois zones :"
+                    ],
+                    "items": [
+                        "à gauche, la liste des dossiers ;",
+                        "en haut, la liste des messages du dossier sélectionné ;",
+                        "en bas, l'aperçu du message sélectionné."
+                    ]
+                },
+                {
+                    "title": "Lire un message",
+                    "keywords": [
+                        "lire",
+                        "message",
+                        "aperçu",
+                        "expéditeur"
+                    ],
+                    "steps": [
+                        "Sélectionnez un dossier dans la colonne de gauche.",
+                        "Cliquez sur un message dans la liste.",
+                        "Son contenu s'affiche dans le volet d'aperçu, avec l'expéditeur, l'objet et la date de réception."
+                    ]
+                },
+                {
+                    "title": "Les dossiers",
+                    "keywords": [
+                        "dossier",
+                        "réception",
+                        "envoyés",
+                        "brouillons",
+                        "indésirable",
+                        "supprimés"
+                    ],
+                    "keys": [
+                        [
+                            "Boîte de réception",
+                            "Les messages que vous avez reçus"
+                        ],
+                        [
+                            "Éléments envoyés",
+                            "Les messages que vous avez envoyés"
+                        ],
+                        [
+                            "Brouillons",
+                            "Les messages en cours de rédaction"
+                        ],
+                        [
+                            "Courrier indésirable",
+                            "Les messages suspects ou publicitaires"
+                        ],
+                        [
+                            "Éléments supprimés",
+                            "Les messages que vous avez supprimés"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Dates et calendrier",
+                    "keywords": [
+                        "date",
+                        "calendrier",
+                        "an 274"
+                    ],
+                    "text": [
+                        "Les dates des messages suivent le calendrier shevarite : cycle, période, année puis heure de réception (par exemple « HI / ER / 274 — 21:45 »)."
+                    ]
+                },
+                {
+                    "title": "Sécurité du courrier",
+                    "keywords": [
+                        "sécurité",
+                        "pièce jointe",
+                        "connexion sécurisée",
+                        "spam"
+                    ],
+                    "text": [
+                        "Inlook Express établit une connexion sécurisée avec votre serveur de messagerie à chaque ouverture."
+                    ],
+                    "warning": "N'ouvrez jamais les pièces jointes d'un expéditeur inconnu. Astiasoft® ne vous demandera jamais votre mot de passe par courrier électronique."
+                }
+            ]
+        },
+        "computer": {
+            "name": "Poste de travail",
+            "icon": "https://win98icons.alexmeub.com/icons/png/computer_explorer-4.png",
+            "version": "4.10.2222",
+            "build": "Composant de Astiasoft® WindOS 98",
+            "description": "Le Poste de travail donne accès à l'ensemble des lecteurs et des fichiers de votre terminal.",
+            "topics": [
+                {
+                    "title": "Présentation du Poste de travail",
+                    "keywords": [
+                        "présentation",
+                        "lecteur",
+                        "disque"
+                    ],
+                    "text": [
+                        "Le Poste de travail affiche les lecteurs de votre ordinateur. Double-cliquez sur un lecteur ou un dossier pour afficher son contenu."
+                    ]
+                },
+                {
+                    "title": "Les lecteurs",
+                    "keywords": [
+                        "lecteur",
+                        "disquette",
+                        "A:",
+                        "B:",
+                        "C:"
+                    ],
+                    "keys": [
+                        [
+                            "Disquette 3½ (A:)",
+                            "Lecteur de disquette amovible (1.44 Mo)"
+                        ],
+                        [
+                            "Disquette chiffrée (B:)",
+                            "Volume protégé par un mot de passe"
+                        ],
+                        [
+                            "Disque local (C:)",
+                            "Disque principal : système WindOS et programmes installés"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Ouvrir un fichier",
+                    "keywords": [
+                        "fichier",
+                        "ouvrir",
+                        "image",
+                        "texte"
+                    ],
+                    "steps": [
+                        "Double-cliquez sur un lecteur, puis sur les dossiers jusqu'au fichier voulu.",
+                        "Double-cliquez sur le fichier : il s'ouvre dans le programme adapté (Bloc-notes, Visionneuse d'images…)."
+                    ],
+                    "tip": "La barre d'adresse indique toujours l'emplacement du dossier affiché."
+                },
+                {
+                    "title": "Volumes chiffrés",
+                    "keywords": [
+                        "chiffré",
+                        "mot de passe",
+                        "authentification"
+                    ],
+                    "text": [
+                        "Certains volumes sont chiffrés. Leur ouverture nécessite un mot de passe."
+                    ],
+                    "warning": "Les fichiers système (.DLL, .SYS) sont indispensables au bon fonctionnement de WindOS. Ne les modifiez pas et ne tentez pas de les exécuter."
+                }
+            ]
+        },
+        "explorer": {
+            "name": "Explorateur de fichiers",
+            "icon": "https://win98icons.alexmeub.com/icons/png/directory_explorer-1.png",
+            "version": "4.10.2222",
+            "build": "Composant de Astiasoft® WindOS 98",
+            "description": "L'Explorateur de fichiers vous permet de parcourir et d'ouvrir les documents enregistrés sur votre terminal.",
+            "topics": [
+                {
+                    "title": "Parcourir les dossiers",
+                    "keywords": [
+                        "dossier",
+                        "parcourir",
+                        "arborescence"
+                    ],
+                    "text": [
+                        "Double-cliquez sur un dossier pour l'ouvrir. La barre d'adresse indique l'emplacement en cours."
+                    ]
+                },
+                {
+                    "title": "Ouvrir un document",
+                    "keywords": [
+                        "ouvrir",
+                        "document",
+                        "musique",
+                        "image",
+                        "texte"
+                    ],
+                    "keys": [
+                        [
+                            "Fichier texte",
+                            "S'ouvre dans le Bloc-notes"
+                        ],
+                        [
+                            "Image",
+                            "S'ouvre dans la Visionneuse d'images"
+                        ],
+                        [
+                            "Musique",
+                            "Se lance dans le Media Player"
+                        ]
+                    ],
+                    "tip": "Double-cliquez sur un fichier pour l'ouvrir avec le programme associé."
+                }
+            ]
+        },
+        "recycle": {
+            "name": "Corbeille",
+            "icon": "https://win98icons.alexmeub.com/icons/png/recycle_bin_full-3.png",
+            "version": "4.10.2222",
+            "build": "Composant de Astiasoft® WindOS 98",
+            "description": "La Corbeille conserve temporairement les fichiers supprimés de votre terminal.",
+            "topics": [
+                {
+                    "title": "À quoi sert la Corbeille ?",
+                    "keywords": [
+                        "corbeille",
+                        "supprimer",
+                        "fichier supprimé"
+                    ],
+                    "text": [
+                        "Lorsque vous supprimez un fichier, il n'est pas effacé immédiatement : il est déplacé dans la Corbeille."
+                    ]
+                },
+                {
+                    "title": "Consulter les éléments supprimés",
+                    "keywords": [
+                        "consulter",
+                        "emplacement d'origine",
+                        "date de suppression"
+                    ],
+                    "text": [
+                        "Pour chaque élément, la Corbeille indique :"
+                    ],
+                    "items": [
+                        "son nom ;",
+                        "son emplacement d'origine ;",
+                        "sa date de suppression ;",
+                        "sa taille."
+                    ],
+                    "warning": "Une fois la Corbeille vidée, les fichiers ne peuvent plus être récupérés."
+                }
+            ]
+        },
+        "msn": {
+            "name": "NSN Messenger",
+            "icon": "/images/icons/32x32/messenger.png",
+            "version": "3.6",
+            "build": "Build 0212 — La messagerie instantanée WindOS",
+            "description": "NSN Messenger vous permet de discuter en temps réel avec vos contacts et de savoir en un coup d'œil qui est connecté.",
+            "topics": [
+                {
+                    "title": "Se connecter",
+                    "keywords": [
+                        "connexion",
+                        "adresse",
+                        "mot de passe"
+                    ],
+                    "steps": [
+                        "Saisissez votre adresse de messagerie.",
+                        "Saisissez votre mot de passe.",
+                        "Cliquez sur « Se connecter »."
+                    ],
+                    "tip": "Cochez « Mémoriser mon mot de passe » uniquement sur un terminal personnel."
+                },
+                {
+                    "title": "La liste de contacts",
+                    "keywords": [
+                        "contacts",
+                        "statut",
+                        "en ligne",
+                        "hors ligne"
+                    ],
+                    "text": [
+                        "Vos contacts sont classés en deux groupes : En ligne et Hors ligne. Cliquez sur le titre d'un groupe pour l'afficher ou le masquer."
+                    ],
+                    "keys": [
+                        [
+                            "● vert",
+                            "En ligne"
+                        ],
+                        [
+                            "● orange",
+                            "Absent"
+                        ],
+                        [
+                            "● gris",
+                            "Hors ligne"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Ouvrir une conversation",
+                    "keywords": [
+                        "conversation",
+                        "discussion",
+                        "message"
+                    ],
+                    "steps": [
+                        "Double-cliquez sur le nom d'un contact.",
+                        "Une fenêtre de conversation s'ouvre avec l'historique de vos échanges."
+                    ],
+                    "tip": "Vous pouvez ouvrir plusieurs conversations en même temps."
+                },
+                {
+                    "title": "Confidentialité",
+                    "keywords": [
+                        "bloquer",
+                        "confidentialité",
+                        "sécurité"
+                    ],
+                    "text": [
+                        "Vous pouvez bloquer un contact pour qu'il ne puisse plus vous écrire ni voir votre statut."
+                    ],
+                    "warning": "Astiasoft® ne vous demandera jamais votre mot de passe dans une conversation."
+                }
+            ]
+        },
+        "intranet": {
+            "name": "PYRAKI-NET",
+            "icon": "https://win98icons.alexmeub.com/icons/png/network_internet_pcs_installer-2.png",
+            "version": "1.02",
+            "build": "Édition Professionnels indépendants",
+            "description": "PYRAKI-NET est le tableau de bord des professionnels indépendants édité par Astiasoft®. Il centralise vos missions, vos clients, votre inventaire et votre comptabilité dans un espace sécurisé.",
+            "topics": [
+                {
+                    "title": "Bienvenue dans PYRAKI-NET",
+                    "keywords": [
+                        "présentation",
+                        "tableau de bord",
+                        "connexion"
+                    ],
+                    "text": [
+                        "PYRAKI-NET est protégé par un mot de passe. Une fois connecté, naviguez entre les modules grâce aux onglets situés en haut de la fenêtre."
+                    ]
+                },
+                {
+                    "title": "Les modules",
+                    "keywords": [
+                        "onglets",
+                        "missions",
+                        "clients",
+                        "inventaire",
+                        "comptes",
+                        "profil",
+                        "journaux"
+                    ],
+                    "keys": [
+                        [
+                            "Missions",
+                            "Suivi des contrats en cours et terminés"
+                        ],
+                        [
+                            "Clients",
+                            "Carnet de vos commanditaires"
+                        ],
+                        [
+                            "Inventaire",
+                            "Objets récupérés et matériel"
+                        ],
+                        [
+                            "Comptes",
+                            "Recettes, dépenses et solde"
+                        ],
+                        [
+                            "Profil",
+                            "Votre fiche professionnelle"
+                        ],
+                        [
+                            "Journaux",
+                            "Historique de l'activité du terminal"
+                        ],
+                        [
+                            "Confidentiel",
+                            "Documents à accès restreint"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Niveaux d'autorisation",
+                    "keywords": [
+                        "autorisation",
+                        "clearance",
+                        "confidentiel",
+                        "accès restreint"
+                    ],
+                    "text": [
+                        "Certains documents sont classés « Confidentiel ». Leur consultation nécessite un niveau d'autorisation supérieur, délivré par l'Invite de commandes de WindOS."
+                    ],
+                    "tip": "Tapez « help » dans l'Invite de commandes pour connaître les commandes liées à PYRAKI-NET."
+                },
+                {
+                    "title": "Confidentialité des données",
+                    "keywords": [
+                        "données",
+                        "chiffrement",
+                        "confidentialité"
+                    ],
+                    "text": [
+                        "Les données saisies dans PYRAKI-NET sont chiffrées sur votre terminal. Conformément à la charte de confidentialité du Groupe Astia, Astiasoft® ne peut ni les lire ni les récupérer."
+                    ],
+                    "warning": "En cas de perte de votre mot de passe, vos données seront définitivement inaccessibles."
+                }
+            ]
+        },
+        "media": {
+            "name": "WindOS Media Player",
+            "icon": "https://win98icons.alexmeub.com/icons/png/wm-3.png",
+            "version": "6.4",
+            "build": "Build 07.1112",
+            "description": "WindOS Media Player lit vos fichiers audio et vos listes de lecture.",
+            "topics": [
+                {
+                    "title": "Écouter un morceau",
+                    "keywords": [
+                        "lecture",
+                        "morceau",
+                        "musique"
+                    ],
+                    "steps": [
+                        "Double-cliquez sur un fichier audio dans l'Explorateur, ou choisissez un morceau dans la liste de lecture.",
+                        "Cliquez sur Lecture."
+                    ]
+                },
+                {
+                    "title": "Les commandes de lecture",
+                    "keywords": [
+                        "lecture",
+                        "pause",
+                        "stop",
+                        "suivant",
+                        "précédent",
+                        "volume"
+                    ],
+                    "keys": [
+                        [
+                            "Lecture / Pause",
+                            "Lancer ou interrompre le morceau"
+                        ],
+                        [
+                            "Stop",
+                            "Arrêter la lecture et revenir au début"
+                        ],
+                        [
+                            "Précédent / Suivant",
+                            "Changer de morceau"
+                        ],
+                        [
+                            "Barre de progression",
+                            "Cliquez pour avancer ou reculer dans le morceau"
+                        ],
+                        [
+                            "Volume",
+                            "Régler le volume sonore"
+                        ]
+                    ]
+                }
+            ]
+        },
+        "cmd": {
+            "name": "Invite de commandes",
+            "icon": "https://win98icons.alexmeub.com/icons/png/console_prompt-0.png",
+            "version": "4.10.2222",
+            "build": "Professional Edition — Build 141",
+            "description": "L'Invite de commandes permet d'utiliser WindOS en tapant des commandes au clavier.",
+            "topics": [
+                {
+                    "title": "Utiliser l'Invite de commandes",
+                    "keywords": [
+                        "commande",
+                        "clavier",
+                        "entrée"
+                    ],
+                    "text": [
+                        "Tapez une commande après l'invite C:\\WINDOS> puis appuyez sur Entrée.",
+                        "Tapez « help » pour afficher la liste des commandes disponibles."
+                    ]
+                },
+                {
+                    "title": "Commandes courantes",
+                    "keywords": [
+                        "help",
+                        "ver",
+                        "whoami",
+                        "dir",
+                        "cls",
+                        "echo",
+                        "ping"
+                    ],
+                    "keys": [
+                        [
+                            "help",
+                            "Affiche la liste des commandes"
+                        ],
+                        [
+                            "ver",
+                            "Affiche la version du système"
+                        ],
+                        [
+                            "whoami",
+                            "Affiche les informations de l'utilisateur"
+                        ],
+                        [
+                            "dir",
+                            "Liste les fichiers du répertoire"
+                        ],
+                        [
+                            "cls",
+                            "Efface l'écran"
+                        ],
+                        [
+                            "echo [msg]",
+                            "Affiche un message"
+                        ],
+                        [
+                            "ping [hôte]",
+                            "Teste la connexion avec un serveur"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Commandes PYRAKI-NET",
+                    "keywords": [
+                        "auth",
+                        "status",
+                        "logout",
+                        "token"
+                    ],
+                    "keys": [
+                        [
+                            "auth [jeton]",
+                            "S'authentifier auprès de PYRAKI-NET"
+                        ],
+                        [
+                            "status",
+                            "Afficher votre niveau d'autorisation"
+                        ],
+                        [
+                            "logout",
+                            "Fermer la session PYRAKI-NET"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Commandes avancées",
+                    "keywords": [
+                        "sudo",
+                        "format",
+                        "administrateur"
+                    ],
+                    "text": [
+                        "Certaines commandes ne sont pas documentées. Astiasoft® décline toute responsabilité quant à leur utilisation."
+                    ],
+                    "warning": "La commande « format c: » efface l'intégralité du disque local. À utiliser avec la plus grande prudence."
+                }
+            ]
+        },
+        "imageviewer": {
+            "name": "Visionneuse d'images",
+            "icon": "https://win98icons.alexmeub.com/icons/png/kodak_imaging-0.png",
+            "version": "4.10.2222",
+            "build": "Composant de Astiasoft® WindOS 98",
+            "description": "La Visionneuse d'images affiche vos photos et illustrations.",
+            "topics": [
+                {
+                    "title": "Afficher une image",
+                    "keywords": [
+                        "image",
+                        "photo",
+                        "ouvrir"
+                    ],
+                    "text": [
+                        "Double-cliquez sur une image dans l'Explorateur ou le Poste de travail pour l'ouvrir dans la visionneuse."
+                    ]
+                },
+                {
+                    "title": "Les commandes",
+                    "keywords": [
+                        "zoom",
+                        "suivante",
+                        "précédente",
+                        "taille normale"
+                    ],
+                    "keys": [
+                        [
+                            "◄ / ►",
+                            "Image précédente / suivante"
+                        ],
+                        [
+                            "Zoom +",
+                            "Agrandir l'image"
+                        ],
+                        [
+                            "Zoom -",
+                            "Réduire l'image"
+                        ],
+                        [
+                            "Taille normale",
+                            "Afficher l'image à sa taille réelle"
+                        ]
+                    ]
+                }
+            ]
+        },
+        "notepad": {
+            "name": "Bloc-notes",
+            "icon": "https://win98icons.alexmeub.com/icons/png/notepad-0.png",
+            "version": "4.10.2222",
+            "build": "Composant de Astiasoft® WindOS 98",
+            "description": "Le Bloc-notes est un éditeur de texte simple pour lire et prendre des notes.",
+            "topics": [
+                {
+                    "title": "Lire un document",
+                    "keywords": [
+                        "texte",
+                        "document",
+                        "lire"
+                    ],
+                    "text": [
+                        "Double-cliquez sur un fichier texte (.txt, .log) pour l'ouvrir dans le Bloc-notes.",
+                        "Utilisez la barre de défilement pour parcourir les documents longs."
+                    ],
+                    "tip": "Vous pouvez ouvrir plusieurs documents à la fois : chacun s'affiche dans sa propre fenêtre."
+                }
+            ]
+        },
+        "powers": {
+            "name": "Registre des Essems",
+            "icon": "https://win98icons.alexmeub.com/icons/png/executable_script-0.png",
+            "version": "2.7",
+            "build": "ESSEMS_REGISTRY.exe",
+            "description": "Le Registre des Essems présente la fiche de capacités d'un individu : essem, statistiques, sorts et techniques.",
+            "topics": [
+                {
+                    "title": "Lire une fiche",
+                    "keywords": [
+                        "fiche",
+                        "essem",
+                        "archétype",
+                        "spécialisation"
+                    ],
+                    "text": [
+                        "La fiche indique l'essem de l'individu, son archétype, sa spécialisation et son affiliation, ainsi que ses points de vie et d'énergie."
+                    ]
+                },
+                {
+                    "title": "Données de capacité",
+                    "keywords": [
+                        "statistiques",
+                        "graphique",
+                        "capacité"
+                    ],
+                    "text": [
+                        "Le graphique en étoile résume les statistiques de l'individu. Plus une branche est longue, plus la capacité est développée."
+                    ]
+                },
+                {
+                    "title": "Sorts et techniques",
+                    "keywords": [
+                        "sort",
+                        "technique",
+                        "coût",
+                        "portée",
+                        "durée",
+                        "recharge"
+                    ],
+                    "steps": [
+                        "Cliquez sur un sort pour afficher sa fiche détaillée.",
+                        "Consultez son effet, son coût, sa portée, sa durée et son temps de recharge.",
+                        "Appuyez sur Échap pour refermer la fiche."
+                    ]
+                },
+                {
+                    "title": "Forces et faiblesses",
+                    "keywords": [
+                        "forces",
+                        "faiblesses",
+                        "avantages",
+                        "limites"
+                    ],
+                    "text": [
+                        "La section Avantages & limites récapitule les points forts de l'individu et les faiblesses à prendre en compte."
+                    ],
+                    "warning": "Les informations du Registre sont confidentielles. Leur diffusion est strictement interdite."
+                }
+            ]
+        },
+        "snake": {
+            "name": "Snake",
+            "icon": "https://win98icons.alexmeub.com/icons/png/joystick_alt-1.png",
+            "version": "1.0",
+            "build": "Pack Divertissement WindOS",
+            "description": "Guidez le serpent, mangez un maximum de nourriture… sans jamais vous mordre la queue !",
+            "topics": [
+                {
+                    "title": "Règles du jeu",
+                    "keywords": [
+                        "règles",
+                        "score",
+                        "serpent"
+                    ],
+                    "text": [
+                        "Chaque aliment mangé fait grandir le serpent et augmente votre score. La partie s'arrête si le serpent touche un mur ou son propre corps."
+                    ]
+                },
+                {
+                    "title": "Commandes",
+                    "keywords": [
+                        "clavier",
+                        "flèches",
+                        "pause"
+                    ],
+                    "keys": [
+                        [
+                            "Flèches",
+                            "Diriger le serpent"
+                        ],
+                        [
+                            "Espace",
+                            "Pause / reprise"
+                        ],
+                        [
+                            "Échap",
+                            "Quitter la partie"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Niveaux de vitesse",
+                    "keywords": [
+                        "vitesse",
+                        "facile",
+                        "normal",
+                        "rapide"
+                    ],
+                    "keys": [
+                        [
+                            "Facile",
+                            "Idéal pour débuter"
+                        ],
+                        [
+                            "Normal",
+                            "Le rythme classique"
+                        ],
+                        [
+                            "Rapide",
+                            "Pour les réflexes aiguisés"
+                        ]
+                    ]
+                }
+            ]
+        },
+        "jump": {
+            "name": "Jeu de saut",
+            "icon": "https://win98icons.alexmeub.com/icons/png/joystick_alt-1.png",
+            "version": "1.0",
+            "build": "Pack Divertissement WindOS",
+            "description": "Sautez par-dessus les obstacles et allez le plus loin possible.",
+            "topics": [
+                {
+                    "title": "Règles du jeu",
+                    "keywords": [
+                        "règles",
+                        "score",
+                        "obstacle"
+                    ],
+                    "text": [
+                        "Le personnage court automatiquement. Sautez au bon moment pour éviter les obstacles : plus vous allez loin, plus votre score augmente."
+                    ]
+                },
+                {
+                    "title": "Commandes",
+                    "keywords": [
+                        "clavier",
+                        "sauter",
+                        "pause"
+                    ],
+                    "keys": [
+                        [
+                            "Espace / Flèche haut",
+                            "Sauter (et lancer la partie)"
+                        ],
+                        [
+                            "Échap",
+                            "Pause / reprise"
+                        ]
+                    ]
+                }
+            ]
+        },
+        "virus": {
+            "name": "VirusSurvivors",
+            "icon": "https://win98icons.alexmeub.com/icons/png/joystick_alt-1.png",
+            "version": "1.0",
+            "build": "Pack Divertissement WindOS",
+            "description": "Survivez aux vagues de virus qui envahissent le système et améliorez vos défenses à chaque niveau.",
+            "topics": [
+                {
+                    "title": "Règles du jeu",
+                    "keywords": [
+                        "règles",
+                        "virus",
+                        "expérience",
+                        "niveau"
+                    ],
+                    "text": [
+                        "Votre programme tire automatiquement sur les virus. Ramassez l'expérience laissée par les ennemis vaincus pour monter de niveau."
+                    ]
+                },
+                {
+                    "title": "Commandes",
+                    "keywords": [
+                        "clavier",
+                        "déplacement",
+                        "pause"
+                    ],
+                    "keys": [
+                        [
+                            "Flèches / ZQSD / WASD",
+                            "Se déplacer"
+                        ],
+                        [
+                            "Entrée / Espace",
+                            "Lancer la partie"
+                        ],
+                        [
+                            "Espace",
+                            "Pause / reprise"
+                        ],
+                        [
+                            "R / Entrée",
+                            "Rejouer après une défaite"
+                        ],
+                        [
+                            "Échap",
+                            "Retour au menu"
+                        ]
+                    ]
+                },
+                {
+                    "title": "Améliorations",
+                    "keywords": [
+                        "amélioration",
+                        "bonus",
+                        "upgrade"
+                    ],
+                    "text": [
+                        "À chaque niveau, trois améliorations vous sont proposées. Cliquez sur l'une d'elles ou appuyez sur 1, 2 ou 3 pour la choisir."
+                    ],
+                    "tip": "Combinez les améliorations pour créer des défenses redoutables."
+                }
+            ]
+        }
     }
 }
