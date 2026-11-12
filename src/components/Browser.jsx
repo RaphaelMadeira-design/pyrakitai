@@ -40,6 +40,13 @@ const normalizeUrl = (s) =>
 const buildGoogleUrl = (q) =>
     `http://www.wiggle.sv/search?q=${encodeURIComponent(q).replace(/%20/g, '+')}`
 
+// Infos d'onglet pour une page externe (wiki Shevar, etc.)
+const externalTabInfo = (url) => ({
+    label: new URL(url).hostname,
+    url,
+    icon: 'https://win98icons.alexmeub.com/icons/png/web_file-0.png',
+})
+
 const isSecretSearch = (query, SECRET_SEARCHES) => {
     const q = query.trim().toLowerCase()
     return SECRET_SEARCHES.some(s => q.includes(s.toLowerCase()))
@@ -117,9 +124,21 @@ export default function Browser() {
     const [addressSaved, setAddressSaved] = useState('')
     const [externalReload, setExternalReload] = useState(0)
     const [newTabs, setNewTabs] = useState([])   // onglets nsn ouverts via "+"
+    const [tabOverrides, setTabOverrides] = useState({})   // pages externes par onglet nsn
     const newTabCounter = useRef(0)
 
     const isNsnTab = (id) => id === 'google' || id.startsWith('nsn-')
+
+    const setTabOverride = (id, info) =>
+        setTabOverrides(prev => ({ ...prev, [id]: info }))
+
+    const clearTabOverride = (id) =>
+        setTabOverrides(prev => {
+            if (!(id in prev)) return prev
+            const next = { ...prev }
+            delete next[id]
+            return next
+        })
 
     const openTab = useCallback((id) => {
         setOpenedTabs(prev => (prev.includes(id) ? prev : [...prev, id]))
@@ -168,38 +187,47 @@ export default function Browser() {
                     setAddressValue(TAB_DEFS[action.tabId].url)
                     break
 
-                case 'OPEN_EXTERNAL':
-                    if (!isNsnTab(activeTab)) {
-                        openTab('google')
-                        setActiveTab('google')
+                case 'OPEN_EXTERNAL': {
+                    const tabId = isNsnTab(activeTab) ? activeTab : 'google'
+                    if (tabId !== activeTab) {
+                        openTab(tabId)
+                        setActiveTab(tabId)
                     }
                     setContentMode('external-page')
                     setExternalUrl(action.url)
                     setAddressValue(action.url)
+                    setTabOverride(tabId, externalTabInfo(action.url))
                     setExternalReload(value => value + 1)
                     break
+                }
 
-                case 'GOOGLE_RESULTS':
-                    if (!isNsnTab(activeTab)) {
-                        openTab('google')
-                        setActiveTab('google')
+                case 'GOOGLE_RESULTS': {
+                    const tabId = isNsnTab(activeTab) ? activeTab : 'google'
+                    if (tabId !== activeTab) {
+                        openTab(tabId)
+                        setActiveTab(tabId)
                     }
                     setSearchQuery(action.query)
                     setSearchTopic(action.topic)
                     setContentMode('google-results')
                     setAddressValue(buildGoogleUrl(action.query))
+                    clearTabOverride(tabId)
                     break
+                }
 
-                case 'GOOGLE_NORESULT':
-                    if (!isNsnTab(activeTab)) {
-                        openTab('google')
-                        setActiveTab('google')
+                case 'GOOGLE_NORESULT': {
+                    const tabId = isNsnTab(activeTab) ? activeTab : 'google'
+                    if (tabId !== activeTab) {
+                        openTab(tabId)
+                        setActiveTab(tabId)
                     }
                     setSearchQuery(action.query)
                     setSearchTopic(null)
                     setContentMode('google-noresult')
                     setAddressValue(buildGoogleUrl(action.query))
+                    clearTabOverride(tabId)
                     break
+                }
                 }
             })
     }, [triggerGlitch, openTab, activeTab])
@@ -213,8 +241,8 @@ export default function Browser() {
     }
 
     const tabs = [
-        ...openedTabs.map(id => TAB_DEFS[id]),
-        ...newTabs,
+        ...openedTabs.map(id => ({ ...TAB_DEFS[id], ...tabOverrides[id] })),
+        ...newTabs.map(tab => ({ ...tab, ...tabOverrides[tab.id] })),
         ...(secretTabVisible ? [secretData.secretTab] : []),
     ]
 
@@ -227,6 +255,7 @@ export default function Browser() {
         } else {
             setOpenedTabs(prev => prev.filter(t => t !== id))
         }
+        clearTabOverride(id)
         if (activeTab === id) {
             setActiveTab('google')
             setAddressValue(TAB_DEFS.google.url)
@@ -295,6 +324,7 @@ export default function Browser() {
         setActiveTab(id)
         setAddressValue(tab.url)
         setContentMode('normal')
+        clearTabOverride(id)
     }
 
     const handleBack = () => {
@@ -302,6 +332,7 @@ export default function Browser() {
             setContentMode('google-results')
             setActiveTab('google')
             setAddressValue(buildGoogleUrl(searchQuery))
+            clearTabOverride('google')
             return
         }
         setContentMode('normal')
