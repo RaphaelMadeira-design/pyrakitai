@@ -31,7 +31,7 @@
             "deadline": "22/06",
             "status": "À LIVRER",
             "reward": 5400,
-            "notes": "Client paye en crédits blanchis. Ne pas ouvrir le dossier. Livraison neutre convenue à la gare monorail."
+            "notes": "Client paye en tihrs blanchis. Ne pas ouvrir le dossier. Livraison neutre convenue à la gare monorail."
         },
         {
             "id": "M-0140",
@@ -227,7 +227,7 @@
     "confidential": {
         "arrangement": {
             "title": "ARRANGEMENT — GROUPE ASTIA (confidentiel)",
-            "content": "Astia verse un forfait mensuel de 2 000 crédits pour un « droit de préemption » sur toute récupération concernant leurs biens ou concurrents. Sin'aän conserve son indépendance et refuse toute exclusivité formelle. Chaque mission Astia est facturée en supplément, sans NDA verbal. Cet arrangement n'apparaît nulle part sur les registres officiels."
+            "content": "Astia verse un forfait mensuel de 2 000 tihrs pour un « droit de préemption » sur toute récupération concernant leurs biens ou concurrents. Sin'aän conserve son indépendance et refuse toute exclusivité formelle. Chaque mission Astia est facturée en supplément, sans NDA verbal. Cet arrangement n'apparaît nulle part sur les registres officiels."
         },
         "watchlist": {
             "title": "LISTE DE VEILLE — CIBLES À NE JAMAIS ACCEPTER",

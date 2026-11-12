@@ -37,7 +37,7 @@
             ["Nom complet", "Sin'aän Kitaï"],
             ["Âge", "198 ans"],
             ["Sexe", "Masculin ♂"],
-            ["Race", "Aüne"],
+            ["Race", "Samaä'ka/Aüne"],
             ["Origine", "Sima'ch"],
             ["Affiliation", "Indépendant"],
             ["Rôle", "Récupérateur"],
@@ -146,20 +146,20 @@
         ] },
         { "level": 2, "id": "wiki-aptitudes", "titleHtml": "Aptitudes et compétences" },
         { "level": 3, "id": "wiki-competences", "titleHtml": "Compétences générales", "list": [
-            "<strong>Motricité</strong> — Sin'aän est ambidextre depuis son plus jeune âge et possède une excellente coordination œil-main et œil-pied.",
-            "<strong>Ouïe surdéveloppée</strong> — Il perçoit les sons avec une acuité exceptionnelle, ce qui lui permet de détecter des bruits subtils.",
-            "<strong>Langues</strong> — Polyglotte, il maîtrise plusieurs langues courantes ainsi que quelques idiomes anciens transmis par un ancien professeur.",
-            "<strong>Technologie</strong> — Sin'aän est familier avec la technologie ancienne et connaît plusieurs langages de programmation aujourd'hui disparus ou obsolètes."
+            "<strong>Motricité</strong> — Aambidextre doté d'une excellente coordination œil-main et œil-pied.",
+            "<strong>Ouïe surdéveloppée</strong> — Perçoit les sons avec une acuité exceptionnelle et peut détecter des bruits subtils.",
+            "<strong>Langues</strong> — Polyglotte maîtrisant plusieurs langues courantes ainsi que quelques idiomes anciens.",
+            "<strong>Technologie</strong> — Connaissances en technologie ancienne et en électronique."
         ] },
         { "level": 3, "id": "wiki-combat", "titleHtml": "Style de combat", "paragraphs": [
-            "Sin'aän ne possède pas de style de combat à proprement parler. Sa manière de combattre se rapproche plus du <em>street fighting</em> que des arts martiaux traditionnels. Il emprunte des techniques de <strong>taekwondo</strong> et de <strong>capoeira</strong> qu'il adapte à sa propre manière de bouger. Il se bat majoritairement avec ses jambes. Bien qu'il reste amateur, son style est fluide, imprévisible et chaotique, basé sur les feintes, les changements de rythme mais aussi sur son environnement immédiat."
+            "Sin'aän ne possède pas de style de combat à proprement parler. Sa manière de combattre se rapproche plus du <em>street fighting</em> que des arts martiaux traditionnels. Il emprunte des techniques de <strong>taekwondo</strong> et de <strong>capoeira</strong> qu'il adapte à sa propre manière de bouger. Il se bat majoritairement avec ses jambes. Bien qu'il ne soit pas gradé, son style est fluide, imprévisible et chaotique, basé sur les feintes, les changements de rythme mais aussi sur son environnement immédiat."
         ] },
         { "level": 3, "id": "wiki-essem", "titleHtml": "Essem", "paragraphs": [
             "..."
         ] },
         { "level": 2, "id": "wiki-entourage", "titleHtml": "Entourage" },
         { "level": 3, "id": "wiki-pros", "titleHtml": "Relations professionnelles", "list": [
-            "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
+            "<strong><span class=\"browser__wiki-link\">Madame Halvar</span></strong> — Sa propriétaire qui gère aussi le restaurant <em>Le lampion</em> d'une main de fer, situé juste à côté. Bien qu'elle puisse se montrer sévère, elle prend soin de Sin'aän à sa manière, qu'elle connaît depuis de longues années.",
             "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
             "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
             "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",

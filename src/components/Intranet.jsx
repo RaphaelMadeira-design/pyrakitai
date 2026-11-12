@@ -250,7 +250,7 @@ export default function Intranet({ onOpenWindow }) {
                                 <th>Priorité</th>
                                 <th>Échéance</th>
                                 <th>Statut</th>
-                                <th style={{ textAlign: 'right' }}>Récomp. (₡)</th>
+                                <th style={{ textAlign: 'right' }}>Récomp. (Ŧ)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -293,7 +293,7 @@ export default function Intranet({ onOpenWindow }) {
                                     'Priorité': openMission.priority,
                                     'Échéance': fakeDate(openMission.deadline),
                                     'Statut': openMission.status,
-                                    'Récompense': `${openMission.reward.toLocaleString('fr-FR')} ₡`,
+                                    'Récompense': `${openMission.reward.toLocaleString('fr-FR')} Ŧ`,
                                 }).map(([k, v]) => (
                                     <tr key={k}><th>{k}</th><td>{v}</td></tr>
                                 ))}
@@ -376,7 +376,7 @@ export default function Intranet({ onOpenWindow }) {
                                 <th>Objet</th>
                                 <th>État</th>
                                 <th>Mission liée</th>
-                                <th style={{ textAlign: 'right' }}>Valeur (₡)</th>
+                                <th style={{ textAlign: 'right' }}>Valeur (Ŧ)</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -397,8 +397,8 @@ export default function Intranet({ onOpenWindow }) {
                 {tab === 'ledger' && (
                     <div className="intranet__ledger">
                         <div className="intranet__ledger-summary" data-testid="ledger-summary">
-                            <div><b>Solde actuel :</b> <span style={{ fontFamily: 'monospace' }}>{OPERATOR.credits.toLocaleString('fr-FR')} ₡</span></div>
-                            <div><b>Delta 30j :</b> <span style={{ fontFamily: 'monospace', color: balance >= 0 ? '#2c7a2c' : '#b00' }}>{balance >= 0 ? '+' : ''}{balance.toLocaleString('fr-FR')} ₡</span></div>
+                            <div><b>Solde actuel :</b> <span style={{ fontFamily: 'monospace' }}>{OPERATOR.credits.toLocaleString('fr-FR')} Ŧ</span></div>
+                            <div><b>Delta 30j :</b> <span style={{ fontFamily: 'monospace', color: balance >= 0 ? '#2c7a2c' : '#b00' }}>{balance >= 0 ? '+' : ''}{balance.toLocaleString('fr-FR')} Ŧ</span></div>
                             <div><b>Notation :</b> {OPERATOR.rating} / 5 ★</div>
                         </div>
                         <table className="intranet__table" data-testid="intranet-ledger-table">
@@ -408,7 +408,7 @@ export default function Intranet({ onOpenWindow }) {
                                     <th>Date</th>
                                     <th>Libellé</th>
                                     <th>Type</th>
-                                    <th style={{ textAlign: 'right' }}>Montant (₡)</th>
+                                    <th style={{ textAlign: 'right' }}>Montant (Ŧ)</th>
                                 </tr>
                             </thead>
                             <tbody>
