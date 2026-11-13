@@ -275,18 +275,46 @@ function MSNChat({ contact, index, onClose, onFocus, focused, zIndex, minimized 
 }
 
 // ─── MAIN MSN APP ────────────────────────────────────────────────
+// Props venant du bureau (App.jsx) :
+//   focused  → Messenger est-il la fenêtre active du bureau ?
+//   onFocus  → à appeler quand on clique dans Messenger, pour que le bureau
+//              le déclare actif (barre des tâches, autres fenêtres)
 
-export default function MSNApp({ onClose, onMinimize, onHelp, minimized = false }) {
+export default function MSNApp({ onClose, onMinimize, onHelp, onFocus, focused: appFocused = true, minimized = false }) {
     const [phase, setPhase]         = useState('login')
     const [openChats, setOpenChats] = useState([])
     const [focusedId, setFocusedId] = useState(null)
     const [zMap, setZMap]           = useState({})
 
+    // Monte une fenêtre Messenger au premier plan (compteur de z-index partagé avec le bureau)
     const bringToFront = useCallback((id) => {
         const z = nextZ()
         setZMap(prev => ({ ...prev, [id]: z }))
         setFocusedId(id)
     }, [])
+
+    // Clic dans une fenêtre Messenger : on la monte ET on prévient le bureau
+    const handleFocus = (id) => {
+        bringToFront(id)
+        onFocus?.()
+    }
+
+    // Quand le bureau redonne le focus à Messenger (clic sur son bouton dans la barre
+    // des tâches), on remonte toutes ses fenêtres au-dessus des autres applications,
+    // en gardant leur ordre relatif.
+    const wasFocused = useRef(appFocused)
+    useEffect(() => {
+        if (appFocused && !wasFocused.current) {
+            setZMap(prev => {
+                const next = { ...prev }
+                Object.keys(prev)
+                    .sort((a, b) => prev[a] - prev[b])
+                    .forEach(id => { next[id] = nextZ() })
+                return next
+            })
+        }
+        wasFocused.current = appFocused
+    }, [appFocused])
 
     useEffect(() => {
         const id = phase === 'login' ? 'msn-login' : 'msn-contacts'
@@ -296,10 +324,8 @@ export default function MSNApp({ onClose, onMinimize, onHelp, minimized = false 
     const openChat = (id) => {
         if (!openChats.includes(id)) {
             setOpenChats(p => [...p, id])
-            bringToFront(`msn-chat-${id}`)
-        } else {
-            bringToFront(`msn-chat-${id}`)
         }
+        handleFocus(`msn-chat-${id}`)
     }
     const closeChat = (id) => setOpenChats(p => p.filter(c => c !== id))
     const closeWrap = () => onClose()
@@ -311,10 +337,10 @@ export default function MSNApp({ onClose, onMinimize, onHelp, minimized = false 
                 <MSNLogin
                     onLogin={() => setPhase('contacts')}
                     onClose={closeWrap}
-                    onFocus={bringToFront}
+                    onFocus={handleFocus}
                     onMinimize={minimizeWrap}
                     onHelp={onHelp}
-                    focused={focusedId === 'msn-login'}
+                    focused={appFocused && focusedId === 'msn-login'}
                     zIndex={zMap['msn-login']}
                     minimized={minimized}
                 />
@@ -324,8 +350,8 @@ export default function MSNApp({ onClose, onMinimize, onHelp, minimized = false 
                     onClose={closeWrap}
                     onMinimize={minimizeWrap}
                     onHelp={onHelp}
-                    onFocus={bringToFront}
-                    focused={focusedId === 'msn-contacts'}
+                    onFocus={handleFocus}
+                    focused={appFocused && focusedId === 'msn-contacts'}
                     zIndex={zMap['msn-contacts']}
                     minimized={minimized}
                 />
@@ -340,8 +366,8 @@ export default function MSNApp({ onClose, onMinimize, onHelp, minimized = false 
                         contact={contact}
                         index={i}
                         onClose={() => closeChat(contactId)}
-                        onFocus={bringToFront}
-                        focused={focusedId === winId}
+                        onFocus={handleFocus}
+                        focused={appFocused && focusedId === winId}
                         zIndex={zMap[winId] ?? 100}
                         minimized={minimized}
                     />

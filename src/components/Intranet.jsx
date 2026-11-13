@@ -40,9 +40,6 @@ const PROFILE_SECTIONS = [
     { key: 'fears',      label: 'Peurs & traumatismes',    field: 'fearsTraumas' },
 ]
 
-// Le token « Confidentiel » est posé via l'invite de commandes (CMD)
-// dans la clé sessionStorage 'pyraki_clearance'. On la conserve
-// pour ne pas casser l'ancien mécanisme d'accès.
 const CLEARANCE_KEY = 'pyraki_clearance'
 const isAuthorized = () => {
     const v = sessionStorage.getItem(CLEARANCE_KEY)
@@ -173,6 +170,16 @@ export default function Intranet({ onOpenWindow }) {
         []
     )
 
+    const handleLogout = () => {
+        sessionStorage.removeItem('pyraki_auth')
+        sessionStorage.removeItem('pyraki_clearance')
+        setAuthed(false)
+        setTab('missions')
+        setOpenMission(null)
+        setOpenClient(null)
+        setOpenModal(null)
+    }
+
     if (!authed) {
         return <IntranetLogin onLogin={() => setAuthed(true)} />
     }
@@ -216,6 +223,15 @@ export default function Intranet({ onOpenWindow }) {
                 >
                     {authorized ? 'CONFIDENTIEL' : 'STANDARD'}
                 </div>
+                <button
+                    type="button"
+                    className="intranet__logout"
+                    onClick={handleLogout}
+                    title="Se déconnecter de PYRAKI-NET"
+                    data-testid="intranet-logout"
+                >
+                   ⏻ Déconnexion
+                </button>
             </div>
 
             {/* Tabs */}

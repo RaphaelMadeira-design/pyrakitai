@@ -242,10 +242,15 @@ function App() {
         }
     }, [msnOpen])
 
+    // Synchronise l'état « réduit » de Messenger avec la liste des fenêtres.
+    // Le focus / z-index est géré par focusWindow : on ne touche ici qu'au retrait du focus
+    // quand la fenêtre est réduite.
     useEffect(() => {
         if (!msnOpen) return
         setWindows(prev => prev.map(w =>
-            w.id === 'msn' ? { ...w, minimized: msnMinimized, focused: !msnMinimized } : w
+            w.id === 'msn'
+                ? { ...w, minimized: msnMinimized, ...(msnMinimized ? { focused: false } : {}) }
+                : w
         ))
     }, [msnMinimized, msnOpen])
 
@@ -254,6 +259,12 @@ function App() {
             setMsnOpen(true)
             setMsnMinimized(false)
             setStartOpen(false)
+            // Si Messenger est déjà ouvert : on le remet au premier plan
+            setWindows(prev => prev.some(w => w.id === 'msn')
+                ? prev.map(w => w.id === 'msn'
+                    ? { ...w, minimized: false, focused: true, zIndex: nextZ() }
+                    : { ...w, focused: false })
+                : prev)
             return
         }
         if (id.startsWith("help-")) {
@@ -368,8 +379,16 @@ function App() {
             if (!msnOpen) {
                 setMsnOpen(true)
                 setMsnMinimized(false)
+                return
+            }
+            const msnWin = windows.find(w => w.id === 'msn')
+            if (msnMinimized) {
+                setMsnMinimized(false)      // restaurer…
+                focusWindow('msn')          // …et passer au premier plan
+            } else if (msnWin?.focused) {
+                setMsnMinimized(true)       // déjà actif : on réduit
             } else {
-                setMsnMinimized(prev => !prev)
+                focusWindow('msn')          // visible mais derrière : premier plan, sans réduire
             }
             return 
         }
@@ -394,7 +413,7 @@ function App() {
                 : { ...w, focused: false }
             )
         })
-    }, [msnOpen])
+    }, [msnOpen, msnMinimized, windows, focusWindow])
 
     const openNotepad = useCallback(({ id, name, content }) => {
         const winId = `notepad-${id}`
@@ -466,6 +485,9 @@ function App() {
         setStartOpen(false)
         setLoggedIn(false)
     }, [])
+
+    // État de la fenêtre Messenger (z-index, focus) dans la liste partagée des fenêtres
+    const msnWin = windows.find(w => w.id === 'msn')
 
     if (isMobile) {
         return <PDAView />
@@ -565,6 +587,8 @@ function App() {
                             {msnOpen && (
                                 <MSNApp
                                     minimized={msnMinimized}
+                                    focused={msnWin?.focused}
+                                    onFocus={() => focusWindow('msn')}
                                     onClose={() => { setMsnOpen(false); setMsnMinimized(false) }}
                                     onMinimize={() => setMsnMinimized(true)}
                                     onHelp={() => handleHelp('msn')}

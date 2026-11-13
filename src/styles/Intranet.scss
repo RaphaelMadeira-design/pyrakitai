@@ -60,6 +60,29 @@
         }
     }
 
+    &__logout {
+        padding: 3px 10px;
+        font-family: $font-system;
+        font-size: 12px;
+        color: $win98-black;
+        background: $win98-gray;
+        @include border-outset;
+        cursor: pointer;
+
+        &:hover {
+            background: $win98-light-gray;
+        }
+
+        &:active {
+            @include border-inset;
+        }
+
+        &:focus-visible {
+            outline: 1px dotted $win98-black;
+            outline-offset: -4px;
+        }
+    }
+
     &__tabs {
         display: flex;
         background: #c0c0c0;
@@ -85,7 +108,7 @@
         margin-right: -1px;
         position: relative;
         top: 1px;
-        min-width: 125px;
+        min-width: 105px;
 
         &:hover { 
             background: #d4d0c8; 
