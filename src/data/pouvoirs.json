@@ -4,7 +4,7 @@
         "lastName": "KITAÏ",
         "school": "INDÉPENDANT",
         "portrait": "/images/Full.png",
-        "description": "Sin'aän est un invocateur expert dans le combat rapproché, au style aussi brutal que nonchalant, qui reflète bien la dualité de sa psyché. Contrairement à la plupart des utilisateurs d'Orhen, il manipule cet essem a des fins majoritairement offensives, spécialisé dans des techniques de condensation pour améliorer la puissance de ses coups en créant une membrane pseudo-protectrice autour de ses membres. Sa technique signature est d'apposer une marque orhenique sur sa cible qui aspire graduellement son énergie vitale et qui lui sert de balise pour savoir où elle se trouve dans un rayon d'action donné."
+        "description": "Sin'aän est un invocateur expert dans le combat rapproché, au style aussi brutal que nonchalant, qui reflète bien la dualité de sa psyché. Contrairement à la plupart des utilisateurs d'Orhen, il manipule cet essem a des fins majoritairement offensives, spécialisé dans des techniques de condensation pour améliorer la puissance de ses coups en créant une membrane pseudo-protectrice autour de ses membres. Sa technique signature consiste à créer un nuage composé de perles de phosphore qui éblouissent, explosent et brûlent sa cible en continu."
     },
     "power": {
         "essem": "ORHEN",
@@ -58,17 +58,6 @@
     "spells": [
         {
             "key": "A",
-            "name": "CONJURATION",
-            "cost": 0,
-            "duration": "/",
-            "recharge": "10 tours",
-            "range": "/",
-            "effect": "Force l'appel du Ruüvhan contractant, servant de balise pour qu'il puisse apparaître à ses côtés.",
-            "desc": "Sin'aän effectue une mudrā avec chacune de ses mains, réalisant des signes distinctifs à l'aide des ses doigts, qui lui sert de sort de conjuration et d'appel pour le Ruüvhan avec qui il est lié par le contrat passé.",
-            "icon": "/images/spell_1.jpg"
-        },
-        {
-            "key": "Z",
             "name": "INFUSION",
             "cost": 20,
             "duration": "5 tours",
@@ -79,8 +68,19 @@
             "icon": "/images/spell_2.jpg"
         },
         {
+            "key": "Z",
+            "name": "ONDE DE CHOC",
+            "cost": 10,
+            "duration": "/",
+            "recharge": "10 tours",
+            "range": "5 mètres",
+            "effect": "Permet de libérer une onde de choc assez puissante pour repousser brutalement les adversaires proches et déséquilibrer les plus éloignés.",
+            "desc": "Sin'aän comprime brusquement une partie de son orhen à l'extrémité d'un de ses membres avant de le relâcher d'un coup sec sous forme d'une impulsion énergétique à forte chaleur.",
+            "icon": "/images/spell_11.jpg"
+        },
+        {
             "key": "E",
-            "name": "REVIGORATION",
+            "name": "AURA REVIGORANTE",
             "cost": 30,
             "duration": "2 tours",
             "recharge": "5 tours",
@@ -91,15 +91,15 @@
         },
         {
             "key": "R",
-            "name": "MALÉDICTION",
+            "name": "NÉBULEUSE DE PHOSPHORE",
             "cost": 50,
             "duration": "10 tours",
             "recharge": "10 tours",
-            "range": "100m",
-            "effect": "La marque orhenique apposée sur la cible aspire graduellement son énergie vitale tout en lui servant de balise pour savoir où elle se trouve dans un rayon d'action donné.",
-            "desc": "En touchant directement son adversaire, Sin'aän appose une marque orhenique de la taille de sa main, qui se présente comme une rune rougeâtre appliquée sur la peau. Cette marque brillante est visible même à travers les vêtements mais peut-être retirée par une technique de purification ou de dissipation très avancée.",
+            "range": "50m",
+            "effect": "Après quelques secondes exposées à l'air ambiant, les perles émettent une lumière éblouissante ainsi qu'une très forte chaleur jusqu'à créer un enchaînement de détonnations. Les perles se transforment en une pâte visqueuse, collante et ultra-corrosive qui brûle en continu, capable de pénétrer les tissus en profondeur.",
+            "desc": "Sin'aän modèle son orhen pour créer une multitude de perles de phosphore de la taille d'un grain de sable. Il peut manipuler ces perles pour les envoyer en direction de sa cible, créant une sorte de nuage qui orbite autour pendant quelques secondes.",
             "ult": true,
-            "icon": "/images/spell_4.jpg"
+            "icon": "/images/spell_44.jpg"
         }
     ],
     "hp": { 
@@ -111,12 +111,12 @@
         "max": 100 
     },
     "strengths": [
-        "En tant qu'aüne, il dispose d'une réserve d'Orhen considérable",
+        "De part sa nature, il dispose d'une réserve d'Orhen considérable",
         "Détient une maîtrise avancée de l'Ohren et de ses différentes utilisations",
         "C'est un invocateur qui bénéficie d'aptitudes physiques améliorées"
     ],
     "weaknesses": [
-        "L'intégralité de son kit de combat est restreinte au corps à corps",
+        "Hormis son ultime, son kit de combat est restreint au corps à corps",
         "C'est un piètre allié qui agit spontanément et de manière imprévisible",
         "En combat, il préfère prendre du bon temps plutôt qu'être efficace"
     ]

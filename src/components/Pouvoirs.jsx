@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import '../styles/Pouvoirs.scss'
 import pouvoirsData from '../data/pouvoirs.json'
 
@@ -39,6 +40,28 @@ const isImg = (icon) => typeof icon === 'string' && /\.(png|jpe?g|webp|gif|svg)$
 export default function Pouvoirs() {
     const [mounted, setMounted] = useState(false)
     const [openSpell, setOpenSpell] = useState(null)
+    const [tip, setTip] = useState(null)   // infobulle d'un sort : { name, left, right, top, bottom }
+    const tipRef = useRef(null)
+
+    const showTip = (e, name) => {
+        const r = e.currentTarget.getBoundingClientRect()
+        setTip({ name, left: r.left, right: r.right, top: r.top, bottom: r.bottom })
+    }
+    const hideTip = () => setTip(null)
+
+    // Place l'infobulle une fois mesurée : centrée au-dessus du sort, gardée dans l'écran
+    useLayoutEffect(() => {
+        const el = tipRef.current
+        if (!tip || !el) return
+        const w = el.offsetWidth, h = el.offsetHeight, m = 4
+        let x = (tip.left + tip.right) / 2 - w / 2
+        x = Math.max(m, Math.min(x, window.innerWidth - w - m))
+        let y = tip.top - h - 6
+        if (y < m) y = tip.bottom + 6       // pas de place au-dessus : on passe dessous
+        el.style.left = `${x}px`
+        el.style.top = `${y}px`
+        el.style.visibility = 'visible'
+    }, [tip])
 
     useEffect(() => {
         const t1 = setTimeout(() => setMounted(true), 60)
@@ -128,14 +151,18 @@ export default function Pouvoirs() {
                                 <span className="moba__panel-dot" />
                             </div>
 
-                            <div className="moba__spell-row" data-testid="spells-grid">
+                            <div className="moba__spell-row" data-testid="spells-grid" onScroll={hideTip}>
                                 {SPELLS.map((sp, i) => (
                                     <button
                                         type="button"
                                         key={sp.key}
                                         className={`moba__spell-btn ${sp.ult ? 'is-ult' : ''}`}
                                         style={{ animationDelay: `${0.4 + i * 0.08}s` }}
-                                        onClick={() => setOpenSpell(i)}
+                                        onClick={() => { hideTip(); setOpenSpell(i) }}
+                                        onMouseEnter={(e) => showTip(e, sp.name)}
+                                        onMouseLeave={hideTip}
+                                        onFocus={(e) => showTip(e, sp.name)}
+                                        onBlur={hideTip}
                                         data-testid={`spell-${sp.key.toLowerCase()}`}
                                         aria-label={`Ouvrir détails ${sp.name}`}
                                     >
@@ -145,7 +172,6 @@ export default function Pouvoirs() {
                                             <span className="moba__spell-glyph">{sp.icon || sp.key}</span>
                                         )}
                                         <span className="moba__spell-key">{sp.key}</span>
-                                        <span className="moba__spell-tip">{sp.name}</span>
                                     </button>
                                 ))}
                             </div>
@@ -253,6 +279,12 @@ export default function Pouvoirs() {
                 </div>
             </div>
 
+            {/* ─── SPELL TOOLTIP (portail dans <body> : jamais coupé par un conteneur) ─── */}
+            {tip && createPortal(
+                <div ref={tipRef} className="moba__spell-tip" role="tooltip">{tip.name}</div>,
+                document.body
+            )}
+
             {/* ─── SPELL MODAL ─── */}
             {spell && (
                 <div
@@ -294,12 +326,14 @@ export default function Pouvoirs() {
                                 <div className="moba__modal-pill moba__modal-pill--cost">
                                     <i>COÛT</i><span>{spell.cost} énergie</span>
                                 </div>
+                                {/*
                                 <div className="moba__modal-pill moba__modal-pill--recharge">
                                     <i>RECHARGE</i><span>{spell.recharge}</span>
                                 </div>
                                 <div className="moba__modal-pill moba__modal-pill--duration">
                                     <i>DURÉE</i><span>{spell.duration}</span>
                                 </div>
+                                */}
                                 {spell.range && (
                                     <div className="moba__modal-pill moba__modal-pill--range">
                                         <i>PORTÉE</i><span>{spell.range}</span>
