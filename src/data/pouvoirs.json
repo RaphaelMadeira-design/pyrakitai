@@ -17,7 +17,7 @@
         { 
             "name": "CONSTITUTION",     
             "value": 18, 
-            "color": "#ff5e6c" 
+            "color": "#B60008" 
         },
         { 
             "name": "DEXTÉRITÉ",   
@@ -27,7 +27,7 @@
         { 
             "name": "FORCE",   
             "value": 16, 
-            "color": "#a98bff" 
+            "color": "#761BBC" 
         },
         { 
             "name": "CHARISME",   
@@ -42,17 +42,17 @@
         { 
             "name": "ÉNERGIE", 
             "value": 18, 
-            "color": "#ffd24a" 
+            "color": "#0040B6" 
         },
         { 
             "name": "VOLONTÉ", 
             "value": 12, 
-            "color": "#ffd24a" 
+            "color": "#BF5D00" 
         },
         { 
             "name": "INTELLIGENCE", 
             "value": 12, 
-            "color": "#ffd24a" 
+            "color": "#E85DDF" 
         }
     ],
     "spells": [
