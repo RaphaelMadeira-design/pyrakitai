@@ -35,7 +35,7 @@
         },
         "rows": [
             ["Nom complet", "Sin'aän Kitaï"],
-            ["Âge", "198 ans"],
+            ["Âge", "158 ans"],
             ["Sexe", "Masculin ♂"],
             ["Race", "Samaä'ka/Aüne"],
             ["Origine", "Sima'ch"],
@@ -75,11 +75,11 @@
                 "id": "wiki-biographie",
                 "labelHtml": "Biographie",
                 "children": [
-                    { "id": "wiki-chap1", "labelHtml": "Chapitre 1" },
-                    { "id": "wiki-chap2", "labelHtml": "Chapitre 2" },
-                    { "id": "wiki-chap3", "labelHtml": "Chapitre 3" },
-                    { "id": "wiki-chap4", "labelHtml": "Chapitre 4" },
-                    { "id": "wiki-chap5", "labelHtml": "Chapitre 5" }
+                    { "id": "wiki-chap1", "labelHtml": "Origines floues" },
+                    { "id": "wiki-chap2", "labelHtml": "Enfance et découverte" },
+                    { "id": "wiki-chap3", "labelHtml": "Arrivée à Shevar" },
+                    { "id": "wiki-chap4", "labelHtml": "Voyages et quête d'identité" },
+                    { "id": "wiki-chap5", "labelHtml": "Naissance du Gran Regalia" }
                 ]
             },
             {
@@ -104,6 +104,10 @@
                 "labelHtml": "Faits notables"
             },
             {
+                "id": "wiki-trivia",
+                "labelHtml": "Trivia"
+            },
+            {
                 "id": "wiki-references",
                 "labelHtml": "Références"
             }
@@ -124,29 +128,36 @@
             "Même s'il est d'un naturel très sociable, notamment par ses manières chaleureuses et spontanées, il reste néanmoins insaisissable et il faut du temps pour qu'il puisse dévoiler sa véritable intimité. Sa fierté l'empêche d'ailleurs bien souvent de montrer ses failles, préférant dissimuler ses peines sous un masque de gaieté. Mais quand on arrive à passer outre sa légèreté, il se révèle être un ami dévoué et un pilier précieux sur lequel on peut compter, en toutes circonstances. Briser la confiance qu'il offre si généreusement est en revanche définitif, car pour lui, le pardon n'efface jamais la trahison."
         ] },
         { "level": 2, "id": "wiki-biographie", "titleHtml": "Biographie" },
-        { "level": 3, "id": "wiki-chap1", "titleHtml": "Chapitre 1", "paragraphs": [
-            "...",
-            "..."
+        { "level": 3, "id": "wiki-chap1", "titleHtml": "Origines floues", "paragraphs": [
+            "Les circonstances de la naissance de Sin’aän Kitaï sont inconnues. Ni la date ni le lieu de sa venue au monde n’ont pu être établis, et l’identité de ses parents demeure ignorée, y compris de l’intéressé, qui n’a conservé aucun souvenir de sa vie antérieure. Aucun document d’état civil le concernant n’a été retrouvé à ce jour.",
+            "Son plus ancien souvenir est celui d’un réveil au pied d’un arbre mort, au fond d’un cratère du Désert Blanc de Sima’ch. Il a alors une dizaine d’années, d’après les estimations ultérieures. De cette période, il ne garde que trois images : l’arbre, le cratère et l’étendue de sable blanc qui les entoure. Il ignore ce qu’il était auparavant, d’où il venait et comment il s’est retrouvé seul en ce lieu.",
+            "Le Désert Blanc de Sima’ch est une région située dans un pays à l’est de Shevar’. Son sable, blanc et luisant, est mêlé d’ossements et de perles de phosphore. Ces dernières libèrent un gaz qui s’élève puis stagne à quelques centaines de mètres d’altitude, empêchant la lumière des astres d’atteindre le sol : le ciel y paraît d’un noir complet, la seule clarté provenant de l’éclat du sable lui-même. Aucune végétation n’y pousse, à l’exception du Shambal’a, dont les champs se déplacent au gré du vent et du pollen. La région renferme également de nombreux vestiges anciens (arbres entièrement morts, fragments de statues colossales, bâtiments ensevelis) qui attirent régulièrement des chercheurs de trésors. Elle est parcourue par des nomades, natifs du désert, à la recherche de ces champs.",
+            "Sin’aän reste à proximité de l’arbre pendant une durée indéterminée, sans s’alimenter. Les circonstances de sa survie durant cette période n’ont jamais été expliquées."
         ] },
-        { "level": 3, "id": "wiki-chap2", "titleHtml": "Chapitre 2", "paragraphs": [
-            "...",
-            "..."
+        { "level": 3, "id": "wiki-chap2", "titleHtml": "Enfance et découverte", "paragraphs": [
+            "À une date indéterminée, un campement de nomades s’établit à proximité du cratère. Une jeune fille du clan, dont Sin’aän ne connaît pas le nom, découvre l’arbre mort alors qu’elle cherchait son foulard, emporté par le vent. Elle y a trouvé un enfant, qui avait récupéré le tissu. De retour au campement, elle signale la présence d’un enfant seul dans le désert. La majorité des nomades refusent de la croire, ou voient dans cette apparition une malédiction, conformément à leurs croyances, et interdisent à quiconque de s’en approcher.",
+            "La jeune fille enfreint néanmoins cet interdit et rend visite à l’enfant en secret, à plusieurs reprises. Sin’aän lui rend son foulard, et ils nouent des liens d’amitié. Elle lui apporte de l’eau, de la nourriture et de quoi se couvrir. Elle lui confie que sa couleur préférée est le violet, car c’est celle qu’elle repère le plus facilement. Cet épisode est parfois mis en relation avec le choix de cette couleur pour son haori[réf. nécessaire].",
+            "Ces visites sont découvertes. Persuadés que l’enfant est l’incarnation d’un esprit malsain du désert, les nomades empêchent la jeune fille de quitter le campement et préparent son expulsion. Elle parvient à s’échapper pour le prévenir, lui remet son foulard violet et le presse de fuir, lui assurant qu’elle le retrouvera grâce à cette couleur une fois que les siens auront renoncé à leur projet.",
+            "Sin’aän fuit pendant deux jours, subsistant grâce aux vivres qu’elle lui avait confiés, puis revient à l’arbre mort. Personne ne s’y présente. Quelques jours plus tard, il se rend au campement et le trouve déserté, les tentes éventrées. La cause demeure inconnue : pillage par des chasseurs de trésors ou départ précipité du clan. Il ne retrouve aucune trace de la jeune fille. Il regagne l’arbre, noue le foulard à l’une de ses branches et s’y endort."
         ] },
-        { "level": 3, "id": "wiki-chap3", "titleHtml": "Chapitre 3", "paragraphs": [
-            "...",
-            "..."
+        { "level": 3, "id": "wiki-chap3", "titleHtml": "Arrivée à Shevar", "paragraphs": [
+            "À son réveil, Sin’aän se retrouve face à un Ak’ulaäsh d’environ soixante-dix ans, chasseur de trésors et érudit, venu dans le désert pour comprendre le monde et ses vestiges. L’homme ne manifeste ni crainte ni hostilité envers l’enfant et cherche à le comprendre. Pendant plusieurs jours, Sin’aän refuse de le suivre, malgré l’eau et la nourriture qu’il lui apporte. Il finit par quitter l’arbre mort et le cratère, qui ont été son seul foyer, laissant sur place le foulard violet.",
+            "L’homme le conduit à Shevar’ et l’élève comme son protégé. Passionné d’histoire, de reliques et d’objets anciens, il lui transmet ce goût pour le passé, qui constitue aujourd’hui le fil conducteur de la vie de Sin’aän et de son activité de récupérateur. Sauvage et craintif à son arrivée, l’enfant calque peu à peu son comportement sur celui de son tuteur, chaleureux, avenant et souriant, au point que cette imitation devient sa manière d’être. Des proches soulignent toutefois qu’il a conservé de cette période un instinct farouche, qui ne se manifeste que dans certaines situations de haut stress."
         ] },
-        { "level": 3, "id": "wiki-chap4", "titleHtml": "Chapitre 4", "paragraphs": [
-            "...",
-            "..."
+        { "level": 3, "id": "wiki-chap4", "titleHtml": "Voyages et quête d'identité", "paragraphs": [
+            "Pendant près de quatre-vingt-dix ans, Sin’aän accompagne son tuteur dans ses recherches et ses expéditions à la poursuite de trésors du passé. Le chercheur constate rapidement l’importance de sa réserve d’Orhen, sa force décuplée et son don d’in’lkaäm, rare faculté qui permet de percevoir ce que les autres ne voient pas. Il comprend que les yeux constamment clos de son protégé le préservent de ce que ce don lui montre, et ne l’incite jamais à les ouvrir. Il l’aide à maîtriser ses capacités. Au fil de leurs voyages, Sin’aän emprunte des techniques aux personnes rencontrées en chemin, sans jamais suivre de discipline, et se forge un style de combat hybride, instinctif et chaotique.",
+            "Parallèlement, le chercheur cherche à déterminer qui est réellement Sin’aän, parfois au péril de sa propre sécurité. Il conclut qu’il est issu d’un croisement entre un Aüne et un Samaä’ka, sans jamais établir l’identité de ses parents ni les raisons de sa présence dans le cratère.",
+            "Lors de leurs retours à Shevar’, le chercheur retrouve Madame Halvar, une amie de longue date, Ak’ulaäsh de la même génération que lui, qui veille sur lui avec une attention constante. Elle connaît son goût pour l’aventure et ses rêves. Selon plusieurs témoignages, leur relation repose sur des attentions mutuelles et des non-dits, la simple présence de l’autre leur suffisant.",
+            "Le chercheur meurt à l’âge de cent soixante ans, des suites d’une maladie qu’il a refusé de soigner."
         ] },
-        { "level": 3, "id": "wiki-chap5", "titleHtml": "Chapitre 5", "paragraphs": [
-            "...",
-            "..."
+        { "level": 3, "id": "wiki-chap5", "titleHtml": "Naissance du Gran Regalia", "paragraphs": [
+            "Resté seul après la mort de son tuteur, Sin’aän poursuit pendant quelques années les recherches de celui-ci, enchaînant les petits boulots pour subsister. Durant cette période d’errance, il devient invocateur et conclut un pacte avec un ruüvahn, sur lequel il reste muet.",
+            "À la mort du chercheur, Madame Halvar reçoit de lui une lettre qui lui est personnellement adressée, dans laquelle il lui confie une demande concernant Sin’aän. Elle finit par retrouver ce dernier et lui propose de louer le local voisin de son restaurant, Le lampion, au district rouge. Sin’aän refuse d’abord. Madame Halvar lui remet alors la lettre du chercheur. Voyant dans quel état de détresse se trouve cette femme d’ordinaire si forte, Sin’aän comprend ce qui lui est demandé et accepte, sans avoir ouvert la lettre, qu’il conserve depuis parmi ses affaires personnelles. Le Gran Regalia ouvre ses portes peu après.",
+            "Madame Halvar, qui gère toujours Le lampion d’une main de fer, est depuis la propriétaire de son local et l’une de ses plus proches relations."
         ] },
         { "level": 2, "id": "wiki-aptitudes", "titleHtml": "Aptitudes et compétences" },
         { "level": 3, "id": "wiki-competences", "titleHtml": "Compétences générales", "list": [
-            "<strong>Motricité</strong> — Aambidextre doté d'une excellente coordination œil-main et œil-pied.",
+            "<strong>Motricité</strong> — Ambidextre doté d'une excellente coordination œil-main et œil-pied.",
             "<strong>Ouïe surdéveloppée</strong> — Perçoit les sons avec une acuité exceptionnelle et peut détecter des bruits subtils.",
             "<strong>Langues</strong> — Polyglotte maîtrisant plusieurs langues courantes ainsi que quelques idiomes anciens.",
             "<strong>Technologie</strong> — Connaissances en technologie ancienne et en électronique."
@@ -155,38 +166,46 @@
             "Sin'aän ne possède pas de style de combat à proprement parler. Sa manière de combattre se rapproche plus du <em>street fighting</em> que des arts martiaux traditionnels. Il emprunte des techniques de <strong>taekwondo</strong> et de <strong>capoeira</strong> qu'il adapte à sa propre manière de bouger. Il se bat majoritairement avec ses jambes. Bien qu'il ne soit pas gradé, son style est fluide, imprévisible et chaotique, basé sur les feintes, les changements de rythme mais aussi sur son environnement immédiat."
         ] },
         { "level": 3, "id": "wiki-essem", "titleHtml": "Essem", "paragraphs": [
-            "..."
+            "Sin’aän est un utilisateur d’Orhen dont la réserve est exceptionnelle. Sa quantité d’essem dépasse largement celle de la plupart des utilisateurs, ce que l’on attribue à sa double ascendance Aüne et Samaä’ka, deux lignées particulièrement affines à cet essem. Elle lui permet d’enchaîner des techniques coûteuses sur de longues périodes, là où d’autres s’épuiseraient, et il en maîtrise de manière avancée les différentes applications.",
+            "Contrairement à la plupart des utilisateurs d’Orhen, Sin’aän l’emploie majoritairement à des fins offensives. Il se spécialise dans la condensation, qui lui permet de renforcer ses coups en formant une membrane pseudo-protectrice autour de ses membres, et se bat presque exclusivement au corps à corps. Sa technique la plus connue est un nuage de perles de phosphore qui éblouissent, explosent et brûlent leur cible en continu. Certains observateurs relèvent la ressemblance de ces perles avec celles du Désert Blanc de Sima’ch, sans qu’aucun lien n’ait pu être établi.",
+            "Invocateur de spécialité démoniste, Sin’aän est lié par un pacte à un ruüvahn, dont il ne divulgue ni l’identité ni les termes. Ses proches soulignent par ailleurs qu’il est un allié peu fiable en combat : spontané et imprévisible, il s’attache davantage à prendre du bon temps qu’à être efficace."
         ] },
         { "level": 2, "id": "wiki-entourage", "titleHtml": "Entourage" },
         { "level": 3, "id": "wiki-pros", "titleHtml": "Relations professionnelles", "list": [
-            "<strong><span class=\"browser__wiki-link\">Madame Halvar</span></strong> — Sa propriétaire qui gère aussi le restaurant <em>Le lampion</em> d'une main de fer, situé juste à côté. Bien qu'elle puisse se montrer sévère, elle prend soin de Sin'aän à sa manière, qu'elle connaît depuis de longues années.",
-            "<strong><span class=\"browser__wiki-link\">Malloy Metkor</span></strong> — Description.",
-            "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
-            "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
-            "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description."
+            "<strong><span class=\"browser__wiki-link\">Malloy Metkor</span></strong> — Informateur qui tire ses renseignements d'une multitude de sources crédibles. Il est au courant de presque tout et est toujours prêt à donner du boulot à Sin'aän en échange d'informations."
         ] },
         { "level": 3, "id": "wiki-civils", "titleHtml": "Relations civiles", "list": [
-            "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
-            "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
-            "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
-            "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description.",
-            "<strong><span class=\"browser__wiki-link\">Prénom Nom</span></strong> — Description."
+            "<strong><span class=\"browser__wiki-link\">Madame Halvar</span></strong> — Sa propriétaire, qui gère aussi le restaurant <em>Le lampion</em> d’une main de fer, situé juste à côté. Amie de longue date du chercheur qui a recueilli Sin’aän, elle l’a retrouvé après le décès de celui-ci et lui a proposé le local qui abrite aujourd’hui le Gran Regalia. Bien qu’elle puisse se montrer sévère, elle prend soin de lui à sa manière, et le connaît depuis près d’un siècle et demi.",
+            "<strong><span class=\"browser__wiki-link\">Juni Sedo</span></strong> — Livreuse vivant en face du Gran Regalia et amie proche de Sin’aän. Elle remarque sa lampe allumée à toute heure, s’inquiète de ses nuits trop courtes et de ses repas sautés, et lui rapporte de quoi nourrir ses passions : un vieux poste radio à réparer, des boosters de cartes à échanger. Elle veille sur lui au quotidien, même s’il ne fait appel à elle qu’en dernier recours."
         ] },
-        { "level": 2, "id": "wiki-faits", "titleHtml": "Faits notables", "list": [
-            "<strong>Mission</strong> — Description.",
-            "<strong>Mission</strong> — Description.",
-            "<strong>Mission</strong> — Description."
+        { "level": 2, "id": "wiki-trivia", "titleHtml": "Trivia", "list": [
+            "Sin’aän porte du violet pour être retrouvé. Une jeune fille du campement nomade lui avait confié que c’était la couleur qu’elle repérait le plus facilement, et lui avait assuré qu’elle le retrouverait grâce à elle. Il n’en parle presque jamais.",
+            "Il a les yeux fermés à cause de son don d’in’lkaäm, qui lui montre ce que les autres ne voient pas : les garder clos l’empêche d’en être submergé. Il perçoit son environnement grâce à ses autres sens, notamment une ouïe surdéveloppée.",
+            "Il collectionne les briquets anciens et les cartes à échanger.",
+            "Il apprécie particulièrement les chats noirs et la pâte de haricot sucrée, mais déteste le poisson et les fruits de mer.",
+            "Il déteste les films d’horreur.",
+            "Il est coutumier des retards de loyer, au grand dam de sa propriétaire.",
+            "Il ne travaille jamais le week-end.",
+            "Il dort peu : la lampe de son bureau reste souvent allumée jusqu’au petit matin.",
+            "Il a refusé que la Chambre des Services Indépendants publie son portrait dans son bulletin.",
+            "Il ne retrouve que les objets volés, jamais les cadeaux que l’on regrette d’avoir faits.",
+            "Il est un lecteur assidu des Archives du District n°5, où il a emprunté trente et un ouvrages de la section « Mythologie & Reliques » depuis le début de l’année, et en rend certains avec du retard."
         ] }
     ],
     "references": {
         "title": "Références",
         "id": "wiki-references",
         "items": [
-            "Référence",
-            "Référence",
-            "Référence",
-            "Référence",
-            "Référence"
+            "Désert Blanc de Sima’ch — Atlas des terres hostiles de l’Est — Tessarin Voll",
+            "Nomades de Sima’ch et Shambal’a — Les peuples du sable blanc : mœurs, croyances et monnaie de pétales — Dr Ilyana Marsk",
+            "Trésors et reliques — Trésors oubliés de l’Ère archaïque : récits, archives et faux-semblants — Pr. H. Vendamir",
+            "Don d’in’lkaäm — Étude sur la prévalence des facultés innées dans la population — Dr Oriel Maverne",
+            "Aünes et Samaä’ka — Croisements essémiques : cas documentés et lignées rares — Pr. Selwyn Aldrik",
+            "Ak’ulaäsh — Éther et cristaux : les Ak’ulaäsh des terres volcaniques — Pr. Devaän Mahiir",
+            "Orhen offensif — Condensation et membranes orheniques : traité de combat rapproché — Maître Ellis Brandt",
+            "Perles de phosphore — Composition, instabilité et usages des perles de phosphore — Dr Nathan Orlow",
+            "Gran Regalia — Bulletin des indépendants n°47 (mai/juin) — Chambre des Services Indépendants du District n°6",
+            "District rouge — Le Lampion et le passage des Lanternes : chronique de quartier — Rédaction de la Gazette du District n°6"
         ]
     },
     "categories": ["Homme", "Indépendant", "Shevar", "Gran Regalia", "Aüne", "Orhen", "Essem"]

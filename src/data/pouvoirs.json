@@ -63,8 +63,8 @@
             "duration": "5 tours",
             "recharge": "2 tours",
             "range": "Aucune",
-            "effect": "Renforce la puissance ainsi que la résistance des membres infusés. Les vibrations induites par son essem peuvent fragiliser les structures touchées et même créer un effet laçérant ou perforant.",
-            "desc": "Condensation avancée de l'Ohren au niveau des ses bras ou de ses jambes, créant une sorte de membrane orhenique visible et solide, située à quelques centimètres de son épiderme. La membrane créé un petit bourdonnement audible ainsi qu'un léger flou autour de sa silhouette, comme si elle vibrait.",
+            "effect": "Renforce la puissance ainsi que la résistance des membres infusés. Les vibrations induites par son essem peuvent fragiliser les structures touchées et même créer un effet lacérant ou perforant.",
+            "desc": "Condensation avancée de l'Orhen au niveau des ses bras ou de ses jambes, créant une sorte de membrane orhenique visible et solide, située à quelques centimètres de son épiderme. La membrane créée un petit bourdonnement audible ainsi qu'un léger flou autour de sa silhouette, comme si elle vibrait.",
             "icon": "/images/spell_2.jpg"
         },
         {
@@ -86,7 +86,7 @@
             "recharge": "5 tours",
             "range": "Aucune",
             "effect": "Permet de soigner les blessures légères et superficielles de l'utilisateur. Très utile pour neutraliser les inflammations musculaires et ainsi permettre à Sin'aän d'être plus endurant bien plus longtemps.",
-            "desc": "Technique de relâchement d'Ohren où Sin'aän brûle lentement mais délibérément sa réserve personnelle, créant une aura stimulante tout autour de sa silhouette.",
+            "desc": "Technique de relâchement d'Orhen où Sin'aän brûle lentement mais délibérément sa réserve personnelle, créant une aura stimulante tout autour de sa silhouette.",
             "icon": "/images/spell_3.jpg"
         },
         {
@@ -112,7 +112,7 @@
     },
     "strengths": [
         "De part sa nature, il dispose d'une réserve d'Orhen considérable",
-        "Détient une maîtrise avancée de l'Ohren et de ses différentes utilisations",
+        "Détient une maîtrise avancée de l'Orhen et de ses différentes utilisations",
         "C'est un invocateur qui bénéficie d'aptitudes physiques améliorées"
     ],
     "weaknesses": [
