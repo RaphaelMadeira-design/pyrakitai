@@ -97,7 +97,7 @@
             "recharge": "10 tours",
             "range": "50m",
             "effect": "Après quelques secondes exposées à l'air ambiant, les perles émettent une lumière éblouissante ainsi qu'une très forte chaleur jusqu'à créer un enchaînement de détonnations. Les perles se transforment en une pâte visqueuse, collante et ultra-corrosive qui brûle en continu, capable de pénétrer les tissus en profondeur.",
-            "desc": "Sin'aän modèle son orhen pour créer une multitude de perles de phosphore de la taille d'un grain de sable. Il peut manipuler ces perles pour les envoyer en direction de sa cible, créant une sorte de nuage qui orbite autour pendant quelques secondes.",
+            "desc": "Sin'aän modèle son orhen pour créer une multitude de perles de phosphore de la taille d'une petite bille. Il peut manipuler ces perles pour les envoyer en direction de sa cible, créant une sorte de nuage qui orbite autour pendant quelques secondes.",
             "ult": true,
             "icon": "/images/spell_44.jpg"
         }
