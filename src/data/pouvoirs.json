@@ -91,13 +91,13 @@
         },
         {
             "key": "R",
-            "name": "NÉBULEUSE DE PHOSPHORE",
+            "name": "NÉBULEUSE PYROPHORE",
             "cost": 50,
             "duration": "10 tours",
             "recharge": "10 tours",
             "range": "50m",
-            "effect": "Après quelques secondes exposées à l'air ambiant, les perles émettent une lumière éblouissante ainsi qu'une très forte chaleur jusqu'à créer un enchaînement de détonnations. Les perles se transforment en une pâte visqueuse, collante et ultra-corrosive qui brûle en continu, capable de pénétrer les tissus en profondeur.",
-            "desc": "Sin'aän modèle son orhen pour créer une multitude de perles de phosphore de la taille d'une petite bille. Il peut manipuler ces perles pour les envoyer en direction de sa cible, créant une sorte de nuage qui orbite autour pendant quelques secondes.",
+            "effect": "Après quelques secondes exposées à l'air ambiant, les perles gonflent pour avoir la taille d'une bille et émettent une lumière éblouissante ainsi qu'une très forte chaleur jusqu'à créer un enchaînement de détonnations. Les perles se transforment alors en une pâte visqueuse, collante et ultra-corrosive qui brûle en continu, capable de pénétrer les tissus en profondeur.",
+            "desc": "Sin'aän modèle son orhen pour créer une multitude de perles pyrophores de la taille d'un grain de sable. Il peut manipuler ces perles pour les envoyer en direction de sa cible, créant une sorte de nuage qui orbite autour pendant quelques secondes.",
             "ult": true,
             "icon": "/images/spell_44.jpg"
         }
